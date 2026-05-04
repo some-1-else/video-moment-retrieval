@@ -1,15 +1,31 @@
-# video-moment-retrieval
-Search for video moments using text queries: implementations and experiments with video-language retrieval models.
+# Video Moment Retrieval
 
-## Goal
-Compare approaches for text-to-video moment retrieval in terms of quality and computational cost.
+**Английское название курсовой:** Search for video moments using text queries: implementations and experiments with video-language retrieval models.
 
-## Planned stages
-1. Literature review
-2. Baseline implementation
-3. Improved models
-4. Experiments
-5. Analysis
+## Цель
 
-## Initial baseline
-CLIP-based retrieval
+Сравнить подходы к `text-to-video moment retrieval` по качеству и вычислительной стоимости.
+
+## Описание задачи
+
+Проект посвящён поиску релевантных временных отрезков в видео по текстовому запросу. Практический фокус работы: собрать воспроизводимый baseline, провести серию простых экспериментов и оценить компромисс между качеством и стоимостью inference.
+
+## Датасет
+
+Основной датасет: `QVHighlights`.
+
+## Baseline
+
+Основной baseline: `CLIP-based retrieval` с извлечением визуальных embedding-ов и сопоставлением с текстовым запросом.
+
+## Метрики
+
+- `Recall@1` при `IoU = 0.3 / 0.5 / 0.7`
+- `mIoU`
+- `inference time`
+- число обработанных кадров
+- размер сохранённых embedding-ов
+
+## Текущий статус
+
+Сейчас проект находится на стадии подготовки документации и плана работ. Следующий шаг: зафиксировать окружение, формат данных и протокол оценки, после чего перейти к воспроизводимому baseline.
