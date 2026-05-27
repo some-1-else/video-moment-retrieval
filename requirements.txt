@@ -5,4 +5,10 @@ pyyaml
 pytest
 matplotlib
 scikit-learn
-
+opencv-python
+torch
+torchvision
+ftfy
+regex
+git+https://github.com/openai/CLIP.git
+yt-dlp

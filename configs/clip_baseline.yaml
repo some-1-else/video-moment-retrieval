@@ -1,0 +1,23 @@
+dataset:
+  annotations: data/qvhighlights/highlight_val_release.jsonl
+  videos_dir: data/qvhighlights/videos
+  limit: 100
+
+frame_extraction:
+  fps: 1.0
+
+clip:
+  model_name: ViT-B/32
+  device: auto
+  batch_size: 32
+
+retrieval:
+  mode: windows
+  window_size: 8.0
+  stride: 4.0
+  aggregation: mean
+  smoothing: null
+
+output:
+  embeddings_dir: results/embeddings
+  results_path: results/clip_baseline_val_100.json

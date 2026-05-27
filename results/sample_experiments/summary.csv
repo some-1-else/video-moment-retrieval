@@ -1,0 +1,6 @@
+result_file,num_samples,fps,window_size,stride,aggregation,smoothing_window,R@1_IoU_0.3,R@1_IoU_0.5,R@1_IoU_0.7,mIoU,total_frames,avg_frames_per_sample
+frame_score_w4_s2_max.json,4,1.0,4.0,2.0,max,,1.0,0.25,0.0,0.39999999999999997,44,11.0
+frame_score_w4_s2_mean.json,4,1.0,4.0,2.0,mean,,1.0,0.75,0.5,0.7333333333333333,44,11.0
+frame_score_w4_s2_mean_smooth3.json,4,1.0,4.0,2.0,mean,3,1.0,0.75,0.5,0.7333333333333333,44,11.0
+frame_score_w8_s4_max.json,4,1.0,8.0,4.0,max,,1.0,0.75,0.0,0.4583333333333333,44,11.0
+frame_score_w8_s4_mean.json,4,1.0,8.0,4.0,mean,,1.0,1.0,0.0,0.5,44,11.0

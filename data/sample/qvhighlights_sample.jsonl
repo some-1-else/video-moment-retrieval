@@ -1,0 +1,4 @@
+{"sample_id": "sample_001", "video_id": "video_001", "query": "person opens a door", "duration": 10.0, "relevant_windows": [[4.0, 8.0]]}
+{"sample_id": "sample_002", "video_id": "video_002", "query": "person sits down on a chair", "duration": 12.0, "relevant_windows": [[4.0, 8.0]]}
+{"sample_id": "sample_003", "video_id": "video_003", "query": "person picks up an object from the table", "duration": 8.0, "relevant_windows": [[2.0, 6.0]]}
+{"sample_id": "sample_004", "video_id": "video_004", "query": "person walks across the room", "duration": 14.0, "relevant_windows": [[5.0, 9.0]]}

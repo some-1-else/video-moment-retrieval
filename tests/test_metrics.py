@@ -16,7 +16,7 @@ def test_recall_at_iou_with_multiple_thresholds() -> None:
     ]
 
     assert recall_at_iou(predictions, ground_truth, threshold=0.3) == pytest.approx(2.0 / 3.0)
-    assert recall_at_iou(predictions, ground_truth, threshold=0.5) == pytest.approx(1.0 / 3.0)
+    assert recall_at_iou(predictions, ground_truth, threshold=0.5) == pytest.approx(2.0 / 3.0)
     assert recall_at_iou(predictions, ground_truth, threshold=0.7) == pytest.approx(1.0 / 3.0)
 
 

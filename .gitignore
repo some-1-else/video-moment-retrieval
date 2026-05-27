@@ -26,6 +26,16 @@ data/processed/*
 !data/processed/.gitkeep
 data/embeddings/*
 !data/embeddings/.gitkeep
+data/sample/*.mp4
+data/sample/synthetic_clip_videos/*.mp4
+data/qvhighlights/*.json
+data/qvhighlights/*.jsonl
+data/qvhighlights/qvhighlights_val_subset_manifest.json
+data/qvhighlights/videos/*.mp4
+data/qvhighlights/*.zip
+data/qvhighlights/*.tar
+data/qvhighlights/*.tar.gz
+!data/qvhighlights/.gitkeep
 
 # Experiment outputs
 results/predictions/*

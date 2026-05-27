@@ -1,0 +1,56 @@
+{
+  "config": {
+    "videos_dir": "data/qvhighlights/videos",
+    "fps": 1.0,
+    "window_size": 4.0,
+    "stride": 2.0,
+    "aggregation": "mean",
+    "model_name": "ViT-B/32",
+    "device": "cpu",
+    "batch_size": 32
+  },
+  "predictions": {
+    "2638": [
+      76.0,
+      80.0
+    ],
+    "781": [
+      70.0,
+      74.0
+    ]
+  },
+  "ground_truth": {
+    "2638": [
+      [
+        0.0,
+        74.0
+      ],
+      [
+        76.0,
+        142.0
+      ],
+      [
+        144.0,
+        150.0
+      ]
+    ],
+    "781": [
+      [
+        6.0,
+        20.0
+      ]
+    ]
+  },
+  "metrics": {
+    "R@1_IoU_0.3": 0.0,
+    "R@1_IoU_0.5": 0.0,
+    "R@1_IoU_0.7": 0.0,
+    "mIoU": 0.030303030303030304
+  },
+  "stats": {
+    "num_samples": 2,
+    "total_frames": 302,
+    "avg_frames_per_sample": 151.0,
+    "inference_time_sec": 11.46223766595358
+  }
+}
