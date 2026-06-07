@@ -1,91 +1,134 @@
-# Project Status
+# Статус проекта
 
-## What Is Implemented
+Проект находится в финальной coursework-версии для показа научному
+руководителю. Основная линия работы: **Video Moment Retrieval на Charades-STA**
+с простым воспроизводимым baseline на базе CLIP.
 
-- Charades-STA loader and local dataset probe.
-- CLIP-based video moment retrieval baseline with frame sampling, CLIP
-  image/text encoding, temporal windowing, mean/max aggregation, optional
-  smoothing, and embedding cache.
-- Evaluation with `R@1` at IoU `0.3`, `0.5`, `0.7` and `mIoU`.
-- Controlled Charades-STA sweeps over window size, stride, aggregation, and
-  smoothing.
-- Isolated Moment-DETR raw-video probe using the external official repository
-  under `external/moment_detr`.
-- Lightweight notebooks and result tables for coursework review.
+QVHighlights был исходным направлением, но не является финальным benchmark в
+этом репозитории: raw videos зависят от внешних YouTube-ссылок, поэтому
+финальная оценка перенесена на Charades-STA.
 
-## What Is Tested
+## Что реализовано
 
-The repository keeps tests for:
+- Загрузка и проверка Charades-STA annotations.
+- Подготовка локальных Charades videos из архива через public script
+  `scripts/prepare_data.py`.
+- CLIP-based raw-video retrieval baseline:
+  - sampling кадров;
+  - CLIP image/text embeddings;
+  - temporal windows;
+  - mean/max aggregation;
+  - optional moving-average smoothing;
+  - embedding cache для повторных sweep-запусков.
+- Метрики temporal localization:
+  - `R@1` при `IoU = 0.3 / 0.5 / 0.7`;
+  - `mIoU`.
+- Контролируемые эксперименты на фиксированной 1,000-query Charades-STA
+  subset.
+- Отдельный 50-query CLIP vs Moment-DETR raw-video feasibility probe.
+- Reader-facing notebooks и таблицы результатов для проверки курсовой.
 
-- data loading and annotation parsing;
-- temporal IoU and metric calculation;
-- window generation and score aggregation;
-- frame sampling and frame extraction;
-- CLIP encoder/cache interfaces;
-- script-level smoke tests for dataset probes and retrieval runners.
+## Основные результаты
 
-The tests remain in `tests/` and were not removed. They are useful for
-development confidence, but they are not the main interface for reading the
-coursework results.
+### CLIP sweep на 1,000 Charades-STA queries
 
-## Main Results
+Источник: `results/charades_sta_sweep_1000/summary.csv`.
 
-### CLIP Sweep on 1,000 Charades-STA Queries
+- Лучший coarse result:
+  `clip_w16_s8_mean`, `R@1_IoU_0.3 = 0.625`.
+- Лучшая strict localization:
+  `clip_w8_s4_mean`, `R@1_IoU_0.5 = 0.393`,
+  `R@1_IoU_0.7 = 0.181`.
+- Лучший `mIoU` в sweep:
+  `clip_w16_s8_mean`, `mIoU = 0.34969020291901676`.
 
-- Best coarse result: `clip_w16_s8_mean`, `R@1_IoU_0.3 = 0.625`.
-- Best strict localization: `clip_w8_s4_mean`,
-  `R@1_IoU_0.5 = 0.393`, `R@1_IoU_0.7 = 0.181`.
-- Best mIoU in the sweep: `clip_w16_s8_mean`, `mIoU = 0.34969020291901676`.
+### Smoothing на той же 1,000-query subset
 
-Source: `results/charades_sta_sweep_1000/summary.csv`.
+Источник: `results/charades_sta_smoothing_1000/summary.csv`.
 
-### Smoothing
+Для `w8/s4/mean` moving average smoothing немного улучшает strict metrics:
 
-For `w8/s4/mean`, moving average smoothing slightly improves strict metrics:
-
-- no smoothing: `R@1_IoU_0.7 = 0.181`, `mIoU = 0.34777747887511207`;
+- без smoothing: `R@1_IoU_0.7 = 0.181`,
+  `mIoU = 0.34777747887511207`;
 - moving average 5: `R@1_IoU_0.7 = 0.190`,
   `mIoU = 0.34942105981287236`.
 
-For `w16/s8/mean`, smoothing does not improve mIoU over the no-smoothing run.
+Для `w16/s8/mean` smoothing не улучшает `mIoU` относительно варианта без
+smoothing.
 
-Source: `results/charades_sta_smoothing_1000/summary.csv`.
+### CLIP vs Moment-DETR на 50 queries
 
-### CLIP vs Moment-DETR on 50 Queries
-
-On the fixed 50-query comparison subset:
-
-- best CLIP strict result: `clip_w8_s4_mean`,
-  `R@1_IoU_0.7 = 0.32`, `mIoU = 0.4393782459360136`;
-- Moment-DETR raw-video probe:
-  `R@1_IoU_0.3 = 0.44`, `R@1_IoU_0.5 = 0.32`,
-  `R@1_IoU_0.7 = 0.04`, `mIoU = 0.26340237468832634`.
-
-Sources:
+Источники:
 
 - `results/clip_vs_moment_detr_50/*/run_config.json`
 - `results/moment_detr_charades_50/metrics.json`
 
-## Limitations
+На фиксированной 50-query comparison subset:
 
-- Main CLIP sweep uses a fixed 1,000-query subset, not the full Charades-STA
-  test split.
-- Moment-DETR comparison uses only 50 examples and should be read as a
-  feasibility probe, not a full official benchmark.
-- All reported runs use CPU inference.
-- No model is fine-tuned on Charades-STA.
-- QVHighlights remains preliminary because raw video availability depends on
-  external YouTube links.
-- Moment-DETR checkpoint compatibility is sensitive to feature format: the
-  raw-video-compatible checkpoint works for the probe, while the QVHighlights
-  feature checkpoint is not directly compatible with the raw-video path.
+- лучший CLIP strict result:
+  `clip_w8_s4_mean`, `R@1_IoU_0.7 = 0.32`,
+  `mIoU = 0.4393782459360136`;
+- Moment-DETR raw-video probe:
+  `R@1_IoU_0.3 = 0.44`, `R@1_IoU_0.5 = 0.32`,
+  `R@1_IoU_0.7 = 0.04`, `mIoU = 0.26340237468832634`.
 
-## Next Steps
+## Что является финальным результатом
 
-- Run the CLIP baseline on a larger or full Charades-STA test split if time and
-  compute allow.
-- Add GPU timing or separate CPU/GPU runtime reporting.
-- Make the Moment-DETR comparison larger only after stabilizing batching and
-  checkpoint/feature compatibility.
-- Add qualitative examples with predicted and ground-truth windows.
-- Polish the final coursework draft using the result tables in `reports/`.
+Финальная evidence line для курсовой:
+
+- `thesis/coursework.md` - основной текст курсовой;
+- `reports/results_tables.md` - компактные таблицы результатов;
+- `results/charades_sta_sweep_1000/` - главный CLIP sweep;
+- `results/charades_sta_smoothing_1000/` - smoothing ablation;
+- `results/clip_vs_moment_detr_50/` и
+  `results/moment_detr_charades_50/` - 50-query comparison/probe;
+- `notebooks/06_results_summary.ipynb` - основной summary notebook.
+
+## Что является дополнительным probe
+
+- Moment-DETR используется как **50-query raw-video feasibility probe**, а не
+  как полноценное воспроизведение official benchmark.
+- QVHighlights сохранен как preliminary/history direction, но full
+  QVHighlights benchmark не заявляется.
+- Exploratory/smoke/synthetic результаты сохранены локально в ignored
+  `.agent_memory/` и не входят в публичную evidence line.
+
+## Ограничения
+
+- Основной CLIP sweep использует фиксированную 1,000-query subset, а не полный
+  Charades-STA test split.
+- Все reported runs выполнены на CPU.
+- CLIP используется без fine-tuning.
+- Moment-DETR comparison использует только 50 examples и должен читаться как
+  feasibility probe.
+- QVHighlights не стал финальным benchmark из-за нестабильной доступности raw
+  videos.
+- Moment-DETR checkpoint compatibility зависит от feature format: raw-video
+  checkpoint работает для probe, а QVHighlights feature checkpoint не подходит
+  напрямую для raw-video path.
+
+## Как смотреть репозиторий
+
+Рекомендуемый порядок чтения:
+
+1. `thesis/coursework.md` - полный текст курсовой.
+2. `notebooks/06_results_summary.ipynb` - короткий notebook с таблицами и
+   выводами.
+3. `results/README.md` - карта сохраненных результатов.
+4. `reports/results_tables.md` - markdown-таблицы для быстрой проверки чисел.
+5. `notebooks/03_clip_window_sweep_1000.ipynb`,
+   `notebooks/04_smoothing_experiment.ipynb`,
+   `notebooks/05_clip_vs_moment_detr.ipynb` - подробные notebooks по
+   отдельным экспериментам.
+
+## Технические проверки
+
+Последняя полная проверка тестов:
+
+```text
+83 passed
+```
+
+Тесты проверяют loaders, metrics, retrieval logic, video utilities, cache
+interfaces и public reproduction scripts. Для чтения курсовой руководителю
+запускать тесты необязательно.

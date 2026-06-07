@@ -57,13 +57,26 @@ archive/      old environment/history files not needed for the main path
 external/     external Moment-DETR code/checkpoints used for the probe
 ```
 
-Recommended reading path for a reviewer:
+## Recommended review path
 
-1. `README.md`
-2. `PROJECT_STATUS.md`
-3. `reports/results_tables.md`
-4. `notebooks/06_results_summary.ipynb`
-5. `thesis/coursework.md`
+Recommended route for a scientific supervisor or reviewer:
+
+1. `thesis/coursework.md` - full coursework draft with motivation, method,
+   experimental setup, results, limitations, and references.
+2. `notebooks/06_results_summary.ipynb` - compact notebook with saved result
+   tables and conclusions; it reads public `results/` files and does not run
+   model inference.
+3. `results/README.md` - map of saved experiment outputs used by the
+   coursework.
+4. `notebooks/03_clip_window_sweep_1000.ipynb`,
+   `notebooks/04_smoothing_experiment.ipynb`, and
+   `notebooks/05_clip_vs_moment_detr.ipynb` - detailed reader-facing notebooks
+   for the main sweep, smoothing ablation, and Moment-DETR feasibility probe.
+5. `PROJECT_STATUS.md` - concise Russian status summary.
+
+Tests are optional for review. They are useful for engineering confidence, but
+the supervisor does not need to run them to inspect the coursework results. The
+latest full test check passed with `83 passed`.
 
 ## Reproducible experiments
 

@@ -424,16 +424,18 @@ Overall, the project provides a clear baseline, reusable data preparation
 workflow, controlled experiment outputs, and a practical foundation for future
 work on trained temporal localization models.
 
-## 10. References Placeholder
+## 10. References and Project Evidence
 
-The final version should complete bibliographic references for:
+Core references used by the project:
 
-- CLIP: Contrastive Language-Image Pre-training.
-- Moment-DETR and QVHighlights.
-- Charades dataset.
-- Charades-STA temporal sentence grounding annotations.
-- Standard temporal sentence grounding and Video Moment Retrieval evaluation
-  protocols.
+- Radford et al. introduced CLIP as a contrastive image-text pretraining model.
+- Lei et al. introduced Moment-DETR and the QVHighlights benchmark for moment
+  retrieval and highlight detection.
+- Sigurdsson et al. introduced the Charades video dataset.
+- Gao et al. introduced Charades-STA for temporal activity localization via
+  language query.
+
+BibTeX entries are collected in `thesis/references.bib`.
 
 Current project evidence and result files used in this draft:
 
