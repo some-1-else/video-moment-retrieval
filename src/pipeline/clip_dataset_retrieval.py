@@ -19,7 +19,7 @@ from src.models.embedding_cache import (
     make_video_embedding_cache_key,
     save_video_embeddings_cache,
 )
-from src.retrieval.aggregation import aggregate_frame_scores_to_windows
+from src.retrieval.aggregation import aggregate_frame_scores_to_windows, smooth_scores
 from src.retrieval.scoring import select_best_window
 from src.retrieval.windowing import generate_temporal_windows
 from src.video.frame_extraction import extract_sampled_frames, get_video_duration
@@ -37,6 +37,7 @@ def run_clip_dataset_retrieval(
     batch_size: int = 32,
     embeddings_cache_dir: str | Path | None = None,
     use_cache: bool = False,
+    smoothing_window: int | None = None,
 ) -> dict:
     """Run CLIP retrieval over a small local set of annotated videos."""
 
@@ -85,6 +86,8 @@ def run_clip_dataset_retrieval(
 
         text_embedding = encode_text(model, sample.query, actual_device)
         frame_scores = compute_text_image_similarity(text_embedding, image_embeddings)
+        if smoothing_window is not None:
+            frame_scores = smooth_scores(frame_scores, smoothing_window)
         windows = generate_temporal_windows(duration, window_size, stride)
         window_scores = aggregate_frame_scores_to_windows(
             frame_timestamps=frame_timestamps,
@@ -122,6 +125,7 @@ def run_clip_dataset_retrieval(
         cache_hits=cache_hits,
         cache_misses=cache_misses,
         embedding_cache_size_bytes=embedding_cache_size_bytes,
+        smoothing_window=smoothing_window,
     )
 
 
@@ -223,6 +227,7 @@ def build_result(
     cache_hits: int = 0,
     cache_misses: int = 0,
     embedding_cache_size_bytes: int = 0,
+    smoothing_window: int | None = None,
 ) -> dict:
     """Build a serializable dataset-level retrieval result."""
 
@@ -237,6 +242,7 @@ def build_result(
             "device": device,
             "batch_size": batch_size,
             "use_cache": use_cache,
+            "smoothing_window": smoothing_window,
             "embeddings_cache_dir": (
                 str(embeddings_cache_dir)
                 if embeddings_cache_dir is not None

@@ -1,0 +1,6 @@
+{
+  "embeddings_cache_dir": "results/charades_sta_sweep_1000/embeddings",
+  "cache_hits": 637,
+  "cache_misses": 363,
+  "cache_size_bytes": 58017484
+}

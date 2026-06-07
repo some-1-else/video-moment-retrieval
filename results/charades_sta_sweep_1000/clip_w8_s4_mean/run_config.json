@@ -1,0 +1,39 @@
+{
+  "config_name": "clip_w8_s4_mean",
+  "config": {
+    "videos_dir": "data/raw/charades/videos",
+    "fps": 1.0,
+    "window_size": 8.0,
+    "stride": 4.0,
+    "aggregation": "mean",
+    "model_name": "ViT-B/32",
+    "device": "cpu",
+    "batch_size": 32,
+    "use_cache": true,
+    "embeddings_cache_dir": "results/charades_sta_sweep_1000/embeddings"
+  },
+  "charades_sta_sweep": {
+    "selection_manifest": "results/charades_sta_sweep_1000/selection_manifest.csv",
+    "selected_rows": 1000,
+    "unique_videos": 363,
+    "clipped_windows": 151,
+    "config_name": "clip_w8_s4_mean"
+  },
+  "summary": {
+    "config_name": "clip_w8_s4_mean",
+    "window_size": 8.0,
+    "stride": 4.0,
+    "aggregation": "mean",
+    "evaluated_queries": 1000,
+    "unique_videos": 363,
+    "processed_frames": 29994,
+    "R@1_IoU_0.3": 0.509,
+    "R@1_IoU_0.5": 0.393,
+    "R@1_IoU_0.7": 0.181,
+    "mIoU": 0.34777747887511207,
+    "inference_time_sec": 309.6866364169982,
+    "cache_hits": 637,
+    "cache_misses": 363,
+    "cache_size_bytes": 58017484
+  }
+}

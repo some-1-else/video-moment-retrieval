@@ -12,3 +12,4 @@ ftfy
 regex
 git+https://github.com/openai/CLIP.git
 yt-dlp
+datasets

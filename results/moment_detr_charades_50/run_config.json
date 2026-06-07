@@ -1,0 +1,10 @@
+{
+  "input_jsonl": "data/processed/charades_sta_moment_detr_test_subset.jsonl",
+  "videos_dir": "data/raw/charades/videos",
+  "repo_dir": "external/moment_detr",
+  "ckpt_path": "external/moment_detr/run_on_video/moment_detr_ckpt/model_best.ckpt",
+  "clip_model": "ViT-B/32",
+  "device": "cpu",
+  "limit": 50,
+  "output_dir": "results/moment_detr_charades_50"
+}

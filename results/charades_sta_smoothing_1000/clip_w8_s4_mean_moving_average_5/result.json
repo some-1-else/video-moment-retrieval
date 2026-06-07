@@ -1,0 +1,10041 @@
+{
+  "config": {
+    "videos_dir": "data/raw/charades/videos",
+    "fps": 1.0,
+    "window_size": 8.0,
+    "stride": 4.0,
+    "aggregation": "mean",
+    "model_name": "ViT-B/32",
+    "device": "cpu",
+    "batch_size": 32,
+    "use_cache": true,
+    "smoothing_window": 5,
+    "embeddings_cache_dir": "results/charades_sta_sweep_1000/embeddings"
+  },
+  "predictions": {
+    "charades_sta_smoke_0": [
+      23.0,
+      31.0
+    ],
+    "charades_sta_smoke_1": [
+      23.0,
+      31.0
+    ],
+    "charades_sta_smoke_2": [
+      23.0,
+      31.0
+    ],
+    "charades_sta_smoke_3": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_4": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_5": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_6": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_7": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_8": [
+      24.916666666666664,
+      32.916666666666664
+    ],
+    "charades_sta_smoke_9": [
+      24.916666666666664,
+      32.916666666666664
+    ],
+    "charades_sta_smoke_10": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_11": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_12": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_13": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_14": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_15": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_16": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_17": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_18": [
+      10.633333333333333,
+      18.633333333333333
+    ],
+    "charades_sta_smoke_19": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_20": [
+      13.100000000000001,
+      21.1
+    ],
+    "charades_sta_smoke_21": [
+      13.100000000000001,
+      21.1
+    ],
+    "charades_sta_smoke_22": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_23": [
+      13.100000000000001,
+      21.1
+    ],
+    "charades_sta_smoke_24": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_25": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_26": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_27": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_28": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_29": [
+      14.373248331027849,
+      22.37324833102785
+    ],
+    "charades_sta_smoke_30": [
+      14.373248331027849,
+      22.37324833102785
+    ],
+    "charades_sta_smoke_31": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_32": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_33": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_34": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_smoke_35": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_36": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_37": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_smoke_38": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_39": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_40": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_41": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_smoke_42": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_smoke_43": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_44": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_smoke_45": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_46": [
+      12.62816076656907,
+      20.62816076656907
+    ],
+    "charades_sta_smoke_47": [
+      12.62816076656907,
+      20.62816076656907
+    ],
+    "charades_sta_smoke_48": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_49": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_50": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_51": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_52": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_53": [
+      7.623122220886913,
+      15.623122220886913
+    ],
+    "charades_sta_smoke_54": [
+      22.0,
+      30.0
+    ],
+    "charades_sta_smoke_55": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_56": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_57": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_58": [
+      22.605871330418488,
+      30.605871330418488
+    ],
+    "charades_sta_smoke_59": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_60": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_61": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_62": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_63": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_64": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_65": [
+      23.433333333333334,
+      31.433333333333334
+    ],
+    "charades_sta_smoke_66": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_67": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_68": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_69": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_70": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_71": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_72": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_73": [
+      22.6,
+      30.6
+    ],
+    "charades_sta_smoke_74": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_75": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_76": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_77": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_78": [
+      21.75,
+      29.75
+    ],
+    "charades_sta_smoke_79": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_80": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_81": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_82": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_83": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_84": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_85": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_86": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_87": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_88": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_89": [
+      15.39240506329114,
+      23.39240506329114
+    ],
+    "charades_sta_smoke_90": [
+      15.39240506329114,
+      23.39240506329114
+    ],
+    "charades_sta_smoke_91": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_92": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_93": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_94": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_95": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_96": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_97": [
+      36.42756787545092,
+      44.42756787545092
+    ],
+    "charades_sta_smoke_98": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_99": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_100": [
+      27.171917315141748,
+      35.17191731514175
+    ],
+    "charades_sta_smoke_101": [
+      27.171917315141748,
+      35.17191731514175
+    ],
+    "charades_sta_smoke_102": [
+      22.766666666666666,
+      30.766666666666666
+    ],
+    "charades_sta_smoke_103": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_104": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_105": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_106": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_107": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_108": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_109": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_110": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_111": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_112": [
+      27.101733333333335,
+      35.101733333333335
+    ],
+    "charades_sta_smoke_113": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_114": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_115": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_116": [
+      22.35976996121439,
+      30.35976996121439
+    ],
+    "charades_sta_smoke_117": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_118": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_119": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_120": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_121": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_122": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_123": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_124": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_125": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_126": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_127": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_128": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_129": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_130": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_131": [
+      16.533333333333335,
+      24.533333333333335
+    ],
+    "charades_sta_smoke_132": [
+      23.033333333333335,
+      31.033333333333335
+    ],
+    "charades_sta_smoke_133": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_134": [
+      23.033333333333335,
+      31.033333333333335
+    ],
+    "charades_sta_smoke_135": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_136": [
+      23.033333333333335,
+      31.033333333333335
+    ],
+    "charades_sta_smoke_137": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_138": [
+      9.245523374594399,
+      17.2455233745944
+    ],
+    "charades_sta_smoke_139": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_140": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_141": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_142": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_143": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_144": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_145": [
+      22.60405378286173,
+      30.60405378286173
+    ],
+    "charades_sta_smoke_146": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_147": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_148": [
+      22.60405378286173,
+      30.60405378286173
+    ],
+    "charades_sta_smoke_149": [
+      22.60405378286173,
+      30.60405378286173
+    ],
+    "charades_sta_smoke_150": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_151": [
+      29.815810920945395,
+      37.815810920945395
+    ],
+    "charades_sta_smoke_152": [
+      10.086768417257542,
+      18.08676841725754
+    ],
+    "charades_sta_smoke_153": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_154": [
+      10.086768417257542,
+      18.08676841725754
+    ],
+    "charades_sta_smoke_155": [
+      10.086768417257542,
+      18.08676841725754
+    ],
+    "charades_sta_smoke_156": [
+      10.086768417257542,
+      18.08676841725754
+    ],
+    "charades_sta_smoke_157": [
+      10.086768417257542,
+      18.08676841725754
+    ],
+    "charades_sta_smoke_158": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_159": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_160": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_161": [
+      25.129203895191246,
+      33.129203895191246
+    ],
+    "charades_sta_smoke_162": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_163": [
+      9.21142857142857,
+      17.21142857142857
+    ],
+    "charades_sta_smoke_164": [
+      28.0,
+      36.0
+    ],
+    "charades_sta_smoke_165": [
+      28.0,
+      36.0
+    ],
+    "charades_sta_smoke_166": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_167": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_168": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_169": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_170": [
+      28.0,
+      36.0
+    ],
+    "charades_sta_smoke_171": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_172": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_173": [
+      19.525906735751295,
+      27.525906735751295
+    ],
+    "charades_sta_smoke_174": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_175": [
+      10.086768417257542,
+      18.08676841725754
+    ],
+    "charades_sta_smoke_176": [
+      23.95843828715365,
+      31.95843828715365
+    ],
+    "charades_sta_smoke_177": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_178": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_179": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_180": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_181": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_182": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_183": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_184": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_185": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_186": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_187": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_188": [
+      21.48592239809497,
+      29.48592239809497
+    ],
+    "charades_sta_smoke_189": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_190": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_191": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_192": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_193": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_194": [
+      22.831973898858074,
+      30.831973898858074
+    ],
+    "charades_sta_smoke_195": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_196": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_197": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_198": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_199": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_200": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_201": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_202": [
+      23.433333333333334,
+      31.433333333333334
+    ],
+    "charades_sta_smoke_203": [
+      22.754130541469,
+      30.754130541469
+    ],
+    "charades_sta_smoke_204": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_205": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_206": [
+      34.166666666666664,
+      42.166666666666664
+    ],
+    "charades_sta_smoke_207": [
+      34.166666666666664,
+      42.166666666666664
+    ],
+    "charades_sta_smoke_208": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_209": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_210": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_211": [
+      24.48078770413065,
+      32.48078770413065
+    ],
+    "charades_sta_smoke_212": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_213": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_214": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_215": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_216": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_217": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_218": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_219": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_220": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_221": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_222": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_223": [
+      19.54,
+      27.54
+    ],
+    "charades_sta_smoke_224": [
+      19.54,
+      27.54
+    ],
+    "charades_sta_smoke_225": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_226": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_227": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_228": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_229": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_230": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_231": [
+      16.566666666666666,
+      24.566666666666666
+    ],
+    "charades_sta_smoke_232": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_233": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_234": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_235": [
+      8.32,
+      16.32
+    ],
+    "charades_sta_smoke_236": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_237": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_238": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_239": [
+      9.125345511356809,
+      17.12534551135681
+    ],
+    "charades_sta_smoke_240": [
+      9.125345511356809,
+      17.12534551135681
+    ],
+    "charades_sta_smoke_241": [
+      9.125345511356809,
+      17.12534551135681
+    ],
+    "charades_sta_smoke_242": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_243": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_244": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_245": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_246": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_247": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_248": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_249": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_250": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_251": [
+      22.393205831215727,
+      30.393205831215727
+    ],
+    "charades_sta_smoke_252": [
+      22.233333333333334,
+      30.233333333333334
+    ],
+    "charades_sta_smoke_253": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_254": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_255": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_256": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_257": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_258": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_259": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_260": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_261": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_262": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_263": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_264": [
+      0.0,
+      7.553670818976941
+    ],
+    "charades_sta_smoke_265": [
+      0.0,
+      7.553670818976941
+    ],
+    "charades_sta_smoke_266": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_267": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_268": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_269": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_270": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_271": [
+      22.368981450478806,
+      30.368981450478806
+    ],
+    "charades_sta_smoke_272": [
+      22.368981450478806,
+      30.368981450478806
+    ],
+    "charades_sta_smoke_273": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_274": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_275": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_276": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_277": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_278": [
+      6.914899999999999,
+      14.9149
+    ],
+    "charades_sta_smoke_279": [
+      6.914899999999999,
+      14.9149
+    ],
+    "charades_sta_smoke_280": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_281": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_282": [
+      24.121310940812002,
+      32.121310940812
+    ],
+    "charades_sta_smoke_283": [
+      24.121310940812002,
+      32.121310940812
+    ],
+    "charades_sta_smoke_284": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_285": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_286": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_287": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_288": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_289": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_290": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_291": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_292": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_293": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_294": [
+      39.166666666666664,
+      47.166666666666664
+    ],
+    "charades_sta_smoke_295": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_296": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_297": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_298": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_299": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_300": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_301": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_302": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_303": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_304": [
+      11.889436365821417,
+      19.889436365821417
+    ],
+    "charades_sta_smoke_305": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_306": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_307": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_308": [
+      11.889436365821417,
+      19.889436365821417
+    ],
+    "charades_sta_smoke_309": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_310": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_311": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_312": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_313": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_314": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_315": [
+      24.1608040201005,
+      32.1608040201005
+    ],
+    "charades_sta_smoke_316": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_317": [
+      22.096733333333333,
+      30.096733333333333
+    ],
+    "charades_sta_smoke_318": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_319": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_320": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_321": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_322": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_323": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_324": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_325": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_326": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_327": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_328": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_329": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_330": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_331": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_332": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_333": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_334": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_335": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_336": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_337": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_338": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_339": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_340": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_341": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_342": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_343": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_344": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_345": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_346": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_347": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_348": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_349": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_350": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_351": [
+      22.864166666666666,
+      30.864166666666666
+    ],
+    "charades_sta_smoke_352": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_353": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_354": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_355": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_356": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_357": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_358": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_359": [
+      9.733333333333334,
+      17.733333333333334
+    ],
+    "charades_sta_smoke_360": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_361": [
+      12.24996995553419,
+      20.24996995553419
+    ],
+    "charades_sta_smoke_362": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_363": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_364": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_365": [
+      23.801138730731843,
+      31.801138730731843
+    ],
+    "charades_sta_smoke_366": [
+      23.801138730731843,
+      31.801138730731843
+    ],
+    "charades_sta_smoke_367": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_368": [
+      27.580218704096623,
+      35.58021870409662
+    ],
+    "charades_sta_smoke_369": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_370": [
+      22.633333333333333,
+      30.633333333333333
+    ],
+    "charades_sta_smoke_371": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_372": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_373": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_374": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_375": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_376": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_377": [
+      14.457641279283497,
+      22.457641279283497
+    ],
+    "charades_sta_smoke_378": [
+      14.457641279283497,
+      22.457641279283497
+    ],
+    "charades_sta_smoke_379": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_380": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_381": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_382": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_383": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_384": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_385": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_386": [
+      15.866666666666667,
+      23.866666666666667
+    ],
+    "charades_sta_smoke_387": [
+      15.866666666666667,
+      23.866666666666667
+    ],
+    "charades_sta_smoke_388": [
+      25.133333333333333,
+      33.13333333333333
+    ],
+    "charades_sta_smoke_389": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_390": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_391": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_392": [
+      25.133333333333333,
+      33.13333333333333
+    ],
+    "charades_sta_smoke_393": [
+      22.086007831063217,
+      30.086007831063217
+    ],
+    "charades_sta_smoke_394": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_395": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_396": [
+      32.0,
+      40.0
+    ],
+    "charades_sta_smoke_397": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_398": [
+      35.10344827586207,
+      43.10344827586207
+    ],
+    "charades_sta_smoke_399": [
+      32.0,
+      40.0
+    ],
+    "charades_sta_smoke_400": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_401": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_402": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_403": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_404": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_405": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_406": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_407": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_408": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_409": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_410": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_411": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_412": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_413": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_414": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_415": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_416": [
+      24.098395080245986,
+      32.098395080245986
+    ],
+    "charades_sta_smoke_417": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_418": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_419": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_420": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_421": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_422": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_423": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_424": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_425": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_426": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_427": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_428": [
+      17.666666666666668,
+      25.666666666666668
+    ],
+    "charades_sta_smoke_429": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_430": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_431": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_432": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_433": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_434": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_435": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_436": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_437": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_438": [
+      11.228458118014661,
+      19.22845811801466
+    ],
+    "charades_sta_smoke_439": [
+      11.228458118014661,
+      19.22845811801466
+    ],
+    "charades_sta_smoke_440": [
+      11.228458118014661,
+      19.22845811801466
+    ],
+    "charades_sta_smoke_441": [
+      22.533333333333335,
+      30.533333333333335
+    ],
+    "charades_sta_smoke_442": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_443": [
+      22.533333333333335,
+      30.533333333333335
+    ],
+    "charades_sta_smoke_444": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_445": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_446": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_447": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_448": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_449": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_450": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_451": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_452": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_453": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_454": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_455": [
+      22.688867123734898,
+      30.688867123734898
+    ],
+    "charades_sta_smoke_456": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_457": [
+      22.688867123734898,
+      30.688867123734898
+    ],
+    "charades_sta_smoke_458": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_459": [
+      22.55668427468509,
+      30.55668427468509
+    ],
+    "charades_sta_smoke_460": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_461": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_462": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_463": [
+      22.90019438300154,
+      30.90019438300154
+    ],
+    "charades_sta_smoke_464": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_465": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_466": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_467": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_468": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_469": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_470": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_471": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_472": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_473": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_474": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_475": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_476": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_477": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_478": [
+      22.974894033257254,
+      30.974894033257254
+    ],
+    "charades_sta_smoke_479": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_480": [
+      22.974894033257254,
+      30.974894033257254
+    ],
+    "charades_sta_smoke_481": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_482": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_483": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_484": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_485": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_486": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_487": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_488": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_489": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_490": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_491": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_492": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_493": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_494": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_495": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_496": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_497": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_498": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_499": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_500": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_501": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_502": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_503": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_504": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_505": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_506": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_507": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_508": [
+      23.200363058770137,
+      31.200363058770137
+    ],
+    "charades_sta_smoke_509": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_510": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_511": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_512": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_513": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_514": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_515": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_516": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_517": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_518": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_519": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_520": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_521": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_522": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_523": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_524": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_525": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_526": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_527": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_528": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_529": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_530": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_531": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_532": [
+      23.126066578536236,
+      31.126066578536236
+    ],
+    "charades_sta_smoke_533": [
+      23.675277749636983,
+      31.675277749636983
+    ],
+    "charades_sta_smoke_534": [
+      23.675277749636983,
+      31.675277749636983
+    ],
+    "charades_sta_smoke_535": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_536": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_537": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_538": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_539": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_540": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_541": [
+      23.24600638977636,
+      31.24600638977636
+    ],
+    "charades_sta_smoke_542": [
+      16.893336120110078,
+      24.893336120110078
+    ],
+    "charades_sta_smoke_543": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_544": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_545": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_546": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_547": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_548": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_549": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_550": [
+      18.033333333333335,
+      26.033333333333335
+    ],
+    "charades_sta_smoke_551": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_552": [
+      18.033333333333335,
+      26.033333333333335
+    ],
+    "charades_sta_smoke_553": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_554": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_555": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_556": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_557": [
+      22.697333333333333,
+      30.697333333333333
+    ],
+    "charades_sta_smoke_558": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_559": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_560": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_561": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_562": [
+      22.697333333333333,
+      30.697333333333333
+    ],
+    "charades_sta_smoke_563": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_564": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_565": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_566": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_567": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_568": [
+      25.80914086583568,
+      33.80914086583568
+    ],
+    "charades_sta_smoke_569": [
+      25.80914086583568,
+      33.80914086583568
+    ],
+    "charades_sta_smoke_570": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_571": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_572": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_573": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_574": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_575": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_576": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_577": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_578": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_579": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_580": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_581": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_582": [
+      12.733333333333334,
+      20.733333333333334
+    ],
+    "charades_sta_smoke_583": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_584": [
+      12.733333333333334,
+      20.733333333333334
+    ],
+    "charades_sta_smoke_585": [
+      12.733333333333334,
+      20.733333333333334
+    ],
+    "charades_sta_smoke_586": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_587": [
+      12.733333333333334,
+      20.733333333333334
+    ],
+    "charades_sta_smoke_588": [
+      12.733333333333334,
+      20.733333333333334
+    ],
+    "charades_sta_smoke_589": [
+      10.467276227141483,
+      18.467276227141483
+    ],
+    "charades_sta_smoke_590": [
+      10.467276227141483,
+      18.467276227141483
+    ],
+    "charades_sta_smoke_591": [
+      10.467276227141483,
+      18.467276227141483
+    ],
+    "charades_sta_smoke_592": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_593": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_594": [
+      15.254416536473983,
+      23.254416536473983
+    ],
+    "charades_sta_smoke_595": [
+      15.254416536473983,
+      23.254416536473983
+    ],
+    "charades_sta_smoke_596": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_597": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_598": [
+      10.93854748603352,
+      18.93854748603352
+    ],
+    "charades_sta_smoke_599": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_600": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_601": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_602": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_603": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_604": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_605": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_606": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_607": [
+      17.625600000000002,
+      25.625600000000002
+    ],
+    "charades_sta_smoke_608": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_609": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_610": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_611": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_612": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_613": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_614": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_615": [
+      36.0,
+      44.0
+    ],
+    "charades_sta_smoke_616": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_617": [
+      36.0,
+      44.0
+    ],
+    "charades_sta_smoke_618": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_619": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_620": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_621": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_622": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_623": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_624": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_625": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_626": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_627": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_628": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_629": [
+      23.0,
+      31.0
+    ],
+    "charades_sta_smoke_630": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_631": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_632": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_633": [
+      22.633333333333333,
+      30.633333333333333
+    ],
+    "charades_sta_smoke_634": [
+      22.733333333333334,
+      30.733333333333334
+    ],
+    "charades_sta_smoke_635": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_636": [
+      22.733333333333334,
+      30.733333333333334
+    ],
+    "charades_sta_smoke_637": [
+      23.989554431206138,
+      31.989554431206138
+    ],
+    "charades_sta_smoke_638": [
+      23.989554431206138,
+      31.989554431206138
+    ],
+    "charades_sta_smoke_639": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_640": [
+      22.166666666666668,
+      30.166666666666668
+    ],
+    "charades_sta_smoke_641": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_642": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_643": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_644": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_645": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_646": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_647": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_648": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_649": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_650": [
+      5.4,
+      13.4
+    ],
+    "charades_sta_smoke_651": [
+      5.4,
+      13.4
+    ],
+    "charades_sta_smoke_652": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_653": [
+      22.70891865403463,
+      30.70891865403463
+    ],
+    "charades_sta_smoke_654": [
+      22.70891865403463,
+      30.70891865403463
+    ],
+    "charades_sta_smoke_655": [
+      22.70891865403463,
+      30.70891865403463
+    ],
+    "charades_sta_smoke_656": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_657": [
+      9.04,
+      17.04
+    ],
+    "charades_sta_smoke_658": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_659": [
+      24.78888776097181,
+      32.78888776097181
+    ],
+    "charades_sta_smoke_660": [
+      24.78888776097181,
+      32.78888776097181
+    ],
+    "charades_sta_smoke_661": [
+      24.78888776097181,
+      32.78888776097181
+    ],
+    "charades_sta_smoke_662": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_663": [
+      27.201833333333333,
+      35.20183333333333
+    ],
+    "charades_sta_smoke_664": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_665": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_666": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_667": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_668": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_669": [
+      22.766666666666666,
+      30.766666666666666
+    ],
+    "charades_sta_smoke_670": [
+      22.766666666666666,
+      30.766666666666666
+    ],
+    "charades_sta_smoke_671": [
+      22.766666666666666,
+      30.766666666666666
+    ],
+    "charades_sta_smoke_672": [
+      22.766666666666666,
+      30.766666666666666
+    ],
+    "charades_sta_smoke_673": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_674": [
+      26.59616985845129,
+      34.59616985845129
+    ],
+    "charades_sta_smoke_675": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_676": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_677": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_678": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_679": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_680": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_681": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_682": [
+      21.295933333333334,
+      29.295933333333334
+    ],
+    "charades_sta_smoke_683": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_684": [
+      22.833333333333332,
+      30.833333333333332
+    ],
+    "charades_sta_smoke_685": [
+      22.833333333333332,
+      30.833333333333332
+    ],
+    "charades_sta_smoke_686": [
+      22.833333333333332,
+      30.833333333333332
+    ],
+    "charades_sta_smoke_687": [
+      22.833333333333332,
+      30.833333333333332
+    ],
+    "charades_sta_smoke_688": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_689": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_690": [
+      22.966666666666665,
+      30.966666666666665
+    ],
+    "charades_sta_smoke_691": [
+      24.733333333333334,
+      32.733333333333334
+    ],
+    "charades_sta_smoke_692": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_693": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_694": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_695": [
+      10.867924528301888,
+      18.867924528301888
+    ],
+    "charades_sta_smoke_696": [
+      7.142410767936546,
+      15.142410767936546
+    ],
+    "charades_sta_smoke_697": [
+      7.142410767936546,
+      15.142410767936546
+    ],
+    "charades_sta_smoke_698": [
+      7.142410767936546,
+      15.142410767936546
+    ],
+    "charades_sta_smoke_699": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_700": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_701": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_702": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_703": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_704": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_705": [
+      17.966666666666665,
+      25.966666666666665
+    ],
+    "charades_sta_smoke_706": [
+      17.966666666666665,
+      25.966666666666665
+    ],
+    "charades_sta_smoke_707": [
+      17.966666666666665,
+      25.966666666666665
+    ],
+    "charades_sta_smoke_708": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_709": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_710": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_711": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_712": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_713": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_714": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_715": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_716": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_717": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_718": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_719": [
+      21.797776884960495,
+      29.797776884960495
+    ],
+    "charades_sta_smoke_720": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_721": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_722": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_723": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_724": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_725": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_726": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_727": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_728": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_729": [
+      22.6306,
+      30.6306
+    ],
+    "charades_sta_smoke_730": [
+      22.6306,
+      30.6306
+    ],
+    "charades_sta_smoke_731": [
+      22.6306,
+      30.6306
+    ],
+    "charades_sta_smoke_732": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_733": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_734": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_735": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_736": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_737": [
+      21.06355339965469,
+      29.06355339965469
+    ],
+    "charades_sta_smoke_738": [
+      21.06355339965469,
+      29.06355339965469
+    ],
+    "charades_sta_smoke_739": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_740": [
+      21.06355339965469,
+      29.06355339965469
+    ],
+    "charades_sta_smoke_741": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_742": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_743": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_744": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_745": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_746": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_747": [
+      25.46666666666667,
+      33.46666666666667
+    ],
+    "charades_sta_smoke_748": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_749": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_750": [
+      21.763066666666667,
+      29.763066666666667
+    ],
+    "charades_sta_smoke_751": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_752": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_753": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_754": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_755": [
+      23.966666666666665,
+      31.966666666666665
+    ],
+    "charades_sta_smoke_756": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_757": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_758": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_759": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_760": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_761": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_762": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_763": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_764": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_765": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_766": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_767": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_768": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_769": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_770": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_771": [
+      9.9622732187913,
+      17.9622732187913
+    ],
+    "charades_sta_smoke_772": [
+      22.332419236171493,
+      30.332419236171493
+    ],
+    "charades_sta_smoke_773": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_774": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_775": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_776": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_777": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_778": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_779": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_780": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_781": [
+      28.0,
+      36.0
+    ],
+    "charades_sta_smoke_782": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_783": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_784": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_785": [
+      1.333333333333334,
+      9.333333333333334
+    ],
+    "charades_sta_smoke_786": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_787": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_788": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_789": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_790": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_791": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_792": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_793": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_794": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_795": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_796": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_797": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_798": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_799": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_800": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_801": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_802": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_803": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_804": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_805": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_806": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_807": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_808": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_809": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_810": [
+      22.864166666666666,
+      30.864166666666666
+    ],
+    "charades_sta_smoke_811": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_812": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_813": [
+      22.864166666666666,
+      30.864166666666666
+    ],
+    "charades_sta_smoke_814": [
+      22.864166666666666,
+      30.864166666666666
+    ],
+    "charades_sta_smoke_815": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_816": [
+      24.026143790849673,
+      32.02614379084967
+    ],
+    "charades_sta_smoke_817": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_818": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_819": [
+      8.644634058406442,
+      16.644634058406442
+    ],
+    "charades_sta_smoke_820": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_821": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_822": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_823": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_824": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_825": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_826": [
+      22.561122244488978,
+      30.561122244488978
+    ],
+    "charades_sta_smoke_827": [
+      9.350666666666665,
+      17.350666666666665
+    ],
+    "charades_sta_smoke_828": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_829": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_830": [
+      28.06666666666667,
+      36.06666666666667
+    ],
+    "charades_sta_smoke_831": [
+      28.06666666666667,
+      36.06666666666667
+    ],
+    "charades_sta_smoke_832": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_833": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_834": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_835": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_836": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_837": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_838": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_839": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_840": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_841": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_842": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_843": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_844": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_845": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_846": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_847": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_848": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_849": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_850": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_851": [
+      12.430236750390577,
+      20.430236750390577
+    ],
+    "charades_sta_smoke_852": [
+      12.430236750390577,
+      20.430236750390577
+    ],
+    "charades_sta_smoke_853": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_854": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_855": [
+      23.7,
+      31.7
+    ],
+    "charades_sta_smoke_856": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_857": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_858": [
+      23.7,
+      31.7
+    ],
+    "charades_sta_smoke_859": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_860": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_861": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_862": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_863": [
+      7.708200212992546,
+      15.708200212992546
+    ],
+    "charades_sta_smoke_864": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_865": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_866": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_867": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_868": [
+      26.03333333333333,
+      34.03333333333333
+    ],
+    "charades_sta_smoke_869": [
+      23.505289942413288,
+      31.505289942413288
+    ],
+    "charades_sta_smoke_870": [
+      17.720838794233288,
+      25.720838794233288
+    ],
+    "charades_sta_smoke_871": [
+      28.0,
+      36.0
+    ],
+    "charades_sta_smoke_872": [
+      23.999011613540898,
+      31.999011613540898
+    ],
+    "charades_sta_smoke_873": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_874": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_875": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_876": [
+      23.999011613540898,
+      31.999011613540898
+    ],
+    "charades_sta_smoke_877": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_878": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_879": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_880": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_881": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_882": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_883": [
+      4.106698596421207,
+      12.106698596421207
+    ],
+    "charades_sta_smoke_884": [
+      4.106698596421207,
+      12.106698596421207
+    ],
+    "charades_sta_smoke_885": [
+      4.106698596421207,
+      12.106698596421207
+    ],
+    "charades_sta_smoke_886": [
+      23.083333333333332,
+      31.083333333333332
+    ],
+    "charades_sta_smoke_887": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_888": [
+      12.81077829904968,
+      20.81077829904968
+    ],
+    "charades_sta_smoke_889": [
+      12.81077829904968,
+      20.81077829904968
+    ],
+    "charades_sta_smoke_890": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_891": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_892": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_893": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_894": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_895": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_896": [
+      22.683858331973234,
+      30.683858331973234
+    ],
+    "charades_sta_smoke_897": [
+      22.683858331973234,
+      30.683858331973234
+    ],
+    "charades_sta_smoke_898": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_899": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_900": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_901": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_902": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_903": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_904": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_905": [
+      26.242541666666668,
+      34.24254166666667
+    ],
+    "charades_sta_smoke_906": [
+      26.242541666666668,
+      34.24254166666667
+    ],
+    "charades_sta_smoke_907": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_908": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_909": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_910": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_911": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_912": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_913": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_914": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_915": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_916": [
+      24.388803022496994,
+      32.388803022496994
+    ],
+    "charades_sta_smoke_917": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_918": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_919": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_920": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_921": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_922": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_923": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_924": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_925": [
+      24.0,
+      32.0
+    ],
+    "charades_sta_smoke_926": [
+      26.4989281886388,
+      34.4989281886388
+    ],
+    "charades_sta_smoke_927": [
+      26.4989281886388,
+      34.4989281886388
+    ],
+    "charades_sta_smoke_928": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_929": [
+      23.133333333333333,
+      31.133333333333333
+    ],
+    "charades_sta_smoke_930": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_931": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_932": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_933": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_934": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_935": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_936": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_937": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_938": [
+      13.248339973439574,
+      21.248339973439574
+    ],
+    "charades_sta_smoke_939": [
+      13.248339973439574,
+      21.248339973439574
+    ],
+    "charades_sta_smoke_940": [
+      13.248339973439574,
+      21.248339973439574
+    ],
+    "charades_sta_smoke_941": [
+      13.248339973439574,
+      21.248339973439574
+    ],
+    "charades_sta_smoke_942": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_943": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_944": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_945": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_946": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_947": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_948": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_949": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_950": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_951": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_952": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_953": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_954": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_955": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_956": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_957": [
+      27.873092176421103,
+      35.8730921764211
+    ],
+    "charades_sta_smoke_958": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_959": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_960": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_961": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_smoke_962": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_963": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_964": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_965": [
+      15.766666666666666,
+      23.766666666666666
+    ],
+    "charades_sta_smoke_966": [
+      15.766666666666666,
+      23.766666666666666
+    ],
+    "charades_sta_smoke_967": [
+      23.766666666666666,
+      31.766666666666666
+    ],
+    "charades_sta_smoke_968": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_969": [
+      23.766666666666666,
+      31.766666666666666
+    ],
+    "charades_sta_smoke_970": [
+      23.766666666666666,
+      31.766666666666666
+    ],
+    "charades_sta_smoke_971": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_smoke_972": [
+      23.766666666666666,
+      31.766666666666666
+    ],
+    "charades_sta_smoke_973": [
+      22.75,
+      30.75
+    ],
+    "charades_sta_smoke_974": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_975": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_976": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_977": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_978": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_979": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_980": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_981": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_982": [
+      1.6217650962176506,
+      9.62176509621765
+    ],
+    "charades_sta_smoke_983": [
+      1.6217650962176506,
+      9.62176509621765
+    ],
+    "charades_sta_smoke_984": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_985": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_986": [
+      20.0,
+      28.0
+    ],
+    "charades_sta_smoke_987": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_988": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_989": [
+      28.0,
+      36.0
+    ],
+    "charades_sta_smoke_990": [
+      32.0,
+      40.0
+    ],
+    "charades_sta_smoke_991": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_992": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_993": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_994": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_995": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_smoke_996": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_997": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_smoke_998": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_smoke_999": [
+      22.6,
+      30.6
+    ]
+  },
+  "ground_truth": {
+    "charades_sta_smoke_0": [
+      [
+        24.3,
+        30.4
+      ]
+    ],
+    "charades_sta_smoke_1": [
+      [
+        24.3,
+        30.4
+      ]
+    ],
+    "charades_sta_smoke_2": [
+      [
+        24.3,
+        30.4
+      ]
+    ],
+    "charades_sta_smoke_3": [
+      [
+        24.3,
+        30.4
+      ]
+    ],
+    "charades_sta_smoke_4": [
+      [
+        4.3,
+        12.5
+      ]
+    ],
+    "charades_sta_smoke_5": [
+      [
+        4.4,
+        9.2
+      ]
+    ],
+    "charades_sta_smoke_6": [
+      [
+        0.0,
+        3.4
+      ]
+    ],
+    "charades_sta_smoke_7": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_smoke_8": [
+      [
+        26.2,
+        31.3
+      ]
+    ],
+    "charades_sta_smoke_9": [
+      [
+        26.2,
+        31.3
+      ]
+    ],
+    "charades_sta_smoke_10": [
+      [
+        1.0,
+        11.0
+      ]
+    ],
+    "charades_sta_smoke_11": [
+      [
+        1.0,
+        11.0
+      ]
+    ],
+    "charades_sta_smoke_12": [
+      [
+        9.3,
+        14.4
+      ]
+    ],
+    "charades_sta_smoke_13": [
+      [
+        3.1,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_14": [
+      [
+        9.3,
+        14.4
+      ]
+    ],
+    "charades_sta_smoke_15": [
+      [
+        9.3,
+        14.4
+      ]
+    ],
+    "charades_sta_smoke_16": [
+      [
+        3.1,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_17": [
+      [
+        3.1,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_18": [
+      [
+        0.0,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_19": [
+      [
+        12.7,
+        18.633333333333333
+      ]
+    ],
+    "charades_sta_smoke_20": [
+      [
+        13.2,
+        20.8
+      ]
+    ],
+    "charades_sta_smoke_21": [
+      [
+        13.2,
+        20.8
+      ]
+    ],
+    "charades_sta_smoke_22": [
+      [
+        10.7,
+        16.5
+      ]
+    ],
+    "charades_sta_smoke_23": [
+      [
+        6.9,
+        13.1
+      ]
+    ],
+    "charades_sta_smoke_24": [
+      [
+        10.2,
+        19.8
+      ]
+    ],
+    "charades_sta_smoke_25": [
+      [
+        4.2,
+        14.2
+      ]
+    ],
+    "charades_sta_smoke_26": [
+      [
+        28.4,
+        35.0
+      ]
+    ],
+    "charades_sta_smoke_27": [
+      [
+        25.8,
+        33.43333333333333
+      ]
+    ],
+    "charades_sta_smoke_28": [
+      [
+        5.1,
+        10.2
+      ]
+    ],
+    "charades_sta_smoke_29": [
+      [
+        13.2,
+        22.37324833102785
+      ]
+    ],
+    "charades_sta_smoke_30": [
+      [
+        13.2,
+        22.37324833102785
+      ]
+    ],
+    "charades_sta_smoke_31": [
+      [
+        5.1,
+        10.2
+      ]
+    ],
+    "charades_sta_smoke_32": [
+      [
+        0.2,
+        9.8
+      ]
+    ],
+    "charades_sta_smoke_33": [
+      [
+        1.7,
+        12.1
+      ]
+    ],
+    "charades_sta_smoke_34": [
+      [
+        26.1,
+        35.81937528293345
+      ]
+    ],
+    "charades_sta_smoke_35": [
+      [
+        0.0,
+        9.9
+      ]
+    ],
+    "charades_sta_smoke_36": [
+      [
+        0.0,
+        12.6
+      ]
+    ],
+    "charades_sta_smoke_37": [
+      [
+        0.0,
+        15.1
+      ]
+    ],
+    "charades_sta_smoke_38": [
+      [
+        0.0,
+        9.9
+      ]
+    ],
+    "charades_sta_smoke_39": [
+      [
+        14.1,
+        20.3
+      ]
+    ],
+    "charades_sta_smoke_40": [
+      [
+        0.0,
+        9.9
+      ]
+    ],
+    "charades_sta_smoke_41": [
+      [
+        0.0,
+        15.1
+      ]
+    ],
+    "charades_sta_smoke_42": [
+      [
+        26.1,
+        35.81937528293345
+      ]
+    ],
+    "charades_sta_smoke_43": [
+      [
+        0.0,
+        9.9
+      ]
+    ],
+    "charades_sta_smoke_44": [
+      [
+        11.6,
+        20.8
+      ]
+    ],
+    "charades_sta_smoke_45": [
+      [
+        22.9,
+        29.8
+      ]
+    ],
+    "charades_sta_smoke_46": [
+      [
+        13.1,
+        20.62816076656907
+      ]
+    ],
+    "charades_sta_smoke_47": [
+      [
+        9.8,
+        15.7
+      ]
+    ],
+    "charades_sta_smoke_48": [
+      [
+        0.0,
+        15.9
+      ]
+    ],
+    "charades_sta_smoke_49": [
+      [
+        0.0,
+        14.4
+      ]
+    ],
+    "charades_sta_smoke_50": [
+      [
+        0.0,
+        15.9
+      ]
+    ],
+    "charades_sta_smoke_51": [
+      [
+        1.0,
+        5.0
+      ]
+    ],
+    "charades_sta_smoke_52": [
+      [
+        1.0,
+        5.0
+      ]
+    ],
+    "charades_sta_smoke_53": [
+      [
+        0.0,
+        6.2
+      ]
+    ],
+    "charades_sta_smoke_54": [
+      [
+        9.4,
+        17.0
+      ]
+    ],
+    "charades_sta_smoke_55": [
+      [
+        0.0,
+        7.7
+      ]
+    ],
+    "charades_sta_smoke_56": [
+      [
+        0.0,
+        7.7
+      ]
+    ],
+    "charades_sta_smoke_57": [
+      [
+        0.0,
+        5.1
+      ]
+    ],
+    "charades_sta_smoke_58": [
+      [
+        0.0,
+        5.1
+      ]
+    ],
+    "charades_sta_smoke_59": [
+      [
+        0.5,
+        6.4
+      ]
+    ],
+    "charades_sta_smoke_60": [
+      [
+        18.4,
+        30.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_61": [
+      [
+        18.4,
+        30.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_62": [
+      [
+        14.6,
+        21.2
+      ]
+    ],
+    "charades_sta_smoke_63": [
+      [
+        9.3,
+        18.0
+      ]
+    ],
+    "charades_sta_smoke_64": [
+      [
+        9.3,
+        18.0
+      ]
+    ],
+    "charades_sta_smoke_65": [
+      [
+        19.4,
+        29.5
+      ]
+    ],
+    "charades_sta_smoke_66": [
+      [
+        3.0,
+        10.4
+      ]
+    ],
+    "charades_sta_smoke_67": [
+      [
+        2.4,
+        6.9
+      ]
+    ],
+    "charades_sta_smoke_68": [
+      [
+        0.0,
+        4.8
+      ]
+    ],
+    "charades_sta_smoke_69": [
+      [
+        27.1,
+        34.068377095475576
+      ]
+    ],
+    "charades_sta_smoke_70": [
+      [
+        0.0,
+        14.2
+      ]
+    ],
+    "charades_sta_smoke_71": [
+      [
+        0.0,
+        14.0
+      ]
+    ],
+    "charades_sta_smoke_72": [
+      [
+        10.1,
+        24.2
+      ]
+    ],
+    "charades_sta_smoke_73": [
+      [
+        11.3,
+        21.1
+      ]
+    ],
+    "charades_sta_smoke_74": [
+      [
+        2.3,
+        13.9
+      ]
+    ],
+    "charades_sta_smoke_75": [
+      [
+        10.1,
+        24.2
+      ]
+    ],
+    "charades_sta_smoke_76": [
+      [
+        17.6,
+        25.2
+      ]
+    ],
+    "charades_sta_smoke_77": [
+      [
+        11.8,
+        19.6
+      ]
+    ],
+    "charades_sta_smoke_78": [
+      [
+        15.6,
+        21.6
+      ]
+    ],
+    "charades_sta_smoke_79": [
+      [
+        7.7,
+        22.0
+      ]
+    ],
+    "charades_sta_smoke_80": [
+      [
+        0.1,
+        9.0
+      ]
+    ],
+    "charades_sta_smoke_81": [
+      [
+        1.4,
+        8.7
+      ]
+    ],
+    "charades_sta_smoke_82": [
+      [
+        20.4,
+        27.6
+      ]
+    ],
+    "charades_sta_smoke_83": [
+      [
+        20.9,
+        30.3
+      ]
+    ],
+    "charades_sta_smoke_84": [
+      [
+        26.9,
+        31.6
+      ]
+    ],
+    "charades_sta_smoke_85": [
+      [
+        26.5,
+        35.8
+      ]
+    ],
+    "charades_sta_smoke_86": [
+      [
+        18.8,
+        24.0
+      ]
+    ],
+    "charades_sta_smoke_87": [
+      [
+        26.5,
+        35.8
+      ]
+    ],
+    "charades_sta_smoke_88": [
+      [
+        2.6,
+        7.7
+      ]
+    ],
+    "charades_sta_smoke_89": [
+      [
+        13.0,
+        19.4
+      ]
+    ],
+    "charades_sta_smoke_90": [
+      [
+        13.0,
+        19.4
+      ]
+    ],
+    "charades_sta_smoke_91": [
+      [
+        0.0,
+        10.9
+      ]
+    ],
+    "charades_sta_smoke_92": [
+      [
+        0.0,
+        10.9
+      ]
+    ],
+    "charades_sta_smoke_93": [
+      [
+        21.8,
+        30.72397450563818
+      ]
+    ],
+    "charades_sta_smoke_94": [
+      [
+        15.1,
+        22.9
+      ]
+    ],
+    "charades_sta_smoke_95": [
+      [
+        0.0,
+        10.0
+      ]
+    ],
+    "charades_sta_smoke_96": [
+      [
+        21.8,
+        30.72397450563818
+      ]
+    ],
+    "charades_sta_smoke_97": [
+      [
+        20.0,
+        28.2
+      ]
+    ],
+    "charades_sta_smoke_98": [
+      [
+        0.0,
+        14.0
+      ]
+    ],
+    "charades_sta_smoke_99": [
+      [
+        11.2,
+        17.7
+      ]
+    ],
+    "charades_sta_smoke_100": [
+      [
+        30.5,
+        35.17191731514175
+      ]
+    ],
+    "charades_sta_smoke_101": [
+      [
+        30.5,
+        35.17191731514175
+      ]
+    ],
+    "charades_sta_smoke_102": [
+      [
+        26.8,
+        30.766666666666666
+      ]
+    ],
+    "charades_sta_smoke_103": [
+      [
+        11.7,
+        17.8
+      ]
+    ],
+    "charades_sta_smoke_104": [
+      [
+        11.7,
+        17.8
+      ]
+    ],
+    "charades_sta_smoke_105": [
+      [
+        4.9,
+        11.6
+      ]
+    ],
+    "charades_sta_smoke_106": [
+      [
+        0.4,
+        9.2
+      ]
+    ],
+    "charades_sta_smoke_107": [
+      [
+        0.6,
+        8.9
+      ]
+    ],
+    "charades_sta_smoke_108": [
+      [
+        0.0,
+        7.0
+      ]
+    ],
+    "charades_sta_smoke_109": [
+      [
+        10.1,
+        15.5
+      ]
+    ],
+    "charades_sta_smoke_110": [
+      [
+        0.0,
+        7.0
+      ]
+    ],
+    "charades_sta_smoke_111": [
+      [
+        0.0,
+        15.9
+      ]
+    ],
+    "charades_sta_smoke_112": [
+      [
+        14.0,
+        19.0
+      ]
+    ],
+    "charades_sta_smoke_113": [
+      [
+        13.0,
+        16.705726819301727
+      ]
+    ],
+    "charades_sta_smoke_114": [
+      [
+        9.4,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_115": [
+      [
+        0.9,
+        8.5
+      ]
+    ],
+    "charades_sta_smoke_116": [
+      [
+        24.6,
+        30.35976996121439
+      ]
+    ],
+    "charades_sta_smoke_117": [
+      [
+        0.9,
+        8.5
+      ]
+    ],
+    "charades_sta_smoke_118": [
+      [
+        8.0,
+        15.2
+      ]
+    ],
+    "charades_sta_smoke_119": [
+      [
+        8.0,
+        15.2
+      ]
+    ],
+    "charades_sta_smoke_120": [
+      [
+        8.0,
+        15.2
+      ]
+    ],
+    "charades_sta_smoke_121": [
+      [
+        15.8,
+        28.7
+      ]
+    ],
+    "charades_sta_smoke_122": [
+      [
+        25.3,
+        30.9
+      ]
+    ],
+    "charades_sta_smoke_123": [
+      [
+        5.1,
+        11.0
+      ]
+    ],
+    "charades_sta_smoke_124": [
+      [
+        3.0,
+        12.4
+      ]
+    ],
+    "charades_sta_smoke_125": [
+      [
+        12.9,
+        19.3
+      ]
+    ],
+    "charades_sta_smoke_126": [
+      [
+        12.9,
+        18.7
+      ]
+    ],
+    "charades_sta_smoke_127": [
+      [
+        12.9,
+        19.3
+      ]
+    ],
+    "charades_sta_smoke_128": [
+      [
+        5.3,
+        11.7
+      ]
+    ],
+    "charades_sta_smoke_129": [
+      [
+        0.0,
+        6.5
+      ]
+    ],
+    "charades_sta_smoke_130": [
+      [
+        5.3,
+        11.7
+      ]
+    ],
+    "charades_sta_smoke_131": [
+      [
+        17.7,
+        22.5
+      ]
+    ],
+    "charades_sta_smoke_132": [
+      [
+        2.0,
+        11.2
+      ]
+    ],
+    "charades_sta_smoke_133": [
+      [
+        8.6,
+        14.1
+      ]
+    ],
+    "charades_sta_smoke_134": [
+      [
+        14.0,
+        24.7
+      ]
+    ],
+    "charades_sta_smoke_135": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_smoke_136": [
+      [
+        14.0,
+        24.7
+      ]
+    ],
+    "charades_sta_smoke_137": [
+      [
+        0.0,
+        4.5
+      ]
+    ],
+    "charades_sta_smoke_138": [
+      [
+        1.8,
+        8.6
+      ]
+    ],
+    "charades_sta_smoke_139": [
+      [
+        1.8,
+        8.6
+      ]
+    ],
+    "charades_sta_smoke_140": [
+      [
+        10.0,
+        22.6
+      ]
+    ],
+    "charades_sta_smoke_141": [
+      [
+        10.0,
+        22.6
+      ]
+    ],
+    "charades_sta_smoke_142": [
+      [
+        10.0,
+        22.6
+      ]
+    ],
+    "charades_sta_smoke_143": [
+      [
+        1.4,
+        7.2
+      ]
+    ],
+    "charades_sta_smoke_144": [
+      [
+        1.4,
+        7.2
+      ]
+    ],
+    "charades_sta_smoke_145": [
+      [
+        16.2,
+        21.8
+      ]
+    ],
+    "charades_sta_smoke_146": [
+      [
+        10.6,
+        19.3
+      ]
+    ],
+    "charades_sta_smoke_147": [
+      [
+        0.0,
+        4.5
+      ]
+    ],
+    "charades_sta_smoke_148": [
+      [
+        16.2,
+        21.8
+      ]
+    ],
+    "charades_sta_smoke_149": [
+      [
+        19.1,
+        30.60405378286173
+      ]
+    ],
+    "charades_sta_smoke_150": [
+      [
+        0.5,
+        16.0
+      ]
+    ],
+    "charades_sta_smoke_151": [
+      [
+        23.2,
+        37.815810920945395
+      ]
+    ],
+    "charades_sta_smoke_152": [
+      [
+        12.5,
+        18.08676841725754
+      ]
+    ],
+    "charades_sta_smoke_153": [
+      [
+        0.0,
+        6.8
+      ]
+    ],
+    "charades_sta_smoke_154": [
+      [
+        0.0,
+        6.8
+      ]
+    ],
+    "charades_sta_smoke_155": [
+      [
+        12.5,
+        18.08676841725754
+      ]
+    ],
+    "charades_sta_smoke_156": [
+      [
+        12.5,
+        18.08676841725754
+      ]
+    ],
+    "charades_sta_smoke_157": [
+      [
+        0.0,
+        6.8
+      ]
+    ],
+    "charades_sta_smoke_158": [
+      [
+        0.0,
+        8.1
+      ]
+    ],
+    "charades_sta_smoke_159": [
+      [
+        0.0,
+        8.1
+      ]
+    ],
+    "charades_sta_smoke_160": [
+      [
+        0.0,
+        8.1
+      ]
+    ],
+    "charades_sta_smoke_161": [
+      [
+        9.9,
+        15.8
+      ]
+    ],
+    "charades_sta_smoke_162": [
+      [
+        0.0,
+        9.6
+      ]
+    ],
+    "charades_sta_smoke_163": [
+      [
+        1.1,
+        6.4
+      ]
+    ],
+    "charades_sta_smoke_164": [
+      [
+        2.5,
+        10.6
+      ]
+    ],
+    "charades_sta_smoke_165": [
+      [
+        2.5,
+        10.6
+      ]
+    ],
+    "charades_sta_smoke_166": [
+      [
+        0.4,
+        7.6
+      ]
+    ],
+    "charades_sta_smoke_167": [
+      [
+        7.0,
+        14.0
+      ]
+    ],
+    "charades_sta_smoke_168": [
+      [
+        17.1,
+        29.7
+      ]
+    ],
+    "charades_sta_smoke_169": [
+      [
+        17.1,
+        29.7
+      ]
+    ],
+    "charades_sta_smoke_170": [
+      [
+        11.4,
+        16.9
+      ]
+    ],
+    "charades_sta_smoke_171": [
+      [
+        9.3,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_172": [
+      [
+        9.3,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_173": [
+      [
+        18.2,
+        23.8
+      ]
+    ],
+    "charades_sta_smoke_174": [
+      [
+        18.2,
+        23.8
+      ]
+    ],
+    "charades_sta_smoke_175": [
+      [
+        3.0,
+        10.1
+      ]
+    ],
+    "charades_sta_smoke_176": [
+      [
+        0.0,
+        5.7
+      ]
+    ],
+    "charades_sta_smoke_177": [
+      [
+        7.3,
+        14.0
+      ]
+    ],
+    "charades_sta_smoke_178": [
+      [
+        7.3,
+        14.0
+      ]
+    ],
+    "charades_sta_smoke_179": [
+      [
+        13.5,
+        19.2
+      ]
+    ],
+    "charades_sta_smoke_180": [
+      [
+        3.7,
+        14.0
+      ]
+    ],
+    "charades_sta_smoke_181": [
+      [
+        0.9,
+        7.7
+      ]
+    ],
+    "charades_sta_smoke_182": [
+      [
+        0.9,
+        7.7
+      ]
+    ],
+    "charades_sta_smoke_183": [
+      [
+        0.9,
+        7.7
+      ]
+    ],
+    "charades_sta_smoke_184": [
+      [
+        18.3,
+        25.3
+      ]
+    ],
+    "charades_sta_smoke_185": [
+      [
+        0.0,
+        3.8
+      ]
+    ],
+    "charades_sta_smoke_186": [
+      [
+        25.5,
+        30.6
+      ]
+    ],
+    "charades_sta_smoke_187": [
+      [
+        25.5,
+        30.6
+      ]
+    ],
+    "charades_sta_smoke_188": [
+      [
+        3.5,
+        7.9
+      ]
+    ],
+    "charades_sta_smoke_189": [
+      [
+        26.4,
+        34.666666666666664
+      ]
+    ],
+    "charades_sta_smoke_190": [
+      [
+        26.4,
+        34.666666666666664
+      ]
+    ],
+    "charades_sta_smoke_191": [
+      [
+        0.3,
+        9.2
+      ]
+    ],
+    "charades_sta_smoke_192": [
+      [
+        10.6,
+        20.7
+      ]
+    ],
+    "charades_sta_smoke_193": [
+      [
+        1.5,
+        10.3
+      ]
+    ],
+    "charades_sta_smoke_194": [
+      [
+        25.4,
+        30.831973898858074
+      ]
+    ],
+    "charades_sta_smoke_195": [
+      [
+        22.2,
+        27.026999999999997
+      ]
+    ],
+    "charades_sta_smoke_196": [
+      [
+        0.0,
+        13.1
+      ]
+    ],
+    "charades_sta_smoke_197": [
+      [
+        0.0,
+        13.1
+      ]
+    ],
+    "charades_sta_smoke_198": [
+      [
+        9.5,
+        16.4
+      ]
+    ],
+    "charades_sta_smoke_199": [
+      [
+        20.4,
+        26.7
+      ]
+    ],
+    "charades_sta_smoke_200": [
+      [
+        0.0,
+        7.8
+      ]
+    ],
+    "charades_sta_smoke_201": [
+      [
+        25.4,
+        31.433333333333334
+      ]
+    ],
+    "charades_sta_smoke_202": [
+      [
+        3.0,
+        13.6
+      ]
+    ],
+    "charades_sta_smoke_203": [
+      [
+        7.1,
+        16.2
+      ]
+    ],
+    "charades_sta_smoke_204": [
+      [
+        0.0,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_205": [
+      [
+        0.0,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_206": [
+      [
+        0.0,
+        6.8
+      ]
+    ],
+    "charades_sta_smoke_207": [
+      [
+        0.0,
+        6.8
+      ]
+    ],
+    "charades_sta_smoke_208": [
+      [
+        1.7,
+        11.5
+      ]
+    ],
+    "charades_sta_smoke_209": [
+      [
+        9.2,
+        22.2
+      ]
+    ],
+    "charades_sta_smoke_210": [
+      [
+        26.8,
+        32.1
+      ]
+    ],
+    "charades_sta_smoke_211": [
+      [
+        10.8,
+        18.6
+      ]
+    ],
+    "charades_sta_smoke_212": [
+      [
+        10.8,
+        18.6
+      ]
+    ],
+    "charades_sta_smoke_213": [
+      [
+        10.8,
+        18.6
+      ]
+    ],
+    "charades_sta_smoke_214": [
+      [
+        1.8,
+        6.4
+      ]
+    ],
+    "charades_sta_smoke_215": [
+      [
+        0.0,
+        4.6
+      ]
+    ],
+    "charades_sta_smoke_216": [
+      [
+        10.5,
+        16.266666666666666
+      ]
+    ],
+    "charades_sta_smoke_217": [
+      [
+        0.0,
+        4.6
+      ]
+    ],
+    "charades_sta_smoke_218": [
+      [
+        10.5,
+        16.266666666666666
+      ]
+    ],
+    "charades_sta_smoke_219": [
+      [
+        10.5,
+        16.266666666666666
+      ]
+    ],
+    "charades_sta_smoke_220": [
+      [
+        4.1,
+        9.7
+      ]
+    ],
+    "charades_sta_smoke_221": [
+      [
+        1.0,
+        6.6
+      ]
+    ],
+    "charades_sta_smoke_222": [
+      [
+        2.8,
+        9.0
+      ]
+    ],
+    "charades_sta_smoke_223": [
+      [
+        4.5,
+        11.1
+      ]
+    ],
+    "charades_sta_smoke_224": [
+      [
+        4.5,
+        11.1
+      ]
+    ],
+    "charades_sta_smoke_225": [
+      [
+        0.0,
+        9.0
+      ]
+    ],
+    "charades_sta_smoke_226": [
+      [
+        0.0,
+        9.7
+      ]
+    ],
+    "charades_sta_smoke_227": [
+      [
+        11.0,
+        21.0
+      ]
+    ],
+    "charades_sta_smoke_228": [
+      [
+        11.0,
+        21.0
+      ]
+    ],
+    "charades_sta_smoke_229": [
+      [
+        1.1,
+        10.0
+      ]
+    ],
+    "charades_sta_smoke_230": [
+      [
+        10.0,
+        21.9
+      ]
+    ],
+    "charades_sta_smoke_231": [
+      [
+        0.0,
+        8.1
+      ]
+    ],
+    "charades_sta_smoke_232": [
+      [
+        21.0,
+        35.7
+      ]
+    ],
+    "charades_sta_smoke_233": [
+      [
+        2.2,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_234": [
+      [
+        2.2,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_235": [
+      [
+        9.9,
+        15.9
+      ]
+    ],
+    "charades_sta_smoke_236": [
+      [
+        0.0,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_237": [
+      [
+        0.0,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_238": [
+      [
+        0.0,
+        10.4
+      ]
+    ],
+    "charades_sta_smoke_239": [
+      [
+        0.0,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_240": [
+      [
+        0.0,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_241": [
+      [
+        0.0,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_242": [
+      [
+        11.6,
+        17.7
+      ]
+    ],
+    "charades_sta_smoke_243": [
+      [
+        11.6,
+        17.7
+      ]
+    ],
+    "charades_sta_smoke_244": [
+      [
+        4.3,
+        16.5
+      ]
+    ],
+    "charades_sta_smoke_245": [
+      [
+        18.4,
+        31.015344433561864
+      ]
+    ],
+    "charades_sta_smoke_246": [
+      [
+        2.0,
+        7.9
+      ]
+    ],
+    "charades_sta_smoke_247": [
+      [
+        18.4,
+        31.015344433561864
+      ]
+    ],
+    "charades_sta_smoke_248": [
+      [
+        18.4,
+        31.015344433561864
+      ]
+    ],
+    "charades_sta_smoke_249": [
+      [
+        18.4,
+        31.015344433561864
+      ]
+    ],
+    "charades_sta_smoke_250": [
+      [
+        11.4,
+        16.9
+      ]
+    ],
+    "charades_sta_smoke_251": [
+      [
+        19.7,
+        28.3
+      ]
+    ],
+    "charades_sta_smoke_252": [
+      [
+        11.5,
+        17.6
+      ]
+    ],
+    "charades_sta_smoke_253": [
+      [
+        2.6,
+        10.2
+      ]
+    ],
+    "charades_sta_smoke_254": [
+      [
+        0.1,
+        6.2
+      ]
+    ],
+    "charades_sta_smoke_255": [
+      [
+        11.0,
+        18.1
+      ]
+    ],
+    "charades_sta_smoke_256": [
+      [
+        23.7,
+        30.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_257": [
+      [
+        0.2,
+        5.3
+      ]
+    ],
+    "charades_sta_smoke_258": [
+      [
+        0.2,
+        5.3
+      ]
+    ],
+    "charades_sta_smoke_259": [
+      [
+        0.2,
+        5.3
+      ]
+    ],
+    "charades_sta_smoke_260": [
+      [
+        14.0,
+        17.5
+      ]
+    ],
+    "charades_sta_smoke_261": [
+      [
+        3.2,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_262": [
+      [
+        0.2,
+        5.3
+      ]
+    ],
+    "charades_sta_smoke_263": [
+      [
+        0.0,
+        8.2
+      ]
+    ],
+    "charades_sta_smoke_264": [
+      [
+        4.3,
+        7.553670818976941
+      ]
+    ],
+    "charades_sta_smoke_265": [
+      [
+        4.3,
+        7.553670818976941
+      ]
+    ],
+    "charades_sta_smoke_266": [
+      [
+        1.9,
+        7.1
+      ]
+    ],
+    "charades_sta_smoke_267": [
+      [
+        0.0,
+        5.6
+      ]
+    ],
+    "charades_sta_smoke_268": [
+      [
+        0.6,
+        5.7
+      ]
+    ],
+    "charades_sta_smoke_269": [
+      [
+        18.6,
+        31.6
+      ]
+    ],
+    "charades_sta_smoke_270": [
+      [
+        17.3,
+        35.4
+      ]
+    ],
+    "charades_sta_smoke_271": [
+      [
+        14.9,
+        21.9
+      ]
+    ],
+    "charades_sta_smoke_272": [
+      [
+        14.9,
+        21.9
+      ]
+    ],
+    "charades_sta_smoke_273": [
+      [
+        14.1,
+        22.3
+      ]
+    ],
+    "charades_sta_smoke_274": [
+      [
+        14.3,
+        23.5
+      ]
+    ],
+    "charades_sta_smoke_275": [
+      [
+        23.4,
+        30.113416666666666
+      ]
+    ],
+    "charades_sta_smoke_276": [
+      [
+        2.5,
+        6.6
+      ]
+    ],
+    "charades_sta_smoke_277": [
+      [
+        2.5,
+        6.6
+      ]
+    ],
+    "charades_sta_smoke_278": [
+      [
+        8.9,
+        14.9149
+      ]
+    ],
+    "charades_sta_smoke_279": [
+      [
+        3.7,
+        9.7
+      ]
+    ],
+    "charades_sta_smoke_280": [
+      [
+        6.2,
+        12.0
+      ]
+    ],
+    "charades_sta_smoke_281": [
+      [
+        18.7,
+        29.0
+      ]
+    ],
+    "charades_sta_smoke_282": [
+      [
+        18.7,
+        29.0
+      ]
+    ],
+    "charades_sta_smoke_283": [
+      [
+        18.7,
+        29.0
+      ]
+    ],
+    "charades_sta_smoke_284": [
+      [
+        0.0,
+        13.9
+      ]
+    ],
+    "charades_sta_smoke_285": [
+      [
+        0.0,
+        13.9
+      ]
+    ],
+    "charades_sta_smoke_286": [
+      [
+        0.0,
+        6.5
+      ]
+    ],
+    "charades_sta_smoke_287": [
+      [
+        2.8,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_288": [
+      [
+        0.1,
+        10.3
+      ]
+    ],
+    "charades_sta_smoke_289": [
+      [
+        1.6,
+        13.3
+      ]
+    ],
+    "charades_sta_smoke_290": [
+      [
+        13.8,
+        23.5
+      ]
+    ],
+    "charades_sta_smoke_291": [
+      [
+        13.8,
+        23.5
+      ]
+    ],
+    "charades_sta_smoke_292": [
+      [
+        9.3,
+        17.6
+      ]
+    ],
+    "charades_sta_smoke_293": [
+      [
+        13.8,
+        23.5
+      ]
+    ],
+    "charades_sta_smoke_294": [
+      [
+        43.3,
+        47.166666666666664
+      ]
+    ],
+    "charades_sta_smoke_295": [
+      [
+        0.3,
+        7.8
+      ]
+    ],
+    "charades_sta_smoke_296": [
+      [
+        11.6,
+        17.5
+      ]
+    ],
+    "charades_sta_smoke_297": [
+      [
+        11.6,
+        17.5
+      ]
+    ],
+    "charades_sta_smoke_298": [
+      [
+        0.0,
+        4.4
+      ]
+    ],
+    "charades_sta_smoke_299": [
+      [
+        0.0,
+        5.0
+      ]
+    ],
+    "charades_sta_smoke_300": [
+      [
+        0.0,
+        4.4
+      ]
+    ],
+    "charades_sta_smoke_301": [
+      [
+        0.0,
+        4.4
+      ]
+    ],
+    "charades_sta_smoke_302": [
+      [
+        23.5,
+        32.8
+      ]
+    ],
+    "charades_sta_smoke_303": [
+      [
+        0.0,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_304": [
+      [
+        2.2,
+        8.2
+      ]
+    ],
+    "charades_sta_smoke_305": [
+      [
+        15.3,
+        19.889436365821417
+      ]
+    ],
+    "charades_sta_smoke_306": [
+      [
+        15.3,
+        19.889436365821417
+      ]
+    ],
+    "charades_sta_smoke_307": [
+      [
+        1.3,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_308": [
+      [
+        0.0,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_309": [
+      [
+        15.3,
+        19.889436365821417
+      ]
+    ],
+    "charades_sta_smoke_310": [
+      [
+        15.3,
+        19.889436365821417
+      ]
+    ],
+    "charades_sta_smoke_311": [
+      [
+        8.8,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_312": [
+      [
+        8.8,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_313": [
+      [
+        0.0,
+        9.6
+      ]
+    ],
+    "charades_sta_smoke_314": [
+      [
+        0.0,
+        9.6
+      ]
+    ],
+    "charades_sta_smoke_315": [
+      [
+        19.2,
+        26.8
+      ]
+    ],
+    "charades_sta_smoke_316": [
+      [
+        14.4,
+        20.8
+      ]
+    ],
+    "charades_sta_smoke_317": [
+      [
+        21.8,
+        26.5
+      ]
+    ],
+    "charades_sta_smoke_318": [
+      [
+        4.1,
+        10.8
+      ]
+    ],
+    "charades_sta_smoke_319": [
+      [
+        4.1,
+        10.8
+      ]
+    ],
+    "charades_sta_smoke_320": [
+      [
+        4.1,
+        10.8
+      ]
+    ],
+    "charades_sta_smoke_321": [
+      [
+        7.9,
+        18.8
+      ]
+    ],
+    "charades_sta_smoke_322": [
+      [
+        7.9,
+        18.8
+      ]
+    ],
+    "charades_sta_smoke_323": [
+      [
+        43.6,
+        49.509803921568626
+      ]
+    ],
+    "charades_sta_smoke_324": [
+      [
+        15.4,
+        21.7
+      ]
+    ],
+    "charades_sta_smoke_325": [
+      [
+        5.9,
+        16.7
+      ]
+    ],
+    "charades_sta_smoke_326": [
+      [
+        8.8,
+        19.8
+      ]
+    ],
+    "charades_sta_smoke_327": [
+      [
+        8.8,
+        19.8
+      ]
+    ],
+    "charades_sta_smoke_328": [
+      [
+        5.1,
+        13.1
+      ]
+    ],
+    "charades_sta_smoke_329": [
+      [
+        18.3,
+        30.095000000000002
+      ]
+    ],
+    "charades_sta_smoke_330": [
+      [
+        0.0,
+        11.2
+      ]
+    ],
+    "charades_sta_smoke_331": [
+      [
+        8.8,
+        19.8
+      ]
+    ],
+    "charades_sta_smoke_332": [
+      [
+        0.0,
+        11.2
+      ]
+    ],
+    "charades_sta_smoke_333": [
+      [
+        0.0,
+        16.6
+      ]
+    ],
+    "charades_sta_smoke_334": [
+      [
+        23.4,
+        34.333333333333336
+      ]
+    ],
+    "charades_sta_smoke_335": [
+      [
+        6.1,
+        11.6
+      ]
+    ],
+    "charades_sta_smoke_336": [
+      [
+        12.1,
+        21.21998270471629
+      ]
+    ],
+    "charades_sta_smoke_337": [
+      [
+        0.0,
+        6.6
+      ]
+    ],
+    "charades_sta_smoke_338": [
+      [
+        5.7,
+        13.1
+      ]
+    ],
+    "charades_sta_smoke_339": [
+      [
+        0.9,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_340": [
+      [
+        7.9,
+        18.0
+      ]
+    ],
+    "charades_sta_smoke_341": [
+      [
+        15.9,
+        25.333333333333332
+      ]
+    ],
+    "charades_sta_smoke_342": [
+      [
+        15.9,
+        25.333333333333332
+      ]
+    ],
+    "charades_sta_smoke_343": [
+      [
+        0.0,
+        10.2
+      ]
+    ],
+    "charades_sta_smoke_344": [
+      [
+        8.0,
+        16.1
+      ]
+    ],
+    "charades_sta_smoke_345": [
+      [
+        0.0,
+        10.2
+      ]
+    ],
+    "charades_sta_smoke_346": [
+      [
+        15.9,
+        25.333333333333332
+      ]
+    ],
+    "charades_sta_smoke_347": [
+      [
+        16.4,
+        25.333333333333332
+      ]
+    ],
+    "charades_sta_smoke_348": [
+      [
+        0.0,
+        7.3
+      ]
+    ],
+    "charades_sta_smoke_349": [
+      [
+        0.0,
+        7.3
+      ]
+    ],
+    "charades_sta_smoke_350": [
+      [
+        0.0,
+        7.3
+      ]
+    ],
+    "charades_sta_smoke_351": [
+      [
+        17.5,
+        25.3
+      ]
+    ],
+    "charades_sta_smoke_352": [
+      [
+        10.3,
+        19.1
+      ]
+    ],
+    "charades_sta_smoke_353": [
+      [
+        1.2,
+        8.0
+      ]
+    ],
+    "charades_sta_smoke_354": [
+      [
+        0.0,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_355": [
+      [
+        0.0,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_356": [
+      [
+        6.7,
+        14.0
+      ]
+    ],
+    "charades_sta_smoke_357": [
+      [
+        10.2,
+        17.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_358": [
+      [
+        10.2,
+        17.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_359": [
+      [
+        8.5,
+        14.2
+      ]
+    ],
+    "charades_sta_smoke_360": [
+      [
+        2.8,
+        10.4
+      ]
+    ],
+    "charades_sta_smoke_361": [
+      [
+        7.5,
+        13.0
+      ]
+    ],
+    "charades_sta_smoke_362": [
+      [
+        11.9,
+        17.4
+      ]
+    ],
+    "charades_sta_smoke_363": [
+      [
+        11.9,
+        17.4
+      ]
+    ],
+    "charades_sta_smoke_364": [
+      [
+        1.8,
+        6.8
+      ]
+    ],
+    "charades_sta_smoke_365": [
+      [
+        0.0,
+        4.2
+      ]
+    ],
+    "charades_sta_smoke_366": [
+      [
+        23.1,
+        31.801138730731843
+      ]
+    ],
+    "charades_sta_smoke_367": [
+      [
+        20.4,
+        26.9
+      ]
+    ],
+    "charades_sta_smoke_368": [
+      [
+        27.5,
+        32.3
+      ]
+    ],
+    "charades_sta_smoke_369": [
+      [
+        19.2,
+        24.396106237231102
+      ]
+    ],
+    "charades_sta_smoke_370": [
+      [
+        13.5,
+        19.5
+      ]
+    ],
+    "charades_sta_smoke_371": [
+      [
+        18.5,
+        25.4
+      ]
+    ],
+    "charades_sta_smoke_372": [
+      [
+        6.8,
+        19.5
+      ]
+    ],
+    "charades_sta_smoke_373": [
+      [
+        8.2,
+        20.1
+      ]
+    ],
+    "charades_sta_smoke_374": [
+      [
+        6.4,
+        17.3
+      ]
+    ],
+    "charades_sta_smoke_375": [
+      [
+        3.4,
+        9.8
+      ]
+    ],
+    "charades_sta_smoke_376": [
+      [
+        3.4,
+        9.8
+      ]
+    ],
+    "charades_sta_smoke_377": [
+      [
+        15.4,
+        20.9
+      ]
+    ],
+    "charades_sta_smoke_378": [
+      [
+        15.4,
+        20.9
+      ]
+    ],
+    "charades_sta_smoke_379": [
+      [
+        7.5,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_380": [
+      [
+        0.0,
+        4.8
+      ]
+    ],
+    "charades_sta_smoke_381": [
+      [
+        16.9,
+        22.3
+      ]
+    ],
+    "charades_sta_smoke_382": [
+      [
+        0.0,
+        4.8
+      ]
+    ],
+    "charades_sta_smoke_383": [
+      [
+        5.2,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_384": [
+      [
+        0.0,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_385": [
+      [
+        0.0,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_386": [
+      [
+        13.3,
+        22.4
+      ]
+    ],
+    "charades_sta_smoke_387": [
+      [
+        0.0,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_388": [
+      [
+        24.0,
+        33.13333333333333
+      ]
+    ],
+    "charades_sta_smoke_389": [
+      [
+        14.2,
+        23.0
+      ]
+    ],
+    "charades_sta_smoke_390": [
+      [
+        14.2,
+        23.0
+      ]
+    ],
+    "charades_sta_smoke_391": [
+      [
+        14.2,
+        23.0
+      ]
+    ],
+    "charades_sta_smoke_392": [
+      [
+        24.0,
+        33.13333333333333
+      ]
+    ],
+    "charades_sta_smoke_393": [
+      [
+        0.0,
+        3.8
+      ]
+    ],
+    "charades_sta_smoke_394": [
+      [
+        11.8,
+        17.5
+      ]
+    ],
+    "charades_sta_smoke_395": [
+      [
+        0.6,
+        7.8
+      ]
+    ],
+    "charades_sta_smoke_396": [
+      [
+        32.1,
+        43.10344827586207
+      ]
+    ],
+    "charades_sta_smoke_397": [
+      [
+        20.6,
+        30.0
+      ]
+    ],
+    "charades_sta_smoke_398": [
+      [
+        14.6,
+        21.2
+      ]
+    ],
+    "charades_sta_smoke_399": [
+      [
+        32.1,
+        43.10344827586207
+      ]
+    ],
+    "charades_sta_smoke_400": [
+      [
+        14.6,
+        21.2
+      ]
+    ],
+    "charades_sta_smoke_401": [
+      [
+        0.0,
+        9.5
+      ]
+    ],
+    "charades_sta_smoke_402": [
+      [
+        7.4,
+        13.1
+      ]
+    ],
+    "charades_sta_smoke_403": [
+      [
+        0.5,
+        12.8
+      ]
+    ],
+    "charades_sta_smoke_404": [
+      [
+        1.7,
+        6.7
+      ]
+    ],
+    "charades_sta_smoke_405": [
+      [
+        1.7,
+        6.7
+      ]
+    ],
+    "charades_sta_smoke_406": [
+      [
+        3.7,
+        9.5
+      ]
+    ],
+    "charades_sta_smoke_407": [
+      [
+        3.7,
+        9.5
+      ]
+    ],
+    "charades_sta_smoke_408": [
+      [
+        3.7,
+        9.5
+      ]
+    ],
+    "charades_sta_smoke_409": [
+      [
+        21.3,
+        30.7
+      ]
+    ],
+    "charades_sta_smoke_410": [
+      [
+        18.5,
+        24.0
+      ]
+    ],
+    "charades_sta_smoke_411": [
+      [
+        21.3,
+        30.7
+      ]
+    ],
+    "charades_sta_smoke_412": [
+      [
+        0.7,
+        9.8
+      ]
+    ],
+    "charades_sta_smoke_413": [
+      [
+        0.0,
+        9.3
+      ]
+    ],
+    "charades_sta_smoke_414": [
+      [
+        1.6,
+        9.3
+      ]
+    ],
+    "charades_sta_smoke_415": [
+      [
+        2.7,
+        7.9
+      ]
+    ],
+    "charades_sta_smoke_416": [
+      [
+        19.7,
+        26.4
+      ]
+    ],
+    "charades_sta_smoke_417": [
+      [
+        2.7,
+        7.9
+      ]
+    ],
+    "charades_sta_smoke_418": [
+      [
+        6.3,
+        11.6
+      ]
+    ],
+    "charades_sta_smoke_419": [
+      [
+        13.2,
+        18.1
+      ]
+    ],
+    "charades_sta_smoke_420": [
+      [
+        22.9,
+        26.796443162701276
+      ]
+    ],
+    "charades_sta_smoke_421": [
+      [
+        14.6,
+        26.796443162701276
+      ]
+    ],
+    "charades_sta_smoke_422": [
+      [
+        17.8,
+        26.625840378086934
+      ]
+    ],
+    "charades_sta_smoke_423": [
+      [
+        6.4,
+        15.5
+      ]
+    ],
+    "charades_sta_smoke_424": [
+      [
+        24.9,
+        32.936136028919535
+      ]
+    ],
+    "charades_sta_smoke_425": [
+      [
+        6.2,
+        15.5
+      ]
+    ],
+    "charades_sta_smoke_426": [
+      [
+        14.9,
+        29.4
+      ]
+    ],
+    "charades_sta_smoke_427": [
+      [
+        14.8,
+        20.9
+      ]
+    ],
+    "charades_sta_smoke_428": [
+      [
+        17.6,
+        24.9
+      ]
+    ],
+    "charades_sta_smoke_429": [
+      [
+        14.8,
+        20.9
+      ]
+    ],
+    "charades_sta_smoke_430": [
+      [
+        1.7,
+        8.0
+      ]
+    ],
+    "charades_sta_smoke_431": [
+      [
+        14.5,
+        20.8
+      ]
+    ],
+    "charades_sta_smoke_432": [
+      [
+        3.7,
+        18.6
+      ]
+    ],
+    "charades_sta_smoke_433": [
+      [
+        5.9,
+        11.6
+      ]
+    ],
+    "charades_sta_smoke_434": [
+      [
+        0.0,
+        7.1
+      ]
+    ],
+    "charades_sta_smoke_435": [
+      [
+        14.7,
+        24.0
+      ]
+    ],
+    "charades_sta_smoke_436": [
+      [
+        18.2,
+        24.2
+      ]
+    ],
+    "charades_sta_smoke_437": [
+      [
+        18.2,
+        24.2
+      ]
+    ],
+    "charades_sta_smoke_438": [
+      [
+        11.8,
+        18.7
+      ]
+    ],
+    "charades_sta_smoke_439": [
+      [
+        13.6,
+        19.22845811801466
+      ]
+    ],
+    "charades_sta_smoke_440": [
+      [
+        11.8,
+        18.7
+      ]
+    ],
+    "charades_sta_smoke_441": [
+      [
+        9.3,
+        18.3
+      ]
+    ],
+    "charades_sta_smoke_442": [
+      [
+        9.3,
+        18.3
+      ]
+    ],
+    "charades_sta_smoke_443": [
+      [
+        9.3,
+        18.3
+      ]
+    ],
+    "charades_sta_smoke_444": [
+      [
+        2.6,
+        9.2
+      ]
+    ],
+    "charades_sta_smoke_445": [
+      [
+        0.0,
+        12.0
+      ]
+    ],
+    "charades_sta_smoke_446": [
+      [
+        5.8,
+        13.3
+      ]
+    ],
+    "charades_sta_smoke_447": [
+      [
+        5.8,
+        13.3
+      ]
+    ],
+    "charades_sta_smoke_448": [
+      [
+        0.0,
+        5.3
+      ]
+    ],
+    "charades_sta_smoke_449": [
+      [
+        11.1,
+        19.7
+      ]
+    ],
+    "charades_sta_smoke_450": [
+      [
+        11.1,
+        19.7
+      ]
+    ],
+    "charades_sta_smoke_451": [
+      [
+        21.0,
+        29.4
+      ]
+    ],
+    "charades_sta_smoke_452": [
+      [
+        6.4,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_453": [
+      [
+        8.1,
+        13.8
+      ]
+    ],
+    "charades_sta_smoke_454": [
+      [
+        8.1,
+        13.8
+      ]
+    ],
+    "charades_sta_smoke_455": [
+      [
+        19.8,
+        25.5
+      ]
+    ],
+    "charades_sta_smoke_456": [
+      [
+        8.1,
+        13.8
+      ]
+    ],
+    "charades_sta_smoke_457": [
+      [
+        19.8,
+        25.5
+      ]
+    ],
+    "charades_sta_smoke_458": [
+      [
+        0.0,
+        6.3
+      ]
+    ],
+    "charades_sta_smoke_459": [
+      [
+        22.4,
+        30.55668427468509
+      ]
+    ],
+    "charades_sta_smoke_460": [
+      [
+        5.0,
+        10.9
+      ]
+    ],
+    "charades_sta_smoke_461": [
+      [
+        6.6,
+        18.3
+      ]
+    ],
+    "charades_sta_smoke_462": [
+      [
+        0.0,
+        3.8
+      ]
+    ],
+    "charades_sta_smoke_463": [
+      [
+        13.6,
+        17.8
+      ]
+    ],
+    "charades_sta_smoke_464": [
+      [
+        12.8,
+        28.7
+      ]
+    ],
+    "charades_sta_smoke_465": [
+      [
+        12.8,
+        28.7
+      ]
+    ],
+    "charades_sta_smoke_466": [
+      [
+        0.0,
+        8.2
+      ]
+    ],
+    "charades_sta_smoke_467": [
+      [
+        1.2,
+        7.2
+      ]
+    ],
+    "charades_sta_smoke_468": [
+      [
+        14.0,
+        27.9
+      ]
+    ],
+    "charades_sta_smoke_469": [
+      [
+        16.5,
+        22.6
+      ]
+    ],
+    "charades_sta_smoke_470": [
+      [
+        14.0,
+        27.9
+      ]
+    ],
+    "charades_sta_smoke_471": [
+      [
+        2.2,
+        7.2
+      ]
+    ],
+    "charades_sta_smoke_472": [
+      [
+        11.0,
+        21.1
+      ]
+    ],
+    "charades_sta_smoke_473": [
+      [
+        11.0,
+        21.1
+      ]
+    ],
+    "charades_sta_smoke_474": [
+      [
+        0.0,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_475": [
+      [
+        0.0,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_476": [
+      [
+        16.0,
+        21.7
+      ]
+    ],
+    "charades_sta_smoke_477": [
+      [
+        0.0,
+        13.0
+      ]
+    ],
+    "charades_sta_smoke_478": [
+      [
+        9.9,
+        18.9
+      ]
+    ],
+    "charades_sta_smoke_479": [
+      [
+        9.9,
+        18.9
+      ]
+    ],
+    "charades_sta_smoke_480": [
+      [
+        19.1,
+        29.3
+      ]
+    ],
+    "charades_sta_smoke_481": [
+      [
+        16.0,
+        21.7
+      ]
+    ],
+    "charades_sta_smoke_482": [
+      [
+        0.0,
+        13.0
+      ]
+    ],
+    "charades_sta_smoke_483": [
+      [
+        1.5,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_484": [
+      [
+        9.0,
+        14.6
+      ]
+    ],
+    "charades_sta_smoke_485": [
+      [
+        9.0,
+        14.6
+      ]
+    ],
+    "charades_sta_smoke_486": [
+      [
+        1.5,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_487": [
+      [
+        9.0,
+        14.6
+      ]
+    ],
+    "charades_sta_smoke_488": [
+      [
+        5.0,
+        13.4
+      ]
+    ],
+    "charades_sta_smoke_489": [
+      [
+        3.9,
+        9.7
+      ]
+    ],
+    "charades_sta_smoke_490": [
+      [
+        3.9,
+        9.0
+      ]
+    ],
+    "charades_sta_smoke_491": [
+      [
+        8.9,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_492": [
+      [
+        8.9,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_493": [
+      [
+        15.4,
+        22.4
+      ]
+    ],
+    "charades_sta_smoke_494": [
+      [
+        15.4,
+        22.4
+      ]
+    ],
+    "charades_sta_smoke_495": [
+      [
+        1.6,
+        7.0
+      ]
+    ],
+    "charades_sta_smoke_496": [
+      [
+        1.6,
+        7.0
+      ]
+    ],
+    "charades_sta_smoke_497": [
+      [
+        8.7,
+        13.9
+      ]
+    ],
+    "charades_sta_smoke_498": [
+      [
+        0.0,
+        14.7
+      ]
+    ],
+    "charades_sta_smoke_499": [
+      [
+        8.5,
+        15.2
+      ]
+    ],
+    "charades_sta_smoke_500": [
+      [
+        20.7,
+        24.666666666666668
+      ]
+    ],
+    "charades_sta_smoke_501": [
+      [
+        1.8,
+        9.4
+      ]
+    ],
+    "charades_sta_smoke_502": [
+      [
+        20.7,
+        24.666666666666668
+      ]
+    ],
+    "charades_sta_smoke_503": [
+      [
+        20.7,
+        24.666666666666668
+      ]
+    ],
+    "charades_sta_smoke_504": [
+      [
+        13.3,
+        20.6
+      ]
+    ],
+    "charades_sta_smoke_505": [
+      [
+        20.7,
+        24.666666666666668
+      ]
+    ],
+    "charades_sta_smoke_506": [
+      [
+        20.7,
+        24.666666666666668
+      ]
+    ],
+    "charades_sta_smoke_507": [
+      [
+        0.0,
+        14.4
+      ]
+    ],
+    "charades_sta_smoke_508": [
+      [
+        13.9,
+        20.9
+      ]
+    ],
+    "charades_sta_smoke_509": [
+      [
+        3.0,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_510": [
+      [
+        3.0,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_511": [
+      [
+        2.4,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_512": [
+      [
+        7.9,
+        15.0
+      ]
+    ],
+    "charades_sta_smoke_513": [
+      [
+        3.7,
+        12.6
+      ]
+    ],
+    "charades_sta_smoke_514": [
+      [
+        0.0,
+        13.8
+      ]
+    ],
+    "charades_sta_smoke_515": [
+      [
+        0.5,
+        11.0
+      ]
+    ],
+    "charades_sta_smoke_516": [
+      [
+        0.0,
+        11.6
+      ]
+    ],
+    "charades_sta_smoke_517": [
+      [
+        0.0,
+        13.4
+      ]
+    ],
+    "charades_sta_smoke_518": [
+      [
+        0.0,
+        13.4
+      ]
+    ],
+    "charades_sta_smoke_519": [
+      [
+        5.0,
+        13.4
+      ]
+    ],
+    "charades_sta_smoke_520": [
+      [
+        0.0,
+        8.0
+      ]
+    ],
+    "charades_sta_smoke_521": [
+      [
+        0.0,
+        8.0
+      ]
+    ],
+    "charades_sta_smoke_522": [
+      [
+        23.0,
+        29.0
+      ]
+    ],
+    "charades_sta_smoke_523": [
+      [
+        0.0,
+        14.0
+      ]
+    ],
+    "charades_sta_smoke_524": [
+      [
+        0.0,
+        8.7
+      ]
+    ],
+    "charades_sta_smoke_525": [
+      [
+        0.0,
+        8.7
+      ]
+    ],
+    "charades_sta_smoke_526": [
+      [
+        0.8,
+        13.6
+      ]
+    ],
+    "charades_sta_smoke_527": [
+      [
+        11.2,
+        19.6
+      ]
+    ],
+    "charades_sta_smoke_528": [
+      [
+        11.2,
+        19.6
+      ]
+    ],
+    "charades_sta_smoke_529": [
+      [
+        11.2,
+        19.6
+      ]
+    ],
+    "charades_sta_smoke_530": [
+      [
+        0.0,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_531": [
+      [
+        4.6,
+        11.9
+      ]
+    ],
+    "charades_sta_smoke_532": [
+      [
+        10.1,
+        22.2
+      ]
+    ],
+    "charades_sta_smoke_533": [
+      [
+        16.1,
+        30.7
+      ]
+    ],
+    "charades_sta_smoke_534": [
+      [
+        16.1,
+        30.7
+      ]
+    ],
+    "charades_sta_smoke_535": [
+      [
+        7.5,
+        19.7
+      ]
+    ],
+    "charades_sta_smoke_536": [
+      [
+        8.7,
+        17.1
+      ]
+    ],
+    "charades_sta_smoke_537": [
+      [
+        31.4,
+        42.00888921539818
+      ]
+    ],
+    "charades_sta_smoke_538": [
+      [
+        18.8,
+        33.1
+      ]
+    ],
+    "charades_sta_smoke_539": [
+      [
+        2.9,
+        8.0
+      ]
+    ],
+    "charades_sta_smoke_540": [
+      [
+        9.0,
+        15.5
+      ]
+    ],
+    "charades_sta_smoke_541": [
+      [
+        23.5,
+        28.9
+      ]
+    ],
+    "charades_sta_smoke_542": [
+      [
+        4.2,
+        13.1
+      ]
+    ],
+    "charades_sta_smoke_543": [
+      [
+        6.5,
+        13.5
+      ]
+    ],
+    "charades_sta_smoke_544": [
+      [
+        0.0,
+        9.5
+      ]
+    ],
+    "charades_sta_smoke_545": [
+      [
+        6.5,
+        13.5
+      ]
+    ],
+    "charades_sta_smoke_546": [
+      [
+        0.0,
+        9.5
+      ]
+    ],
+    "charades_sta_smoke_547": [
+      [
+        0.0,
+        9.5
+      ]
+    ],
+    "charades_sta_smoke_548": [
+      [
+        0.0,
+        10.0
+      ]
+    ],
+    "charades_sta_smoke_549": [
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "charades_sta_smoke_550": [
+      [
+        8.0,
+        13.0
+      ]
+    ],
+    "charades_sta_smoke_551": [
+      [
+        0.0,
+        10.0
+      ]
+    ],
+    "charades_sta_smoke_552": [
+      [
+        18.0,
+        25.0
+      ]
+    ],
+    "charades_sta_smoke_553": [
+      [
+        6.9,
+        11.5
+      ]
+    ],
+    "charades_sta_smoke_554": [
+      [
+        19.1,
+        30.595549738219894
+      ]
+    ],
+    "charades_sta_smoke_555": [
+      [
+        1.3,
+        13.6
+      ]
+    ],
+    "charades_sta_smoke_556": [
+      [
+        0.0,
+        15.9
+      ]
+    ],
+    "charades_sta_smoke_557": [
+      [
+        25.5,
+        30.697333333333333
+      ]
+    ],
+    "charades_sta_smoke_558": [
+      [
+        18.3,
+        25.3
+      ]
+    ],
+    "charades_sta_smoke_559": [
+      [
+        18.3,
+        25.3
+      ]
+    ],
+    "charades_sta_smoke_560": [
+      [
+        0.0,
+        5.8
+      ]
+    ],
+    "charades_sta_smoke_561": [
+      [
+        18.3,
+        25.3
+      ]
+    ],
+    "charades_sta_smoke_562": [
+      [
+        25.5,
+        30.697333333333333
+      ]
+    ],
+    "charades_sta_smoke_563": [
+      [
+        0.0,
+        5.8
+      ]
+    ],
+    "charades_sta_smoke_564": [
+      [
+        9.5,
+        20.4
+      ]
+    ],
+    "charades_sta_smoke_565": [
+      [
+        5.6,
+        13.2
+      ]
+    ],
+    "charades_sta_smoke_566": [
+      [
+        8.6,
+        15.1
+      ]
+    ],
+    "charades_sta_smoke_567": [
+      [
+        24.9,
+        31.1
+      ]
+    ],
+    "charades_sta_smoke_568": [
+      [
+        0.0,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_569": [
+      [
+        0.0,
+        14.7
+      ]
+    ],
+    "charades_sta_smoke_570": [
+      [
+        0.0,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_571": [
+      [
+        13.9,
+        26.2
+      ]
+    ],
+    "charades_sta_smoke_572": [
+      [
+        0.0,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_573": [
+      [
+        0.0,
+        14.5
+      ]
+    ],
+    "charades_sta_smoke_574": [
+      [
+        24.1,
+        30.8
+      ]
+    ],
+    "charades_sta_smoke_575": [
+      [
+        0.0,
+        15.0
+      ]
+    ],
+    "charades_sta_smoke_576": [
+      [
+        0.0,
+        15.0
+      ]
+    ],
+    "charades_sta_smoke_577": [
+      [
+        24.1,
+        30.8
+      ]
+    ],
+    "charades_sta_smoke_578": [
+      [
+        19.7,
+        32.4
+      ]
+    ],
+    "charades_sta_smoke_579": [
+      [
+        8.7,
+        23.6
+      ]
+    ],
+    "charades_sta_smoke_580": [
+      [
+        8.7,
+        23.6
+      ]
+    ],
+    "charades_sta_smoke_581": [
+      [
+        19.7,
+        32.4
+      ]
+    ],
+    "charades_sta_smoke_582": [
+      [
+        11.6,
+        20.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_583": [
+      [
+        0.9,
+        7.9
+      ]
+    ],
+    "charades_sta_smoke_584": [
+      [
+        11.6,
+        20.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_585": [
+      [
+        11.6,
+        20.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_586": [
+      [
+        1.0,
+        6.4
+      ]
+    ],
+    "charades_sta_smoke_587": [
+      [
+        11.6,
+        20.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_588": [
+      [
+        11.6,
+        20.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_589": [
+      [
+        0.0,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_590": [
+      [
+        0.0,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_591": [
+      [
+        5.4,
+        11.6
+      ]
+    ],
+    "charades_sta_smoke_592": [
+      [
+        0.0,
+        11.2
+      ]
+    ],
+    "charades_sta_smoke_593": [
+      [
+        0.0,
+        12.2
+      ]
+    ],
+    "charades_sta_smoke_594": [
+      [
+        12.5,
+        23.254416536473983
+      ]
+    ],
+    "charades_sta_smoke_595": [
+      [
+        7.7,
+        15.3
+      ]
+    ],
+    "charades_sta_smoke_596": [
+      [
+        0.9,
+        8.2
+      ]
+    ],
+    "charades_sta_smoke_597": [
+      [
+        14.9,
+        21.9
+      ]
+    ],
+    "charades_sta_smoke_598": [
+      [
+        11.1,
+        18.7
+      ]
+    ],
+    "charades_sta_smoke_599": [
+      [
+        5.5,
+        10.7
+      ]
+    ],
+    "charades_sta_smoke_600": [
+      [
+        3.0,
+        11.0
+      ]
+    ],
+    "charades_sta_smoke_601": [
+      [
+        13.7,
+        20.4
+      ]
+    ],
+    "charades_sta_smoke_602": [
+      [
+        13.7,
+        20.4
+      ]
+    ],
+    "charades_sta_smoke_603": [
+      [
+        25.7,
+        31.166666666666668
+      ]
+    ],
+    "charades_sta_smoke_604": [
+      [
+        14.9,
+        24.2
+      ]
+    ],
+    "charades_sta_smoke_605": [
+      [
+        2.7,
+        13.0
+      ]
+    ],
+    "charades_sta_smoke_606": [
+      [
+        12.0,
+        23.8
+      ]
+    ],
+    "charades_sta_smoke_607": [
+      [
+        12.0,
+        23.8
+      ]
+    ],
+    "charades_sta_smoke_608": [
+      [
+        2.7,
+        13.0
+      ]
+    ],
+    "charades_sta_smoke_609": [
+      [
+        7.6,
+        17.5
+      ]
+    ],
+    "charades_sta_smoke_610": [
+      [
+        0.2,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_611": [
+      [
+        10.1,
+        17.3
+      ]
+    ],
+    "charades_sta_smoke_612": [
+      [
+        0.2,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_613": [
+      [
+        2.1,
+        8.0
+      ]
+    ],
+    "charades_sta_smoke_614": [
+      [
+        0.0,
+        6.7
+      ]
+    ],
+    "charades_sta_smoke_615": [
+      [
+        31.6,
+        40.2
+      ]
+    ],
+    "charades_sta_smoke_616": [
+      [
+        46.4,
+        48.4
+      ]
+    ],
+    "charades_sta_smoke_617": [
+      [
+        38.4,
+        47.8
+      ]
+    ],
+    "charades_sta_smoke_618": [
+      [
+        46.4,
+        48.4
+      ]
+    ],
+    "charades_sta_smoke_619": [
+      [
+        27.5,
+        34.2
+      ]
+    ],
+    "charades_sta_smoke_620": [
+      [
+        23.5,
+        29.529500000000002
+      ]
+    ],
+    "charades_sta_smoke_621": [
+      [
+        23.5,
+        29.529500000000002
+      ]
+    ],
+    "charades_sta_smoke_622": [
+      [
+        23.5,
+        29.529500000000002
+      ]
+    ],
+    "charades_sta_smoke_623": [
+      [
+        3.8,
+        8.5
+      ]
+    ],
+    "charades_sta_smoke_624": [
+      [
+        4.8,
+        12.2
+      ]
+    ],
+    "charades_sta_smoke_625": [
+      [
+        16.6,
+        27.2
+      ]
+    ],
+    "charades_sta_smoke_626": [
+      [
+        16.5,
+        25.9
+      ]
+    ],
+    "charades_sta_smoke_627": [
+      [
+        0.0,
+        12.6
+      ]
+    ],
+    "charades_sta_smoke_628": [
+      [
+        16.5,
+        25.9
+      ]
+    ],
+    "charades_sta_smoke_629": [
+      [
+        6.1,
+        16.1
+      ]
+    ],
+    "charades_sta_smoke_630": [
+      [
+        0.0,
+        3.8
+      ]
+    ],
+    "charades_sta_smoke_631": [
+      [
+        15.7,
+        25.2
+      ]
+    ],
+    "charades_sta_smoke_632": [
+      [
+        0.0,
+        8.1
+      ]
+    ],
+    "charades_sta_smoke_633": [
+      [
+        25.1,
+        30.633333333333333
+      ]
+    ],
+    "charades_sta_smoke_634": [
+      [
+        3.4,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_635": [
+      [
+        16.0,
+        23.2
+      ]
+    ],
+    "charades_sta_smoke_636": [
+      [
+        3.4,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_637": [
+      [
+        27.3,
+        31.989554431206138
+      ]
+    ],
+    "charades_sta_smoke_638": [
+      [
+        27.3,
+        31.989554431206138
+      ]
+    ],
+    "charades_sta_smoke_639": [
+      [
+        2.1,
+        8.2
+      ]
+    ],
+    "charades_sta_smoke_640": [
+      [
+        23.8,
+        30.166666666666668
+      ]
+    ],
+    "charades_sta_smoke_641": [
+      [
+        13.4,
+        28.1
+      ]
+    ],
+    "charades_sta_smoke_642": [
+      [
+        15.1,
+        26.5
+      ]
+    ],
+    "charades_sta_smoke_643": [
+      [
+        4.1,
+        11.9
+      ]
+    ],
+    "charades_sta_smoke_644": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_smoke_645": [
+      [
+        1.4,
+        7.9
+      ]
+    ],
+    "charades_sta_smoke_646": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_smoke_647": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_smoke_648": [
+      [
+        4.1,
+        11.9
+      ]
+    ],
+    "charades_sta_smoke_649": [
+      [
+        1.4,
+        7.9
+      ]
+    ],
+    "charades_sta_smoke_650": [
+      [
+        0.0,
+        4.4
+      ]
+    ],
+    "charades_sta_smoke_651": [
+      [
+        11.4,
+        13.4
+      ]
+    ],
+    "charades_sta_smoke_652": [
+      [
+        25.2,
+        30.7
+      ]
+    ],
+    "charades_sta_smoke_653": [
+      [
+        18.1,
+        30.70891865403463
+      ]
+    ],
+    "charades_sta_smoke_654": [
+      [
+        18.1,
+        30.70891865403463
+      ]
+    ],
+    "charades_sta_smoke_655": [
+      [
+        18.1,
+        30.70891865403463
+      ]
+    ],
+    "charades_sta_smoke_656": [
+      [
+        9.5,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_657": [
+      [
+        9.5,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_658": [
+      [
+        0.0,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_659": [
+      [
+        16.7,
+        32.2
+      ]
+    ],
+    "charades_sta_smoke_660": [
+      [
+        16.7,
+        32.2
+      ]
+    ],
+    "charades_sta_smoke_661": [
+      [
+        16.7,
+        32.2
+      ]
+    ],
+    "charades_sta_smoke_662": [
+      [
+        15.4,
+        26.5
+      ]
+    ],
+    "charades_sta_smoke_663": [
+      [
+        7.9,
+        14.1
+      ]
+    ],
+    "charades_sta_smoke_664": [
+      [
+        2.1,
+        7.6
+      ]
+    ],
+    "charades_sta_smoke_665": [
+      [
+        0.0,
+        5.7
+      ]
+    ],
+    "charades_sta_smoke_666": [
+      [
+        2.1,
+        7.6
+      ]
+    ],
+    "charades_sta_smoke_667": [
+      [
+        0.0,
+        3.6
+      ]
+    ],
+    "charades_sta_smoke_668": [
+      [
+        10.1,
+        14.4
+      ]
+    ],
+    "charades_sta_smoke_669": [
+      [
+        24.0,
+        30.766666666666666
+      ]
+    ],
+    "charades_sta_smoke_670": [
+      [
+        0.9,
+        10.8
+      ]
+    ],
+    "charades_sta_smoke_671": [
+      [
+        24.0,
+        30.766666666666666
+      ]
+    ],
+    "charades_sta_smoke_672": [
+      [
+        24.0,
+        30.766666666666666
+      ]
+    ],
+    "charades_sta_smoke_673": [
+      [
+        0.0,
+        3.7
+      ]
+    ],
+    "charades_sta_smoke_674": [
+      [
+        0.0,
+        10.0
+      ]
+    ],
+    "charades_sta_smoke_675": [
+      [
+        0.0,
+        3.2
+      ]
+    ],
+    "charades_sta_smoke_676": [
+      [
+        15.2,
+        21.5
+      ]
+    ],
+    "charades_sta_smoke_677": [
+      [
+        2.0,
+        16.0
+      ]
+    ],
+    "charades_sta_smoke_678": [
+      [
+        2.0,
+        16.0
+      ]
+    ],
+    "charades_sta_smoke_679": [
+      [
+        2.0,
+        16.0
+      ]
+    ],
+    "charades_sta_smoke_680": [
+      [
+        15.4,
+        32.1
+      ]
+    ],
+    "charades_sta_smoke_681": [
+      [
+        23.2,
+        29.295933333333334
+      ]
+    ],
+    "charades_sta_smoke_682": [
+      [
+        3.1,
+        15.5
+      ]
+    ],
+    "charades_sta_smoke_683": [
+      [
+        1.2,
+        8.0
+      ]
+    ],
+    "charades_sta_smoke_684": [
+      [
+        25.9,
+        30.833333333333332
+      ]
+    ],
+    "charades_sta_smoke_685": [
+      [
+        23.6,
+        29.4
+      ]
+    ],
+    "charades_sta_smoke_686": [
+      [
+        25.1,
+        30.833333333333332
+      ]
+    ],
+    "charades_sta_smoke_687": [
+      [
+        25.1,
+        30.833333333333332
+      ]
+    ],
+    "charades_sta_smoke_688": [
+      [
+        0.0,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_689": [
+      [
+        0.0,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_690": [
+      [
+        21.1,
+        27.2
+      ]
+    ],
+    "charades_sta_smoke_691": [
+      [
+        23.4,
+        32.733333333333334
+      ]
+    ],
+    "charades_sta_smoke_692": [
+      [
+        0.0,
+        10.9
+      ]
+    ],
+    "charades_sta_smoke_693": [
+      [
+        0.0,
+        15.2
+      ]
+    ],
+    "charades_sta_smoke_694": [
+      [
+        14.5,
+        18.867924528301888
+      ]
+    ],
+    "charades_sta_smoke_695": [
+      [
+        14.5,
+        18.867924528301888
+      ]
+    ],
+    "charades_sta_smoke_696": [
+      [
+        7.6,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_697": [
+      [
+        7.6,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_698": [
+      [
+        2.5,
+        9.4
+      ]
+    ],
+    "charades_sta_smoke_699": [
+      [
+        3.1,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_700": [
+      [
+        3.1,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_701": [
+      [
+        1.5,
+        5.6
+      ]
+    ],
+    "charades_sta_smoke_702": [
+      [
+        3.1,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_703": [
+      [
+        0.0,
+        8.7
+      ]
+    ],
+    "charades_sta_smoke_704": [
+      [
+        30.0,
+        39.9399
+      ]
+    ],
+    "charades_sta_smoke_705": [
+      [
+        11.8,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_706": [
+      [
+        20.0,
+        25.966666666666665
+      ]
+    ],
+    "charades_sta_smoke_707": [
+      [
+        20.0,
+        25.966666666666665
+      ]
+    ],
+    "charades_sta_smoke_708": [
+      [
+        11.8,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_709": [
+      [
+        11.8,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_710": [
+      [
+        11.8,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_711": [
+      [
+        16.8,
+        30.4
+      ]
+    ],
+    "charades_sta_smoke_712": [
+      [
+        16.8,
+        30.4
+      ]
+    ],
+    "charades_sta_smoke_713": [
+      [
+        16.8,
+        30.4
+      ]
+    ],
+    "charades_sta_smoke_714": [
+      [
+        16.4,
+        29.233333333333334
+      ]
+    ],
+    "charades_sta_smoke_715": [
+      [
+        16.4,
+        29.233333333333334
+      ]
+    ],
+    "charades_sta_smoke_716": [
+      [
+        15.5,
+        20.4
+      ]
+    ],
+    "charades_sta_smoke_717": [
+      [
+        10.5,
+        17.1
+      ]
+    ],
+    "charades_sta_smoke_718": [
+      [
+        23.3,
+        29.4
+      ]
+    ],
+    "charades_sta_smoke_719": [
+      [
+        23.3,
+        29.4
+      ]
+    ],
+    "charades_sta_smoke_720": [
+      [
+        0.0,
+        9.5
+      ]
+    ],
+    "charades_sta_smoke_721": [
+      [
+        19.5,
+        33.6336
+      ]
+    ],
+    "charades_sta_smoke_722": [
+      [
+        6.7,
+        16.1
+      ]
+    ],
+    "charades_sta_smoke_723": [
+      [
+        0.0,
+        3.5
+      ]
+    ],
+    "charades_sta_smoke_724": [
+      [
+        0.0,
+        10.7
+      ]
+    ],
+    "charades_sta_smoke_725": [
+      [
+        0.0,
+        10.7
+      ]
+    ],
+    "charades_sta_smoke_726": [
+      [
+        8.3,
+        13.5
+      ]
+    ],
+    "charades_sta_smoke_727": [
+      [
+        0.0,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_728": [
+      [
+        0.0,
+        8.3
+      ]
+    ],
+    "charades_sta_smoke_729": [
+      [
+        17.2,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_730": [
+      [
+        17.2,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_731": [
+      [
+        17.2,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_732": [
+      [
+        6.3,
+        12.6
+      ]
+    ],
+    "charades_sta_smoke_733": [
+      [
+        3.7,
+        10.7
+      ]
+    ],
+    "charades_sta_smoke_734": [
+      [
+        21.4,
+        37.6
+      ]
+    ],
+    "charades_sta_smoke_735": [
+      [
+        3.7,
+        10.7
+      ]
+    ],
+    "charades_sta_smoke_736": [
+      [
+        21.4,
+        37.6
+      ]
+    ],
+    "charades_sta_smoke_737": [
+      [
+        13.1,
+        18.9
+      ]
+    ],
+    "charades_sta_smoke_738": [
+      [
+        13.1,
+        18.9
+      ]
+    ],
+    "charades_sta_smoke_739": [
+      [
+        10.1,
+        17.3
+      ]
+    ],
+    "charades_sta_smoke_740": [
+      [
+        13.1,
+        18.9
+      ]
+    ],
+    "charades_sta_smoke_741": [
+      [
+        20.7,
+        25.6
+      ]
+    ],
+    "charades_sta_smoke_742": [
+      [
+        20.7,
+        25.6
+      ]
+    ],
+    "charades_sta_smoke_743": [
+      [
+        20.7,
+        25.6
+      ]
+    ],
+    "charades_sta_smoke_744": [
+      [
+        20.7,
+        25.6
+      ]
+    ],
+    "charades_sta_smoke_745": [
+      [
+        20.7,
+        25.6
+      ]
+    ],
+    "charades_sta_smoke_746": [
+      [
+        24.1,
+        30.9
+      ]
+    ],
+    "charades_sta_smoke_747": [
+      [
+        21.6,
+        28.6
+      ]
+    ],
+    "charades_sta_smoke_748": [
+      [
+        14.4,
+        24.3
+      ]
+    ],
+    "charades_sta_smoke_749": [
+      [
+        5.4,
+        11.5
+      ]
+    ],
+    "charades_sta_smoke_750": [
+      [
+        2.8,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_751": [
+      [
+        1.3,
+        6.9
+      ]
+    ],
+    "charades_sta_smoke_752": [
+      [
+        5.4,
+        11.5
+      ]
+    ],
+    "charades_sta_smoke_753": [
+      [
+        2.8,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_754": [
+      [
+        1.3,
+        6.9
+      ]
+    ],
+    "charades_sta_smoke_755": [
+      [
+        22.9,
+        29.7
+      ]
+    ],
+    "charades_sta_smoke_756": [
+      [
+        8.1,
+        21.2
+      ]
+    ],
+    "charades_sta_smoke_757": [
+      [
+        0.0,
+        4.1
+      ]
+    ],
+    "charades_sta_smoke_758": [
+      [
+        1.1,
+        9.3
+      ]
+    ],
+    "charades_sta_smoke_759": [
+      [
+        23.2,
+        28.495133333333335
+      ]
+    ],
+    "charades_sta_smoke_760": [
+      [
+        23.2,
+        28.495133333333335
+      ]
+    ],
+    "charades_sta_smoke_761": [
+      [
+        0.0,
+        8.2
+      ]
+    ],
+    "charades_sta_smoke_762": [
+      [
+        12.7,
+        19.9
+      ]
+    ],
+    "charades_sta_smoke_763": [
+      [
+        12.7,
+        19.9
+      ]
+    ],
+    "charades_sta_smoke_764": [
+      [
+        12.7,
+        19.9
+      ]
+    ],
+    "charades_sta_smoke_765": [
+      [
+        0.0,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_766": [
+      [
+        16.5,
+        30.033333333333335
+      ]
+    ],
+    "charades_sta_smoke_767": [
+      [
+        0.0,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_768": [
+      [
+        3.0,
+        12.4
+      ]
+    ],
+    "charades_sta_smoke_769": [
+      [
+        2.7,
+        10.3
+      ]
+    ],
+    "charades_sta_smoke_770": [
+      [
+        3.2,
+        9.3
+      ]
+    ],
+    "charades_sta_smoke_771": [
+      [
+        7.9,
+        13.0
+      ]
+    ],
+    "charades_sta_smoke_772": [
+      [
+        2.6,
+        7.8
+      ]
+    ],
+    "charades_sta_smoke_773": [
+      [
+        11.7,
+        22.1
+      ]
+    ],
+    "charades_sta_smoke_774": [
+      [
+        5.2,
+        11.0
+      ]
+    ],
+    "charades_sta_smoke_775": [
+      [
+        17.2,
+        23.8
+      ]
+    ],
+    "charades_sta_smoke_776": [
+      [
+        17.2,
+        23.8
+      ]
+    ],
+    "charades_sta_smoke_777": [
+      [
+        8.7,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_778": [
+      [
+        8.7,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_779": [
+      [
+        0.3,
+        4.8
+      ]
+    ],
+    "charades_sta_smoke_780": [
+      [
+        1.7,
+        8.0
+      ]
+    ],
+    "charades_sta_smoke_781": [
+      [
+        11.4,
+        15.8
+      ]
+    ],
+    "charades_sta_smoke_782": [
+      [
+        4.6,
+        9.3
+      ]
+    ],
+    "charades_sta_smoke_783": [
+      [
+        4.6,
+        9.3
+      ]
+    ],
+    "charades_sta_smoke_784": [
+      [
+        0.0,
+        2.9
+      ]
+    ],
+    "charades_sta_smoke_785": [
+      [
+        0.3,
+        4.7
+      ]
+    ],
+    "charades_sta_smoke_786": [
+      [
+        11.3,
+        22.1
+      ]
+    ],
+    "charades_sta_smoke_787": [
+      [
+        11.3,
+        22.1
+      ]
+    ],
+    "charades_sta_smoke_788": [
+      [
+        8.3,
+        14.2
+      ]
+    ],
+    "charades_sta_smoke_789": [
+      [
+        0.0,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_790": [
+      [
+        0.0,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_791": [
+      [
+        0.3,
+        6.5
+      ]
+    ],
+    "charades_sta_smoke_792": [
+      [
+        0.0,
+        5.4
+      ]
+    ],
+    "charades_sta_smoke_793": [
+      [
+        19.0,
+        24.1
+      ]
+    ],
+    "charades_sta_smoke_794": [
+      [
+        0.3,
+        6.5
+      ]
+    ],
+    "charades_sta_smoke_795": [
+      [
+        20.6,
+        26.5
+      ]
+    ],
+    "charades_sta_smoke_796": [
+      [
+        6.5,
+        13.5
+      ]
+    ],
+    "charades_sta_smoke_797": [
+      [
+        0.4,
+        6.1
+      ]
+    ],
+    "charades_sta_smoke_798": [
+      [
+        0.0,
+        5.5
+      ]
+    ],
+    "charades_sta_smoke_799": [
+      [
+        0.0,
+        5.4
+      ]
+    ],
+    "charades_sta_smoke_800": [
+      [
+        4.5,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_801": [
+      [
+        4.5,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_802": [
+      [
+        23.2,
+        30.7340199444172
+      ]
+    ],
+    "charades_sta_smoke_803": [
+      [
+        15.2,
+        22.8
+      ]
+    ],
+    "charades_sta_smoke_804": [
+      [
+        12.0,
+        17.9
+      ]
+    ],
+    "charades_sta_smoke_805": [
+      [
+        8.0,
+        15.1
+      ]
+    ],
+    "charades_sta_smoke_806": [
+      [
+        8.0,
+        15.1
+      ]
+    ],
+    "charades_sta_smoke_807": [
+      [
+        12.0,
+        17.9
+      ]
+    ],
+    "charades_sta_smoke_808": [
+      [
+        4.3,
+        16.7
+      ]
+    ],
+    "charades_sta_smoke_809": [
+      [
+        5.7,
+        15.0
+      ]
+    ],
+    "charades_sta_smoke_810": [
+      [
+        4.3,
+        16.7
+      ]
+    ],
+    "charades_sta_smoke_811": [
+      [
+        16.4,
+        26.7
+      ]
+    ],
+    "charades_sta_smoke_812": [
+      [
+        4.3,
+        16.7
+      ]
+    ],
+    "charades_sta_smoke_813": [
+      [
+        0.8,
+        11.9
+      ]
+    ],
+    "charades_sta_smoke_814": [
+      [
+        4.3,
+        16.7
+      ]
+    ],
+    "charades_sta_smoke_815": [
+      [
+        19.5,
+        31.0
+      ]
+    ],
+    "charades_sta_smoke_816": [
+      [
+        19.5,
+        31.0
+      ]
+    ],
+    "charades_sta_smoke_817": [
+      [
+        19.5,
+        31.0
+      ]
+    ],
+    "charades_sta_smoke_818": [
+      [
+        15.3,
+        24.6
+      ]
+    ],
+    "charades_sta_smoke_819": [
+      [
+        4.3,
+        10.9
+      ]
+    ],
+    "charades_sta_smoke_820": [
+      [
+        13.8,
+        21.5
+      ]
+    ],
+    "charades_sta_smoke_821": [
+      [
+        26.1,
+        32.233333333333334
+      ]
+    ],
+    "charades_sta_smoke_822": [
+      [
+        26.1,
+        32.233333333333334
+      ]
+    ],
+    "charades_sta_smoke_823": [
+      [
+        17.0,
+        30.7
+      ]
+    ],
+    "charades_sta_smoke_824": [
+      [
+        12.0,
+        21.7
+      ]
+    ],
+    "charades_sta_smoke_825": [
+      [
+        17.0,
+        30.7
+      ]
+    ],
+    "charades_sta_smoke_826": [
+      [
+        0.3,
+        5.7
+      ]
+    ],
+    "charades_sta_smoke_827": [
+      [
+        1.8,
+        7.8
+      ]
+    ],
+    "charades_sta_smoke_828": [
+      [
+        0.0,
+        11.5
+      ]
+    ],
+    "charades_sta_smoke_829": [
+      [
+        0.0,
+        6.4
+      ]
+    ],
+    "charades_sta_smoke_830": [
+      [
+        14.1,
+        20.6
+      ]
+    ],
+    "charades_sta_smoke_831": [
+      [
+        0.0,
+        13.5
+      ]
+    ],
+    "charades_sta_smoke_832": [
+      [
+        19.3,
+        25.7
+      ]
+    ],
+    "charades_sta_smoke_833": [
+      [
+        32.1,
+        37.266666666666666
+      ]
+    ],
+    "charades_sta_smoke_834": [
+      [
+        23.5,
+        37.266666666666666
+      ]
+    ],
+    "charades_sta_smoke_835": [
+      [
+        32.1,
+        37.266666666666666
+      ]
+    ],
+    "charades_sta_smoke_836": [
+      [
+        0.0,
+        2.8
+      ]
+    ],
+    "charades_sta_smoke_837": [
+      [
+        2.0,
+        8.8
+      ]
+    ],
+    "charades_sta_smoke_838": [
+      [
+        22.6,
+        29.9
+      ]
+    ],
+    "charades_sta_smoke_839": [
+      [
+        16.9,
+        30.53061224489796
+      ]
+    ],
+    "charades_sta_smoke_840": [
+      [
+        16.9,
+        30.53061224489796
+      ]
+    ],
+    "charades_sta_smoke_841": [
+      [
+        22.6,
+        29.9
+      ]
+    ],
+    "charades_sta_smoke_842": [
+      [
+        0.0,
+        7.5
+      ]
+    ],
+    "charades_sta_smoke_843": [
+      [
+        4.1,
+        9.3
+      ]
+    ],
+    "charades_sta_smoke_844": [
+      [
+        0.0,
+        6.2
+      ]
+    ],
+    "charades_sta_smoke_845": [
+      [
+        0.0,
+        6.2
+      ]
+    ],
+    "charades_sta_smoke_846": [
+      [
+        0.0,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_847": [
+      [
+        0.0,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_848": [
+      [
+        30.9,
+        37.5
+      ]
+    ],
+    "charades_sta_smoke_849": [
+      [
+        15.1,
+        20.4
+      ]
+    ],
+    "charades_sta_smoke_850": [
+      [
+        3.4,
+        11.8
+      ]
+    ],
+    "charades_sta_smoke_851": [
+      [
+        12.5,
+        20.430236750390577
+      ]
+    ],
+    "charades_sta_smoke_852": [
+      [
+        0.9,
+        10.8
+      ]
+    ],
+    "charades_sta_smoke_853": [
+      [
+        0.0,
+        15.0
+      ]
+    ],
+    "charades_sta_smoke_854": [
+      [
+        0.0,
+        12.1
+      ]
+    ],
+    "charades_sta_smoke_855": [
+      [
+        0.0,
+        15.0
+      ]
+    ],
+    "charades_sta_smoke_856": [
+      [
+        0.0,
+        12.1
+      ]
+    ],
+    "charades_sta_smoke_857": [
+      [
+        0.0,
+        12.1
+      ]
+    ],
+    "charades_sta_smoke_858": [
+      [
+        0.0,
+        15.0
+      ]
+    ],
+    "charades_sta_smoke_859": [
+      [
+        0.0,
+        4.4
+      ]
+    ],
+    "charades_sta_smoke_860": [
+      [
+        0.0,
+        7.0
+      ]
+    ],
+    "charades_sta_smoke_861": [
+      [
+        0.0,
+        7.0
+      ]
+    ],
+    "charades_sta_smoke_862": [
+      [
+        0.0,
+        4.4
+      ]
+    ],
+    "charades_sta_smoke_863": [
+      [
+        7.7,
+        14.6
+      ]
+    ],
+    "charades_sta_smoke_864": [
+      [
+        25.2,
+        31.8
+      ]
+    ],
+    "charades_sta_smoke_865": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_smoke_866": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_smoke_867": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_smoke_868": [
+      [
+        21.1,
+        26.2
+      ]
+    ],
+    "charades_sta_smoke_869": [
+      [
+        7.9,
+        15.1
+      ]
+    ],
+    "charades_sta_smoke_870": [
+      [
+        0.2,
+        6.2
+      ]
+    ],
+    "charades_sta_smoke_871": [
+      [
+        0.0,
+        4.1
+      ]
+    ],
+    "charades_sta_smoke_872": [
+      [
+        23.1,
+        31.999011613540898
+      ]
+    ],
+    "charades_sta_smoke_873": [
+      [
+        2.5,
+        13.4
+      ]
+    ],
+    "charades_sta_smoke_874": [
+      [
+        2.5,
+        13.4
+      ]
+    ],
+    "charades_sta_smoke_875": [
+      [
+        12.9,
+        21.4
+      ]
+    ],
+    "charades_sta_smoke_876": [
+      [
+        23.1,
+        31.999011613540898
+      ]
+    ],
+    "charades_sta_smoke_877": [
+      [
+        3.6,
+        10.3
+      ]
+    ],
+    "charades_sta_smoke_878": [
+      [
+        0.0,
+        3.5
+      ]
+    ],
+    "charades_sta_smoke_879": [
+      [
+        4.2,
+        9.7
+      ]
+    ],
+    "charades_sta_smoke_880": [
+      [
+        3.6,
+        12.5
+      ]
+    ],
+    "charades_sta_smoke_881": [
+      [
+        0.0,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_882": [
+      [
+        3.6,
+        12.5
+      ]
+    ],
+    "charades_sta_smoke_883": [
+      [
+        0.0,
+        3.2
+      ]
+    ],
+    "charades_sta_smoke_884": [
+      [
+        0.0,
+        3.7
+      ]
+    ],
+    "charades_sta_smoke_885": [
+      [
+        0.0,
+        3.7
+      ]
+    ],
+    "charades_sta_smoke_886": [
+      [
+        23.5,
+        31.083333333333332
+      ]
+    ],
+    "charades_sta_smoke_887": [
+      [
+        18.2,
+        22.8
+      ]
+    ],
+    "charades_sta_smoke_888": [
+      [
+        14.4,
+        20.81077829904968
+      ]
+    ],
+    "charades_sta_smoke_889": [
+      [
+        14.4,
+        20.81077829904968
+      ]
+    ],
+    "charades_sta_smoke_890": [
+      [
+        0.0,
+        3.7
+      ]
+    ],
+    "charades_sta_smoke_891": [
+      [
+        18.8,
+        31.10475509474437
+      ]
+    ],
+    "charades_sta_smoke_892": [
+      [
+        0.0,
+        8.1
+      ]
+    ],
+    "charades_sta_smoke_893": [
+      [
+        18.8,
+        31.10475509474437
+      ]
+    ],
+    "charades_sta_smoke_894": [
+      [
+        18.8,
+        31.10475509474437
+      ]
+    ],
+    "charades_sta_smoke_895": [
+      [
+        3.7,
+        19.0
+      ]
+    ],
+    "charades_sta_smoke_896": [
+      [
+        20.3,
+        26.3
+      ]
+    ],
+    "charades_sta_smoke_897": [
+      [
+        25.0,
+        30.683858331973234
+      ]
+    ],
+    "charades_sta_smoke_898": [
+      [
+        0.0,
+        7.2
+      ]
+    ],
+    "charades_sta_smoke_899": [
+      [
+        24.9,
+        29.496133333333333
+      ]
+    ],
+    "charades_sta_smoke_900": [
+      [
+        24.9,
+        29.496133333333333
+      ]
+    ],
+    "charades_sta_smoke_901": [
+      [
+        27.2,
+        30.533333333333335
+      ]
+    ],
+    "charades_sta_smoke_902": [
+      [
+        27.2,
+        30.533333333333335
+      ]
+    ],
+    "charades_sta_smoke_903": [
+      [
+        27.2,
+        30.533333333333335
+      ]
+    ],
+    "charades_sta_smoke_904": [
+      [
+        27.2,
+        30.533333333333335
+      ]
+    ],
+    "charades_sta_smoke_905": [
+      [
+        29.4,
+        34.24254166666667
+      ]
+    ],
+    "charades_sta_smoke_906": [
+      [
+        29.4,
+        34.24254166666667
+      ]
+    ],
+    "charades_sta_smoke_907": [
+      [
+        24.4,
+        30.3
+      ]
+    ],
+    "charades_sta_smoke_908": [
+      [
+        6.7,
+        18.9
+      ]
+    ],
+    "charades_sta_smoke_909": [
+      [
+        21.6,
+        26.1
+      ]
+    ],
+    "charades_sta_smoke_910": [
+      [
+        21.6,
+        26.1
+      ]
+    ],
+    "charades_sta_smoke_911": [
+      [
+        2.8,
+        12.4
+      ]
+    ],
+    "charades_sta_smoke_912": [
+      [
+        1.1,
+        6.3
+      ]
+    ],
+    "charades_sta_smoke_913": [
+      [
+        26.4,
+        31.9
+      ]
+    ],
+    "charades_sta_smoke_914": [
+      [
+        2.8,
+        12.4
+      ]
+    ],
+    "charades_sta_smoke_915": [
+      [
+        26.4,
+        31.9
+      ]
+    ],
+    "charades_sta_smoke_916": [
+      [
+        9.0,
+        16.4
+      ]
+    ],
+    "charades_sta_smoke_917": [
+      [
+        19.2,
+        26.5
+      ]
+    ],
+    "charades_sta_smoke_918": [
+      [
+        19.2,
+        26.5
+      ]
+    ],
+    "charades_sta_smoke_919": [
+      [
+        19.2,
+        26.5
+      ]
+    ],
+    "charades_sta_smoke_920": [
+      [
+        5.0,
+        14.3
+      ]
+    ],
+    "charades_sta_smoke_921": [
+      [
+        0.0,
+        2.8
+      ]
+    ],
+    "charades_sta_smoke_922": [
+      [
+        6.9,
+        13.0
+      ]
+    ],
+    "charades_sta_smoke_923": [
+      [
+        4.6,
+        16.7
+      ]
+    ],
+    "charades_sta_smoke_924": [
+      [
+        0.1,
+        5.1
+      ]
+    ],
+    "charades_sta_smoke_925": [
+      [
+        4.6,
+        9.8
+      ]
+    ],
+    "charades_sta_smoke_926": [
+      [
+        25.3,
+        33.1
+      ]
+    ],
+    "charades_sta_smoke_927": [
+      [
+        25.3,
+        33.1
+      ]
+    ],
+    "charades_sta_smoke_928": [
+      [
+        0.1,
+        5.1
+      ]
+    ],
+    "charades_sta_smoke_929": [
+      [
+        16.8,
+        23.8
+      ]
+    ],
+    "charades_sta_smoke_930": [
+      [
+        16.8,
+        23.8
+      ]
+    ],
+    "charades_sta_smoke_931": [
+      [
+        14.3,
+        21.9
+      ]
+    ],
+    "charades_sta_smoke_932": [
+      [
+        9.6,
+        15.1
+      ]
+    ],
+    "charades_sta_smoke_933": [
+      [
+        18.1,
+        24.9
+      ]
+    ],
+    "charades_sta_smoke_934": [
+      [
+        18.1,
+        24.9
+      ]
+    ],
+    "charades_sta_smoke_935": [
+      [
+        15.5,
+        23.7
+      ]
+    ],
+    "charades_sta_smoke_936": [
+      [
+        11.8,
+        21.2
+      ]
+    ],
+    "charades_sta_smoke_937": [
+      [
+        9.6,
+        15.1
+      ]
+    ],
+    "charades_sta_smoke_938": [
+      [
+        11.8,
+        20.1
+      ]
+    ],
+    "charades_sta_smoke_939": [
+      [
+        11.8,
+        20.1
+      ]
+    ],
+    "charades_sta_smoke_940": [
+      [
+        11.8,
+        20.1
+      ]
+    ],
+    "charades_sta_smoke_941": [
+      [
+        10.0,
+        15.5
+      ]
+    ],
+    "charades_sta_smoke_942": [
+      [
+        0.7,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_943": [
+      [
+        0.7,
+        8.4
+      ]
+    ],
+    "charades_sta_smoke_944": [
+      [
+        22.1,
+        30.705882352941178
+      ]
+    ],
+    "charades_sta_smoke_945": [
+      [
+        0.0,
+        8.1
+      ]
+    ],
+    "charades_sta_smoke_946": [
+      [
+        15.5,
+        26.7
+      ]
+    ],
+    "charades_sta_smoke_947": [
+      [
+        15.5,
+        26.7
+      ]
+    ],
+    "charades_sta_smoke_948": [
+      [
+        13.2,
+        23.7
+      ]
+    ],
+    "charades_sta_smoke_949": [
+      [
+        5.8,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_950": [
+      [
+        5.8,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_951": [
+      [
+        5.8,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_952": [
+      [
+        13.2,
+        23.7
+      ]
+    ],
+    "charades_sta_smoke_953": [
+      [
+        5.8,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_954": [
+      [
+        0.0,
+        4.6
+      ]
+    ],
+    "charades_sta_smoke_955": [
+      [
+        22.0,
+        35.8730921764211
+      ]
+    ],
+    "charades_sta_smoke_956": [
+      [
+        22.0,
+        35.8730921764211
+      ]
+    ],
+    "charades_sta_smoke_957": [
+      [
+        23.3,
+        34.3
+      ]
+    ],
+    "charades_sta_smoke_958": [
+      [
+        2.1,
+        8.5
+      ]
+    ],
+    "charades_sta_smoke_959": [
+      [
+        7.3,
+        14.9
+      ]
+    ],
+    "charades_sta_smoke_960": [
+      [
+        2.1,
+        8.5
+      ]
+    ],
+    "charades_sta_smoke_961": [
+      [
+        0.8,
+        9.0
+      ]
+    ],
+    "charades_sta_smoke_962": [
+      [
+        4.7,
+        17.9
+      ]
+    ],
+    "charades_sta_smoke_963": [
+      [
+        0.8,
+        9.0
+      ]
+    ],
+    "charades_sta_smoke_964": [
+      [
+        5.7,
+        16.4
+      ]
+    ],
+    "charades_sta_smoke_965": [
+      [
+        1.8,
+        7.3
+      ]
+    ],
+    "charades_sta_smoke_966": [
+      [
+        1.8,
+        7.3
+      ]
+    ],
+    "charades_sta_smoke_967": [
+      [
+        18.8,
+        25.8
+      ]
+    ],
+    "charades_sta_smoke_968": [
+      [
+        0.0,
+        4.7
+      ]
+    ],
+    "charades_sta_smoke_969": [
+      [
+        18.8,
+        25.8
+      ]
+    ],
+    "charades_sta_smoke_970": [
+      [
+        14.5,
+        19.3
+      ]
+    ],
+    "charades_sta_smoke_971": [
+      [
+        24.5,
+        31.766666666666666
+      ]
+    ],
+    "charades_sta_smoke_972": [
+      [
+        18.8,
+        25.8
+      ]
+    ],
+    "charades_sta_smoke_973": [
+      [
+        19.4,
+        30.75
+      ]
+    ],
+    "charades_sta_smoke_974": [
+      [
+        0.0,
+        3.7
+      ]
+    ],
+    "charades_sta_smoke_975": [
+      [
+        17.8,
+        33.01251850854758
+      ]
+    ],
+    "charades_sta_smoke_976": [
+      [
+        23.8,
+        33.01251850854758
+      ]
+    ],
+    "charades_sta_smoke_977": [
+      [
+        7.1,
+        14.2
+      ]
+    ],
+    "charades_sta_smoke_978": [
+      [
+        7.1,
+        14.2
+      ]
+    ],
+    "charades_sta_smoke_979": [
+      [
+        7.1,
+        14.2
+      ]
+    ],
+    "charades_sta_smoke_980": [
+      [
+        0.9,
+        10.7
+      ]
+    ],
+    "charades_sta_smoke_981": [
+      [
+        0.9,
+        10.7
+      ]
+    ],
+    "charades_sta_smoke_982": [
+      [
+        0.8,
+        5.6
+      ]
+    ],
+    "charades_sta_smoke_983": [
+      [
+        0.0,
+        4.6
+      ]
+    ],
+    "charades_sta_smoke_984": [
+      [
+        1.0,
+        8.6
+      ]
+    ],
+    "charades_sta_smoke_985": [
+      [
+        0.0,
+        5.5
+      ]
+    ],
+    "charades_sta_smoke_986": [
+      [
+        3.2,
+        8.9
+      ]
+    ],
+    "charades_sta_smoke_987": [
+      [
+        0.0,
+        18.7
+      ]
+    ],
+    "charades_sta_smoke_988": [
+      [
+        0.0,
+        18.7
+      ]
+    ],
+    "charades_sta_smoke_989": [
+      [
+        27.0,
+        40.3
+      ]
+    ],
+    "charades_sta_smoke_990": [
+      [
+        27.0,
+        40.3
+      ]
+    ],
+    "charades_sta_smoke_991": [
+      [
+        14.9,
+        19.7
+      ]
+    ],
+    "charades_sta_smoke_992": [
+      [
+        0.0,
+        18.7
+      ]
+    ],
+    "charades_sta_smoke_993": [
+      [
+        0.4,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_994": [
+      [
+        0.4,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_995": [
+      [
+        11.6,
+        17.6
+      ]
+    ],
+    "charades_sta_smoke_996": [
+      [
+        0.4,
+        5.2
+      ]
+    ],
+    "charades_sta_smoke_997": [
+      [
+        0.8,
+        9.1
+      ]
+    ],
+    "charades_sta_smoke_998": [
+      [
+        9.2,
+        13.5
+      ]
+    ],
+    "charades_sta_smoke_999": [
+      [
+        4.0,
+        10.3
+      ]
+    ]
+  },
+  "metrics": {
+    "R@1_IoU_0.3": 0.509,
+    "R@1_IoU_0.5": 0.398,
+    "R@1_IoU_0.7": 0.19,
+    "mIoU": 0.34942105981287236
+  },
+  "stats": {
+    "num_samples": 1000,
+    "total_frames": 29994,
+    "avg_frames_per_sample": 29.994,
+    "inference_time_sec": 15.789070291997632,
+    "cache_hits": 1000,
+    "cache_misses": 0,
+    "embedding_cache_size_bytes": 58017484
+  },
+  "charades_sta_smoothing": {
+    "selection_manifest": "results/charades_sta_sweep_1000/selection_manifest.csv",
+    "selected_rows": 1000,
+    "unique_videos": 363,
+    "config_name": "clip_w8_s4_mean_moving_average_5",
+    "smoothing": "moving_average_5"
+  }
+}

@@ -1,5 +1,6 @@
 # Python
 __pycache__/
+*.pyc
 *.py[cod]
 *.so
 
@@ -24,6 +25,8 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+data/embeddings/
+!data/embeddings/
 data/embeddings/*
 !data/embeddings/.gitkeep
 data/sample/*.mp4
@@ -38,6 +41,7 @@ data/qvhighlights/*.tar.gz
 !data/qvhighlights/.gitkeep
 
 # Experiment outputs
+results/caches/
 results/predictions/*
 !results/predictions/.gitkeep
 results/metrics/*
@@ -57,5 +61,10 @@ checkpoints/
 logs/
 *.log
 
+# Local agent memory
+.agent_memory/
+
 # OS files
 .DS_Store
+external/moment_detr/
+external/moment_detr_checkpoints/

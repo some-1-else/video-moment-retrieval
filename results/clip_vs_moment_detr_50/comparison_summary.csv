@@ -1,0 +1,6 @@
+model,config_name,window_size,stride,aggregation,evaluated_queries,failed_queries,R@1_IoU_0.3,R@1_IoU_0.5,R@1_IoU_0.7,mIoU,inference_time_sec,cache_hits,cache_misses,cache_size_bytes
+CLIP,clip_w8_s4_mean,8.0,4.0,mean,50,0,0.58,0.52,0.32,0.4393782459360136,14.223121250004624,34,16,2929638
+CLIP,clip_w16_s8_mean,16.0,8.0,mean,50,0,0.68,0.36,0.08,0.4007717686562073,2.116203374986071,50,0,2929638
+CLIP,clip_w32_s16_mean,32.0,16.0,mean,50,0,0.54,0.0,0.0,0.2854293692302304,2.0916127920063445,50,0,2929638
+CLIP,clip_w16_s8_max,16.0,8.0,max,50,0,0.56,0.36,0.06,0.3374594801614168,2.0933764169894857,50,0,2929638
+Moment-DETR,moment_detr_raw_video,,,,50,0,0.44,0.32,0.04,0.26340237468832634,17.933695000014268,,,

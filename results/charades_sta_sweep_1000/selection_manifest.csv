@@ -1,0 +1,1001 @@
+sample_id,row_index,video_id,query,video_path,duration_sec,raw_start,raw_end,clipped_start,clipped_end,was_clipped,fps,frame_count
+charades_sta_smoke_0,0,3MSZA,person turn a light on.,data/raw/charades/videos/3MSZA.mp4,31.0,24.3,30.4,24.3,30.4,False,30.0,930.0
+charades_sta_smoke_1,1,3MSZA,person flipped the light switch near the door.,data/raw/charades/videos/3MSZA.mp4,31.0,24.3,30.4,24.3,30.4,False,30.0,930.0
+charades_sta_smoke_2,2,3MSZA,person turn the light switch on.,data/raw/charades/videos/3MSZA.mp4,31.0,24.3,30.4,24.3,30.4,False,30.0,930.0
+charades_sta_smoke_3,3,3MSZA,person is playing with the switch for the light.,data/raw/charades/videos/3MSZA.mp4,31.0,24.3,30.4,24.3,30.4,False,30.0,930.0
+charades_sta_smoke_4,4,AMT7R,a person is putting a picture onto the wall.,data/raw/charades/videos/AMT7R.mp4,30.11241970021413,4.3,12.5,4.3,12.5,False,29.888,900.0
+charades_sta_smoke_5,5,YVKIV,the person puts down the bag.,data/raw/charades/videos/YVKIV.mp4,31.95337620578778,4.4,9.2,4.4,9.2,False,29.856,954.0
+charades_sta_smoke_6,6,VXJS4,a person walks through the doorway.,data/raw/charades/videos/VXJS4.mp4,30.259462351210377,0.0,3.4,0.0,3.4,False,29.908,905.0
+charades_sta_smoke_7,7,VXJS4,a person opens the door.,data/raw/charades/videos/VXJS4.mp4,30.259462351210377,0.0,4.0,0.0,4.0,False,29.908,905.0
+charades_sta_smoke_8,8,GBD1Y,person closes the door.,data/raw/charades/videos/GBD1Y.mp4,32.916666666666664,26.2,31.3,26.2,31.3,False,24.0,790.0
+charades_sta_smoke_9,9,GBD1Y,person closing the door.,data/raw/charades/videos/GBD1Y.mp4,32.916666666666664,26.2,31.3,26.2,31.3,False,24.0,790.0
+charades_sta_smoke_10,10,KVXJ9,person runs up the stairs.,data/raw/charades/videos/KVXJ9.mp4,30.766666666666666,1.0,11.0,1.0,11.0,False,30.0,923.0
+charades_sta_smoke_11,11,KVXJ9,a person watches another run up some stairs.,data/raw/charades/videos/KVXJ9.mp4,30.766666666666666,1.0,11.0,1.0,11.0,False,30.0,923.0
+charades_sta_smoke_12,12,E6DLK,person runs to the window to look out.,data/raw/charades/videos/E6DLK.mp4,27.293933333333335,9.3,14.4,9.3,14.4,False,29.97002997002997,818.0
+charades_sta_smoke_13,13,E6DLK,a person sits in a chair.,data/raw/charades/videos/E6DLK.mp4,27.293933333333335,3.1,11.8,3.1,11.8,False,29.97002997002997,818.0
+charades_sta_smoke_14,14,E6DLK,person runs to the window.,data/raw/charades/videos/E6DLK.mp4,27.293933333333335,9.3,14.4,9.3,14.4,False,29.97002997002997,818.0
+charades_sta_smoke_15,15,E6DLK,person runs to the door.,data/raw/charades/videos/E6DLK.mp4,27.293933333333335,9.3,14.4,9.3,14.4,False,29.97002997002997,818.0
+charades_sta_smoke_16,16,E6DLK,a person sits on a chair.,data/raw/charades/videos/E6DLK.mp4,27.293933333333335,3.1,11.8,3.1,11.8,False,29.97002997002997,818.0
+charades_sta_smoke_17,17,E6DLK,the person sits in the chair momentarily.,data/raw/charades/videos/E6DLK.mp4,27.293933333333335,3.1,11.8,3.1,11.8,False,29.97002997002997,818.0
+charades_sta_smoke_18,18,AKO6M,a person stands in the bathroom holding a glass.,data/raw/charades/videos/AKO6M.mp4,18.633333333333333,0.0,8.8,0.0,8.8,False,30.0,559.0
+charades_sta_smoke_19,19,AKO6M,the person takes a bag from the bottom cabinet.,data/raw/charades/videos/AKO6M.mp4,18.633333333333333,12.7,19.9,12.7,18.633333333333333,True,30.0,559.0
+charades_sta_smoke_20,20,F7TG5,person sits in a chair.,data/raw/charades/videos/F7TG5.mp4,21.1,13.2,20.8,13.2,20.8,False,30.0,633.0
+charades_sta_smoke_21,21,F7TG5,person sits down on a chair.,data/raw/charades/videos/F7TG5.mp4,21.1,13.2,20.8,13.2,20.8,False,30.0,633.0
+charades_sta_smoke_22,22,F7TG5,person throwing a blanket onto the vacuum.,data/raw/charades/videos/F7TG5.mp4,21.1,10.7,16.5,10.7,16.5,False,30.0,633.0
+charades_sta_smoke_23,23,F7TG5,person they throw their clothes on to a nearby desk.,data/raw/charades/videos/F7TG5.mp4,21.1,6.9,13.1,6.9,13.1,False,30.0,633.0
+charades_sta_smoke_24,24,KOVTR,person they stand up.,data/raw/charades/videos/KOVTR.mp4,35.29765484064943,10.2,19.8,10.2,19.8,False,16.63,587.0
+charades_sta_smoke_25,25,KOVTR,a person awakens in their sofa.,data/raw/charades/videos/KOVTR.mp4,35.29765484064943,4.2,14.2,4.2,14.2,False,16.63,587.0
+charades_sta_smoke_26,26,KOVTR,person takes some medicine.,data/raw/charades/videos/KOVTR.mp4,35.29765484064943,28.4,35.0,28.4,35.0,False,16.63,587.0
+charades_sta_smoke_27,27,FPJ9D,person sit on a chair.,data/raw/charades/videos/FPJ9D.mp4,33.43333333333333,25.8,34.0,25.8,33.43333333333333,True,30.0,1003.0
+charades_sta_smoke_28,28,5NV2Z,person takes a cup off a desk.,data/raw/charades/videos/5NV2Z.mp4,22.37324833102785,5.1,10.2,5.1,10.2,False,16.627,372.0
+charades_sta_smoke_29,29,5NV2Z,person opens the front door.,data/raw/charades/videos/5NV2Z.mp4,22.37324833102785,13.2,23.0,13.2,22.37324833102785,True,16.627,372.0
+charades_sta_smoke_30,30,5NV2Z,the person opens a door leading outside.,data/raw/charades/videos/5NV2Z.mp4,22.37324833102785,13.2,23.0,13.2,22.37324833102785,True,16.627,372.0
+charades_sta_smoke_31,31,5NV2Z,a person takes a cup from a table.,data/raw/charades/videos/5NV2Z.mp4,22.37324833102785,5.1,10.2,5.1,10.2,False,16.627,372.0
+charades_sta_smoke_32,32,Y1HGC,a person walks in a doorway drinking some coffee.,data/raw/charades/videos/Y1HGC.mp4,30.697333333333333,0.2,9.8,0.2,9.8,False,14.985014985014985,460.0
+charades_sta_smoke_33,33,Y1HGC,person drinking a glass of water.,data/raw/charades/videos/Y1HGC.mp4,30.697333333333333,1.7,12.1,1.7,12.1,False,14.985014985014985,460.0
+charades_sta_smoke_34,34,9JZO2,person put on their shoes.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,26.1,36.0,26.1,35.81937528293345,True,17.672,633.0
+charades_sta_smoke_35,35,9JZO2,person holding a glass cup.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,0.0,9.9,0.0,9.9,False,17.672,633.0
+charades_sta_smoke_36,36,9JZO2,a person eats some food.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,0.0,12.6,0.0,12.6,False,17.672,633.0
+charades_sta_smoke_37,37,9JZO2,a person is in a entryway eating a sandwich.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,0.0,15.1,0.0,15.1,False,17.672,633.0
+charades_sta_smoke_38,38,9JZO2,person holding a glass of water.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,0.0,9.9,0.0,9.9,False,17.672,633.0
+charades_sta_smoke_39,39,9JZO2,the person puts the cup down.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,14.1,20.3,14.1,20.3,False,17.672,633.0
+charades_sta_smoke_40,40,9JZO2,person stands in doorway holding a glass.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,0.0,9.9,0.0,9.9,False,17.672,633.0
+charades_sta_smoke_41,41,9JZO2,person eating a sandwich.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,0.0,15.1,0.0,15.1,False,17.672,633.0
+charades_sta_smoke_42,42,9JZO2,person puts on some shoes.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,26.1,36.0,26.1,35.81937528293345,True,17.672,633.0
+charades_sta_smoke_43,43,9JZO2,person holding a cup in the doorway.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,0.0,9.9,0.0,9.9,False,17.672,633.0
+charades_sta_smoke_44,44,9JZO2,the person walks into the house puts down the food.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,11.6,20.8,11.6,20.8,False,17.672,633.0
+charades_sta_smoke_45,45,9JZO2,person start smiling as the dress.,data/raw/charades/videos/9JZO2.mp4,35.81937528293345,22.9,29.8,22.9,29.8,False,17.672,633.0
+charades_sta_smoke_46,46,4J1AP,person drinking a glass of water.,data/raw/charades/videos/4J1AP.mp4,20.62816076656907,13.1,21.5,13.1,20.62816076656907,True,15.028,310.0
+charades_sta_smoke_47,47,4J1AP,lastly the person takes a drink from a cup.,data/raw/charades/videos/4J1AP.mp4,20.62816076656907,9.8,15.7,9.8,15.7,False,15.028,310.0
+charades_sta_smoke_48,48,V1WN7,person sitting on bed.,data/raw/charades/videos/V1WN7.mp4,36.03333333333333,0.0,15.9,0.0,15.9,False,30.0,1081.0
+charades_sta_smoke_49,49,V1WN7,a person is dressing.,data/raw/charades/videos/V1WN7.mp4,36.03333333333333,0.0,14.4,0.0,14.4,False,30.0,1081.0
+charades_sta_smoke_50,50,V1WN7,person sitting on their bed.,data/raw/charades/videos/V1WN7.mp4,36.03333333333333,0.0,15.9,0.0,15.9,False,30.0,1081.0
+charades_sta_smoke_51,51,BL7OF,a person throws a pair of shoes under the window.,data/raw/charades/videos/BL7OF.mp4,36.036,1.0,5.0,1.0,5.0,False,29.97002997002997,1080.0
+charades_sta_smoke_52,52,BL7OF,the person throws shoes under the window.,data/raw/charades/videos/BL7OF.mp4,36.036,1.0,5.0,1.0,5.0,False,29.97002997002997,1080.0
+charades_sta_smoke_53,53,5C4EK,a person reads a book.,data/raw/charades/videos/5C4EK.mp4,15.623122220886913,0.0,6.2,0.0,6.2,False,16.642,260.0
+charades_sta_smoke_54,54,S591U,person sitting on top of bed closes laptop.,data/raw/charades/videos/S591U.mp4,30.0,9.4,17.0,9.4,17.0,False,30.0,900.0
+charades_sta_smoke_55,55,DLFPX,a person is standing on their stairs holding a bag.,data/raw/charades/videos/DLFPX.mp4,26.619396707126548,0.0,7.7,0.0,7.7,False,16.642,443.0
+charades_sta_smoke_56,56,9HG4Z,a person is closing a door.,data/raw/charades/videos/9HG4Z.mp4,17.2,0.0,7.7,0.0,7.7,False,15.0,258.0
+charades_sta_smoke_57,57,I7AS7,a person runs through a doorway.,data/raw/charades/videos/I7AS7.mp4,30.605871330418488,0.0,5.1,0.0,5.1,False,6.404,196.0
+charades_sta_smoke_58,58,I7AS7,a person runs into the dining room.,data/raw/charades/videos/I7AS7.mp4,30.605871330418488,0.0,5.1,0.0,5.1,False,6.404,196.0
+charades_sta_smoke_59,59,I7AS7,the person opens the bag.,data/raw/charades/videos/I7AS7.mp4,30.605871330418488,0.5,6.4,0.5,6.4,False,6.404,196.0
+charades_sta_smoke_60,60,J48N6,the same person was laughing as he was undressing.,data/raw/charades/videos/J48N6.mp4,30.733333333333334,18.4,32.0,18.4,30.733333333333334,True,30.0,922.0
+charades_sta_smoke_61,61,J48N6,person begins to undress.,data/raw/charades/videos/J48N6.mp4,30.733333333333334,18.4,32.0,18.4,30.733333333333334,True,30.0,922.0
+charades_sta_smoke_62,62,J48N6,the person was putting the bag into the cabinet.,data/raw/charades/videos/J48N6.mp4,30.733333333333334,14.6,21.2,14.6,21.2,False,30.0,922.0
+charades_sta_smoke_63,63,JVLAZ,person laying on the bed sneezing.,data/raw/charades/videos/JVLAZ.mp4,31.433333333333334,9.3,18.0,9.3,18.0,False,30.0,943.0
+charades_sta_smoke_64,64,JVLAZ,person is lying on bed sneezing.,data/raw/charades/videos/JVLAZ.mp4,31.433333333333334,9.3,18.0,9.3,18.0,False,30.0,943.0
+charades_sta_smoke_65,65,JVLAZ,person drinks water from a cup.,data/raw/charades/videos/JVLAZ.mp4,31.433333333333334,19.4,29.5,19.4,29.5,False,30.0,943.0
+charades_sta_smoke_66,66,2RFLZ,a person picks up their phone talks on it.,data/raw/charades/videos/2RFLZ.mp4,14.771441879033867,3.0,10.4,3.0,10.4,False,15.029,222.0
+charades_sta_smoke_67,67,2RFLZ,person takes a phone off a desk.,data/raw/charades/videos/2RFLZ.mp4,14.771441879033867,2.4,6.9,2.4,6.9,False,15.029,222.0
+charades_sta_smoke_68,68,N3U9S,person opens a cabinet door twice.,data/raw/charades/videos/N3U9S.mp4,14.8975791433892,0.0,4.8,0.0,4.8,False,15.036,224.0
+charades_sta_smoke_69,69,J9T5D,person start laughing.,data/raw/charades/videos/J9T5D.mp4,34.068377095475576,27.1,35.0,27.1,34.068377095475576,True,16.643,567.0
+charades_sta_smoke_70,70,1CYLM,a person sits down on a couch.,data/raw/charades/videos/1CYLM.mp4,33.4,0.0,14.2,0.0,14.2,False,30.0,1002.0
+charades_sta_smoke_71,71,1CYLM,the person is drinking something from a cup.,data/raw/charades/videos/1CYLM.mp4,33.4,0.0,14.0,0.0,14.0,False,30.0,1002.0
+charades_sta_smoke_72,72,V2GC9,person putting groceries away.,data/raw/charades/videos/V2GC9.mp4,30.6,10.1,24.2,10.1,24.2,False,30.0,918.0
+charades_sta_smoke_73,73,V2GC9,person opening a pantry door.,data/raw/charades/videos/V2GC9.mp4,30.6,11.3,21.1,11.3,21.1,False,30.0,918.0
+charades_sta_smoke_74,74,V2GC9,a person walks through the house holding a bag.,data/raw/charades/videos/V2GC9.mp4,30.6,2.3,13.9,2.3,13.9,False,30.0,918.0
+charades_sta_smoke_75,75,V2GC9,person put groceries away.,data/raw/charades/videos/V2GC9.mp4,30.6,10.1,24.2,10.1,24.2,False,30.0,918.0
+charades_sta_smoke_76,76,LGJAR,person turns on the light.,data/raw/charades/videos/LGJAR.mp4,32.28969359331476,17.6,25.2,17.6,25.2,False,29.916666666666668,966.0
+charades_sta_smoke_77,77,ZHRPD,the person puts the towel onto the shelf.,data/raw/charades/videos/ZHRPD.mp4,29.75,11.8,19.6,11.8,19.6,False,24.0,714.0
+charades_sta_smoke_78,78,ZHRPD,the person takes a phone.,data/raw/charades/videos/ZHRPD.mp4,29.75,15.6,21.6,15.6,21.6,False,24.0,714.0
+charades_sta_smoke_79,79,43CCM,person undressing by the shelf beside the doorway.,data/raw/charades/videos/43CCM.mp4,30.458650610943867,7.7,22.0,7.7,22.0,False,16.941,516.0
+charades_sta_smoke_80,80,43CCM,a person opens a door.,data/raw/charades/videos/43CCM.mp4,30.458650610943867,0.1,9.0,0.1,9.0,False,16.941,516.0
+charades_sta_smoke_81,81,YZ8HK,the person closes the laptop.,data/raw/charades/videos/YZ8HK.mp4,29.833333333333332,1.4,8.7,1.4,8.7,False,30.0,895.0
+charades_sta_smoke_82,82,2P7A9,person take a picture from the top of a cabinet.,data/raw/charades/videos/2P7A9.mp4,36.10273333333333,20.4,27.6,20.4,27.6,False,29.97002997002997,1082.0
+charades_sta_smoke_83,83,2P7A9,person sit down in a chair at a desk.,data/raw/charades/videos/2P7A9.mp4,36.10273333333333,20.9,30.3,20.9,30.3,False,29.97002997002997,1082.0
+charades_sta_smoke_84,84,2P7A9,person looking at the picture for a second.,data/raw/charades/videos/2P7A9.mp4,36.10273333333333,26.9,31.6,26.9,31.6,False,29.97002997002997,1082.0
+charades_sta_smoke_85,85,2P7A9,the person puts a picture on their desk.,data/raw/charades/videos/2P7A9.mp4,36.10273333333333,26.5,35.8,26.5,35.8,False,29.97002997002997,1082.0
+charades_sta_smoke_86,86,2P7A9,person they put down the broom.,data/raw/charades/videos/2P7A9.mp4,36.10273333333333,18.8,24.0,18.8,24.0,False,29.97002997002997,1082.0
+charades_sta_smoke_87,87,2P7A9,person put the picture on the desk.,data/raw/charades/videos/2P7A9.mp4,36.10273333333333,26.5,35.8,26.5,35.8,False,29.97002997002997,1082.0
+charades_sta_smoke_88,88,1ZWPP,a person is smiling in the mirror of their bathroom.,data/raw/charades/videos/1ZWPP.mp4,23.39240506329114,2.6,7.7,2.6,7.7,False,19.75,462.0
+charades_sta_smoke_89,89,1ZWPP,person opens the door.,data/raw/charades/videos/1ZWPP.mp4,23.39240506329114,13.0,19.4,13.0,19.4,False,19.75,462.0
+charades_sta_smoke_90,90,1ZWPP,person they open the door.,data/raw/charades/videos/1ZWPP.mp4,23.39240506329114,13.0,19.4,13.0,19.4,False,19.75,462.0
+charades_sta_smoke_91,91,QUXYH,person laughs in the kitchen.,data/raw/charades/videos/QUXYH.mp4,30.72397450563818,0.0,10.9,0.0,10.9,False,6.119,188.0
+charades_sta_smoke_92,92,QUXYH,person seems to be laughing into the blanket.,data/raw/charades/videos/QUXYH.mp4,30.72397450563818,0.0,10.9,0.0,10.9,False,6.119,188.0
+charades_sta_smoke_93,93,QUXYH,person eats one.,data/raw/charades/videos/QUXYH.mp4,30.72397450563818,21.8,31.2,21.8,30.72397450563818,True,6.119,188.0
+charades_sta_smoke_94,94,QUXYH,person takes some food.,data/raw/charades/videos/QUXYH.mp4,30.72397450563818,15.1,22.9,15.1,22.9,False,6.119,188.0
+charades_sta_smoke_95,95,QUXYH,a person snuggles with a blanket.,data/raw/charades/videos/QUXYH.mp4,30.72397450563818,0.0,10.0,0.0,10.0,False,6.119,188.0
+charades_sta_smoke_96,96,QUXYH,person eats it.,data/raw/charades/videos/QUXYH.mp4,30.72397450563818,21.8,31.2,21.8,30.72397450563818,True,6.119,188.0
+charades_sta_smoke_97,97,V3SOF,person opened up the refrigerator.,data/raw/charades/videos/V3SOF.mp4,44.42756787545092,20.0,28.2,20.0,28.2,False,10.534,468.0
+charades_sta_smoke_98,98,SY5QP,a person is standing in the room holding a sandwich.,data/raw/charades/videos/SY5QP.mp4,30.733333333333334,0.0,14.0,0.0,14.0,False,30.0,922.0
+charades_sta_smoke_99,99,SY5QP,the person puts the sandwich down.,data/raw/charades/videos/SY5QP.mp4,30.733333333333334,11.2,17.7,11.2,17.7,False,30.0,922.0
+charades_sta_smoke_100,100,AOK1L,person drinking from a cup.,data/raw/charades/videos/AOK1L.mp4,35.17191731514175,30.5,36.0,30.5,35.17191731514175,True,29.171,1026.0
+charades_sta_smoke_101,101,AOK1L,person drinking from a glass.,data/raw/charades/videos/AOK1L.mp4,35.17191731514175,30.5,36.0,30.5,35.17191731514175,True,29.171,1026.0
+charades_sta_smoke_102,102,NBSPH,person sits on the table.,data/raw/charades/videos/NBSPH.mp4,30.766666666666666,26.8,32.0,26.8,30.766666666666666,True,30.0,923.0
+charades_sta_smoke_103,103,NBSPH,person takes a towel from a container.,data/raw/charades/videos/NBSPH.mp4,30.766666666666666,11.7,17.8,11.7,17.8,False,30.0,923.0
+charades_sta_smoke_104,104,NBSPH,person takes out a towel.,data/raw/charades/videos/NBSPH.mp4,30.766666666666666,11.7,17.8,11.7,17.8,False,30.0,923.0
+charades_sta_smoke_105,105,HY4FS,person the open the cabinet.,data/raw/charades/videos/HY4FS.mp4,34.35344538940601,4.9,11.6,4.9,11.6,False,29.866,1026.0
+charades_sta_smoke_106,106,HY4FS,a person walks into a bathroom holding dishes.,data/raw/charades/videos/HY4FS.mp4,34.35344538940601,0.4,9.2,0.4,9.2,False,29.866,1026.0
+charades_sta_smoke_107,107,YSE1G,person closed the door.,data/raw/charades/videos/YSE1G.mp4,28.666666666666668,0.6,8.9,0.6,8.9,False,24.0,688.0
+charades_sta_smoke_108,108,XMYXI,a person sits in a chair.,data/raw/charades/videos/XMYXI.mp4,40.266666666666666,0.0,7.0,0.0,7.0,False,30.0,1208.0
+charades_sta_smoke_109,109,XMYXI,person he begins to laugh at something.,data/raw/charades/videos/XMYXI.mp4,40.266666666666666,10.1,15.5,10.1,15.5,False,30.0,1208.0
+charades_sta_smoke_110,110,XMYXI,a man is sitting at a chair.,data/raw/charades/videos/XMYXI.mp4,40.266666666666666,0.0,7.0,0.0,7.0,False,30.0,1208.0
+charades_sta_smoke_111,111,XMYXI,a person is smiling.,data/raw/charades/videos/XMYXI.mp4,40.266666666666666,0.0,15.9,0.0,15.9,False,30.0,1208.0
+charades_sta_smoke_112,112,QLEN3,person open the closet.,data/raw/charades/videos/QLEN3.mp4,35.101733333333335,14.0,19.0,14.0,19.0,False,29.97002997002997,1052.0
+charades_sta_smoke_113,113,YSKX3,person throws pillow on it.,data/raw/charades/videos/YSKX3.mp4,16.705726819301727,13.0,18.0,13.0,16.705726819301727,True,16.641,278.0
+charades_sta_smoke_114,114,HBWLV,person puts the shoes on the floor.,data/raw/charades/videos/HBWLV.mp4,31.598233333333333,9.4,14.3,9.4,14.3,False,29.97002997002997,947.0
+charades_sta_smoke_115,115,XE19C,person puts a cup in the sink.,data/raw/charades/videos/XE19C.mp4,30.35976996121439,0.9,8.5,0.9,8.5,False,29.908,908.0
+charades_sta_smoke_116,116,XE19C,person closes the door.,data/raw/charades/videos/XE19C.mp4,30.35976996121439,24.6,31.0,24.6,30.35976996121439,True,29.908,908.0
+charades_sta_smoke_117,117,XE19C,person puts the cup in the sink.,data/raw/charades/videos/XE19C.mp4,30.35976996121439,0.9,8.5,0.9,8.5,False,29.908,908.0
+charades_sta_smoke_118,118,W3SC3,the person immediately opened a window.,data/raw/charades/videos/W3SC3.mp4,21.92,8.0,15.2,8.0,15.2,False,25.0,548.0
+charades_sta_smoke_119,119,W3SC3,person opens a window.,data/raw/charades/videos/W3SC3.mp4,21.92,8.0,15.2,8.0,15.2,False,25.0,548.0
+charades_sta_smoke_120,120,W3SC3,person opens the window.,data/raw/charades/videos/W3SC3.mp4,21.92,8.0,15.2,8.0,15.2,False,25.0,548.0
+charades_sta_smoke_121,121,WKPQ3,person they talk on the phone.,data/raw/charades/videos/WKPQ3.mp4,32.11541666666666,15.8,28.7,15.8,28.7,False,23.976023976023978,770.0
+charades_sta_smoke_122,122,WKPQ3,person close the closet door.,data/raw/charades/videos/WKPQ3.mp4,32.11541666666666,25.3,30.9,25.3,30.9,False,23.976023976023978,770.0
+charades_sta_smoke_123,123,WKPQ3,person turns on the light.,data/raw/charades/videos/WKPQ3.mp4,32.11541666666666,5.1,11.0,5.1,11.0,False,23.976023976023978,770.0
+charades_sta_smoke_124,124,FXZI5,a person is dressing in a towel.,data/raw/charades/videos/FXZI5.mp4,32.4,3.0,12.4,3.0,12.4,False,30.0,972.0
+charades_sta_smoke_125,125,OE2M1,another person comes in takes the box away.,data/raw/charades/videos/OE2M1.mp4,30.633333333333333,12.9,19.3,12.9,19.3,False,30.0,919.0
+charades_sta_smoke_126,126,OE2M1,person takes the tray of food.,data/raw/charades/videos/OE2M1.mp4,30.633333333333333,12.9,18.7,12.9,18.7,False,30.0,919.0
+charades_sta_smoke_127,127,OE2M1,person takes the box.,data/raw/charades/videos/OE2M1.mp4,30.633333333333333,12.9,19.3,12.9,19.3,False,30.0,919.0
+charades_sta_smoke_128,128,ZF7YA,the person sits on a pillow on the floor.,data/raw/charades/videos/ZF7YA.mp4,37.2372,5.3,11.7,5.3,11.7,False,29.97002997002997,1116.0
+charades_sta_smoke_129,129,ZF7YA,a person runs down a few stairs.,data/raw/charades/videos/ZF7YA.mp4,37.2372,0.0,6.5,0.0,6.5,False,29.97002997002997,1116.0
+charades_sta_smoke_130,130,ZF7YA,person sitting on the floor.,data/raw/charades/videos/ZF7YA.mp4,37.2372,5.3,11.7,5.3,11.7,False,29.97002997002997,1116.0
+charades_sta_smoke_131,131,B82GJ,the person takes a paper towel from the table.,data/raw/charades/videos/B82GJ.mp4,24.533333333333335,17.7,22.5,17.7,22.5,False,30.0,736.0
+charades_sta_smoke_132,132,FYYFX,person opens a window.,data/raw/charades/videos/FYYFX.mp4,31.033333333333335,2.0,11.2,2.0,11.2,False,30.0,931.0
+charades_sta_smoke_133,133,FYYFX,person takes a camera from a table.,data/raw/charades/videos/FYYFX.mp4,31.033333333333335,8.6,14.1,8.6,14.1,False,30.0,931.0
+charades_sta_smoke_134,134,FYYFX,person get something to look out the window with.,data/raw/charades/videos/FYYFX.mp4,31.033333333333335,14.0,24.7,14.0,24.7,False,30.0,931.0
+charades_sta_smoke_135,135,FYYFX,person upon awakening.,data/raw/charades/videos/FYYFX.mp4,31.033333333333335,0.0,4.0,0.0,4.0,False,30.0,931.0
+charades_sta_smoke_136,136,FYYFX,person looks out the window.,data/raw/charades/videos/FYYFX.mp4,31.033333333333335,14.0,24.7,14.0,24.7,False,30.0,931.0
+charades_sta_smoke_137,137,Q7IQI,person looks at some books open it.,data/raw/charades/videos/Q7IQI.mp4,17.2455233745944,0.0,4.5,0.0,4.5,False,16.642,287.0
+charades_sta_smoke_138,138,Q7IQI,person start sneezing with looking at the papers.,data/raw/charades/videos/Q7IQI.mp4,17.2455233745944,1.8,8.6,1.8,8.6,False,16.642,287.0
+charades_sta_smoke_139,139,Q7IQI,a person is sneezing into a blanket.,data/raw/charades/videos/Q7IQI.mp4,17.2455233745944,1.8,8.6,1.8,8.6,False,16.642,287.0
+charades_sta_smoke_140,140,HSEH1,person is fixing a light bulb.,data/raw/charades/videos/HSEH1.mp4,31.266666666666666,10.0,22.6,10.0,22.6,False,30.0,938.0
+charades_sta_smoke_141,141,HSEH1,a person is fixing a light on the room.,data/raw/charades/videos/HSEH1.mp4,31.266666666666666,10.0,22.6,10.0,22.6,False,30.0,938.0
+charades_sta_smoke_142,142,HSEH1,a person is fixing a light.,data/raw/charades/videos/HSEH1.mp4,31.266666666666666,10.0,22.6,10.0,22.6,False,30.0,938.0
+charades_sta_smoke_143,143,6ZWSU,person puts the books down.,data/raw/charades/videos/6ZWSU.mp4,30.60405378286173,1.4,7.2,1.4,7.2,False,29.898,915.0
+charades_sta_smoke_144,144,6ZWSU,person they immediately put their books down.,data/raw/charades/videos/6ZWSU.mp4,30.60405378286173,1.4,7.2,1.4,7.2,False,29.898,915.0
+charades_sta_smoke_145,145,6ZWSU,the person takes their phone out.,data/raw/charades/videos/6ZWSU.mp4,30.60405378286173,16.2,21.8,16.2,21.8,False,29.898,915.0
+charades_sta_smoke_146,146,6ZWSU,person take their shoes off.,data/raw/charades/videos/6ZWSU.mp4,30.60405378286173,10.6,19.3,10.6,19.3,False,29.898,915.0
+charades_sta_smoke_147,147,6ZWSU,person closes the door.,data/raw/charades/videos/6ZWSU.mp4,30.60405378286173,0.0,4.5,0.0,4.5,False,29.898,915.0
+charades_sta_smoke_148,148,6ZWSU,the person takes their phone.,data/raw/charades/videos/6ZWSU.mp4,30.60405378286173,16.2,21.8,16.2,21.8,False,29.898,915.0
+charades_sta_smoke_149,149,6ZWSU,person plays with their phone.,data/raw/charades/videos/6ZWSU.mp4,30.60405378286173,19.1,32.0,19.1,30.60405378286173,True,29.898,915.0
+charades_sta_smoke_150,150,V0ZD9,person washes a cup.,data/raw/charades/videos/V0ZD9.mp4,37.815810920945395,0.5,16.0,0.5,16.0,False,6.135,232.0
+charades_sta_smoke_151,151,V0ZD9,person putting on clothes in a dining room.,data/raw/charades/videos/V0ZD9.mp4,37.815810920945395,23.2,39.0,23.2,37.815810920945395,True,6.135,232.0
+charades_sta_smoke_152,152,AK2KG,person opens up the window.,data/raw/charades/videos/AK2KG.mp4,18.08676841725754,12.5,19.0,12.5,18.08676841725754,True,16.642,301.0
+charades_sta_smoke_153,153,AK2KG,a person is sitting on a bed.,data/raw/charades/videos/AK2KG.mp4,18.08676841725754,0.0,6.8,0.0,6.8,False,16.642,301.0
+charades_sta_smoke_154,154,AK2KG,this person is sitting on their bed in the bedroom.,data/raw/charades/videos/AK2KG.mp4,18.08676841725754,0.0,6.8,0.0,6.8,False,16.642,301.0
+charades_sta_smoke_155,155,AK2KG,person begins opening the window.,data/raw/charades/videos/AK2KG.mp4,18.08676841725754,12.5,19.0,12.5,18.08676841725754,True,16.642,301.0
+charades_sta_smoke_156,156,AK2KG,person opened the window.,data/raw/charades/videos/AK2KG.mp4,18.08676841725754,12.5,19.0,12.5,18.08676841725754,True,16.642,301.0
+charades_sta_smoke_157,157,AK2KG,a person was sitting on a bed.,data/raw/charades/videos/AK2KG.mp4,18.08676841725754,0.0,6.8,0.0,6.8,False,16.642,301.0
+charades_sta_smoke_158,158,8MQH6,a person opens a closet door.,data/raw/charades/videos/8MQH6.mp4,33.129203895191246,0.0,8.1,0.0,8.1,False,29.883,990.0
+charades_sta_smoke_159,159,8MQH6,a person opens up the closet.,data/raw/charades/videos/8MQH6.mp4,33.129203895191246,0.0,8.1,0.0,8.1,False,29.883,990.0
+charades_sta_smoke_160,160,8MQH6,a person opens a closet.,data/raw/charades/videos/8MQH6.mp4,33.129203895191246,0.0,8.1,0.0,8.1,False,29.883,990.0
+charades_sta_smoke_161,161,8MQH6,person they hold the shoes.,data/raw/charades/videos/8MQH6.mp4,33.129203895191246,9.9,15.8,9.9,15.8,False,29.883,990.0
+charades_sta_smoke_162,162,MAUMO,person takes a drink from a glass.,data/raw/charades/videos/MAUMO.mp4,33.72908796546142,0.0,9.6,0.0,9.6,False,29.648,1000.0
+charades_sta_smoke_163,163,EHS68,another person is throwing a pair of shoes.,data/raw/charades/videos/EHS68.mp4,17.21142857142857,1.1,6.4,1.1,6.4,False,29.166666666666668,502.0
+charades_sta_smoke_164,164,G30NS,person puts it into a box.,data/raw/charades/videos/G30NS.mp4,37.47076666666667,2.5,10.6,2.5,10.6,False,29.97002997002997,1123.0
+charades_sta_smoke_165,165,G30NS,person puts the box down.,data/raw/charades/videos/G30NS.mp4,37.47076666666667,2.5,10.6,2.5,10.6,False,29.97002997002997,1123.0
+charades_sta_smoke_166,166,G30NS,person putting things on a shelf.,data/raw/charades/videos/G30NS.mp4,37.47076666666667,0.4,7.6,0.4,7.6,False,29.97002997002997,1123.0
+charades_sta_smoke_167,167,G30NS,the person takes a large blanket.,data/raw/charades/videos/G30NS.mp4,37.47076666666667,7.0,14.0,7.0,14.0,False,29.97002997002997,1123.0
+charades_sta_smoke_168,168,SUJWY,the person laughs at something on the screen multiple times.,data/raw/charades/videos/SUJWY.mp4,32.56666666666667,17.1,29.7,17.1,29.7,False,30.0,977.0
+charades_sta_smoke_169,169,SUJWY,the person begins laughing at something on the screen.,data/raw/charades/videos/SUJWY.mp4,32.56666666666667,17.1,29.7,17.1,29.7,False,30.0,977.0
+charades_sta_smoke_170,170,KERO6,the person puts some food onto a pan.,data/raw/charades/videos/KERO6.mp4,40.13357619914997,11.4,16.9,11.4,16.9,False,16.47,661.0
+charades_sta_smoke_171,171,SV6KF,a person throws a broom at the stairs.,data/raw/charades/videos/SV6KF.mp4,22.313958333333332,9.3,14.5,9.3,14.5,False,23.976023976023978,535.0
+charades_sta_smoke_172,172,SV6KF,this person throws the broom down.,data/raw/charades/videos/SV6KF.mp4,22.313958333333332,9.3,14.5,9.3,14.5,False,23.976023976023978,535.0
+charades_sta_smoke_173,173,VCYH8,person turns off the light as they're leaving.,data/raw/charades/videos/VCYH8.mp4,27.525906735751295,18.2,23.8,18.2,23.8,False,6.176,170.0
+charades_sta_smoke_174,174,VCYH8,person turns off a light.,data/raw/charades/videos/VCYH8.mp4,27.525906735751295,18.2,23.8,18.2,23.8,False,6.176,170.0
+charades_sta_smoke_175,175,G852Y,one person is wrapped in a blanket sneezing.,data/raw/charades/videos/G852Y.mp4,18.08676841725754,3.0,10.1,3.0,10.1,False,16.642,301.0
+charades_sta_smoke_176,176,OKXIQ,person they use the doorknob to open the cabinet.,data/raw/charades/videos/OKXIQ.mp4,31.95843828715365,0.0,5.7,0.0,5.7,False,6.352,203.0
+charades_sta_smoke_177,177,KB7WQ,person they close the box.,data/raw/charades/videos/KB7WQ.mp4,38.00463333333333,7.3,14.0,7.3,14.0,False,29.97002997002997,1139.0
+charades_sta_smoke_178,178,KB7WQ,the person closes a box that's been searched through.,data/raw/charades/videos/KB7WQ.mp4,38.00463333333333,7.3,14.0,7.3,14.0,False,29.97002997002997,1139.0
+charades_sta_smoke_179,179,27DCQ,a person awakens in bed.,data/raw/charades/videos/27DCQ.mp4,31.041666666666668,13.5,19.2,13.5,19.2,False,24.0,745.0
+charades_sta_smoke_180,180,UM5II,the person eats a few bite.,data/raw/charades/videos/UM5II.mp4,33.757808745795295,3.7,14.0,3.7,14.0,False,16.648,562.0
+charades_sta_smoke_181,181,UM5II,a person is sneezing on the medicine.,data/raw/charades/videos/UM5II.mp4,33.757808745795295,0.9,7.7,0.9,7.7,False,16.648,562.0
+charades_sta_smoke_182,182,UM5II,person starts sneezing.,data/raw/charades/videos/UM5II.mp4,33.757808745795295,0.9,7.7,0.9,7.7,False,16.648,562.0
+charades_sta_smoke_183,183,UM5II,a person is sneezing.,data/raw/charades/videos/UM5II.mp4,33.757808745795295,0.9,7.7,0.9,7.7,False,16.648,562.0
+charades_sta_smoke_184,184,XT9D4,a person is putting food into the refrigerator.,data/raw/charades/videos/XT9D4.mp4,33.46953491166927,18.3,25.3,18.3,25.3,False,16.642,557.0
+charades_sta_smoke_185,185,XT9D4,a person is putting away groceries in the fridge.,data/raw/charades/videos/XT9D4.mp4,33.46953491166927,0.0,3.8,0.0,3.8,False,16.642,557.0
+charades_sta_smoke_186,186,XT9D4,person their phone rings so they close the fridge door.,data/raw/charades/videos/XT9D4.mp4,33.46953491166927,25.5,30.6,25.5,30.6,False,16.642,557.0
+charades_sta_smoke_187,187,XT9D4,person closed the refrigerator door.,data/raw/charades/videos/XT9D4.mp4,33.46953491166927,25.5,30.6,25.5,30.6,False,16.642,557.0
+charades_sta_smoke_188,188,1W6YY,person closes the cabinet door.,data/raw/charades/videos/1W6YY.mp4,29.48592239809497,3.5,7.9,3.5,7.9,False,14.278,421.0
+charades_sta_smoke_189,189,YOCRB,person sit down in a chair.,data/raw/charades/videos/YOCRB.mp4,34.666666666666664,26.4,36.0,26.4,34.666666666666664,True,24.0,832.0
+charades_sta_smoke_190,190,YOCRB,person sitting in a chair.,data/raw/charades/videos/YOCRB.mp4,34.666666666666664,26.4,36.0,26.4,34.666666666666664,True,24.0,832.0
+charades_sta_smoke_191,191,ZDV60,a person opens a closet door.,data/raw/charades/videos/ZDV60.mp4,30.831973898858074,0.3,9.2,0.3,9.2,False,6.13,189.0
+charades_sta_smoke_192,192,ZDV60,person start dressing themselves.,data/raw/charades/videos/ZDV60.mp4,30.831973898858074,10.6,20.7,10.6,20.7,False,6.13,189.0
+charades_sta_smoke_193,193,ZDV60,person opens the door.,data/raw/charades/videos/ZDV60.mp4,30.831973898858074,1.5,10.3,1.5,10.3,False,6.13,189.0
+charades_sta_smoke_194,194,ZDV60,the person puts shoes on.,data/raw/charades/videos/ZDV60.mp4,30.831973898858074,25.4,32.0,25.4,30.831973898858074,True,6.13,189.0
+charades_sta_smoke_195,195,GHC5X,a person takes a glass of water.,data/raw/charades/videos/GHC5X.mp4,27.026999999999997,22.2,27.8,22.2,27.026999999999997,True,23.976023976023978,648.0
+charades_sta_smoke_196,196,6IOV0,person working on a laptop.,data/raw/charades/videos/6IOV0.mp4,30.5305,0.0,13.1,0.0,13.1,False,29.97002997002997,915.0
+charades_sta_smoke_197,197,6IOV0,person playing a casual game on their laptop.,data/raw/charades/videos/6IOV0.mp4,30.5305,0.0,13.1,0.0,13.1,False,29.97002997002997,915.0
+charades_sta_smoke_198,198,6IOV0,person drinking a bottle of soda.,data/raw/charades/videos/6IOV0.mp4,30.5305,9.5,16.4,9.5,16.4,False,29.97002997002997,915.0
+charades_sta_smoke_199,199,OP2SS,the person takes out their laptop.,data/raw/charades/videos/OP2SS.mp4,31.433333333333334,20.4,26.7,20.4,26.7,False,30.0,943.0
+charades_sta_smoke_200,200,PPY0W,a person is holding a bag.,data/raw/charades/videos/PPY0W.mp4,32.32108582396491,0.0,7.8,0.0,7.8,False,29.176,943.0
+charades_sta_smoke_201,201,DCV2M,person start undressing.,data/raw/charades/videos/DCV2M.mp4,31.433333333333334,25.4,32.0,25.4,31.433333333333334,True,30.0,943.0
+charades_sta_smoke_202,202,DCV2M,a person is awakening.,data/raw/charades/videos/DCV2M.mp4,31.433333333333334,3.0,13.6,3.0,13.6,False,30.0,943.0
+charades_sta_smoke_203,203,TEV5K,person begings to drink a glass of water.,data/raw/charades/videos/TEV5K.mp4,30.754130541469,7.1,16.2,7.1,16.2,False,6.113,188.0
+charades_sta_smoke_204,204,TEV5K,a person opens their kitchen window.,data/raw/charades/videos/TEV5K.mp4,30.754130541469,0.0,8.3,0.0,8.3,False,6.113,188.0
+charades_sta_smoke_205,205,TEV5K,a person opens the window.,data/raw/charades/videos/TEV5K.mp4,30.754130541469,0.0,8.3,0.0,8.3,False,6.113,188.0
+charades_sta_smoke_206,206,Q3BCC,a person closes a door.,data/raw/charades/videos/Q3BCC.mp4,42.166666666666664,0.0,6.8,0.0,6.8,False,24.0,1012.0
+charades_sta_smoke_207,207,Q3BCC,person trying to close the door.,data/raw/charades/videos/Q3BCC.mp4,42.166666666666664,0.0,6.8,0.0,6.8,False,24.0,1012.0
+charades_sta_smoke_208,208,M8OYC,a person walks in holding a bag of groceries.,data/raw/charades/videos/M8OYC.mp4,33.833800000000004,1.7,11.5,1.7,11.5,False,29.97002997002997,1014.0
+charades_sta_smoke_209,209,FBOF0,a person awakens in bed.,data/raw/charades/videos/FBOF0.mp4,33.416666666666664,9.2,22.2,9.2,22.2,False,24.0,802.0
+charades_sta_smoke_210,210,FBOF0,the person throws the blanket off of the bed.,data/raw/charades/videos/FBOF0.mp4,33.416666666666664,26.8,32.1,26.8,32.1,False,24.0,802.0
+charades_sta_smoke_211,211,D1NT7,a person is putting some dishes into a box.,data/raw/charades/videos/D1NT7.mp4,32.48078770413065,10.8,18.6,10.8,18.6,False,16.656,541.0
+charades_sta_smoke_212,212,D1NT7,person they put the box on a bed.,data/raw/charades/videos/D1NT7.mp4,32.48078770413065,10.8,18.6,10.8,18.6,False,16.656,541.0
+charades_sta_smoke_213,213,D1NT7,a person is putting some plates in a box.,data/raw/charades/videos/D1NT7.mp4,32.48078770413065,10.8,18.6,10.8,18.6,False,16.656,541.0
+charades_sta_smoke_214,214,3UACJ,person takes a drink from a glass.,data/raw/charades/videos/3UACJ.mp4,37.96139519133085,1.8,6.4,1.8,6.4,False,29.53,1121.0
+charades_sta_smoke_215,215,U2AO1,closes the doors.the person takes the food.,data/raw/charades/videos/U2AO1.mp4,16.266666666666666,0.0,4.6,0.0,4.6,False,30.0,488.0
+charades_sta_smoke_216,216,U2AO1,person starts eating.,data/raw/charades/videos/U2AO1.mp4,16.266666666666666,10.5,17.0,10.5,16.266666666666666,True,30.0,488.0
+charades_sta_smoke_217,217,U2AO1,a person closed a cabinet.,data/raw/charades/videos/U2AO1.mp4,16.266666666666666,0.0,4.6,0.0,4.6,False,30.0,488.0
+charades_sta_smoke_218,218,U2AO1,person looks for something to eat.,data/raw/charades/videos/U2AO1.mp4,16.266666666666666,10.5,17.0,10.5,16.266666666666666,True,30.0,488.0
+charades_sta_smoke_219,219,U2AO1,the person eats it.,data/raw/charades/videos/U2AO1.mp4,16.266666666666666,10.5,17.0,10.5,16.266666666666666,True,30.0,488.0
+charades_sta_smoke_220,220,U2AO1,person a opens the door bites into a snack.,data/raw/charades/videos/U2AO1.mp4,16.266666666666666,4.1,9.7,4.1,9.7,False,30.0,488.0
+charades_sta_smoke_221,221,3J9L5,a person is eating.,data/raw/charades/videos/3J9L5.mp4,29.8298,1.0,6.6,1.0,6.6,False,14.985014985014985,447.0
+charades_sta_smoke_222,222,3J9L5,a person is throwing the bag at the light switch.,data/raw/charades/videos/3J9L5.mp4,29.8298,2.8,9.0,2.8,9.0,False,14.985014985014985,447.0
+charades_sta_smoke_223,223,XQVXF,person opens a fridge door.,data/raw/charades/videos/XQVXF.mp4,27.54,4.5,11.1,4.5,11.1,False,16.666666666666668,459.0
+charades_sta_smoke_224,224,XQVXF,another person opens an oven door to look inside.,data/raw/charades/videos/XQVXF.mp4,27.54,4.5,11.1,4.5,11.1,False,16.666666666666668,459.0
+charades_sta_smoke_225,225,XQVXF,one person is cooking.,data/raw/charades/videos/XQVXF.mp4,27.54,0.0,9.0,0.0,9.0,False,16.666666666666668,459.0
+charades_sta_smoke_226,226,9LWQ6,a person undresses.,data/raw/charades/videos/9LWQ6.mp4,22.7,0.0,9.7,0.0,9.7,False,30.0,681.0
+charades_sta_smoke_227,227,9LWQ6,person takes their shoes off.,data/raw/charades/videos/9LWQ6.mp4,22.7,11.0,21.0,11.0,21.0,False,30.0,681.0
+charades_sta_smoke_228,228,9LWQ6,person takes off their shoes.,data/raw/charades/videos/9LWQ6.mp4,22.7,11.0,21.0,11.0,21.0,False,30.0,681.0
+charades_sta_smoke_229,229,9LWQ6,person puts the clothes on the bed.,data/raw/charades/videos/9LWQ6.mp4,22.7,1.1,10.0,1.1,10.0,False,30.0,681.0
+charades_sta_smoke_230,230,2ADJI,person putting away groceries.,data/raw/charades/videos/2ADJI.mp4,24.566666666666666,10.0,21.9,10.0,21.9,False,30.0,737.0
+charades_sta_smoke_231,231,2ADJI,person drinking from a glass of water.,data/raw/charades/videos/2ADJI.mp4,24.566666666666666,0.0,8.1,0.0,8.1,False,30.0,737.0
+charades_sta_smoke_232,232,B1AMA,person dresses in pajamas.,data/raw/charades/videos/B1AMA.mp4,37.45408333333333,21.0,35.7,21.0,35.7,False,23.976023976023978,898.0
+charades_sta_smoke_233,233,LA6AA,a person was holding a blanket.,data/raw/charades/videos/LA6AA.mp4,27.99148796857096,2.2,11.8,2.2,11.8,False,6.109,171.0
+charades_sta_smoke_234,234,LA6AA,a person is holding a blanket.,data/raw/charades/videos/LA6AA.mp4,27.99148796857096,2.2,11.8,2.2,11.8,False,6.109,171.0
+charades_sta_smoke_235,235,YNWMW,the person takes a broom.,data/raw/charades/videos/YNWMW.mp4,16.32,9.9,15.9,9.9,15.9,False,14.583333333333334,238.0
+charades_sta_smoke_236,236,YNWMW,a person eats some food.,data/raw/charades/videos/YNWMW.mp4,16.32,0.0,5.2,0.0,5.2,False,14.583333333333334,238.0
+charades_sta_smoke_237,237,YNWMW,a person is in a basement eating.,data/raw/charades/videos/YNWMW.mp4,16.32,0.0,5.2,0.0,5.2,False,14.583333333333334,238.0
+charades_sta_smoke_238,238,LUTIO,the person lays on the floor the gets up.,data/raw/charades/videos/LUTIO.mp4,30.7,0.0,10.4,0.0,10.4,False,30.0,921.0
+charades_sta_smoke_239,239,Q6290,person watching the television eating an apple.,data/raw/charades/videos/Q6290.mp4,17.12534551135681,0.0,8.3,0.0,8.3,False,16.642,285.0
+charades_sta_smoke_240,240,Q6290,a person is standing eating something as they watch tv.,data/raw/charades/videos/Q6290.mp4,17.12534551135681,0.0,8.3,0.0,8.3,False,16.642,285.0
+charades_sta_smoke_241,241,Q6290,person eating a sandwich out of a dish.,data/raw/charades/videos/Q6290.mp4,17.12534551135681,0.0,8.3,0.0,8.3,False,16.642,285.0
+charades_sta_smoke_242,242,TAQ25,the person closes the laptop.,data/raw/charades/videos/TAQ25.mp4,27.966666666666665,11.6,17.7,11.6,17.7,False,30.0,839.0
+charades_sta_smoke_243,243,TAQ25,the person closes the laptop screen.,data/raw/charades/videos/TAQ25.mp4,27.966666666666665,11.6,17.7,11.6,17.7,False,30.0,839.0
+charades_sta_smoke_244,244,TAQ25,person smiling at their laptop.,data/raw/charades/videos/TAQ25.mp4,27.966666666666665,4.3,16.5,4.3,16.5,False,30.0,839.0
+charades_sta_smoke_245,245,EEVD3,person begins to eat it.,data/raw/charades/videos/EEVD3.mp4,31.015344433561864,18.4,32.0,18.4,31.015344433561864,True,6.126,190.0
+charades_sta_smoke_246,246,EEVD3,a person is holding the door to the refrigerator open.,data/raw/charades/videos/EEVD3.mp4,31.015344433561864,2.0,7.9,2.0,7.9,False,6.126,190.0
+charades_sta_smoke_247,247,EEVD3,person removes a snack to eat.,data/raw/charades/videos/EEVD3.mp4,31.015344433561864,18.4,32.0,18.4,31.015344433561864,True,6.126,190.0
+charades_sta_smoke_248,248,EEVD3,person eat the food.,data/raw/charades/videos/EEVD3.mp4,31.015344433561864,18.4,32.0,18.4,31.015344433561864,True,6.126,190.0
+charades_sta_smoke_249,249,EEVD3,person they begin eating the fruit.,data/raw/charades/videos/EEVD3.mp4,31.015344433561864,18.4,32.0,18.4,31.015344433561864,True,6.126,190.0
+charades_sta_smoke_250,250,EEVD3,person closing the door.,data/raw/charades/videos/EEVD3.mp4,31.015344433561864,11.4,16.9,11.4,16.9,False,6.126,190.0
+charades_sta_smoke_251,251,IOGR7,person they stand up.,data/raw/charades/videos/IOGR7.mp4,30.393205831215727,19.7,28.3,19.7,28.3,False,29.908,909.0
+charades_sta_smoke_252,252,2OREK,looking out the window in a curious manner.,data/raw/charades/videos/2OREK.mp4,30.233333333333334,11.5,17.6,11.5,17.6,False,30.0,907.0
+charades_sta_smoke_253,253,JCT0K,a person is opening the closet door.,data/raw/charades/videos/JCT0K.mp4,29.889669007021062,2.6,10.2,2.6,10.2,False,14.955,447.0
+charades_sta_smoke_254,254,JCT0K,person opens the closet.,data/raw/charades/videos/JCT0K.mp4,29.889669007021062,0.1,6.2,0.1,6.2,False,14.955,447.0
+charades_sta_smoke_255,255,H0P5D,one person was running into the table.,data/raw/charades/videos/H0P5D.mp4,30.733333333333334,11.0,18.1,11.0,18.1,False,30.0,922.0
+charades_sta_smoke_256,256,H0P5D,person they laugh.,data/raw/charades/videos/H0P5D.mp4,30.733333333333334,23.7,32.0,23.7,30.733333333333334,True,30.0,922.0
+charades_sta_smoke_257,257,BFCU9,person eating it.,data/raw/charades/videos/BFCU9.mp4,17.5,0.2,5.3,0.2,5.3,False,30.0,525.0
+charades_sta_smoke_258,258,BFCU9,a person is eating from a can.,data/raw/charades/videos/BFCU9.mp4,17.5,0.2,5.3,0.2,5.3,False,30.0,525.0
+charades_sta_smoke_259,259,BFCU9,a person eats something from a jar.,data/raw/charades/videos/BFCU9.mp4,17.5,0.2,5.3,0.2,5.3,False,30.0,525.0
+charades_sta_smoke_260,260,BFCU9,person puts the jar down on a table.,data/raw/charades/videos/BFCU9.mp4,17.5,14.0,18.0,14.0,17.5,True,30.0,525.0
+charades_sta_smoke_261,261,BFCU9,person the put the food down.,data/raw/charades/videos/BFCU9.mp4,17.5,3.2,8.4,3.2,8.4,False,30.0,525.0
+charades_sta_smoke_262,262,BFCU9,person eats it.,data/raw/charades/videos/BFCU9.mp4,17.5,0.2,5.3,0.2,5.3,False,30.0,525.0
+charades_sta_smoke_263,263,BFCU9,a person is holding some food.,data/raw/charades/videos/BFCU9.mp4,17.5,0.0,8.2,0.0,8.2,False,30.0,525.0
+charades_sta_smoke_264,264,TUD6M,person throws their blanket inside.,data/raw/charades/videos/TUD6M.mp4,7.553670818976941,4.3,8.0,4.3,7.553670818976941,True,15.092,114.0
+charades_sta_smoke_265,265,TUD6M,person throwing a blanket into a closet.,data/raw/charades/videos/TUD6M.mp4,7.553670818976941,4.3,8.0,4.3,7.553670818976941,True,15.092,114.0
+charades_sta_smoke_266,266,A3XXB,person puts them away on a shelf in a closet.,data/raw/charades/videos/A3XXB.mp4,11.333333333333334,1.9,7.1,1.9,7.1,False,15.0,170.0
+charades_sta_smoke_267,267,A3XXB,a person is tidying a blanket.,data/raw/charades/videos/A3XXB.mp4,11.333333333333334,0.0,5.6,0.0,5.6,False,15.0,170.0
+charades_sta_smoke_268,268,L5YHH,a person is turns on the light in their closet.,data/raw/charades/videos/L5YHH.mp4,36.480402542372886,0.6,5.7,0.6,5.7,False,15.104,551.0
+charades_sta_smoke_269,269,L5YHH,person open the door.,data/raw/charades/videos/L5YHH.mp4,36.480402542372886,18.6,31.6,18.6,31.6,False,15.104,551.0
+charades_sta_smoke_270,270,L5YHH,person opens the closet.,data/raw/charades/videos/L5YHH.mp4,36.480402542372886,17.3,35.4,17.3,35.4,False,15.104,551.0
+charades_sta_smoke_271,271,GL2JW,person closes a cupboard door.,data/raw/charades/videos/GL2JW.mp4,30.368981450478806,14.9,21.9,14.9,21.9,False,29.866,907.0
+charades_sta_smoke_272,272,GL2JW,the person closes a cupboard door.,data/raw/charades/videos/GL2JW.mp4,30.368981450478806,14.9,21.9,14.9,21.9,False,29.866,907.0
+charades_sta_smoke_273,273,GL2JW,a person is closing a cabinet.,data/raw/charades/videos/GL2JW.mp4,30.368981450478806,14.1,22.3,14.1,22.3,False,29.866,907.0
+charades_sta_smoke_274,274,FAJEA,person they take some medicine.,data/raw/charades/videos/FAJEA.mp4,30.113416666666666,14.3,23.5,14.3,23.5,False,23.976023976023978,722.0
+charades_sta_smoke_275,275,FAJEA,person drink from a cup.,data/raw/charades/videos/FAJEA.mp4,30.113416666666666,23.4,31.0,23.4,30.113416666666666,True,23.976023976023978,722.0
+charades_sta_smoke_276,276,RXELU,person turns the light on.,data/raw/charades/videos/RXELU.mp4,14.9149,2.5,6.6,2.5,6.6,False,29.97002997002997,447.0
+charades_sta_smoke_277,277,RXELU,person turns on the light.,data/raw/charades/videos/RXELU.mp4,14.9149,2.5,6.6,2.5,6.6,False,29.97002997002997,447.0
+charades_sta_smoke_278,278,RXELU,person smiling in the mirror.,data/raw/charades/videos/RXELU.mp4,14.9149,8.9,16.0,8.9,14.9149,True,29.97002997002997,447.0
+charades_sta_smoke_279,279,RXELU,the person drinks from a cup of coffee.,data/raw/charades/videos/RXELU.mp4,14.9149,3.7,9.7,3.7,9.7,False,29.97002997002997,447.0
+charades_sta_smoke_280,280,QCVZN,a person takes a book off a shelf.,data/raw/charades/videos/QCVZN.mp4,25.351435780367655,6.2,12.0,6.2,12.0,False,16.646,422.0
+charades_sta_smoke_281,281,5B9XE,person turns off the ceiling light.,data/raw/charades/videos/5B9XE.mp4,32.121310940812,18.7,29.0,18.7,29.0,False,6.133,197.0
+charades_sta_smoke_282,282,5B9XE,person turns the light off.,data/raw/charades/videos/5B9XE.mp4,32.121310940812,18.7,29.0,18.7,29.0,False,6.133,197.0
+charades_sta_smoke_283,283,5B9XE,person turns off the light.,data/raw/charades/videos/5B9XE.mp4,32.121310940812,18.7,29.0,18.7,29.0,False,6.133,197.0
+charades_sta_smoke_284,284,5B9XE,a person runs into a room.,data/raw/charades/videos/5B9XE.mp4,32.121310940812,0.0,13.9,0.0,13.9,False,6.133,197.0
+charades_sta_smoke_285,285,5B9XE,a person runs into the bedroom.,data/raw/charades/videos/5B9XE.mp4,32.121310940812,0.0,13.9,0.0,13.9,False,6.133,197.0
+charades_sta_smoke_286,286,LKNZD,a person is throwing clothes on the floor.,data/raw/charades/videos/LKNZD.mp4,33.19983333333333,0.0,6.5,0.0,6.5,False,23.976023976023978,796.0
+charades_sta_smoke_287,287,0DVVD,a person closes a window.,data/raw/charades/videos/0DVVD.mp4,29.696333333333335,2.8,14.3,2.8,14.3,False,29.97002997002997,890.0
+charades_sta_smoke_288,288,0DVVD,a person is opening a window in the bathroom.,data/raw/charades/videos/0DVVD.mp4,29.696333333333335,0.1,10.3,0.1,10.3,False,29.97002997002997,890.0
+charades_sta_smoke_289,289,U8M2P,another person is sneezing on a sandwich.,data/raw/charades/videos/U8M2P.mp4,32.76,1.6,13.3,1.6,13.3,False,25.0,819.0
+charades_sta_smoke_290,290,VAV4C,person eating a sandwich.,data/raw/charades/videos/VAV4C.mp4,47.166666666666664,13.8,23.5,13.8,23.5,False,6.0,283.0
+charades_sta_smoke_291,291,VAV4C,the person is sitting on a closed toilet eating.,data/raw/charades/videos/VAV4C.mp4,47.166666666666664,13.8,23.5,13.8,23.5,False,6.0,283.0
+charades_sta_smoke_292,292,VAV4C,a person is in a bathroom drinking from a cup.,data/raw/charades/videos/VAV4C.mp4,47.166666666666664,9.3,17.6,9.3,17.6,False,6.0,283.0
+charades_sta_smoke_293,293,VAV4C,person repeats the process until he is finished with both.,data/raw/charades/videos/VAV4C.mp4,47.166666666666664,13.8,23.5,13.8,23.5,False,6.0,283.0
+charades_sta_smoke_294,294,VAV4C,person walk out the doorway.,data/raw/charades/videos/VAV4C.mp4,47.166666666666664,43.3,48.0,43.3,47.166666666666664,True,6.0,283.0
+charades_sta_smoke_295,295,6C0BK,a person is putting a towel on a towel rack.,data/raw/charades/videos/6C0BK.mp4,30.301001104898383,0.3,7.8,0.3,7.8,False,29.867,905.0
+charades_sta_smoke_296,296,5CN21,a person is standing in their garage holding a pillow.,data/raw/charades/videos/5CN21.mp4,25.333333333333332,11.6,17.5,11.6,17.5,False,14.25,361.0
+charades_sta_smoke_297,297,5CN21,person holding a pillow.,data/raw/charades/videos/5CN21.mp4,25.333333333333332,11.6,17.5,11.6,17.5,False,14.25,361.0
+charades_sta_smoke_298,298,OTIA2,person turns on a lightswitch.,data/raw/charades/videos/OTIA2.mp4,23.666666666666668,0.0,4.4,0.0,4.4,False,30.0,710.0
+charades_sta_smoke_299,299,OTIA2,a person walks through the doorway into the home office.,data/raw/charades/videos/OTIA2.mp4,23.666666666666668,0.0,5.0,0.0,5.0,False,30.0,710.0
+charades_sta_smoke_300,300,OTIA2,person turns on the light.,data/raw/charades/videos/OTIA2.mp4,23.666666666666668,0.0,4.4,0.0,4.4,False,30.0,710.0
+charades_sta_smoke_301,301,OTIA2,a person is walking to turn on the light.,data/raw/charades/videos/OTIA2.mp4,23.666666666666668,0.0,4.4,0.0,4.4,False,30.0,710.0
+charades_sta_smoke_302,302,B4ED1,a person is pouring water into a cup.,data/raw/charades/videos/B4ED1.mp4,34.16596613426204,23.5,32.8,23.5,32.8,False,16.654,569.0
+charades_sta_smoke_303,303,86E2E,the person is sitting on the floor.,data/raw/charades/videos/86E2E.mp4,19.889436365821417,0.0,8.8,0.0,8.8,False,16.642,331.0
+charades_sta_smoke_304,304,86E2E,person snuggling with a pillow.,data/raw/charades/videos/86E2E.mp4,19.889436365821417,2.2,8.2,2.2,8.2,False,16.642,331.0
+charades_sta_smoke_305,305,86E2E,person begins to eat from a bowl on the floor.,data/raw/charades/videos/86E2E.mp4,19.889436365821417,15.3,20.8,15.3,19.889436365821417,True,16.642,331.0
+charades_sta_smoke_306,306,86E2E,person eats something.,data/raw/charades/videos/86E2E.mp4,19.889436365821417,15.3,20.8,15.3,19.889436365821417,True,16.642,331.0
+charades_sta_smoke_307,307,86E2E,person holds a pillow.,data/raw/charades/videos/86E2E.mp4,19.889436365821417,1.3,8.4,1.3,8.4,False,16.642,331.0
+charades_sta_smoke_308,308,86E2E,a person sits on the floor.,data/raw/charades/videos/86E2E.mp4,19.889436365821417,0.0,8.8,0.0,8.8,False,16.642,331.0
+charades_sta_smoke_309,309,86E2E,person eating as they are laying down.,data/raw/charades/videos/86E2E.mp4,19.889436365821417,15.3,20.8,15.3,19.889436365821417,True,16.642,331.0
+charades_sta_smoke_310,310,86E2E,person eating food in a home office / study.,data/raw/charades/videos/86E2E.mp4,19.889436365821417,15.3,20.8,15.3,19.889436365821417,True,16.642,331.0
+charades_sta_smoke_311,311,YJ1KW,person sits down in a chair.,data/raw/charades/videos/YJ1KW.mp4,31.433333333333334,8.8,14.3,8.8,14.3,False,30.0,943.0
+charades_sta_smoke_312,312,YJ1KW,person sits down in a red chair.,data/raw/charades/videos/YJ1KW.mp4,31.433333333333334,8.8,14.3,8.8,14.3,False,30.0,943.0
+charades_sta_smoke_313,313,DJ87X,a person is looking out the window.,data/raw/charades/videos/DJ87X.mp4,32.1608040201005,0.0,9.6,0.0,9.6,False,29.85,960.0
+charades_sta_smoke_314,314,DJ87X,a person looks out the bathroom window.,data/raw/charades/videos/DJ87X.mp4,32.1608040201005,0.0,9.6,0.0,9.6,False,29.85,960.0
+charades_sta_smoke_315,315,DJ87X,person takes their phone out of the cabinet.,data/raw/charades/videos/DJ87X.mp4,32.1608040201005,19.2,26.8,19.2,26.8,False,29.85,960.0
+charades_sta_smoke_316,316,N0ZPI,person take a drink from the cup.,data/raw/charades/videos/N0ZPI.mp4,30.096733333333333,14.4,20.8,14.4,20.8,False,29.97002997002997,902.0
+charades_sta_smoke_317,317,N0ZPI,person throw it on the floor.,data/raw/charades/videos/N0ZPI.mp4,30.096733333333333,21.8,26.5,21.8,26.5,False,29.97002997002997,902.0
+charades_sta_smoke_318,318,OVD84,a person turns on some lights.,data/raw/charades/videos/OVD84.mp4,30.7,4.1,10.8,4.1,10.8,False,30.0,921.0
+charades_sta_smoke_319,319,OVD84,person turns on the light.,data/raw/charades/videos/OVD84.mp4,30.7,4.1,10.8,4.1,10.8,False,30.0,921.0
+charades_sta_smoke_320,320,OVD84,person turns on a light.,data/raw/charades/videos/OVD84.mp4,30.7,4.1,10.8,4.1,10.8,False,30.0,921.0
+charades_sta_smoke_321,321,NW0KT,person takes book out.,data/raw/charades/videos/NW0KT.mp4,49.509803921568626,7.9,18.8,7.9,18.8,False,6.12,303.0
+charades_sta_smoke_322,322,NW0KT,person takes a book out from the entertainment center.,data/raw/charades/videos/NW0KT.mp4,49.509803921568626,7.9,18.8,7.9,18.8,False,6.12,303.0
+charades_sta_smoke_323,323,NW0KT,a person is tidying some books on a shelf.,data/raw/charades/videos/NW0KT.mp4,49.509803921568626,43.6,50.0,43.6,49.509803921568626,True,6.12,303.0
+charades_sta_smoke_324,324,8SDK5,person sits down in a chair.,data/raw/charades/videos/8SDK5.mp4,21.7,15.4,23.0,15.4,21.7,True,30.0,651.0
+charades_sta_smoke_325,325,8SDK5,person laughing so hard.,data/raw/charades/videos/8SDK5.mp4,21.7,5.9,16.7,5.9,16.7,False,30.0,651.0
+charades_sta_smoke_326,326,95GB4,person takes a picture with a camera.,data/raw/charades/videos/95GB4.mp4,30.095000000000002,8.8,19.8,8.8,19.8,False,28.509719222462202,858.0
+charades_sta_smoke_327,327,95GB4,the person takes a picture of something.,data/raw/charades/videos/95GB4.mp4,30.095000000000002,8.8,19.8,8.8,19.8,False,28.509719222462202,858.0
+charades_sta_smoke_328,328,95GB4,the person puts the phone away.,data/raw/charades/videos/95GB4.mp4,30.095000000000002,5.1,13.1,5.1,13.1,False,28.509719222462202,858.0
+charades_sta_smoke_329,329,95GB4,person washes their hands with hand sanitizer.,data/raw/charades/videos/95GB4.mp4,30.095000000000002,18.3,31.0,18.3,30.095000000000002,True,28.509719222462202,858.0
+charades_sta_smoke_330,330,95GB4,person playing with a phone.,data/raw/charades/videos/95GB4.mp4,30.095000000000002,0.0,11.2,0.0,11.2,False,28.509719222462202,858.0
+charades_sta_smoke_331,331,95GB4,person takes a picture.,data/raw/charades/videos/95GB4.mp4,30.095000000000002,8.8,19.8,8.8,19.8,False,28.509719222462202,858.0
+charades_sta_smoke_332,332,95GB4,person playing with their phone.,data/raw/charades/videos/95GB4.mp4,30.095000000000002,0.0,11.2,0.0,11.2,False,28.509719222462202,858.0
+charades_sta_smoke_333,333,TDAY1,person working on a laptop.,data/raw/charades/videos/TDAY1.mp4,34.333333333333336,0.0,16.6,0.0,16.6,False,30.0,1030.0
+charades_sta_smoke_334,334,TDAY1,person stand up from the laying position.,data/raw/charades/videos/TDAY1.mp4,34.333333333333336,23.4,35.0,23.4,34.333333333333336,True,30.0,1030.0
+charades_sta_smoke_335,335,NRGQB,person throws their shoes off by kicking them.,data/raw/charades/videos/NRGQB.mp4,11.803458333333332,6.1,11.6,6.1,11.6,False,23.976023976023978,283.0
+charades_sta_smoke_336,336,5R8BL,person begin undressing.,data/raw/charades/videos/5R8BL.mp4,21.21998270471629,12.1,22.0,12.1,21.21998270471629,True,15.033,319.0
+charades_sta_smoke_337,337,5R8BL,a person opens their closet door.,data/raw/charades/videos/5R8BL.mp4,21.21998270471629,0.0,6.6,0.0,6.6,False,15.033,319.0
+charades_sta_smoke_338,338,5R8BL,person they throw the pillow behind them.,data/raw/charades/videos/5R8BL.mp4,21.21998270471629,5.7,13.1,5.7,13.1,False,15.033,319.0
+charades_sta_smoke_339,339,BI4KK,person drinking from a glass of water.,data/raw/charades/videos/BI4KK.mp4,30.687660668380463,0.9,8.4,0.9,8.4,False,6.224,191.0
+charades_sta_smoke_340,340,DU416,person holding a bag.,data/raw/charades/videos/DU416.mp4,30.633333333333333,7.9,18.0,7.9,18.0,False,30.0,919.0
+charades_sta_smoke_341,341,NO1GJ,person washes clothes.,data/raw/charades/videos/NO1GJ.mp4,25.333333333333332,15.9,25.8,15.9,25.333333333333332,True,30.0,760.0
+charades_sta_smoke_342,342,NO1GJ,a person is washing the clothes.,data/raw/charades/videos/NO1GJ.mp4,25.333333333333332,15.9,25.8,15.9,25.333333333333332,True,30.0,760.0
+charades_sta_smoke_343,343,NO1GJ,a person is undressing in their laundry room.,data/raw/charades/videos/NO1GJ.mp4,25.333333333333332,0.0,10.2,0.0,10.2,False,30.0,760.0
+charades_sta_smoke_344,344,NO1GJ,person they take a towel from a cabinet.,data/raw/charades/videos/NO1GJ.mp4,25.333333333333332,8.0,16.1,8.0,16.1,False,30.0,760.0
+charades_sta_smoke_345,345,NO1GJ,a person is undressing in the laundry room.,data/raw/charades/videos/NO1GJ.mp4,25.333333333333332,0.0,10.2,0.0,10.2,False,30.0,760.0
+charades_sta_smoke_346,346,NO1GJ,person their other clothes into the washer.,data/raw/charades/videos/NO1GJ.mp4,25.333333333333332,15.9,25.8,15.9,25.333333333333332,True,30.0,760.0
+charades_sta_smoke_347,347,NO1GJ,person talking a towel off the shelf.,data/raw/charades/videos/NO1GJ.mp4,25.333333333333332,16.4,25.4,16.4,25.333333333333332,True,30.0,760.0
+charades_sta_smoke_348,348,7SNIO,one person runs into the room laughing.,data/raw/charades/videos/7SNIO.mp4,34.367666666666665,0.0,7.3,0.0,7.3,False,29.97002997002997,1030.0
+charades_sta_smoke_349,349,7SNIO,the person runs into the room.,data/raw/charades/videos/7SNIO.mp4,34.367666666666665,0.0,7.3,0.0,7.3,False,29.97002997002997,1030.0
+charades_sta_smoke_350,350,7SNIO,a person runs into a living.,data/raw/charades/videos/7SNIO.mp4,34.367666666666665,0.0,7.3,0.0,7.3,False,29.97002997002997,1030.0
+charades_sta_smoke_351,351,QOYH2,person takes a drink from a cup.,data/raw/charades/videos/QOYH2.mp4,30.864166666666666,17.5,25.3,17.5,25.3,False,29.97002997002997,925.0
+charades_sta_smoke_352,352,QWKVM,person closes the door.,data/raw/charades/videos/QWKVM.mp4,30.833333333333332,10.3,19.1,10.3,19.1,False,30.0,925.0
+charades_sta_smoke_353,353,QWKVM,person puts a glass on the desk.,data/raw/charades/videos/QWKVM.mp4,30.833333333333332,1.2,8.0,1.2,8.0,False,30.0,925.0
+charades_sta_smoke_354,354,QWKVM,one person opens the door.,data/raw/charades/videos/QWKVM.mp4,30.833333333333332,0.0,5.2,0.0,5.2,False,30.0,925.0
+charades_sta_smoke_355,355,QWKVM,a man opens a door.,data/raw/charades/videos/QWKVM.mp4,30.833333333333332,0.0,5.2,0.0,5.2,False,30.0,925.0
+charades_sta_smoke_356,356,COBS0,a smiling person takes a towel.,data/raw/charades/videos/COBS0.mp4,31.2,6.7,14.0,6.7,14.0,False,30.0,936.0
+charades_sta_smoke_357,357,TJZ0P,the person is seated in a chair.,data/raw/charades/videos/TJZ0P.mp4,17.733333333333334,10.2,19.0,10.2,17.733333333333334,True,30.0,532.0
+charades_sta_smoke_358,358,TJZ0P,person eats some food.,data/raw/charades/videos/TJZ0P.mp4,17.733333333333334,10.2,19.0,10.2,17.733333333333334,True,30.0,532.0
+charades_sta_smoke_359,359,TJZ0P,person takes a bite of food.,data/raw/charades/videos/TJZ0P.mp4,17.733333333333334,8.5,14.2,8.5,14.2,False,30.0,532.0
+charades_sta_smoke_360,360,TJZ0P,person they start sneezing.,data/raw/charades/videos/TJZ0P.mp4,17.733333333333334,2.8,10.4,2.8,10.4,False,30.0,532.0
+charades_sta_smoke_361,361,759MY,person put something on the table.,data/raw/charades/videos/759MY.mp4,20.24996995553419,7.5,13.0,7.5,13.0,False,16.642,337.0
+charades_sta_smoke_362,362,759MY,person putting on their shoes.,data/raw/charades/videos/759MY.mp4,20.24996995553419,11.9,17.4,11.9,17.4,False,16.642,337.0
+charades_sta_smoke_363,363,759MY,person put on their shoes.,data/raw/charades/videos/759MY.mp4,20.24996995553419,11.9,17.4,11.9,17.4,False,16.642,337.0
+charades_sta_smoke_364,364,759MY,a person awakens in their home office.,data/raw/charades/videos/759MY.mp4,20.24996995553419,1.8,6.8,1.8,6.8,False,16.642,337.0
+charades_sta_smoke_365,365,F1V30,a person holding a towel walks up to a counter.,data/raw/charades/videos/F1V30.mp4,31.801138730731843,0.0,4.2,0.0,4.2,False,7.201,229.0
+charades_sta_smoke_366,366,F1V30,person washing a glass.,data/raw/charades/videos/F1V30.mp4,31.801138730731843,23.1,33.0,23.1,31.801138730731843,True,7.201,229.0
+charades_sta_smoke_367,367,U502L,a person awakens in their bathroom holding their phone.,data/raw/charades/videos/U502L.mp4,35.58021870409662,20.4,26.9,20.4,26.9,False,6.127,218.0
+charades_sta_smoke_368,368,U502L,person takes a towel off the shower rod.,data/raw/charades/videos/U502L.mp4,35.58021870409662,27.5,32.3,27.5,32.3,False,6.127,218.0
+charades_sta_smoke_369,369,OPPVW,person laugh about it.,data/raw/charades/videos/OPPVW.mp4,24.396106237231102,19.2,25.0,19.2,24.396106237231102,True,16.642,406.0
+charades_sta_smoke_370,370,NI15V,person holding a towel in the other hand.,data/raw/charades/videos/NI15V.mp4,30.633333333333333,13.5,19.5,13.5,19.5,False,30.0,919.0
+charades_sta_smoke_371,371,NI15V,the person in the doorway walks away holding the towel.,data/raw/charades/videos/NI15V.mp4,30.633333333333333,18.5,25.4,18.5,25.4,False,30.0,919.0
+charades_sta_smoke_372,372,6HT0J,person start reading a book.,data/raw/charades/videos/6HT0J.mp4,31.233333333333334,6.8,19.5,6.8,19.5,False,30.0,937.0
+charades_sta_smoke_373,373,6HT0J,person holding a cup.,data/raw/charades/videos/6HT0J.mp4,31.233333333333334,8.2,20.1,8.2,20.1,False,30.0,937.0
+charades_sta_smoke_374,374,BM3UJ,a person walks through the entryway holding a glass.,data/raw/charades/videos/BM3UJ.mp4,32.98888845108161,6.4,17.3,6.4,17.3,False,16.641967213114754,549.0
+charades_sta_smoke_375,375,BM3UJ,a person opens the door to their study.,data/raw/charades/videos/BM3UJ.mp4,32.98888845108161,3.4,9.8,3.4,9.8,False,16.641967213114754,549.0
+charades_sta_smoke_376,376,BM3UJ,a person opens the front door to their residence.,data/raw/charades/videos/BM3UJ.mp4,32.98888845108161,3.4,9.8,3.4,9.8,False,16.641967213114754,549.0
+charades_sta_smoke_377,377,DM2XL,person opens the front door.,data/raw/charades/videos/DM2XL.mp4,22.457641279283497,15.4,20.9,15.4,20.9,False,29.923,672.0
+charades_sta_smoke_378,378,DM2XL,person opening a door.,data/raw/charades/videos/DM2XL.mp4,22.457641279283497,15.4,20.9,15.4,20.9,False,29.923,672.0
+charades_sta_smoke_379,379,RQRRD,person quickly undressing.,data/raw/charades/videos/RQRRD.mp4,46.53571189951226,7.5,24.3,7.5,24.3,False,29.934,1393.0
+charades_sta_smoke_380,380,RQRRD,a person runs into the bedroom.,data/raw/charades/videos/RQRRD.mp4,46.53571189951226,0.0,4.8,0.0,4.8,False,29.934,1393.0
+charades_sta_smoke_381,381,RQRRD,the person throws their dirty clothes onto a sofa.,data/raw/charades/videos/RQRRD.mp4,46.53571189951226,16.9,22.3,16.9,22.3,False,29.934,1393.0
+charades_sta_smoke_382,382,RQRRD,a person runs into the the living room.,data/raw/charades/videos/RQRRD.mp4,46.53571189951226,0.0,4.8,0.0,4.8,False,29.934,1393.0
+charades_sta_smoke_383,383,RQRRD,person takes new clothes from a box.,data/raw/charades/videos/RQRRD.mp4,46.53571189951226,5.2,11.8,5.2,11.8,False,29.934,1393.0
+charades_sta_smoke_384,384,S2FUO,a person kneeling on the floor talks on a phone.,data/raw/charades/videos/S2FUO.mp4,23.866666666666667,0.0,8.4,0.0,8.4,False,30.0,716.0
+charades_sta_smoke_385,385,S2FUO,person talking on the phone.,data/raw/charades/videos/S2FUO.mp4,23.866666666666667,0.0,8.4,0.0,8.4,False,30.0,716.0
+charades_sta_smoke_386,386,S2FUO,the person pours something into a glass.,data/raw/charades/videos/S2FUO.mp4,23.866666666666667,13.3,22.4,13.3,22.4,False,30.0,716.0
+charades_sta_smoke_387,387,S2FUO,a person talks on their phone in the kitchen.,data/raw/charades/videos/S2FUO.mp4,23.866666666666667,0.0,8.4,0.0,8.4,False,30.0,716.0
+charades_sta_smoke_388,388,36T5X,person starts undressing out of their outdoor clothes.,data/raw/charades/videos/36T5X.mp4,33.13333333333333,24.0,34.0,24.0,33.13333333333333,True,30.0,994.0
+charades_sta_smoke_389,389,36T5X,person closes the door.,data/raw/charades/videos/36T5X.mp4,33.13333333333333,14.2,23.0,14.2,23.0,False,30.0,994.0
+charades_sta_smoke_390,390,36T5X,person another closes the door.,data/raw/charades/videos/36T5X.mp4,33.13333333333333,14.2,23.0,14.2,23.0,False,30.0,994.0
+charades_sta_smoke_391,391,36T5X,person closing the door.,data/raw/charades/videos/36T5X.mp4,33.13333333333333,14.2,23.0,14.2,23.0,False,30.0,994.0
+charades_sta_smoke_392,392,36T5X,person begins to undress.,data/raw/charades/videos/36T5X.mp4,33.13333333333333,24.0,34.0,24.0,33.13333333333333,True,30.0,994.0
+charades_sta_smoke_393,393,AL1WC,the person closes the door.,data/raw/charades/videos/AL1WC.mp4,30.086007831063217,0.0,3.8,0.0,3.8,False,29.881,899.0
+charades_sta_smoke_394,394,HOYUT,person closes the pantry door.,data/raw/charades/videos/HOYUT.mp4,30.4009695990304,11.8,17.5,11.8,17.5,False,29.703,903.0
+charades_sta_smoke_395,395,L39A4,a person sits on the floor reading a book.,data/raw/charades/videos/L39A4.mp4,37.46666666666667,0.6,7.8,0.6,7.8,False,15.0,562.0
+charades_sta_smoke_396,396,4H64T,person eating some leftovers from a take-out carton.,data/raw/charades/videos/4H64T.mp4,43.10344827586207,32.1,44.0,32.1,43.10344827586207,True,6.148,265.0
+charades_sta_smoke_397,397,4H64T,person takes out some food.,data/raw/charades/videos/4H64T.mp4,43.10344827586207,20.6,30.0,20.6,30.0,False,6.148,265.0
+charades_sta_smoke_398,398,4H64T,person opens a refrigerator.,data/raw/charades/videos/4H64T.mp4,43.10344827586207,14.6,21.2,14.6,21.2,False,6.148,265.0
+charades_sta_smoke_399,399,4H64T,person start to eat the food with a plastic fork.,data/raw/charades/videos/4H64T.mp4,43.10344827586207,32.1,44.0,32.1,43.10344827586207,True,6.148,265.0
+charades_sta_smoke_400,400,4H64T,person opens the refrigerator.,data/raw/charades/videos/4H64T.mp4,43.10344827586207,14.6,21.2,14.6,21.2,False,6.148,265.0
+charades_sta_smoke_401,401,AIJ0M,that same person takes a towel.,data/raw/charades/videos/AIJ0M.mp4,31.185523422966344,0.0,9.5,0.0,9.5,False,29.565,922.0
+charades_sta_smoke_402,402,AIJ0M,person opens the door.,data/raw/charades/videos/AIJ0M.mp4,31.185523422966344,7.4,13.1,7.4,13.1,False,29.565,922.0
+charades_sta_smoke_403,403,AIJ0M,person holding a towel over one arm.,data/raw/charades/videos/AIJ0M.mp4,31.185523422966344,0.5,12.8,0.5,12.8,False,29.565,922.0
+charades_sta_smoke_404,404,FXGQI,person sneezing into the mirror they are holding.,data/raw/charades/videos/FXGQI.mp4,31.13791979132703,1.7,6.7,1.7,6.7,False,6.134,191.0
+charades_sta_smoke_405,405,FXGQI,person they start sneezing.,data/raw/charades/videos/FXGQI.mp4,31.13791979132703,1.7,6.7,1.7,6.7,False,6.134,191.0
+charades_sta_smoke_406,406,KY2KA,person knees takes a book from a cabinet.,data/raw/charades/videos/KY2KA.mp4,36.46530940262523,3.7,9.5,3.7,9.5,False,29.864,1089.0
+charades_sta_smoke_407,407,KY2KA,a person takes a book from a shelf.,data/raw/charades/videos/KY2KA.mp4,36.46530940262523,3.7,9.5,3.7,9.5,False,29.864,1089.0
+charades_sta_smoke_408,408,KY2KA,one person takes a book from a wardrobe.,data/raw/charades/videos/KY2KA.mp4,36.46530940262523,3.7,9.5,3.7,9.5,False,29.864,1089.0
+charades_sta_smoke_409,409,MNNJS,person pouring coffee into a cup in the dining room.,data/raw/charades/videos/MNNJS.mp4,31.7,21.3,30.7,21.3,30.7,False,30.0,951.0
+charades_sta_smoke_410,410,MNNJS,the person puts the cups onto a table.,data/raw/charades/videos/MNNJS.mp4,31.7,18.5,24.0,18.5,24.0,False,30.0,951.0
+charades_sta_smoke_411,411,MNNJS,person pour a cup of coffee.,data/raw/charades/videos/MNNJS.mp4,31.7,21.3,30.7,21.3,30.7,False,30.0,951.0
+charades_sta_smoke_412,412,QMIKJ,a person is putting their laptop on their desk.,data/raw/charades/videos/QMIKJ.mp4,29.966666666666665,0.7,9.8,0.7,9.8,False,30.0,899.0
+charades_sta_smoke_413,413,QMIKJ,person watching television.,data/raw/charades/videos/QMIKJ.mp4,29.966666666666665,0.0,9.3,0.0,9.3,False,30.0,899.0
+charades_sta_smoke_414,414,QMIKJ,person puts a laptop down on a table.,data/raw/charades/videos/QMIKJ.mp4,29.966666666666665,1.6,9.3,1.6,9.3,False,30.0,899.0
+charades_sta_smoke_415,415,HRASP,a person turns on the light to an entryway.,data/raw/charades/videos/HRASP.mp4,32.098395080245986,2.7,7.9,2.7,7.9,False,6.667,214.0
+charades_sta_smoke_416,416,HRASP,person seen closing a door.,data/raw/charades/videos/HRASP.mp4,32.098395080245986,19.7,26.4,19.7,26.4,False,6.667,214.0
+charades_sta_smoke_417,417,HRASP,person turns on a light.,data/raw/charades/videos/HRASP.mp4,32.098395080245986,2.7,7.9,2.7,7.9,False,6.667,214.0
+charades_sta_smoke_418,418,HRASP,person are seen throwing shoes on the floor.,data/raw/charades/videos/HRASP.mp4,32.098395080245986,6.3,11.6,6.3,11.6,False,6.667,214.0
+charades_sta_smoke_419,419,UY0SK,the person takes a bite out of the sandwich.,data/raw/charades/videos/UY0SK.mp4,26.796443162701276,13.2,18.1,13.2,18.1,False,16.644,446.0
+charades_sta_smoke_420,420,UY0SK,person sit to eat a sandwich.,data/raw/charades/videos/UY0SK.mp4,26.796443162701276,22.9,28.0,22.9,26.796443162701276,True,16.644,446.0
+charades_sta_smoke_421,421,UY0SK,person watch the television in the next room.,data/raw/charades/videos/UY0SK.mp4,26.796443162701276,14.6,28.0,14.6,26.796443162701276,True,16.644,446.0
+charades_sta_smoke_422,422,YQT32,person takes several pictures of different things in the room.,data/raw/charades/videos/YQT32.mp4,26.625840378086934,17.8,27.2,17.8,26.625840378086934,True,15.023,400.0
+charades_sta_smoke_423,423,SJ4QF,person washes a glass.,data/raw/charades/videos/SJ4QF.mp4,30.933333333333334,6.4,15.5,6.4,15.5,False,30.0,928.0
+charades_sta_smoke_424,424,69R8T,person eats it from a plate.,data/raw/charades/videos/69R8T.mp4,32.936136028919535,24.9,33.0,24.9,32.936136028919535,True,29.876,984.0
+charades_sta_smoke_425,425,2Z8G8,person they put the bag on a shelf.,data/raw/charades/videos/2Z8G8.mp4,29.97542997542997,6.2,15.5,6.2,15.5,False,6.105,183.0
+charades_sta_smoke_426,426,2Z8G8,person tidying up a blanket.,data/raw/charades/videos/2Z8G8.mp4,29.97542997542997,14.9,29.4,14.9,29.4,False,6.105,183.0
+charades_sta_smoke_427,427,XVI3M,person they put the laptop on the pillow.,data/raw/charades/videos/XVI3M.mp4,25.666666666666668,14.8,20.9,14.8,20.9,False,30.0,770.0
+charades_sta_smoke_428,428,XVI3M,person stand up.,data/raw/charades/videos/XVI3M.mp4,25.666666666666668,17.6,24.9,17.6,24.9,False,30.0,770.0
+charades_sta_smoke_429,429,XVI3M,the person puts the laptop down.,data/raw/charades/videos/XVI3M.mp4,25.666666666666668,14.8,20.9,14.8,20.9,False,30.0,770.0
+charades_sta_smoke_430,430,Y3M3W,the person is looking at an opened book.,data/raw/charades/videos/Y3M3W.mp4,35.18530929562362,1.7,8.0,1.7,8.0,False,29.842,1050.0
+charades_sta_smoke_431,431,URK3G,person open the books.,data/raw/charades/videos/URK3G.mp4,31.066666666666666,14.5,20.8,14.5,20.8,False,30.0,932.0
+charades_sta_smoke_432,432,URK3G,person start drinking from the glass.,data/raw/charades/videos/URK3G.mp4,31.066666666666666,3.7,18.6,3.7,18.6,False,30.0,932.0
+charades_sta_smoke_433,433,URK3G,another person runs in with homework.,data/raw/charades/videos/URK3G.mp4,31.066666666666666,5.9,11.6,5.9,11.6,False,30.0,932.0
+charades_sta_smoke_434,434,URK3G,one person opens the refrigerator.,data/raw/charades/videos/URK3G.mp4,31.066666666666666,0.0,7.1,0.0,7.1,False,30.0,932.0
+charades_sta_smoke_435,435,G8NEV,the person starts reading a book.,data/raw/charades/videos/G8NEV.mp4,33.058405418091596,14.7,24.0,14.7,24.0,False,29.826,986.0
+charades_sta_smoke_436,436,G8NEV,person a few moments later laughs.,data/raw/charades/videos/G8NEV.mp4,33.058405418091596,18.2,24.2,18.2,24.2,False,29.826,986.0
+charades_sta_smoke_437,437,G8NEV,person laughs a little bit.,data/raw/charades/videos/G8NEV.mp4,33.058405418091596,18.2,24.2,18.2,24.2,False,29.826,986.0
+charades_sta_smoke_438,438,C0CMQ,person open the door at the bottom of the stairs.,data/raw/charades/videos/C0CMQ.mp4,19.22845811801466,11.8,18.7,11.8,18.7,False,16.642,320.0
+charades_sta_smoke_439,439,C0CMQ,person walks through the doorway.,data/raw/charades/videos/C0CMQ.mp4,19.22845811801466,13.6,20.0,13.6,19.22845811801466,True,16.642,320.0
+charades_sta_smoke_440,440,C0CMQ,person opens a door.,data/raw/charades/videos/C0CMQ.mp4,19.22845811801466,11.8,18.7,11.8,18.7,False,16.642,320.0
+charades_sta_smoke_441,441,7XMBM,person starts eating.,data/raw/charades/videos/7XMBM.mp4,30.533333333333335,9.3,18.3,9.3,18.3,False,30.0,916.0
+charades_sta_smoke_442,442,7XMBM,person eating from a bowl.,data/raw/charades/videos/7XMBM.mp4,30.533333333333335,9.3,18.3,9.3,18.3,False,30.0,916.0
+charades_sta_smoke_443,443,7XMBM,another person walks into a room eating some food.,data/raw/charades/videos/7XMBM.mp4,30.533333333333335,9.3,18.3,9.3,18.3,False,30.0,916.0
+charades_sta_smoke_444,444,61IVZ,person closes the door.,data/raw/charades/videos/61IVZ.mp4,25.11764705882353,2.6,9.2,2.6,9.2,False,17.0,427.0
+charades_sta_smoke_445,445,61IVZ,person they set down the bag they're holding.,data/raw/charades/videos/61IVZ.mp4,25.11764705882353,0.0,12.0,0.0,12.0,False,17.0,427.0
+charades_sta_smoke_446,446,61IVZ,person put down the bag they were holding.,data/raw/charades/videos/61IVZ.mp4,25.11764705882353,5.8,13.3,5.8,13.3,False,17.0,427.0
+charades_sta_smoke_447,447,61IVZ,the person puts a bag down.,data/raw/charades/videos/61IVZ.mp4,25.11764705882353,5.8,13.3,5.8,13.3,False,17.0,427.0
+charades_sta_smoke_448,448,61IVZ,a person opens the door.,data/raw/charades/videos/61IVZ.mp4,25.11764705882353,0.0,5.3,0.0,5.3,False,17.0,427.0
+charades_sta_smoke_449,449,A33VQ,person holding a chair opened a refrigerator.,data/raw/charades/videos/A33VQ.mp4,30.933333333333334,11.1,19.7,11.1,19.7,False,15.0,464.0
+charades_sta_smoke_450,450,A33VQ,person opening a refrigerator in the dining room.,data/raw/charades/videos/A33VQ.mp4,30.933333333333334,11.1,19.7,11.1,19.7,False,15.0,464.0
+charades_sta_smoke_451,451,A33VQ,person closes the refrigerator.,data/raw/charades/videos/A33VQ.mp4,30.933333333333334,21.0,29.4,21.0,29.4,False,15.0,464.0
+charades_sta_smoke_452,452,ZMY8M,person takes some food from a bowl.,data/raw/charades/videos/ZMY8M.mp4,30.688867123734898,6.4,11.8,6.4,11.8,False,6.126,188.0
+charades_sta_smoke_453,453,ZMY8M,a person eats a sandwich from the table.,data/raw/charades/videos/ZMY8M.mp4,30.688867123734898,8.1,13.8,8.1,13.8,False,6.126,188.0
+charades_sta_smoke_454,454,ZMY8M,the person eats some food.,data/raw/charades/videos/ZMY8M.mp4,30.688867123734898,8.1,13.8,8.1,13.8,False,6.126,188.0
+charades_sta_smoke_455,455,ZMY8M,person opening a cabinet in a kitchen.,data/raw/charades/videos/ZMY8M.mp4,30.688867123734898,19.8,25.5,19.8,25.5,False,6.126,188.0
+charades_sta_smoke_456,456,ZMY8M,person eating breakfast.,data/raw/charades/videos/ZMY8M.mp4,30.688867123734898,8.1,13.8,8.1,13.8,False,6.126,188.0
+charades_sta_smoke_457,457,ZMY8M,person opens cabinets above it.,data/raw/charades/videos/ZMY8M.mp4,30.688867123734898,19.8,25.5,19.8,25.5,False,6.126,188.0
+charades_sta_smoke_458,458,39E0I,a person runs around covered in a blanket.,data/raw/charades/videos/39E0I.mp4,31.5315,0.0,6.3,0.0,6.3,False,29.97002997002997,945.0
+charades_sta_smoke_459,459,T9Y1N,the person starts smiling.,data/raw/charades/videos/T9Y1N.mp4,30.55668427468509,22.4,32.0,22.4,30.55668427468509,True,24.61,752.0
+charades_sta_smoke_460,460,T9Y1N,the person opens the box.,data/raw/charades/videos/T9Y1N.mp4,30.55668427468509,5.0,10.9,5.0,10.9,False,24.61,752.0
+charades_sta_smoke_461,461,T9Y1N,a person is sneezing on a box.,data/raw/charades/videos/T9Y1N.mp4,30.55668427468509,6.6,18.3,6.6,18.3,False,24.61,752.0
+charades_sta_smoke_462,462,T9Y1N,a person opens the doors to the pantry.,data/raw/charades/videos/T9Y1N.mp4,30.55668427468509,0.0,3.8,0.0,3.8,False,24.61,752.0
+charades_sta_smoke_463,463,0PU21,the person puts the cup down.,data/raw/charades/videos/0PU21.mp4,30.90019438300154,13.6,17.8,13.6,17.8,False,14.919,461.0
+charades_sta_smoke_464,464,AX46Z,person starts laughing.,data/raw/charades/videos/AX46Z.mp4,31.77689136191466,12.8,28.7,12.8,28.7,False,29.833,948.0
+charades_sta_smoke_465,465,AX46Z,person laughs as they lean against the dresser.,data/raw/charades/videos/AX46Z.mp4,31.77689136191466,12.8,28.7,12.8,28.7,False,29.833,948.0
+charades_sta_smoke_466,466,AX46Z,the animal sitting on the bed climbs on the person.,data/raw/charades/videos/AX46Z.mp4,31.77689136191466,0.0,8.2,0.0,8.2,False,29.833,948.0
+charades_sta_smoke_467,467,AX46Z,a person is awakening in their bed.,data/raw/charades/videos/AX46Z.mp4,31.77689136191466,1.2,7.2,1.2,7.2,False,29.833,948.0
+charades_sta_smoke_468,468,9POJB,the person sits in a chair for a moment.,data/raw/charades/videos/9POJB.mp4,31.406374999999997,14.0,27.9,14.0,27.9,False,23.976023976023978,753.0
+charades_sta_smoke_469,469,9POJB,person takes a blanket.,data/raw/charades/videos/9POJB.mp4,31.406374999999997,16.5,22.6,16.5,22.6,False,23.976023976023978,753.0
+charades_sta_smoke_470,470,9POJB,person sitting in a chair drinking a something.,data/raw/charades/videos/9POJB.mp4,31.406374999999997,14.0,27.9,14.0,27.9,False,23.976023976023978,753.0
+charades_sta_smoke_471,471,9POJB,person stand up.,data/raw/charades/videos/9POJB.mp4,31.406374999999997,2.2,7.2,2.2,7.2,False,23.976023976023978,753.0
+charades_sta_smoke_472,472,K0FAG,a person is smiling.,data/raw/charades/videos/K0FAG.mp4,29.77899445816919,11.0,21.1,11.0,21.1,False,14.977,446.0
+charades_sta_smoke_473,473,K0FAG,a person is standing in their kitchen laughing.,data/raw/charades/videos/K0FAG.mp4,29.77899445816919,11.0,21.1,11.0,21.1,False,14.977,446.0
+charades_sta_smoke_474,474,N0G70,a person puts food into a sandwich maker.,data/raw/charades/videos/N0G70.mp4,31.041757358604293,0.0,9.1,0.0,9.1,False,29.863,927.0
+charades_sta_smoke_475,475,N0G70,a person cooks a sandwich on a panini maker.,data/raw/charades/videos/N0G70.mp4,31.041757358604293,0.0,9.1,0.0,9.1,False,29.863,927.0
+charades_sta_smoke_476,476,SJ51G,person puts the blanket into a closet.,data/raw/charades/videos/SJ51G.mp4,30.974894033257254,16.0,21.7,16.0,21.7,False,6.134,190.0
+charades_sta_smoke_477,477,SJ51G,a person is seen snuggling up to a blanket.,data/raw/charades/videos/SJ51G.mp4,30.974894033257254,0.0,13.0,0.0,13.0,False,6.134,190.0
+charades_sta_smoke_478,478,SJ51G,a person opens a door.,data/raw/charades/videos/SJ51G.mp4,30.974894033257254,9.9,18.9,9.9,18.9,False,6.134,190.0
+charades_sta_smoke_479,479,SJ51G,person open their closet door.,data/raw/charades/videos/SJ51G.mp4,30.974894033257254,9.9,18.9,9.9,18.9,False,6.134,190.0
+charades_sta_smoke_480,480,SJ51G,person close the door.,data/raw/charades/videos/SJ51G.mp4,30.974894033257254,19.1,29.3,19.1,29.3,False,6.134,190.0
+charades_sta_smoke_481,481,SJ51G,person put the blanket away.,data/raw/charades/videos/SJ51G.mp4,30.974894033257254,16.0,21.7,16.0,21.7,False,6.134,190.0
+charades_sta_smoke_482,482,SJ51G,a person is snuggling with a blanket.,data/raw/charades/videos/SJ51G.mp4,30.974894033257254,0.0,13.0,0.0,13.0,False,6.134,190.0
+charades_sta_smoke_483,483,30I35,person took a drink from the glass.,data/raw/charades/videos/30I35.mp4,23.815458333333332,1.5,8.3,1.5,8.3,False,23.976023976023978,571.0
+charades_sta_smoke_484,484,30I35,person poured its contents into the glass.,data/raw/charades/videos/30I35.mp4,23.815458333333332,9.0,14.6,9.0,14.6,False,23.976023976023978,571.0
+charades_sta_smoke_485,485,30I35,person pours a glass of something.,data/raw/charades/videos/30I35.mp4,23.815458333333332,9.0,14.6,9.0,14.6,False,23.976023976023978,571.0
+charades_sta_smoke_486,486,30I35,person takes a drink from the glass.,data/raw/charades/videos/30I35.mp4,23.815458333333332,1.5,8.3,1.5,8.3,False,23.976023976023978,571.0
+charades_sta_smoke_487,487,30I35,person pours water into a glass.,data/raw/charades/videos/30I35.mp4,23.815458333333332,9.0,14.6,9.0,14.6,False,23.976023976023978,571.0
+charades_sta_smoke_488,488,MUWG4,person pours soda into a cup.,data/raw/charades/videos/MUWG4.mp4,42.292249999999996,5.0,13.4,5.0,13.4,False,23.976023976023978,1014.0
+charades_sta_smoke_489,489,WD35N,a person opens a cabinet.,data/raw/charades/videos/WD35N.mp4,30.32195833333333,3.9,9.7,3.9,9.7,False,23.976023976023978,727.0
+charades_sta_smoke_490,490,WD35N,person closes the cabinet.,data/raw/charades/videos/WD35N.mp4,30.32195833333333,3.9,9.0,3.9,9.0,False,23.976023976023978,727.0
+charades_sta_smoke_491,491,WD35N,person takes a pillow from inside.,data/raw/charades/videos/WD35N.mp4,30.32195833333333,8.9,14.3,8.9,14.3,False,23.976023976023978,727.0
+charades_sta_smoke_492,492,WD35N,person takes out a pillow like object.,data/raw/charades/videos/WD35N.mp4,30.32195833333333,8.9,14.3,8.9,14.3,False,23.976023976023978,727.0
+charades_sta_smoke_493,493,LLT3E,person walks through a doorway to leave the room.,data/raw/charades/videos/LLT3E.mp4,26.3263,15.4,22.4,15.4,22.4,False,29.97002997002997,789.0
+charades_sta_smoke_494,494,LLT3E,person they walk through a doorway.,data/raw/charades/videos/LLT3E.mp4,26.3263,15.4,22.4,15.4,22.4,False,29.97002997002997,789.0
+charades_sta_smoke_495,495,8UCK1,a person opens a cabinet.,data/raw/charades/videos/8UCK1.mp4,14.866666666666667,1.6,7.0,1.6,7.0,False,30.0,446.0
+charades_sta_smoke_496,496,8UCK1,a person is opening a cabinet.,data/raw/charades/videos/8UCK1.mp4,14.866666666666667,1.6,7.0,1.6,7.0,False,30.0,446.0
+charades_sta_smoke_497,497,8UCK1,person closing the cabinet.,data/raw/charades/videos/8UCK1.mp4,14.866666666666667,8.7,13.9,8.7,13.9,False,30.0,446.0
+charades_sta_smoke_498,498,4U8WV,person holding a small hand towel.,data/raw/charades/videos/4U8WV.mp4,32.224532224532226,0.0,14.7,0.0,14.7,False,29.822,961.0
+charades_sta_smoke_499,499,4U8WV,the person puts the towel down on the couch.,data/raw/charades/videos/4U8WV.mp4,32.224532224532226,8.5,15.2,8.5,15.2,False,29.822,961.0
+charades_sta_smoke_500,500,LSFJG,person starts running in place.,data/raw/charades/videos/LSFJG.mp4,24.666666666666668,20.7,26.0,20.7,24.666666666666668,True,24.0,592.0
+charades_sta_smoke_501,501,LSFJG,a person puts on a pair of shoes.,data/raw/charades/videos/LSFJG.mp4,24.666666666666668,1.8,9.4,1.8,9.4,False,24.0,592.0
+charades_sta_smoke_502,502,LSFJG,person begins running in place.,data/raw/charades/videos/LSFJG.mp4,24.666666666666668,20.7,26.0,20.7,24.666666666666668,True,24.0,592.0
+charades_sta_smoke_503,503,LSFJG,person they start running in place again.,data/raw/charades/videos/LSFJG.mp4,24.666666666666668,20.7,26.0,20.7,24.666666666666668,True,24.0,592.0
+charades_sta_smoke_504,504,LSFJG,person start watching themselves in a mirror.,data/raw/charades/videos/LSFJG.mp4,24.666666666666668,13.3,20.6,13.3,20.6,False,24.0,592.0
+charades_sta_smoke_505,505,LSFJG,person start running in palce again.,data/raw/charades/videos/LSFJG.mp4,24.666666666666668,20.7,26.0,20.7,24.666666666666668,True,24.0,592.0
+charades_sta_smoke_506,506,LSFJG,person starts running in place again.,data/raw/charades/videos/LSFJG.mp4,24.666666666666668,20.7,26.0,20.7,24.666666666666668,True,24.0,592.0
+charades_sta_smoke_507,507,W0QSB,a person is cooking on a stove.,data/raw/charades/videos/W0QSB.mp4,33.96666666666667,0.0,14.4,0.0,14.4,False,30.0,1019.0
+charades_sta_smoke_508,508,5IPJA,person puts a pillow on their head.,data/raw/charades/videos/5IPJA.mp4,31.200363058770137,13.9,20.9,13.9,20.9,False,17.628,550.0
+charades_sta_smoke_509,509,S7JTZ,person uses it to take pictures of their self.,data/raw/charades/videos/S7JTZ.mp4,28.39274964885292,3.0,14.5,3.0,14.5,False,29.902,849.0
+charades_sta_smoke_510,510,S7JTZ,person take a timed picture.,data/raw/charades/videos/S7JTZ.mp4,28.39274964885292,3.0,14.5,3.0,14.5,False,29.902,849.0
+charades_sta_smoke_511,511,S7JTZ,a person walks into the bathroom holding a camera.,data/raw/charades/videos/S7JTZ.mp4,28.39274964885292,2.4,14.5,2.4,14.5,False,29.902,849.0
+charades_sta_smoke_512,512,RVVDR,person puts the bag on the table.,data/raw/charades/videos/RVVDR.mp4,29.896533333333334,7.9,15.0,7.9,15.0,False,29.97002997002997,896.0
+charades_sta_smoke_513,513,RVVDR,person putting it on a table.,data/raw/charades/videos/RVVDR.mp4,29.896533333333334,3.7,12.6,3.7,12.6,False,29.97002997002997,896.0
+charades_sta_smoke_514,514,RVVDR,a person was holding a bag which he.,data/raw/charades/videos/RVVDR.mp4,29.896533333333334,0.0,13.8,0.0,13.8,False,29.97002997002997,896.0
+charades_sta_smoke_515,515,RVVDR,a person is putting groceries in a bag.,data/raw/charades/videos/RVVDR.mp4,29.896533333333334,0.5,11.0,0.5,11.0,False,29.97002997002997,896.0
+charades_sta_smoke_516,516,RVVDR,a person opens a bag.,data/raw/charades/videos/RVVDR.mp4,29.896533333333334,0.0,11.6,0.0,11.6,False,29.97002997002997,896.0
+charades_sta_smoke_517,517,T06AT,one person runs into the bathroom grasping a pillow.,data/raw/charades/videos/T06AT.mp4,30.9,0.0,13.4,0.0,13.4,False,30.0,927.0
+charades_sta_smoke_518,518,T06AT,a man runs into a bathroom holding a pillow.,data/raw/charades/videos/T06AT.mp4,30.9,0.0,13.4,0.0,13.4,False,30.0,927.0
+charades_sta_smoke_519,519,T06AT,another person is inside holding a blanket.,data/raw/charades/videos/T06AT.mp4,30.9,5.0,13.4,5.0,13.4,False,30.0,927.0
+charades_sta_smoke_520,520,TZ9FE,a person runs to the closet.,data/raw/charades/videos/TZ9FE.mp4,30.620599312264613,0.0,8.0,0.0,8.0,False,6.107,187.0
+charades_sta_smoke_521,521,TZ9FE,a person runs into a room.,data/raw/charades/videos/TZ9FE.mp4,30.620599312264613,0.0,8.0,0.0,8.0,False,6.107,187.0
+charades_sta_smoke_522,522,TZ9FE,person puts the clothes away.,data/raw/charades/videos/TZ9FE.mp4,30.620599312264613,23.0,29.0,23.0,29.0,False,6.107,187.0
+charades_sta_smoke_523,523,TZ9FE,person holding a stack of clothes.,data/raw/charades/videos/TZ9FE.mp4,30.620599312264613,0.0,14.0,0.0,14.0,False,6.107,187.0
+charades_sta_smoke_524,524,T7ST5,the person used the spoon to eat from the cup.,data/raw/charades/videos/T7ST5.mp4,21.54134332352154,0.0,8.7,0.0,8.7,False,29.896,644.0
+charades_sta_smoke_525,525,T7ST5,person eating a piece of pie.,data/raw/charades/videos/T7ST5.mp4,21.54134332352154,0.0,8.7,0.0,8.7,False,29.896,644.0
+charades_sta_smoke_526,526,IQA16,person putting them on a table.,data/raw/charades/videos/IQA16.mp4,31.346282652377763,0.8,13.6,0.8,13.6,False,29.86,936.0
+charades_sta_smoke_527,527,IQA16,person turns off the light.,data/raw/charades/videos/IQA16.mp4,31.346282652377763,11.2,19.6,11.2,19.6,False,29.86,936.0
+charades_sta_smoke_528,528,IQA16,person switch the light off.,data/raw/charades/videos/IQA16.mp4,31.346282652377763,11.2,19.6,11.2,19.6,False,29.86,936.0
+charades_sta_smoke_529,529,IQA16,the person turns off the light.,data/raw/charades/videos/IQA16.mp4,31.346282652377763,11.2,19.6,11.2,19.6,False,29.86,936.0
+charades_sta_smoke_530,530,M3OMM,a man begins to undress.,data/raw/charades/videos/M3OMM.mp4,20.80981941309255,0.0,8.4,0.0,8.4,False,14.176,295.0
+charades_sta_smoke_531,531,J7BOV,a person is putting a camera next to a towel.,data/raw/charades/videos/J7BOV.mp4,32.38975673943116,4.6,11.9,4.6,11.9,False,29.639,960.0
+charades_sta_smoke_532,532,RPXAC,person dressing themselves.,data/raw/charades/videos/RPXAC.mp4,31.126066578536236,10.1,22.2,10.1,22.2,False,16.642,518.0
+charades_sta_smoke_533,533,RLQ9K,the person takes out a bottle of medicine.,data/raw/charades/videos/RLQ9K.mp4,31.675277749636983,16.1,30.7,16.1,30.7,False,29.613,938.0
+charades_sta_smoke_534,534,RLQ9K,person take some medicine.,data/raw/charades/videos/RLQ9K.mp4,31.675277749636983,16.1,30.7,16.1,30.7,False,29.613,938.0
+charades_sta_smoke_535,535,PRTAJ,a person opens a cabinet.,data/raw/charades/videos/PRTAJ.mp4,42.00888921539818,7.5,19.7,7.5,19.7,False,6.117752808988764,257.0
+charades_sta_smoke_536,536,PRTAJ,person closes the cabinet.,data/raw/charades/videos/PRTAJ.mp4,42.00888921539818,8.7,17.1,8.7,17.1,False,6.117752808988764,257.0
+charades_sta_smoke_537,537,PRTAJ,person looks out the window.,data/raw/charades/videos/PRTAJ.mp4,42.00888921539818,31.4,43.0,31.4,42.00888921539818,True,6.117752808988764,257.0
+charades_sta_smoke_538,538,PRTAJ,person gets dressed.,data/raw/charades/videos/PRTAJ.mp4,42.00888921539818,18.8,33.1,18.8,33.1,False,6.117752808988764,257.0
+charades_sta_smoke_539,539,KZ36U,a person runs into the garage.,data/raw/charades/videos/KZ36U.mp4,30.597233333333335,2.9,8.0,2.9,8.0,False,29.97002997002997,917.0
+charades_sta_smoke_540,540,KZ36U,the person takes a picture of something.,data/raw/charades/videos/KZ36U.mp4,30.597233333333335,9.0,15.5,9.0,15.5,False,29.97002997002997,917.0
+charades_sta_smoke_541,541,CD9GP,person stand up.,data/raw/charades/videos/CD9GP.mp4,31.24600638977636,23.5,28.9,23.5,28.9,False,26.083333333333332,815.0
+charades_sta_smoke_542,542,7NXWU,person drinking from a cup.,data/raw/charades/videos/7NXWU.mp4,24.893336120110078,4.2,13.1,4.2,13.1,False,29.686659772492245,739.0
+charades_sta_smoke_543,543,OHNUQ,a person is eating some food.,data/raw/charades/videos/OHNUQ.mp4,37.370473537604454,6.5,13.5,6.5,13.5,False,29.916666666666668,1118.0
+charades_sta_smoke_544,544,OHNUQ,person they are watching television in the living room.,data/raw/charades/videos/OHNUQ.mp4,37.370473537604454,0.0,9.5,0.0,9.5,False,29.916666666666668,1118.0
+charades_sta_smoke_545,545,OHNUQ,person eating it out of the box.,data/raw/charades/videos/OHNUQ.mp4,37.370473537604454,6.5,13.5,6.5,13.5,False,29.916666666666668,1118.0
+charades_sta_smoke_546,546,OHNUQ,person watching the television.,data/raw/charades/videos/OHNUQ.mp4,37.370473537604454,0.0,9.5,0.0,9.5,False,29.916666666666668,1118.0
+charades_sta_smoke_547,547,OHNUQ,person watching television.,data/raw/charades/videos/OHNUQ.mp4,37.370473537604454,0.0,9.5,0.0,9.5,False,29.916666666666668,1118.0
+charades_sta_smoke_548,548,5VUT9,the person is holding a broom.,data/raw/charades/videos/5VUT9.mp4,26.033333333333335,0.0,10.0,0.0,10.0,False,30.0,781.0
+charades_sta_smoke_549,549,5VUT9,person put the broom aside.,data/raw/charades/videos/5VUT9.mp4,26.033333333333335,5.0,10.0,5.0,10.0,False,30.0,781.0
+charades_sta_smoke_550,550,5VUT9,person open a cabinet door get a cup out.,data/raw/charades/videos/5VUT9.mp4,26.033333333333335,8.0,13.0,8.0,13.0,False,30.0,781.0
+charades_sta_smoke_551,551,5VUT9,a person standing in the doorway holds a broom.,data/raw/charades/videos/5VUT9.mp4,26.033333333333335,0.0,10.0,0.0,10.0,False,30.0,781.0
+charades_sta_smoke_552,552,5VUT9,person pour a cup of coffee.,data/raw/charades/videos/5VUT9.mp4,26.033333333333335,18.0,25.0,18.0,25.0,False,30.0,781.0
+charades_sta_smoke_553,553,FQS7O,person closes a book.,data/raw/charades/videos/FQS7O.mp4,24.576373032087492,6.9,11.5,6.9,11.5,False,16.642,409.0
+charades_sta_smoke_554,554,55NRK,person begins sneezing.,data/raw/charades/videos/55NRK.mp4,30.595549738219894,19.1,30.6,19.1,30.595549738219894,True,6.112,187.0
+charades_sta_smoke_555,555,UNWMJ,the person was undressing by the wardrobe.,data/raw/charades/videos/UNWMJ.mp4,31.297933333333333,1.3,13.6,1.3,13.6,False,14.985014985014985,469.0
+charades_sta_smoke_556,556,X9M5B,the person is sitting in the couch with the laptop.,data/raw/charades/videos/X9M5B.mp4,32.3,0.0,15.9,0.0,15.9,False,30.0,969.0
+charades_sta_smoke_557,557,9RRED,person sits down on a sofa.,data/raw/charades/videos/9RRED.mp4,30.697333333333333,25.5,32.0,25.5,30.697333333333333,True,29.97002997002997,920.0
+charades_sta_smoke_558,558,9RRED,person takes off his shoes.,data/raw/charades/videos/9RRED.mp4,30.697333333333333,18.3,25.3,18.3,25.3,False,29.97002997002997,920.0
+charades_sta_smoke_559,559,9RRED,this person takes off their shoes.,data/raw/charades/videos/9RRED.mp4,30.697333333333333,18.3,25.3,18.3,25.3,False,29.97002997002997,920.0
+charades_sta_smoke_560,560,9RRED,person drinking from a water bottle.,data/raw/charades/videos/9RRED.mp4,30.697333333333333,0.0,5.8,0.0,5.8,False,29.97002997002997,920.0
+charades_sta_smoke_561,561,9RRED,the person takes off a pair of shoes.,data/raw/charades/videos/9RRED.mp4,30.697333333333333,18.3,25.3,18.3,25.3,False,29.97002997002997,920.0
+charades_sta_smoke_562,562,9RRED,person sits on a couch.,data/raw/charades/videos/9RRED.mp4,30.697333333333333,25.5,32.0,25.5,30.697333333333333,True,29.97002997002997,920.0
+charades_sta_smoke_563,563,9RRED,person drinking from a plastic water bottle.,data/raw/charades/videos/9RRED.mp4,30.697333333333333,0.0,5.8,0.0,5.8,False,29.97002997002997,920.0
+charades_sta_smoke_564,564,IALUY,person holding a towel.,data/raw/charades/videos/IALUY.mp4,29.733333333333334,9.5,20.4,9.5,20.4,False,30.0,892.0
+charades_sta_smoke_565,565,IALUY,a person is sneezing.,data/raw/charades/videos/IALUY.mp4,29.733333333333334,5.6,13.2,5.6,13.2,False,30.0,892.0
+charades_sta_smoke_566,566,IALUY,person takes a towel from a rack.,data/raw/charades/videos/IALUY.mp4,29.733333333333334,8.6,15.1,8.6,15.1,False,30.0,892.0
+charades_sta_smoke_567,567,HHNTA,person open a box.,data/raw/charades/videos/HHNTA.mp4,33.80914086583568,24.9,31.1,24.9,31.1,False,29.844,1009.0
+charades_sta_smoke_568,568,HHNTA,person eating something.,data/raw/charades/videos/HHNTA.mp4,33.80914086583568,0.0,14.5,0.0,14.5,False,29.844,1009.0
+charades_sta_smoke_569,569,HHNTA,a person is walking around the room eating a sandwich.,data/raw/charades/videos/HHNTA.mp4,33.80914086583568,0.0,14.7,0.0,14.7,False,29.844,1009.0
+charades_sta_smoke_570,570,HHNTA,person removes a sweatshirt.,data/raw/charades/videos/HHNTA.mp4,33.80914086583568,0.0,14.5,0.0,14.5,False,29.844,1009.0
+charades_sta_smoke_571,571,HHNTA,person start undressing.,data/raw/charades/videos/HHNTA.mp4,33.80914086583568,13.9,26.2,13.9,26.2,False,29.844,1009.0
+charades_sta_smoke_572,572,HHNTA,person takes off a sweatshirt.,data/raw/charades/videos/HHNTA.mp4,33.80914086583568,0.0,14.5,0.0,14.5,False,29.844,1009.0
+charades_sta_smoke_573,573,HHNTA,the person takes off their hoodie/sweater.,data/raw/charades/videos/HHNTA.mp4,33.80914086583568,0.0,14.5,0.0,14.5,False,29.844,1009.0
+charades_sta_smoke_574,574,BM9NZ,the person eats food.,data/raw/charades/videos/BM9NZ.mp4,33.714285714285715,24.1,30.8,24.1,30.8,False,29.75,1003.0
+charades_sta_smoke_575,575,BM9NZ,a person is snuggling with their pillow in bed.,data/raw/charades/videos/BM9NZ.mp4,33.714285714285715,0.0,15.0,0.0,15.0,False,29.75,1003.0
+charades_sta_smoke_576,576,BM9NZ,person snuggling with a pillow.,data/raw/charades/videos/BM9NZ.mp4,33.714285714285715,0.0,15.0,0.0,15.0,False,29.75,1003.0
+charades_sta_smoke_577,577,BM9NZ,person they start eating.,data/raw/charades/videos/BM9NZ.mp4,33.714285714285715,24.1,30.8,24.1,30.8,False,29.75,1003.0
+charades_sta_smoke_578,578,318CP,person pick up a cup to drink.,data/raw/charades/videos/318CP.mp4,32.4,19.7,33.0,19.7,32.4,True,30.0,972.0
+charades_sta_smoke_579,579,318CP,person eat it.,data/raw/charades/videos/318CP.mp4,32.4,8.7,23.6,8.7,23.6,False,30.0,972.0
+charades_sta_smoke_580,580,318CP,person eats it.,data/raw/charades/videos/318CP.mp4,32.4,8.7,23.6,8.7,23.6,False,30.0,972.0
+charades_sta_smoke_581,581,318CP,person drinks from a cup.,data/raw/charades/videos/318CP.mp4,32.4,19.7,33.0,19.7,32.4,True,30.0,972.0
+charades_sta_smoke_582,582,H608V,a person is running in the living room in circles.,data/raw/charades/videos/H608V.mp4,20.733333333333334,11.6,22.0,11.6,20.733333333333334,True,15.0,311.0
+charades_sta_smoke_583,583,H608V,person eats a sandwich.,data/raw/charades/videos/H608V.mp4,20.733333333333334,0.9,7.9,0.9,7.9,False,15.0,311.0
+charades_sta_smoke_584,584,H608V,person begins to run around in a circle again.,data/raw/charades/videos/H608V.mp4,20.733333333333334,11.6,22.0,11.6,20.733333333333334,True,15.0,311.0
+charades_sta_smoke_585,585,H608V,a person runs around the room in a circle.,data/raw/charades/videos/H608V.mp4,20.733333333333334,11.6,22.0,11.6,20.733333333333334,True,15.0,311.0
+charades_sta_smoke_586,586,H608V,person take a bite of a sandwich.,data/raw/charades/videos/H608V.mp4,20.733333333333334,1.0,6.4,1.0,6.4,False,15.0,311.0
+charades_sta_smoke_587,587,H608V,person continue to run.,data/raw/charades/videos/H608V.mp4,20.733333333333334,11.6,22.0,11.6,20.733333333333334,True,15.0,311.0
+charades_sta_smoke_588,588,H608V,person start running again.,data/raw/charades/videos/H608V.mp4,20.733333333333334,11.6,22.0,11.6,20.733333333333334,True,15.0,311.0
+charades_sta_smoke_589,589,IGZZG,person reading a book.,data/raw/charades/videos/IGZZG.mp4,18.467276227141483,0.0,8.8,0.0,8.8,False,16.624,307.0
+charades_sta_smoke_590,590,IGZZG,person reading books.,data/raw/charades/videos/IGZZG.mp4,18.467276227141483,0.0,8.8,0.0,8.8,False,16.624,307.0
+charades_sta_smoke_591,591,IGZZG,the person is sitting on the floor watching television.,data/raw/charades/videos/IGZZG.mp4,18.467276227141483,5.4,11.6,5.4,11.6,False,16.624,307.0
+charades_sta_smoke_592,592,MPHFU,a person looks at a picture in a picture frame.,data/raw/charades/videos/MPHFU.mp4,30.296933333333335,0.0,11.2,0.0,11.2,False,29.97002997002997,908.0
+charades_sta_smoke_593,593,MPHFU,a person holds a picture.,data/raw/charades/videos/MPHFU.mp4,30.296933333333335,0.0,12.2,0.0,12.2,False,29.97002997002997,908.0
+charades_sta_smoke_594,594,YYLKT,person begin to eat a sandwich.,data/raw/charades/videos/YYLKT.mp4,23.254416536473983,12.5,24.0,12.5,23.254416536473983,True,16.642,387.0
+charades_sta_smoke_595,595,YYLKT,the person puts the blanket on the floor.,data/raw/charades/videos/YYLKT.mp4,23.254416536473983,7.7,15.3,7.7,15.3,False,16.642,387.0
+charades_sta_smoke_596,596,TUJF4,a person opens a door.,data/raw/charades/videos/TUJF4.mp4,29.4294,0.9,8.2,0.9,8.2,False,29.97002997002997,882.0
+charades_sta_smoke_597,597,TUJF4,person takes a pair of shoes from under a chair.,data/raw/charades/videos/TUJF4.mp4,29.4294,14.9,21.9,14.9,21.9,False,29.97002997002997,882.0
+charades_sta_smoke_598,598,A2X7Q,person put a sandwich in the bag.,data/raw/charades/videos/A2X7Q.mp4,18.93854748603352,11.1,18.7,11.1,18.7,False,29.833333333333332,565.0
+charades_sta_smoke_599,599,A2X7Q,person take a bag out.,data/raw/charades/videos/A2X7Q.mp4,18.93854748603352,5.5,10.7,5.5,10.7,False,29.833333333333332,565.0
+charades_sta_smoke_600,600,A2X7Q,a person walks into the kitchen they open the cabinet.,data/raw/charades/videos/A2X7Q.mp4,18.93854748603352,3.0,11.0,3.0,11.0,False,29.833333333333332,565.0
+charades_sta_smoke_601,601,URAIM,the person takes a picture from the table.,data/raw/charades/videos/URAIM.mp4,31.166666666666668,13.7,20.4,13.7,20.4,False,24.0,748.0
+charades_sta_smoke_602,602,URAIM,the person takes a picture from a coffee table.,data/raw/charades/videos/URAIM.mp4,31.166666666666668,13.7,20.4,13.7,20.4,False,24.0,748.0
+charades_sta_smoke_603,603,URAIM,person puts it back on the table.,data/raw/charades/videos/URAIM.mp4,31.166666666666668,25.7,32.0,25.7,31.166666666666668,True,24.0,748.0
+charades_sta_smoke_604,604,MBAA5,a person is smiling.,data/raw/charades/videos/MBAA5.mp4,25.625600000000002,14.9,24.2,14.9,24.2,False,29.97002997002997,768.0
+charades_sta_smoke_605,605,MBAA5,person opens a closet door.,data/raw/charades/videos/MBAA5.mp4,25.625600000000002,2.7,13.0,2.7,13.0,False,29.97002997002997,768.0
+charades_sta_smoke_606,606,MBAA5,person closing a closet door in the hallway.,data/raw/charades/videos/MBAA5.mp4,25.625600000000002,12.0,23.8,12.0,23.8,False,29.97002997002997,768.0
+charades_sta_smoke_607,607,MBAA5,person closes the door.,data/raw/charades/videos/MBAA5.mp4,25.625600000000002,12.0,23.8,12.0,23.8,False,29.97002997002997,768.0
+charades_sta_smoke_608,608,MBAA5,the person opens a closet.,data/raw/charades/videos/MBAA5.mp4,25.625600000000002,2.7,13.0,2.7,13.0,False,29.97002997002997,768.0
+charades_sta_smoke_609,609,MBAA5,person puts it on a shelf.,data/raw/charades/videos/MBAA5.mp4,25.625600000000002,7.6,17.5,7.6,17.5,False,29.97002997002997,768.0
+charades_sta_smoke_610,610,YE6TZ,a person is putting a book on a chair.,data/raw/charades/videos/YE6TZ.mp4,30.964266666666667,0.2,8.3,0.2,8.3,False,29.97002997002997,928.0
+charades_sta_smoke_611,611,YE6TZ,person start drinking from a cup.,data/raw/charades/videos/YE6TZ.mp4,30.964266666666667,10.1,17.3,10.1,17.3,False,29.97002997002997,928.0
+charades_sta_smoke_612,612,YE6TZ,a person put a book into a closet.,data/raw/charades/videos/YE6TZ.mp4,30.964266666666667,0.2,8.3,0.2,8.3,False,29.97002997002997,928.0
+charades_sta_smoke_613,613,0TDOP,a person is putting a box on the table.,data/raw/charades/videos/0TDOP.mp4,30.590544740716503,2.1,8.0,2.1,8.0,False,6.113,187.0
+charades_sta_smoke_614,614,0TDOP,a person holding a brown cardboard box enters a kitchen.,data/raw/charades/videos/0TDOP.mp4,30.590544740716503,0.0,6.7,0.0,6.7,False,6.113,187.0
+charades_sta_smoke_615,615,8B4ZP,person they stand up.,data/raw/charades/videos/8B4ZP.mp4,48.4,31.6,40.2,31.6,40.2,False,30.0,1452.0
+charades_sta_smoke_616,616,8B4ZP,person turn off the light.,data/raw/charades/videos/8B4ZP.mp4,48.4,46.4,49.0,46.4,48.4,True,30.0,1452.0
+charades_sta_smoke_617,617,8B4ZP,person start undressing.,data/raw/charades/videos/8B4ZP.mp4,48.4,38.4,47.8,38.4,47.8,False,30.0,1452.0
+charades_sta_smoke_618,618,8B4ZP,person turning off the light.,data/raw/charades/videos/8B4ZP.mp4,48.4,46.4,49.0,46.4,48.4,True,30.0,1452.0
+charades_sta_smoke_619,619,8B4ZP,the person puts the book down.,data/raw/charades/videos/8B4ZP.mp4,48.4,27.5,34.2,27.5,34.2,False,30.0,1452.0
+charades_sta_smoke_620,620,N0NLE,person laughs at cellphone.,data/raw/charades/videos/N0NLE.mp4,29.529500000000002,23.5,30.0,23.5,29.529500000000002,True,29.97002997002997,885.0
+charades_sta_smoke_621,621,N0NLE,person laughing a lot.,data/raw/charades/videos/N0NLE.mp4,29.529500000000002,23.5,30.0,23.5,29.529500000000002,True,29.97002997002997,885.0
+charades_sta_smoke_622,622,N0NLE,person is laughing at the camera.,data/raw/charades/videos/N0NLE.mp4,29.529500000000002,23.5,30.0,23.5,29.529500000000002,True,29.97002997002997,885.0
+charades_sta_smoke_623,623,AVL8A,person opens a book.,data/raw/charades/videos/AVL8A.mp4,33.99229166666667,3.8,8.5,3.8,8.5,False,23.976023976023978,815.0
+charades_sta_smoke_624,624,AVL8A,person smiling at the book.,data/raw/charades/videos/AVL8A.mp4,33.99229166666667,4.8,12.2,4.8,12.2,False,23.976023976023978,815.0
+charades_sta_smoke_625,625,7ZL8E,person putting the shoes down on the floor.,data/raw/charades/videos/7ZL8E.mp4,31.297933333333333,16.6,27.2,16.6,27.2,False,14.985014985014985,469.0
+charades_sta_smoke_626,626,7ZL8E,a person takes off their shoes.,data/raw/charades/videos/7ZL8E.mp4,31.297933333333333,16.5,25.9,16.5,25.9,False,14.985014985014985,469.0
+charades_sta_smoke_627,627,7ZL8E,person they hold each shoe.,data/raw/charades/videos/7ZL8E.mp4,31.297933333333333,0.0,12.6,0.0,12.6,False,14.985014985014985,469.0
+charades_sta_smoke_628,628,7ZL8E,person takes off their shoes.,data/raw/charades/videos/7ZL8E.mp4,31.297933333333333,16.5,25.9,16.5,25.9,False,14.985014985014985,469.0
+charades_sta_smoke_629,629,V0WK7,another person stands by them smiling.,data/raw/charades/videos/V0WK7.mp4,31.0,6.1,16.1,6.1,16.1,False,30.0,930.0
+charades_sta_smoke_630,630,3JXKZ,a person is opening a bag.,data/raw/charades/videos/3JXKZ.mp4,32.4324,0.0,3.8,0.0,3.8,False,14.985014985014985,486.0
+charades_sta_smoke_631,631,KQ6XW,person take a drink from their water bottle.,data/raw/charades/videos/KQ6XW.mp4,39.29816127869247,15.7,25.2,15.7,25.2,False,16.642,654.0
+charades_sta_smoke_632,632,9TM1K,the person opens a box.,data/raw/charades/videos/9TM1K.mp4,30.633333333333333,0.0,8.1,0.0,8.1,False,30.0,919.0
+charades_sta_smoke_633,633,9TM1K,person closes the book.,data/raw/charades/videos/9TM1K.mp4,30.633333333333333,25.1,32.0,25.1,30.633333333333333,True,30.0,919.0
+charades_sta_smoke_634,634,YMD74,a person is awakening.,data/raw/charades/videos/YMD74.mp4,30.733333333333334,3.4,8.8,3.4,8.8,False,15.0,461.0
+charades_sta_smoke_635,635,YMD74,person putting on shoes.,data/raw/charades/videos/YMD74.mp4,30.733333333333334,16.0,23.2,16.0,23.2,False,15.0,461.0
+charades_sta_smoke_636,636,YMD74,person awakening.,data/raw/charades/videos/YMD74.mp4,30.733333333333334,3.4,8.8,3.4,8.8,False,15.0,461.0
+charades_sta_smoke_637,637,ATIAW,person turn on the light.,data/raw/charades/videos/ATIAW.mp4,31.989554431206138,27.3,32.9,27.3,31.989554431206138,True,6.127,196.0
+charades_sta_smoke_638,638,ATIAW,person turning on a light.,data/raw/charades/videos/ATIAW.mp4,31.989554431206138,27.3,32.9,27.3,31.989554431206138,True,6.127,196.0
+charades_sta_smoke_639,639,0UK3H,person taping the box closed.,data/raw/charades/videos/0UK3H.mp4,24.636461963706285,2.1,8.2,2.1,8.2,False,16.642,410.0
+charades_sta_smoke_640,640,KWZSA,person walks to the doorway.,data/raw/charades/videos/KWZSA.mp4,30.166666666666668,23.8,31.0,23.8,30.166666666666668,True,30.0,905.0
+charades_sta_smoke_641,641,KWZSA,a person was sitting at a table.,data/raw/charades/videos/KWZSA.mp4,30.166666666666668,13.4,28.1,13.4,28.1,False,30.0,905.0
+charades_sta_smoke_642,642,KWZSA,person begins tidying the table.,data/raw/charades/videos/KWZSA.mp4,30.166666666666668,15.1,26.5,15.1,26.5,False,30.0,905.0
+charades_sta_smoke_643,643,12XD3,person looks outy the window.,data/raw/charades/videos/12XD3.mp4,19.894875,4.1,11.9,4.1,11.9,False,23.976023976023978,477.0
+charades_sta_smoke_644,644,12XD3,person eating some food.,data/raw/charades/videos/12XD3.mp4,19.894875,0.0,4.0,0.0,4.0,False,23.976023976023978,477.0
+charades_sta_smoke_645,645,12XD3,the person is look at a picture.,data/raw/charades/videos/12XD3.mp4,19.894875,1.4,7.9,1.4,7.9,False,23.976023976023978,477.0
+charades_sta_smoke_646,646,12XD3,a person is eating.,data/raw/charades/videos/12XD3.mp4,19.894875,0.0,4.0,0.0,4.0,False,23.976023976023978,477.0
+charades_sta_smoke_647,647,12XD3,the person begins eating the sandwich.,data/raw/charades/videos/12XD3.mp4,19.894875,0.0,4.0,0.0,4.0,False,23.976023976023978,477.0
+charades_sta_smoke_648,648,12XD3,person watching something out the window.,data/raw/charades/videos/12XD3.mp4,19.894875,4.1,11.9,4.1,11.9,False,23.976023976023978,477.0
+charades_sta_smoke_649,649,12XD3,person looks at the picture.,data/raw/charades/videos/12XD3.mp4,19.894875,1.4,7.9,1.4,7.9,False,23.976023976023978,477.0
+charades_sta_smoke_650,650,3Q6N1,a person opens their laptop to do their work.,data/raw/charades/videos/3Q6N1.mp4,13.4,0.0,4.4,0.0,4.4,False,15.0,201.0
+charades_sta_smoke_651,651,3Q6N1,a person starts working on a laptop.,data/raw/charades/videos/3Q6N1.mp4,13.4,11.4,14.0,11.4,13.4,True,15.0,201.0
+charades_sta_smoke_652,652,7XCAP,a person is smiling.,data/raw/charades/videos/7XCAP.mp4,30.70891865403463,25.2,30.7,25.2,30.7,False,6.122,188.0
+charades_sta_smoke_653,653,7XCAP,person they are drinking a glass of water.,data/raw/charades/videos/7XCAP.mp4,30.70891865403463,18.1,32.0,18.1,30.70891865403463,True,6.122,188.0
+charades_sta_smoke_654,654,7XCAP,person drinks from a glass.,data/raw/charades/videos/7XCAP.mp4,30.70891865403463,18.1,32.0,18.1,30.70891865403463,True,6.122,188.0
+charades_sta_smoke_655,655,7XCAP,person begin to drink water from a glass cup.,data/raw/charades/videos/7XCAP.mp4,30.70891865403463,18.1,32.0,18.1,30.70891865403463,True,6.122,188.0
+charades_sta_smoke_656,656,GY8P2,person is sneezing.,data/raw/charades/videos/GY8P2.mp4,17.04,9.5,14.9,9.5,14.9,False,16.666666666666668,284.0
+charades_sta_smoke_657,657,GY8P2,the sneezing person picks up a broom as well.,data/raw/charades/videos/GY8P2.mp4,17.04,9.5,14.9,9.5,14.9,False,16.666666666666668,284.0
+charades_sta_smoke_658,658,XK0QV,person drinking a glass of water.,data/raw/charades/videos/XK0QV.mp4,34.734700000000004,0.0,14.3,0.0,14.3,False,29.97002997002997,1041.0
+charades_sta_smoke_659,659,1HZGH,person putting on their shoes.,data/raw/charades/videos/1HZGH.mp4,32.78888776097181,16.7,32.2,16.7,32.2,False,16.6214848143982,545.0
+charades_sta_smoke_660,660,1HZGH,person begin putting on their shoes.,data/raw/charades/videos/1HZGH.mp4,32.78888776097181,16.7,32.2,16.7,32.2,False,16.6214848143982,545.0
+charades_sta_smoke_661,661,1HZGH,person proceeds to stand put on a pair of shoes.,data/raw/charades/videos/1HZGH.mp4,32.78888776097181,16.7,32.2,16.7,32.2,False,16.6214848143982,545.0
+charades_sta_smoke_662,662,J5K87,a person is laughing on the phone.,data/raw/charades/videos/J5K87.mp4,35.20183333333333,15.4,26.5,15.4,26.5,False,29.97002997002997,1055.0
+charades_sta_smoke_663,663,J5K87,person drinking a glass of orange juice.,data/raw/charades/videos/J5K87.mp4,35.20183333333333,7.9,14.1,7.9,14.1,False,29.97002997002997,1055.0
+charades_sta_smoke_664,664,DR1ZU,person turns the light on.,data/raw/charades/videos/DR1ZU.mp4,13.583333333333334,2.1,7.6,2.1,7.6,False,24.0,326.0
+charades_sta_smoke_665,665,DR1ZU,a person is fixing the light near the stairs.,data/raw/charades/videos/DR1ZU.mp4,13.583333333333334,0.0,5.7,0.0,5.7,False,24.0,326.0
+charades_sta_smoke_666,666,DR1ZU,a person turns on the light.,data/raw/charades/videos/DR1ZU.mp4,13.583333333333334,2.1,7.6,2.1,7.6,False,24.0,326.0
+charades_sta_smoke_667,667,874F1,the person drinks from a glass.,data/raw/charades/videos/874F1.mp4,32.66596666666667,0.0,3.6,0.0,3.6,False,29.97002997002997,979.0
+charades_sta_smoke_668,668,QJM3B,person closes the book.,data/raw/charades/videos/QJM3B.mp4,29.866666666666667,10.1,14.4,10.1,14.4,False,30.0,896.0
+charades_sta_smoke_669,669,J6JNK,person closing a wood door.,data/raw/charades/videos/J6JNK.mp4,30.766666666666666,24.0,32.0,24.0,30.766666666666666,True,30.0,923.0
+charades_sta_smoke_670,670,J6JNK,a person is awakening with clothes on.,data/raw/charades/videos/J6JNK.mp4,30.766666666666666,0.9,10.8,0.9,10.8,False,30.0,923.0
+charades_sta_smoke_671,671,J6JNK,person closing the door.,data/raw/charades/videos/J6JNK.mp4,30.766666666666666,24.0,32.0,24.0,30.766666666666666,True,30.0,923.0
+charades_sta_smoke_672,672,J6JNK,person closing the door next to their bed.,data/raw/charades/videos/J6JNK.mp4,30.766666666666666,24.0,32.0,24.0,30.766666666666666,True,30.0,923.0
+charades_sta_smoke_673,673,JVH7Q,the person looks out the window.,data/raw/charades/videos/JVH7Q.mp4,29.1291,0.0,3.7,0.0,3.7,False,29.97002997002997,873.0
+charades_sta_smoke_674,674,FQM2N,a person sits in a chair.,data/raw/charades/videos/FQM2N.mp4,34.59616985845129,0.0,10.0,0.0,10.0,False,24.02,831.0
+charades_sta_smoke_675,675,FQM2N,person sitting on the bed.,data/raw/charades/videos/FQM2N.mp4,34.59616985845129,0.0,3.2,0.0,3.2,False,24.02,831.0
+charades_sta_smoke_676,676,21WN7,person put the plate on a table.,data/raw/charades/videos/21WN7.mp4,34.930362116991645,15.2,21.5,15.2,21.5,False,29.916666666666668,1045.0
+charades_sta_smoke_677,677,21WN7,a person sitting in a chair eating something.,data/raw/charades/videos/21WN7.mp4,34.930362116991645,2.0,16.0,2.0,16.0,False,29.916666666666668,1045.0
+charades_sta_smoke_678,678,21WN7,a person is sitting on the couch eating food.,data/raw/charades/videos/21WN7.mp4,34.930362116991645,2.0,16.0,2.0,16.0,False,29.916666666666668,1045.0
+charades_sta_smoke_679,679,21WN7,person eating food.,data/raw/charades/videos/21WN7.mp4,34.930362116991645,2.0,16.0,2.0,16.0,False,29.916666666666668,1045.0
+charades_sta_smoke_680,680,21WN7,person puts the food on a table.,data/raw/charades/videos/21WN7.mp4,34.930362116991645,15.4,32.1,15.4,32.1,False,29.916666666666668,1045.0
+charades_sta_smoke_681,681,ECFMO,person closes the door.,data/raw/charades/videos/ECFMO.mp4,29.295933333333334,23.2,30.0,23.2,29.295933333333334,True,29.97002997002997,878.0
+charades_sta_smoke_682,682,ECFMO,person simultaneously being interrupted by sneezing.,data/raw/charades/videos/ECFMO.mp4,29.295933333333334,3.1,15.5,3.1,15.5,False,29.97002997002997,878.0
+charades_sta_smoke_683,683,GIIF8,a person puts a bag on a shelf.,data/raw/charades/videos/GIIF8.mp4,16.2,1.2,8.0,1.2,8.0,False,15.0,243.0
+charades_sta_smoke_684,684,75M1Z,person sat on the sofa to read a book.,data/raw/charades/videos/75M1Z.mp4,30.833333333333332,25.9,32.0,25.9,30.833333333333332,True,30.0,925.0
+charades_sta_smoke_685,685,75M1Z,person sits on the sofa.,data/raw/charades/videos/75M1Z.mp4,30.833333333333332,23.6,29.4,23.6,29.4,False,30.0,925.0
+charades_sta_smoke_686,686,75M1Z,person opens a box with a book.,data/raw/charades/videos/75M1Z.mp4,30.833333333333332,25.1,31.6,25.1,30.833333333333332,True,30.0,925.0
+charades_sta_smoke_687,687,75M1Z,person opens the book.,data/raw/charades/videos/75M1Z.mp4,30.833333333333332,25.1,31.6,25.1,30.833333333333332,True,30.0,925.0
+charades_sta_smoke_688,688,J3Y7L,a smiling person opens a box.,data/raw/charades/videos/J3Y7L.mp4,29.746445844936243,0.0,9.1,0.0,9.1,False,28.911016949152543,860.0
+charades_sta_smoke_689,689,J3Y7L,a person opens a box.,data/raw/charades/videos/J3Y7L.mp4,29.746445844936243,0.0,9.1,0.0,9.1,False,28.911016949152543,860.0
+charades_sta_smoke_690,690,TQYV1,person starts sneezing.,data/raw/charades/videos/TQYV1.mp4,30.966666666666665,21.1,27.2,21.1,27.2,False,30.0,929.0
+charades_sta_smoke_691,691,GKH0F,one person takes a phone from a bag.,data/raw/charades/videos/GKH0F.mp4,32.733333333333334,23.4,34.0,23.4,32.733333333333334,True,30.0,982.0
+charades_sta_smoke_692,692,RPY8D,person fixes their hair.,data/raw/charades/videos/RPY8D.mp4,30.663966666666667,0.0,10.9,0.0,10.9,False,29.97002997002997,919.0
+charades_sta_smoke_693,693,RPY8D,person sitting on a couch.,data/raw/charades/videos/RPY8D.mp4,30.663966666666667,0.0,15.2,0.0,15.2,False,29.97002997002997,919.0
+charades_sta_smoke_694,694,UMTLM,person so he is closing the bathroom door.,data/raw/charades/videos/UMTLM.mp4,18.867924528301888,14.5,20.0,14.5,18.867924528301888,True,16.642,314.0
+charades_sta_smoke_695,695,UMTLM,person close the door.,data/raw/charades/videos/UMTLM.mp4,18.867924528301888,14.5,20.0,14.5,18.867924528301888,True,16.642,314.0
+charades_sta_smoke_696,696,FORXE,person runs around with a bag in their hand.,data/raw/charades/videos/FORXE.mp4,15.142410767936546,7.6,14.3,7.6,14.3,False,16.642,252.0
+charades_sta_smoke_697,697,FORXE,person decides to run with a bag of groceries.,data/raw/charades/videos/FORXE.mp4,15.142410767936546,7.6,14.3,7.6,14.3,False,16.642,252.0
+charades_sta_smoke_698,698,FORXE,a person is throwing a picture on the floor.,data/raw/charades/videos/FORXE.mp4,15.142410767936546,2.5,9.4,2.5,9.4,False,16.642,252.0
+charades_sta_smoke_699,699,3WMV4,a person is eating.,data/raw/charades/videos/3WMV4.mp4,17.42579016945079,3.1,9.1,3.1,9.1,False,16.642,290.0
+charades_sta_smoke_700,700,3WMV4,person eating a snack.,data/raw/charades/videos/3WMV4.mp4,17.42579016945079,3.1,9.1,3.1,9.1,False,16.642,290.0
+charades_sta_smoke_701,701,3WMV4,person drinking a glass of water.,data/raw/charades/videos/3WMV4.mp4,17.42579016945079,1.5,5.6,1.5,5.6,False,16.642,290.0
+charades_sta_smoke_702,702,3WMV4,person eating a sandwich.,data/raw/charades/videos/3WMV4.mp4,17.42579016945079,3.1,9.1,3.1,9.1,False,16.642,290.0
+charades_sta_smoke_703,703,C7G1S,this person washed the dishes over the sink.,data/raw/charades/videos/C7G1S.mp4,18.688780722312362,0.0,8.7,0.0,8.7,False,16.641,311.0
+charades_sta_smoke_704,704,3AKML,person takes a box off of a shelf.,data/raw/charades/videos/3AKML.mp4,39.9399,30.0,41.0,30.0,39.9399,True,29.97002997002997,1197.0
+charades_sta_smoke_705,705,NDDHA,person put on shoes.,data/raw/charades/videos/NDDHA.mp4,25.966666666666665,11.8,24.3,11.8,24.3,False,30.0,779.0
+charades_sta_smoke_706,706,NDDHA,person runs out.,data/raw/charades/videos/NDDHA.mp4,25.966666666666665,20.0,26.6,20.0,25.966666666666665,True,30.0,779.0
+charades_sta_smoke_707,707,NDDHA,person running out of the room.,data/raw/charades/videos/NDDHA.mp4,25.966666666666665,20.0,26.6,20.0,25.966666666666665,True,30.0,779.0
+charades_sta_smoke_708,708,NDDHA,person putting shoes on.,data/raw/charades/videos/NDDHA.mp4,25.966666666666665,11.8,24.3,11.8,24.3,False,30.0,779.0
+charades_sta_smoke_709,709,NDDHA,person puts on some shoes.,data/raw/charades/videos/NDDHA.mp4,25.966666666666665,11.8,24.3,11.8,24.3,False,30.0,779.0
+charades_sta_smoke_710,710,NDDHA,person putting on shoes.,data/raw/charades/videos/NDDHA.mp4,25.966666666666665,11.8,24.3,11.8,24.3,False,30.0,779.0
+charades_sta_smoke_711,711,W8CWW,a person opens a door goes into a room.,data/raw/charades/videos/W8CWW.mp4,30.545573342045085,16.8,30.4,16.8,30.4,False,6.122,187.0
+charades_sta_smoke_712,712,W8CWW,a person opens a door.,data/raw/charades/videos/W8CWW.mp4,30.545573342045085,16.8,30.4,16.8,30.4,False,6.122,187.0
+charades_sta_smoke_713,713,W8CWW,person opens turns doorknob.,data/raw/charades/videos/W8CWW.mp4,30.545573342045085,16.8,30.4,16.8,30.4,False,6.122,187.0
+charades_sta_smoke_714,714,11L5M,person starts running in place.,data/raw/charades/videos/11L5M.mp4,29.233333333333334,16.4,30.0,16.4,29.233333333333334,True,30.0,877.0
+charades_sta_smoke_715,715,11L5M,person start running in place.,data/raw/charades/videos/11L5M.mp4,29.233333333333334,16.4,30.0,16.4,29.233333333333334,True,30.0,877.0
+charades_sta_smoke_716,716,11L5M,person they throw the broom down.,data/raw/charades/videos/11L5M.mp4,29.233333333333334,15.5,20.4,15.5,20.4,False,30.0,877.0
+charades_sta_smoke_717,717,E6ZBZ,person they start sneezing.,data/raw/charades/videos/E6ZBZ.mp4,31.2,10.5,17.1,10.5,17.1,False,30.0,936.0
+charades_sta_smoke_718,718,H0L5S,person opens the door.,data/raw/charades/videos/H0L5S.mp4,29.797776884960495,23.3,29.4,23.3,29.4,False,29.868,890.0
+charades_sta_smoke_719,719,H0L5S,person opening the door.,data/raw/charades/videos/H0L5S.mp4,29.797776884960495,23.3,29.4,23.3,29.4,False,29.868,890.0
+charades_sta_smoke_720,720,SW8VM,a smiling person is grasping a pillow.,data/raw/charades/videos/SW8VM.mp4,30.525628468821417,0.0,9.5,0.0,9.5,False,6.126,187.0
+charades_sta_smoke_721,721,F19VE,the person takes food from a box.,data/raw/charades/videos/F19VE.mp4,33.6336,19.5,33.8,19.5,33.6336,True,29.97002997002997,1008.0
+charades_sta_smoke_722,722,F19VE,person puts other food away in a cupboard.,data/raw/charades/videos/F19VE.mp4,33.6336,6.7,16.1,6.7,16.1,False,29.97002997002997,1008.0
+charades_sta_smoke_723,723,44T8B,a person washes their hands in a bathroom.,data/raw/charades/videos/44T8B.mp4,29.666666666666668,0.0,3.5,0.0,3.5,False,24.0,712.0
+charades_sta_smoke_724,724,O0349,a person is doing a lot of cooking.,data/raw/charades/videos/O0349.mp4,31.08270877944325,0.0,10.7,0.0,10.7,False,29.888,929.0
+charades_sta_smoke_725,725,O0349,person cooks something.,data/raw/charades/videos/O0349.mp4,31.08270877944325,0.0,10.7,0.0,10.7,False,29.888,929.0
+charades_sta_smoke_726,726,O0349,person so they must open the pantry door.,data/raw/charades/videos/O0349.mp4,31.08270877944325,8.3,13.5,8.3,13.5,False,29.888,929.0
+charades_sta_smoke_727,727,DSZYT,a person drinking from a coffee cup.,data/raw/charades/videos/DSZYT.mp4,30.797433333333334,0.0,8.3,0.0,8.3,False,29.97002997002997,923.0
+charades_sta_smoke_728,728,DSZYT,person they drink from a glass.,data/raw/charades/videos/DSZYT.mp4,30.797433333333334,0.0,8.3,0.0,8.3,False,29.97002997002997,923.0
+charades_sta_smoke_729,729,KCRQU,the person opens the refrigerator.,data/raw/charades/videos/KCRQU.mp4,30.6306,17.2,24.3,17.2,24.3,False,29.97002997002997,918.0
+charades_sta_smoke_730,730,KCRQU,person they open the refrigerator.,data/raw/charades/videos/KCRQU.mp4,30.6306,17.2,24.3,17.2,24.3,False,29.97002997002997,918.0
+charades_sta_smoke_731,731,KCRQU,person opens the refrigerator.,data/raw/charades/videos/KCRQU.mp4,30.6306,17.2,24.3,17.2,24.3,False,29.97002997002997,918.0
+charades_sta_smoke_732,732,NBMH9,person opening a door.,data/raw/charades/videos/NBMH9.mp4,37.70433333333333,6.3,12.6,6.3,12.6,False,23.976023976023978,904.0
+charades_sta_smoke_733,733,NBMH9,person closes the door.,data/raw/charades/videos/NBMH9.mp4,37.70433333333333,3.7,10.7,3.7,10.7,False,23.976023976023978,904.0
+charades_sta_smoke_734,734,NBMH9,person sitting in a chair.,data/raw/charades/videos/NBMH9.mp4,37.70433333333333,21.4,37.6,21.4,37.6,False,23.976023976023978,904.0
+charades_sta_smoke_735,735,NBMH9,person closing the door behind them.,data/raw/charades/videos/NBMH9.mp4,37.70433333333333,3.7,10.7,3.7,10.7,False,23.976023976023978,904.0
+charades_sta_smoke_736,736,NBMH9,person sits in a chair.,data/raw/charades/videos/NBMH9.mp4,37.70433333333333,21.4,37.6,21.4,37.6,False,23.976023976023978,904.0
+charades_sta_smoke_737,737,SW5TC,person laughs at a tv.,data/raw/charades/videos/SW5TC.mp4,29.06355339965469,13.1,18.9,13.1,18.9,False,24.326,707.0
+charades_sta_smoke_738,738,SW5TC,person laughs at the television.,data/raw/charades/videos/SW5TC.mp4,29.06355339965469,13.1,18.9,13.1,18.9,False,24.326,707.0
+charades_sta_smoke_739,739,SW5TC,a person awakens in a bedroom.,data/raw/charades/videos/SW5TC.mp4,29.06355339965469,10.1,17.3,10.1,17.3,False,24.326,707.0
+charades_sta_smoke_740,740,SW5TC,person laughs at the tv.,data/raw/charades/videos/SW5TC.mp4,29.06355339965469,13.1,18.9,13.1,18.9,False,24.326,707.0
+charades_sta_smoke_741,741,G2JR9,a person takes a lightbulb.,data/raw/charades/videos/G2JR9.mp4,31.033333333333335,20.7,25.6,20.7,25.6,False,30.0,931.0
+charades_sta_smoke_742,742,G2JR9,a person tries to put a lightbulb in a fixture.,data/raw/charades/videos/G2JR9.mp4,31.033333333333335,20.7,25.6,20.7,25.6,False,30.0,931.0
+charades_sta_smoke_743,743,G2JR9,person the light turns on.,data/raw/charades/videos/G2JR9.mp4,31.033333333333335,20.7,25.6,20.7,25.6,False,30.0,931.0
+charades_sta_smoke_744,744,G2JR9,person the lightbulb lights up.,data/raw/charades/videos/G2JR9.mp4,31.033333333333335,20.7,25.6,20.7,25.6,False,30.0,931.0
+charades_sta_smoke_745,745,G2JR9,a person fixing a light.,data/raw/charades/videos/G2JR9.mp4,31.033333333333335,20.7,25.6,20.7,25.6,False,30.0,931.0
+charades_sta_smoke_746,746,G2JR9,the person throws some bread on the floor.,data/raw/charades/videos/G2JR9.mp4,31.033333333333335,24.1,30.9,24.1,30.9,False,30.0,931.0
+charades_sta_smoke_747,747,M9NAG,the person walks through the doorway.,data/raw/charades/videos/M9NAG.mp4,33.46666666666667,21.6,28.6,21.6,28.6,False,30.0,1004.0
+charades_sta_smoke_748,748,M9NAG,person stretching arms as if awakening.,data/raw/charades/videos/M9NAG.mp4,33.46666666666667,14.4,24.3,14.4,24.3,False,30.0,1004.0
+charades_sta_smoke_749,749,MS4GA,a person opens a closet door.,data/raw/charades/videos/MS4GA.mp4,29.763066666666667,5.4,11.5,5.4,11.5,False,14.985014985014985,446.0
+charades_sta_smoke_750,750,MS4GA,person puts a broom into the closet.,data/raw/charades/videos/MS4GA.mp4,29.763066666666667,2.8,9.1,2.8,9.1,False,14.985014985014985,446.0
+charades_sta_smoke_751,751,MS4GA,a person opens a door.,data/raw/charades/videos/MS4GA.mp4,29.763066666666667,1.3,6.9,1.3,6.9,False,14.985014985014985,446.0
+charades_sta_smoke_752,752,MS4GA,person closes the door.,data/raw/charades/videos/MS4GA.mp4,29.763066666666667,5.4,11.5,5.4,11.5,False,14.985014985014985,446.0
+charades_sta_smoke_753,753,MS4GA,person puts a broom inside.,data/raw/charades/videos/MS4GA.mp4,29.763066666666667,2.8,9.1,2.8,9.1,False,14.985014985014985,446.0
+charades_sta_smoke_754,754,MS4GA,a person opens a door with the doorknob.,data/raw/charades/videos/MS4GA.mp4,29.763066666666667,1.3,6.9,1.3,6.9,False,14.985014985014985,446.0
+charades_sta_smoke_755,755,YW5QQ,person closes the door.,data/raw/charades/videos/YW5QQ.mp4,31.966666666666665,22.9,29.7,22.9,29.7,False,30.0,959.0
+charades_sta_smoke_756,756,YW5QQ,the person looks at a picture on the desk.,data/raw/charades/videos/YW5QQ.mp4,31.966666666666665,8.1,21.2,8.1,21.2,False,30.0,959.0
+charades_sta_smoke_757,757,FYHTC,person takes a sip from a glass of water.,data/raw/charades/videos/FYHTC.mp4,28.495133333333335,0.0,4.1,0.0,4.1,False,29.97002997002997,854.0
+charades_sta_smoke_758,758,FYHTC,person jiggles the doorknob of the closed bathroom door.,data/raw/charades/videos/FYHTC.mp4,28.495133333333335,1.1,9.3,1.1,9.3,False,29.97002997002997,854.0
+charades_sta_smoke_759,759,FYHTC,person opens the door.,data/raw/charades/videos/FYHTC.mp4,28.495133333333335,23.2,29.0,23.2,28.495133333333335,True,29.97002997002997,854.0
+charades_sta_smoke_760,760,FYHTC,person try to open the door.,data/raw/charades/videos/FYHTC.mp4,28.495133333333335,23.2,29.0,23.2,28.495133333333335,True,29.97002997002997,854.0
+charades_sta_smoke_761,761,FKK5R,the person is sitting in a chair.,data/raw/charades/videos/FKK5R.mp4,26.43912991227016,0.0,8.2,0.0,8.2,False,16.642,440.0
+charades_sta_smoke_762,762,FKK5R,person turns on the light.,data/raw/charades/videos/FKK5R.mp4,26.43912991227016,12.7,19.9,12.7,19.9,False,16.642,440.0
+charades_sta_smoke_763,763,FKK5R,person getting up to turn on light.,data/raw/charades/videos/FKK5R.mp4,26.43912991227016,12.7,19.9,12.7,19.9,False,16.642,440.0
+charades_sta_smoke_764,764,FKK5R,person walks over to the lights.,data/raw/charades/videos/FKK5R.mp4,26.43912991227016,12.7,19.9,12.7,19.9,False,16.642,440.0
+charades_sta_smoke_765,765,QYM5H,a person throws a blanket across the room.,data/raw/charades/videos/QYM5H.mp4,30.033333333333335,0.0,5.2,0.0,5.2,False,30.0,901.0
+charades_sta_smoke_766,766,QYM5H,person take a picture of the towel.,data/raw/charades/videos/QYM5H.mp4,30.033333333333335,16.5,31.0,16.5,30.033333333333335,True,30.0,901.0
+charades_sta_smoke_767,767,QYM5H,a person throws a towel on the floor.,data/raw/charades/videos/QYM5H.mp4,30.033333333333335,0.0,5.2,0.0,5.2,False,30.0,901.0
+charades_sta_smoke_768,768,77Z0Z,person opens pantry grabs towel puts it on table.,data/raw/charades/videos/77Z0Z.mp4,33.53333333333333,3.0,12.4,3.0,12.4,False,30.0,1006.0
+charades_sta_smoke_769,769,51RLB,the person takes a drink from a water bottle.,data/raw/charades/videos/51RLB.mp4,20.186833333333333,2.7,10.3,2.7,10.3,False,23.976023976023978,484.0
+charades_sta_smoke_770,770,3IPI3,a person drinks from a cup.,data/raw/charades/videos/3IPI3.mp4,17.9622732187913,3.2,9.3,3.2,9.3,False,16.646,299.0
+charades_sta_smoke_771,771,3IPI3,the person eats a sandwich.,data/raw/charades/videos/3IPI3.mp4,17.9622732187913,7.9,13.0,7.9,13.0,False,16.646,299.0
+charades_sta_smoke_772,772,L0HDB,person opening a cabinet.,data/raw/charades/videos/L0HDB.mp4,30.332419236171493,2.6,7.8,2.6,7.8,False,29.902,907.0
+charades_sta_smoke_773,773,EZRQW,another person is playing at running back.,data/raw/charades/videos/EZRQW.mp4,28.443281629601945,11.7,22.1,11.7,22.1,False,26.755,761.0
+charades_sta_smoke_774,774,I9CDV,a person is eating a sandwich at the bathroom mirror.,data/raw/charades/videos/I9CDV.mp4,30.663966666666667,5.2,11.0,5.2,11.0,False,29.97002997002997,919.0
+charades_sta_smoke_775,775,I9CDV,person takes a picture in the mirror with a camera.,data/raw/charades/videos/I9CDV.mp4,30.663966666666667,17.2,23.8,17.2,23.8,False,29.97002997002997,919.0
+charades_sta_smoke_776,776,I9CDV,person takes a picture of himself in the mirror.,data/raw/charades/videos/I9CDV.mp4,30.663966666666667,17.2,23.8,17.2,23.8,False,29.97002997002997,919.0
+charades_sta_smoke_777,777,4683D,the person is cleaning off a chair to sit.,data/raw/charades/videos/4683D.mp4,30.666666666666668,8.7,14.9,8.7,14.9,False,30.0,920.0
+charades_sta_smoke_778,778,4683D,person they sit down on a chair.,data/raw/charades/videos/4683D.mp4,30.666666666666668,8.7,14.9,8.7,14.9,False,30.0,920.0
+charades_sta_smoke_779,779,3HRNV,a person is smiling in a study holding a bag.,data/raw/charades/videos/3HRNV.mp4,15.623122220886913,0.3,4.8,0.3,4.8,False,16.642,260.0
+charades_sta_smoke_780,780,K8MZH,a person turns the lights on.,data/raw/charades/videos/K8MZH.mp4,30.538749639873235,1.7,8.0,1.7,8.0,False,6.942,212.0
+charades_sta_smoke_781,781,1TIAK,the person fixes some messy homework papers on the table.,data/raw/charades/videos/1TIAK.mp4,39.497791666666664,11.4,15.8,11.4,15.8,False,23.976023976023978,947.0
+charades_sta_smoke_782,782,TJJKK,person eating on the bed.,data/raw/charades/videos/TJJKK.mp4,9.333333333333334,4.6,9.3,4.6,9.3,False,15.0,140.0
+charades_sta_smoke_783,783,TJJKK,the person eats something from off the bed.,data/raw/charades/videos/TJJKK.mp4,9.333333333333334,4.6,9.3,4.6,9.3,False,15.0,140.0
+charades_sta_smoke_784,784,TJJKK,person sitting on a bed with a cell phone.,data/raw/charades/videos/TJJKK.mp4,9.333333333333334,0.0,2.9,0.0,2.9,False,15.0,140.0
+charades_sta_smoke_785,785,TJJKK,person take a picture of the room.,data/raw/charades/videos/TJJKK.mp4,9.333333333333334,0.3,4.7,0.3,4.7,False,15.0,140.0
+charades_sta_smoke_786,786,41F2M,finally the person washes their hands in the sink.,data/raw/charades/videos/41F2M.mp4,31.569079288305407,11.3,22.1,11.3,22.1,False,29.871001031991746,943.0
+charades_sta_smoke_787,787,41F2M,this person washer their hands.,data/raw/charades/videos/41F2M.mp4,31.569079288305407,11.3,22.1,11.3,22.1,False,29.871001031991746,943.0
+charades_sta_smoke_788,788,41F2M,person puts a book next to a toilet.,data/raw/charades/videos/41F2M.mp4,31.569079288305407,8.3,14.2,8.3,14.2,False,29.871001031991746,943.0
+charades_sta_smoke_789,789,SBM3M,person the other is putting shoes in a box.,data/raw/charades/videos/SBM3M.mp4,20.009614229059007,0.0,8.8,0.0,8.8,False,16.642,333.0
+charades_sta_smoke_790,790,SBM3M,one person puts shoes in a box.,data/raw/charades/videos/SBM3M.mp4,20.009614229059007,0.0,8.8,0.0,8.8,False,16.642,333.0
+charades_sta_smoke_791,791,W0XPU,the person puts the shoes on.,data/raw/charades/videos/W0XPU.mp4,31.18,0.3,6.5,0.3,6.5,False,50.0,1559.0
+charades_sta_smoke_792,792,W0XPU,a person holds a pair of shoes.,data/raw/charades/videos/W0XPU.mp4,31.18,0.0,5.4,0.0,5.4,False,50.0,1559.0
+charades_sta_smoke_793,793,W0XPU,person stand up.,data/raw/charades/videos/W0XPU.mp4,31.18,19.0,24.1,19.0,24.1,False,50.0,1559.0
+charades_sta_smoke_794,794,W0XPU,person puts on shoes.,data/raw/charades/videos/W0XPU.mp4,31.18,0.3,6.5,0.3,6.5,False,50.0,1559.0
+charades_sta_smoke_795,795,W0XPU,person eat some food off of a plate.,data/raw/charades/videos/W0XPU.mp4,31.18,20.6,26.5,20.6,26.5,False,50.0,1559.0
+charades_sta_smoke_796,796,87Y64,a person is throwing a book to another person.,data/raw/charades/videos/87Y64.mp4,30.3,6.5,13.5,6.5,13.5,False,30.0,909.0
+charades_sta_smoke_797,797,87Y64,person run to the other side of the room.,data/raw/charades/videos/87Y64.mp4,30.3,0.4,6.1,0.4,6.1,False,30.0,909.0
+charades_sta_smoke_798,798,87Y64,a person is sitting on a bed.,data/raw/charades/videos/87Y64.mp4,30.3,0.0,5.5,0.0,5.5,False,30.0,909.0
+charades_sta_smoke_799,799,ZQKVY,a person runs into the bedroom.,data/raw/charades/videos/ZQKVY.mp4,13.105375199574242,0.0,5.4,0.0,5.4,False,15.032,197.0
+charades_sta_smoke_800,800,2Y8XQ,person he pours something into a glass.,data/raw/charades/videos/2Y8XQ.mp4,30.7340199444172,4.5,11.8,4.5,11.8,False,6.117,188.0
+charades_sta_smoke_801,801,2Y8XQ,a person pours some water in a glass.,data/raw/charades/videos/2Y8XQ.mp4,30.7340199444172,4.5,11.8,4.5,11.8,False,6.117,188.0
+charades_sta_smoke_802,802,2Y8XQ,the person is sneezing.,data/raw/charades/videos/2Y8XQ.mp4,30.7340199444172,23.2,31.2,23.2,30.7340199444172,True,6.117,188.0
+charades_sta_smoke_803,803,2Y8XQ,person drinking glass.,data/raw/charades/videos/2Y8XQ.mp4,30.7340199444172,15.2,22.8,15.2,22.8,False,6.117,188.0
+charades_sta_smoke_804,804,JR6VG,a person goes running by.,data/raw/charades/videos/JR6VG.mp4,22.4,12.0,17.9,12.0,17.9,False,30.0,672.0
+charades_sta_smoke_805,805,JR6VG,person as the door opens.,data/raw/charades/videos/JR6VG.mp4,22.4,8.0,15.1,8.0,15.1,False,30.0,672.0
+charades_sta_smoke_806,806,JR6VG,person the door opens.,data/raw/charades/videos/JR6VG.mp4,22.4,8.0,15.1,8.0,15.1,False,30.0,672.0
+charades_sta_smoke_807,807,JR6VG,another person runs into the room.,data/raw/charades/videos/JR6VG.mp4,22.4,12.0,17.9,12.0,17.9,False,30.0,672.0
+charades_sta_smoke_808,808,AAQHJ,a person is seen eating.,data/raw/charades/videos/AAQHJ.mp4,30.864166666666666,4.3,16.7,4.3,16.7,False,23.976023976023978,740.0
+charades_sta_smoke_809,809,AAQHJ,a person is sitting on a chair.,data/raw/charades/videos/AAQHJ.mp4,30.864166666666666,5.7,15.0,5.7,15.0,False,23.976023976023978,740.0
+charades_sta_smoke_810,810,AAQHJ,a person eating something off of a plate.,data/raw/charades/videos/AAQHJ.mp4,30.864166666666666,4.3,16.7,4.3,16.7,False,23.976023976023978,740.0
+charades_sta_smoke_811,811,AAQHJ,person grab a pillow to snuggle with.,data/raw/charades/videos/AAQHJ.mp4,30.864166666666666,16.4,26.7,16.4,26.7,False,23.976023976023978,740.0
+charades_sta_smoke_812,812,AAQHJ,a person sits in a chair eating.,data/raw/charades/videos/AAQHJ.mp4,30.864166666666666,4.3,16.7,4.3,16.7,False,23.976023976023978,740.0
+charades_sta_smoke_813,813,AAQHJ,person holding a pillow.,data/raw/charades/videos/AAQHJ.mp4,30.864166666666666,0.8,11.9,0.8,11.9,False,23.976023976023978,740.0
+charades_sta_smoke_814,814,AAQHJ,person eating from a plate of food.,data/raw/charades/videos/AAQHJ.mp4,30.864166666666666,4.3,16.7,4.3,16.7,False,23.976023976023978,740.0
+charades_sta_smoke_815,815,GG3K5,person watches the television.,data/raw/charades/videos/GG3K5.mp4,32.02614379084967,19.5,31.0,19.5,31.0,False,16.83,539.0
+charades_sta_smoke_816,816,GG3K5,the person start watching television.,data/raw/charades/videos/GG3K5.mp4,32.02614379084967,19.5,31.0,19.5,31.0,False,16.83,539.0
+charades_sta_smoke_817,817,GG3K5,person watches television.,data/raw/charades/videos/GG3K5.mp4,32.02614379084967,19.5,31.0,19.5,31.0,False,16.83,539.0
+charades_sta_smoke_818,818,GG3K5,person sits on the edge of the bed.,data/raw/charades/videos/GG3K5.mp4,32.02614379084967,15.3,24.6,15.3,24.6,False,16.83,539.0
+charades_sta_smoke_819,819,1XBU2,person is drinking tea from glass mug.,data/raw/charades/videos/1XBU2.mp4,16.644634058406442,4.3,10.9,4.3,10.9,False,16.642,277.0
+charades_sta_smoke_820,820,LLQBB,the person throws the bag down.,data/raw/charades/videos/LLQBB.mp4,32.233333333333334,13.8,21.5,13.8,21.5,False,30.0,967.0
+charades_sta_smoke_821,821,LLQBB,person finally laughing to themselves.,data/raw/charades/videos/LLQBB.mp4,32.233333333333334,26.1,33.0,26.1,32.233333333333334,True,30.0,967.0
+charades_sta_smoke_822,822,LLQBB,the person starts laughing as they put the bag down.,data/raw/charades/videos/LLQBB.mp4,32.233333333333334,26.1,33.0,26.1,32.233333333333334,True,30.0,967.0
+charades_sta_smoke_823,823,LLQBB,person takes their shoes off.,data/raw/charades/videos/LLQBB.mp4,32.233333333333334,17.0,30.7,17.0,30.7,False,30.0,967.0
+charades_sta_smoke_824,824,LLQBB,a person is holding a bag.,data/raw/charades/videos/LLQBB.mp4,32.233333333333334,12.0,21.7,12.0,21.7,False,30.0,967.0
+charades_sta_smoke_825,825,LLQBB,person take off their shoes.,data/raw/charades/videos/LLQBB.mp4,32.233333333333334,17.0,30.7,17.0,30.7,False,30.0,967.0
+charades_sta_smoke_826,826,BB7WL,a person opens a cabinet.,data/raw/charades/videos/BB7WL.mp4,30.561122244488978,0.3,5.7,0.3,5.7,False,29.94,915.0
+charades_sta_smoke_827,827,ZX37G,the person puts the laptop down on the table.,data/raw/charades/videos/ZX37G.mp4,17.350666666666665,1.8,7.8,1.8,7.8,False,29.97002997002997,520.0
+charades_sta_smoke_828,828,RX7TC,a person is eating some food.,data/raw/charades/videos/RX7TC.mp4,30.226230852372257,0.0,11.5,0.0,11.5,False,26.831,811.0
+charades_sta_smoke_829,829,RX7TC,person takes several bites of an unknown food item.,data/raw/charades/videos/RX7TC.mp4,30.226230852372257,0.0,6.4,0.0,6.4,False,26.831,811.0
+charades_sta_smoke_830,830,GFK4S,person opens the door.,data/raw/charades/videos/GFK4S.mp4,36.06666666666667,14.1,20.6,14.1,20.6,False,30.0,1082.0
+charades_sta_smoke_831,831,GFK4S,person holding a pillow.,data/raw/charades/videos/GFK4S.mp4,36.06666666666667,0.0,13.5,0.0,13.5,False,30.0,1082.0
+charades_sta_smoke_832,832,H5CJD,person closes the fridge door.,data/raw/charades/videos/H5CJD.mp4,26.511627906976745,19.3,25.7,19.3,25.7,False,10.75,285.0
+charades_sta_smoke_833,833,F5UVQ,person that turn off the lights.,data/raw/charades/videos/F5UVQ.mp4,37.266666666666666,32.1,38.0,32.1,37.266666666666666,True,30.0,1118.0
+charades_sta_smoke_834,834,F5UVQ,person wash their hands a little bit.,data/raw/charades/videos/F5UVQ.mp4,37.266666666666666,23.5,38.0,23.5,37.266666666666666,True,30.0,1118.0
+charades_sta_smoke_835,835,F5UVQ,person turn off a light.,data/raw/charades/videos/F5UVQ.mp4,37.266666666666666,32.1,38.0,32.1,37.266666666666666,True,30.0,1118.0
+charades_sta_smoke_836,836,MSACP,person they take the batteries out of the camera.,data/raw/charades/videos/MSACP.mp4,29.991975391199677,0.0,2.8,0.0,2.8,False,29.908,897.0
+charades_sta_smoke_837,837,VIN5T,a person is sitting on the floor throwing a pillow.,data/raw/charades/videos/VIN5T.mp4,20.043956043956044,2.0,8.8,2.0,8.8,False,15.166666666666666,304.0
+charades_sta_smoke_838,838,D1WYU,the person takes off their shoes.,data/raw/charades/videos/D1WYU.mp4,30.53061224489796,22.6,29.9,22.6,29.9,False,6.125,187.0
+charades_sta_smoke_839,839,D1WYU,person sits down on a chair.,data/raw/charades/videos/D1WYU.mp4,30.53061224489796,16.9,31.0,16.9,30.53061224489796,True,6.125,187.0
+charades_sta_smoke_840,840,D1WYU,the person sits down in a chair.,data/raw/charades/videos/D1WYU.mp4,30.53061224489796,16.9,31.0,16.9,30.53061224489796,True,6.125,187.0
+charades_sta_smoke_841,841,D1WYU,person takes their shoes off.,data/raw/charades/videos/D1WYU.mp4,30.53061224489796,22.6,29.9,22.6,29.9,False,6.125,187.0
+charades_sta_smoke_842,842,D1WYU,a person is holding a bag walk to a bed.,data/raw/charades/videos/D1WYU.mp4,30.53061224489796,0.0,7.5,0.0,7.5,False,6.125,187.0
+charades_sta_smoke_843,843,IONV9,a laughing person is drinking soda in their basement.,data/raw/charades/videos/IONV9.mp4,38.275862068965516,4.1,9.3,4.1,9.3,False,29.0,1110.0
+charades_sta_smoke_844,844,IONV9,person continuing to drink from the bottle.,data/raw/charades/videos/IONV9.mp4,38.275862068965516,0.0,6.2,0.0,6.2,False,29.0,1110.0
+charades_sta_smoke_845,845,IONV9,person drinking from a glass of water.,data/raw/charades/videos/IONV9.mp4,38.275862068965516,0.0,6.2,0.0,6.2,False,29.0,1110.0
+charades_sta_smoke_846,846,IDXZK,person eating food from a dish.,data/raw/charades/videos/IDXZK.mp4,35.428809325562035,0.0,9.1,0.0,9.1,False,24.02,851.0
+charades_sta_smoke_847,847,IDXZK,person eating a sandwich.,data/raw/charades/videos/IDXZK.mp4,35.428809325562035,0.0,9.1,0.0,9.1,False,24.02,851.0
+charades_sta_smoke_848,848,79VVK,person run out of the closet.,data/raw/charades/videos/79VVK.mp4,40.10673333333333,30.9,37.5,30.9,37.5,False,29.97002997002997,1202.0
+charades_sta_smoke_849,849,79VVK,a person takes a blanket.,data/raw/charades/videos/79VVK.mp4,40.10673333333333,15.1,20.4,15.1,20.4,False,29.97002997002997,1202.0
+charades_sta_smoke_850,850,YACA8,person putting clothes.,data/raw/charades/videos/YACA8.mp4,29.766666666666666,3.4,11.8,3.4,11.8,False,30.0,893.0
+charades_sta_smoke_851,851,VG7S6,person takes a vacuum.,data/raw/charades/videos/VG7S6.mp4,20.430236750390577,12.5,21.0,12.5,20.430236750390577,True,16.642,340.0
+charades_sta_smoke_852,852,VG7S6,person sneezing constantly.,data/raw/charades/videos/VG7S6.mp4,20.430236750390577,0.9,10.8,0.9,10.8,False,16.642,340.0
+charades_sta_smoke_853,853,C46TD,person looks out the window above the sink.,data/raw/charades/videos/C46TD.mp4,31.7,0.0,15.0,0.0,15.0,False,30.0,951.0
+charades_sta_smoke_854,854,C46TD,the person washes their hands at the kitchen sink.,data/raw/charades/videos/C46TD.mp4,31.7,0.0,12.1,0.0,12.1,False,30.0,951.0
+charades_sta_smoke_855,855,C46TD,person continuing to look out the window.,data/raw/charades/videos/C46TD.mp4,31.7,0.0,15.0,0.0,15.0,False,30.0,951.0
+charades_sta_smoke_856,856,C46TD,a person is washing their hands in the sink.,data/raw/charades/videos/C46TD.mp4,31.7,0.0,12.1,0.0,12.1,False,30.0,951.0
+charades_sta_smoke_857,857,C46TD,a person washes their hands in the kitchen sink.,data/raw/charades/videos/C46TD.mp4,31.7,0.0,12.1,0.0,12.1,False,30.0,951.0
+charades_sta_smoke_858,858,C46TD,person looking out the window.,data/raw/charades/videos/C46TD.mp4,31.7,0.0,15.0,0.0,15.0,False,30.0,951.0
+charades_sta_smoke_859,859,9J0RB,a person is standing in a room watching television.,data/raw/charades/videos/9J0RB.mp4,15.708200212992546,0.0,4.4,0.0,4.4,False,15.024,236.0
+charades_sta_smoke_860,860,9J0RB,person drinking something from a glass.,data/raw/charades/videos/9J0RB.mp4,15.708200212992546,0.0,7.0,0.0,7.0,False,15.024,236.0
+charades_sta_smoke_861,861,9J0RB,person drinking a glass of milk.,data/raw/charades/videos/9J0RB.mp4,15.708200212992546,0.0,7.0,0.0,7.0,False,15.024,236.0
+charades_sta_smoke_862,862,9J0RB,a person is watching a television in their bedroom.,data/raw/charades/videos/9J0RB.mp4,15.708200212992546,0.0,4.4,0.0,4.4,False,15.024,236.0
+charades_sta_smoke_863,863,9J0RB,person throws the pillow to the side.,data/raw/charades/videos/9J0RB.mp4,15.708200212992546,7.7,14.6,7.7,14.6,False,15.024,236.0
+charades_sta_smoke_864,864,ZIP18,person eat a sandwich.,data/raw/charades/videos/ZIP18.mp4,34.03333333333333,25.2,31.8,25.2,31.8,False,30.0,1021.0
+charades_sta_smoke_865,865,ZIP18,a person turns on a light.,data/raw/charades/videos/ZIP18.mp4,34.03333333333333,0.0,4.0,0.0,4.0,False,30.0,1021.0
+charades_sta_smoke_866,866,ZIP18,a person turns on a light in their bedroom.,data/raw/charades/videos/ZIP18.mp4,34.03333333333333,0.0,4.0,0.0,4.0,False,30.0,1021.0
+charades_sta_smoke_867,867,ZIP18,person turns on the light.,data/raw/charades/videos/ZIP18.mp4,34.03333333333333,0.0,4.0,0.0,4.0,False,30.0,1021.0
+charades_sta_smoke_868,868,ZIP18,person sit on their bed.,data/raw/charades/videos/ZIP18.mp4,34.03333333333333,21.1,26.2,21.1,26.2,False,30.0,1021.0
+charades_sta_smoke_869,869,3N1I2,the person puts the sandwich into the refrigerator.,data/raw/charades/videos/3N1I2.mp4,31.505289942413288,7.9,15.1,7.9,15.1,False,29.868,941.0
+charades_sta_smoke_870,870,337O2,person they put them down on the table.,data/raw/charades/videos/337O2.mp4,25.720838794233288,0.2,6.2,0.2,6.2,False,6.104,157.0
+charades_sta_smoke_871,871,LE7PM,person throws some food onto the table.,data/raw/charades/videos/LE7PM.mp4,47.647600000000004,0.0,4.1,0.0,4.1,False,29.97002997002997,1428.0
+charades_sta_smoke_872,872,VJ0LT,person closing the front door.,data/raw/charades/videos/VJ0LT.mp4,31.999011613540898,23.1,33.0,23.1,31.999011613540898,True,8.094,259.0
+charades_sta_smoke_873,873,VJ0LT,person pours it into a glass.,data/raw/charades/videos/VJ0LT.mp4,31.999011613540898,2.5,13.4,2.5,13.4,False,8.094,259.0
+charades_sta_smoke_874,874,VJ0LT,person pours a glass of soda.,data/raw/charades/videos/VJ0LT.mp4,31.999011613540898,2.5,13.4,2.5,13.4,False,8.094,259.0
+charades_sta_smoke_875,875,VJ0LT,the person drinks the coke from the glass.,data/raw/charades/videos/VJ0LT.mp4,31.999011613540898,12.9,21.4,12.9,21.4,False,8.094,259.0
+charades_sta_smoke_876,876,VJ0LT,person closes a door outside.,data/raw/charades/videos/VJ0LT.mp4,31.999011613540898,23.1,33.0,23.1,31.999011613540898,True,8.094,259.0
+charades_sta_smoke_877,877,TCI7K,person put a item on the table.,data/raw/charades/videos/TCI7K.mp4,30.833333333333332,3.6,10.3,3.6,10.3,False,30.0,925.0
+charades_sta_smoke_878,878,QE4YE,a person is opening a bag.,data/raw/charades/videos/QE4YE.mp4,42.8,0.0,3.5,0.0,3.5,False,30.0,1284.0
+charades_sta_smoke_879,879,QE4YE,the person puts the bag on a counter.,data/raw/charades/videos/QE4YE.mp4,42.8,4.2,9.7,4.2,9.7,False,30.0,1284.0
+charades_sta_smoke_880,880,XO8NL,a person throws a pillow into a closet.,data/raw/charades/videos/XO8NL.mp4,30.9328968903437,3.6,12.5,3.6,12.5,False,6.11,189.0
+charades_sta_smoke_881,881,XO8NL,a person is holding a pillow.,data/raw/charades/videos/XO8NL.mp4,30.9328968903437,0.0,9.1,0.0,9.1,False,6.11,189.0
+charades_sta_smoke_882,882,XO8NL,the person throws the pillow into the closet.,data/raw/charades/videos/XO8NL.mp4,30.9328968903437,3.6,12.5,3.6,12.5,False,6.11,189.0
+charades_sta_smoke_883,883,CM6T8,a person is opening their closet looking for a sandwich.,data/raw/charades/videos/CM6T8.mp4,12.106698596421207,0.0,3.2,0.0,3.2,False,15.033,182.0
+charades_sta_smoke_884,884,CM6T8,a person opens a door to a closet.,data/raw/charades/videos/CM6T8.mp4,12.106698596421207,0.0,3.7,0.0,3.7,False,15.033,182.0
+charades_sta_smoke_885,885,CM6T8,person open up the door.,data/raw/charades/videos/CM6T8.mp4,12.106698596421207,0.0,3.7,0.0,3.7,False,15.033,182.0
+charades_sta_smoke_886,886,QI0EL,person watches television.,data/raw/charades/videos/QI0EL.mp4,31.083333333333332,23.5,32.0,23.5,31.083333333333332,True,24.0,746.0
+charades_sta_smoke_887,887,QI0EL,person closes the laptop.,data/raw/charades/videos/QI0EL.mp4,31.083333333333332,18.2,22.8,18.2,22.8,False,24.0,746.0
+charades_sta_smoke_888,888,ICQUJ,person starts eating some food.,data/raw/charades/videos/ICQUJ.mp4,20.81077829904968,14.4,22.0,14.4,20.81077829904968,True,16.626,346.0
+charades_sta_smoke_889,889,ICQUJ,person pick up a sandwich to eat.,data/raw/charades/videos/ICQUJ.mp4,20.81077829904968,14.4,22.0,14.4,20.81077829904968,True,16.626,346.0
+charades_sta_smoke_890,890,I87SH,a person awakens on the floor of their home office.,data/raw/charades/videos/I87SH.mp4,31.10475509474437,0.0,3.7,0.0,3.7,False,16.782,522.0
+charades_sta_smoke_891,891,I87SH,person walk near the window open the curtain.,data/raw/charades/videos/I87SH.mp4,31.10475509474437,18.8,32.0,18.8,31.10475509474437,True,16.782,522.0
+charades_sta_smoke_892,892,I87SH,the person is laying on the floor.,data/raw/charades/videos/I87SH.mp4,31.10475509474437,0.0,8.1,0.0,8.1,False,16.782,522.0
+charades_sta_smoke_893,893,I87SH,person opens the window.,data/raw/charades/videos/I87SH.mp4,31.10475509474437,18.8,32.0,18.8,31.10475509474437,True,16.782,522.0
+charades_sta_smoke_894,894,I87SH,person opens a curtain to look out the window.,data/raw/charades/videos/I87SH.mp4,31.10475509474437,18.8,32.0,18.8,31.10475509474437,True,16.782,522.0
+charades_sta_smoke_895,895,BDY1V,one person undresses in front of a wardrobe.,data/raw/charades/videos/BDY1V.mp4,30.683858331973234,3.7,19.0,3.7,19.0,False,6.127,188.0
+charades_sta_smoke_896,896,BDY1V,person takes a pillow from the closet.,data/raw/charades/videos/BDY1V.mp4,30.683858331973234,20.3,26.3,20.3,26.3,False,6.127,188.0
+charades_sta_smoke_897,897,BDY1V,person snuggles the pillow.,data/raw/charades/videos/BDY1V.mp4,30.683858331973234,25.0,32.0,25.0,30.683858331973234,True,6.127,188.0
+charades_sta_smoke_898,898,AFCDN,person takes a picture of something.,data/raw/charades/videos/AFCDN.mp4,29.496133333333333,0.0,7.2,0.0,7.2,False,14.985014985014985,442.0
+charades_sta_smoke_899,899,AFCDN,person eats it.,data/raw/charades/videos/AFCDN.mp4,29.496133333333333,24.9,30.0,24.9,29.496133333333333,True,14.985014985014985,442.0
+charades_sta_smoke_900,900,AFCDN,person began to eat.,data/raw/charades/videos/AFCDN.mp4,29.496133333333333,24.9,30.0,24.9,29.496133333333333,True,14.985014985014985,442.0
+charades_sta_smoke_901,901,KA09C,the person turns the light off.,data/raw/charades/videos/KA09C.mp4,30.533333333333335,27.2,32.0,27.2,30.533333333333335,True,30.0,916.0
+charades_sta_smoke_902,902,KA09C,person turning off the light.,data/raw/charades/videos/KA09C.mp4,30.533333333333335,27.2,32.0,27.2,30.533333333333335,True,30.0,916.0
+charades_sta_smoke_903,903,KA09C,person turns off the light.,data/raw/charades/videos/KA09C.mp4,30.533333333333335,27.2,32.0,27.2,30.533333333333335,True,30.0,916.0
+charades_sta_smoke_904,904,KA09C,the person turns off the light.,data/raw/charades/videos/KA09C.mp4,30.533333333333335,27.2,32.0,27.2,30.533333333333335,True,30.0,916.0
+charades_sta_smoke_905,905,CUSTU,person opens a laptop.,data/raw/charades/videos/CUSTU.mp4,34.24254166666667,29.4,35.0,29.4,34.24254166666667,True,23.976023976023978,821.0
+charades_sta_smoke_906,906,CUSTU,person opening a laptop.,data/raw/charades/videos/CUSTU.mp4,34.24254166666667,29.4,35.0,29.4,34.24254166666667,True,23.976023976023978,821.0
+charades_sta_smoke_907,907,CUSTU,the person puts the broom down.,data/raw/charades/videos/CUSTU.mp4,34.24254166666667,24.4,30.3,24.4,30.3,False,23.976023976023978,821.0
+charades_sta_smoke_908,908,Q38XP,person eating food.,data/raw/charades/videos/Q38XP.mp4,31.066666666666666,6.7,18.9,6.7,18.9,False,30.0,932.0
+charades_sta_smoke_909,909,SLHDI,person eating something.,data/raw/charades/videos/SLHDI.mp4,38.62617885091298,21.6,26.1,21.6,26.1,False,29.902,1155.0
+charades_sta_smoke_910,910,SLHDI,a person by the refrigerator was eating.,data/raw/charades/videos/SLHDI.mp4,38.62617885091298,21.6,26.1,21.6,26.1,False,29.902,1155.0
+charades_sta_smoke_911,911,SLHDI,person opening the refrigerator doors.,data/raw/charades/videos/SLHDI.mp4,38.62617885091298,2.8,12.4,2.8,12.4,False,29.902,1155.0
+charades_sta_smoke_912,912,SLHDI,a person is closing a door.,data/raw/charades/videos/SLHDI.mp4,38.62617885091298,1.1,6.3,1.1,6.3,False,29.902,1155.0
+charades_sta_smoke_913,913,SLHDI,person sneezing into a towel.,data/raw/charades/videos/SLHDI.mp4,38.62617885091298,26.4,31.9,26.4,31.9,False,29.902,1155.0
+charades_sta_smoke_914,914,SLHDI,person opens refrigerator.,data/raw/charades/videos/SLHDI.mp4,38.62617885091298,2.8,12.4,2.8,12.4,False,29.902,1155.0
+charades_sta_smoke_915,915,SLHDI,person sneezing on a towel.,data/raw/charades/videos/SLHDI.mp4,38.62617885091298,26.4,31.9,26.4,31.9,False,29.902,1155.0
+charades_sta_smoke_916,916,XKU2U,a person is sneezing as they dust a nearby mirror.,data/raw/charades/videos/XKU2U.mp4,32.388803022496994,9.0,16.4,9.0,16.4,False,29.115,943.0
+charades_sta_smoke_917,917,XKU2U,person throws the bag.,data/raw/charades/videos/XKU2U.mp4,32.388803022496994,19.2,26.5,19.2,26.5,False,29.115,943.0
+charades_sta_smoke_918,918,XKU2U,person puts it on a table.,data/raw/charades/videos/XKU2U.mp4,32.388803022496994,19.2,26.5,19.2,26.5,False,29.115,943.0
+charades_sta_smoke_919,919,XKU2U,person they begin to put a bag on the table.,data/raw/charades/videos/XKU2U.mp4,32.388803022496994,19.2,26.5,19.2,26.5,False,29.115,943.0
+charades_sta_smoke_920,920,ULD0T,person holding a bag.,data/raw/charades/videos/ULD0T.mp4,30.363666666666667,5.0,14.3,5.0,14.3,False,14.985014985014985,455.0
+charades_sta_smoke_921,921,ULD0T,a person walks through a doorway.,data/raw/charades/videos/ULD0T.mp4,30.363666666666667,0.0,2.8,0.0,2.8,False,14.985014985014985,455.0
+charades_sta_smoke_922,922,SLT0S,a person is looking in a book holding a pen.,data/raw/charades/videos/SLT0S.mp4,31.297933333333333,6.9,13.0,6.9,13.0,False,14.985014985014985,469.0
+charades_sta_smoke_923,923,J3RP9,a person walks through a doorway.,data/raw/charades/videos/J3RP9.mp4,38.621916666666664,4.6,16.7,4.6,16.7,False,23.976023976023978,926.0
+charades_sta_smoke_924,924,BI6Y4,a person is cooking something on the stove.,data/raw/charades/videos/BI6Y4.mp4,34.4989281886388,0.1,5.1,0.1,5.1,False,29.856,1030.0
+charades_sta_smoke_925,925,BI6Y4,person drinks out of a cup.,data/raw/charades/videos/BI6Y4.mp4,34.4989281886388,4.6,9.8,4.6,9.8,False,29.856,1030.0
+charades_sta_smoke_926,926,BI6Y4,person sits down at the table.,data/raw/charades/videos/BI6Y4.mp4,34.4989281886388,25.3,33.1,25.3,33.1,False,29.856,1030.0
+charades_sta_smoke_927,927,BI6Y4,person sits on the chair at the dining table.,data/raw/charades/videos/BI6Y4.mp4,34.4989281886388,25.3,33.1,25.3,33.1,False,29.856,1030.0
+charades_sta_smoke_928,928,BI6Y4,person cooking at the stove.,data/raw/charades/videos/BI6Y4.mp4,34.4989281886388,0.1,5.1,0.1,5.1,False,29.856,1030.0
+charades_sta_smoke_929,929,735W9,person putting a blanket on the table.,data/raw/charades/videos/735W9.mp4,31.133333333333333,16.8,23.8,16.8,23.8,False,30.0,934.0
+charades_sta_smoke_930,930,735W9,person puts it on the table.,data/raw/charades/videos/735W9.mp4,31.133333333333333,16.8,23.8,16.8,23.8,False,30.0,934.0
+charades_sta_smoke_931,931,1FIGA,person puts it onto the shelf.,data/raw/charades/videos/1FIGA.mp4,35.78575,14.3,21.9,14.3,21.9,False,23.976023976023978,858.0
+charades_sta_smoke_932,932,1FIGA,the person closes the box.,data/raw/charades/videos/1FIGA.mp4,35.78575,9.6,15.1,9.6,15.1,False,23.976023976023978,858.0
+charades_sta_smoke_933,933,1FIGA,person put something in it closes the door.,data/raw/charades/videos/1FIGA.mp4,35.78575,18.1,24.9,18.1,24.9,False,23.976023976023978,858.0
+charades_sta_smoke_934,934,1FIGA,person closes the door.,data/raw/charades/videos/1FIGA.mp4,35.78575,18.1,24.9,18.1,24.9,False,23.976023976023978,858.0
+charades_sta_smoke_935,935,1FIGA,person puts the book inside.,data/raw/charades/videos/1FIGA.mp4,35.78575,15.5,23.7,15.5,23.7,False,23.976023976023978,858.0
+charades_sta_smoke_936,936,1FIGA,person takes it to a cabinet they open the cabinet.,data/raw/charades/videos/1FIGA.mp4,35.78575,11.8,21.2,11.8,21.2,False,23.976023976023978,858.0
+charades_sta_smoke_937,937,1FIGA,a person runs into the closet with a box.,data/raw/charades/videos/1FIGA.mp4,35.78575,9.6,15.1,9.6,15.1,False,23.976023976023978,858.0
+charades_sta_smoke_938,938,LZ2Y4,person runs to the kitchen.,data/raw/charades/videos/LZ2Y4.mp4,21.248339973439574,11.8,20.1,11.8,20.1,False,6.777,144.0
+charades_sta_smoke_939,939,LZ2Y4,person begin running around.,data/raw/charades/videos/LZ2Y4.mp4,21.248339973439574,11.8,20.1,11.8,20.1,False,6.777,144.0
+charades_sta_smoke_940,940,LZ2Y4,person runs out of the couch.,data/raw/charades/videos/LZ2Y4.mp4,21.248339973439574,11.8,20.1,11.8,20.1,False,6.777,144.0
+charades_sta_smoke_941,941,LZ2Y4,the person puts the cup down.,data/raw/charades/videos/LZ2Y4.mp4,21.248339973439574,10.0,15.5,10.0,15.5,False,6.777,144.0
+charades_sta_smoke_942,942,M4Z0M,a person walks by eating a sandwich.,data/raw/charades/videos/M4Z0M.mp4,33.890311278803395,0.7,8.4,0.7,8.4,False,14.842,503.0
+charades_sta_smoke_943,943,M4Z0M,a person is eating a sandwich in a hallway.,data/raw/charades/videos/M4Z0M.mp4,33.890311278803395,0.7,8.4,0.7,8.4,False,14.842,503.0
+charades_sta_smoke_944,944,YPRUL,person takes a drink from a glass.,data/raw/charades/videos/YPRUL.mp4,30.705882352941178,22.1,32.0,22.1,30.705882352941178,True,17.0,522.0
+charades_sta_smoke_945,945,YPRUL,a person is sneezing.,data/raw/charades/videos/YPRUL.mp4,30.705882352941178,0.0,8.1,0.0,8.1,False,17.0,522.0
+charades_sta_smoke_946,946,YPRUL,the person closes the door.,data/raw/charades/videos/YPRUL.mp4,30.705882352941178,15.5,26.7,15.5,26.7,False,17.0,522.0
+charades_sta_smoke_947,947,YPRUL,person closes a door.,data/raw/charades/videos/YPRUL.mp4,30.705882352941178,15.5,26.7,15.5,26.7,False,17.0,522.0
+charades_sta_smoke_948,948,K7NRW,another person tries to fix a loose doorknob.,data/raw/charades/videos/K7NRW.mp4,30.733333333333334,13.2,23.7,13.2,23.7,False,30.0,922.0
+charades_sta_smoke_949,949,K7NRW,person eating it.,data/raw/charades/videos/K7NRW.mp4,30.733333333333334,5.8,14.9,5.8,14.9,False,30.0,922.0
+charades_sta_smoke_950,950,K7NRW,person the other continues to eat.,data/raw/charades/videos/K7NRW.mp4,30.733333333333334,5.8,14.9,5.8,14.9,False,30.0,922.0
+charades_sta_smoke_951,951,K7NRW,person eats a sandwich out of a bag.,data/raw/charades/videos/K7NRW.mp4,30.733333333333334,5.8,14.9,5.8,14.9,False,30.0,922.0
+charades_sta_smoke_952,952,K7NRW,another person is fixing a doorknob.,data/raw/charades/videos/K7NRW.mp4,30.733333333333334,13.2,23.7,13.2,23.7,False,30.0,922.0
+charades_sta_smoke_953,953,K7NRW,the eating man watches his friend fix the door.,data/raw/charades/videos/K7NRW.mp4,30.733333333333334,5.8,14.9,5.8,14.9,False,30.0,922.0
+charades_sta_smoke_954,954,K7NRW,a person opens a bag.,data/raw/charades/videos/K7NRW.mp4,30.733333333333334,0.0,4.6,0.0,4.6,False,30.0,922.0
+charades_sta_smoke_955,955,KZS5M,person eats some food.,data/raw/charades/videos/KZS5M.mp4,35.8730921764211,22.0,36.8,22.0,35.8730921764211,True,16.642,597.0
+charades_sta_smoke_956,956,KZS5M,person eating something.,data/raw/charades/videos/KZS5M.mp4,35.8730921764211,22.0,36.8,22.0,35.8730921764211,True,16.642,597.0
+charades_sta_smoke_957,957,KZS5M,watches the tv as the person eats a sandwich.,data/raw/charades/videos/KZS5M.mp4,35.8730921764211,23.3,34.3,23.3,34.3,False,16.642,597.0
+charades_sta_smoke_958,958,KZS5M,person closes the door.,data/raw/charades/videos/KZS5M.mp4,35.8730921764211,2.1,8.5,2.1,8.5,False,16.642,597.0
+charades_sta_smoke_959,959,KZS5M,person turning the light on.,data/raw/charades/videos/KZS5M.mp4,35.8730921764211,7.3,14.9,7.3,14.9,False,16.642,597.0
+charades_sta_smoke_960,960,KZS5M,person closing the door.,data/raw/charades/videos/KZS5M.mp4,35.8730921764211,2.1,8.5,2.1,8.5,False,16.642,597.0
+charades_sta_smoke_961,961,DO48Z,a person is smiling.,data/raw/charades/videos/DO48Z.mp4,31.2312,0.8,9.0,0.8,9.0,False,14.985014985014985,468.0
+charades_sta_smoke_962,962,DO48Z,person putting their shoes in a closet.,data/raw/charades/videos/DO48Z.mp4,31.2312,4.7,17.9,4.7,17.9,False,14.985014985014985,468.0
+charades_sta_smoke_963,963,DO48Z,the person was smiling.,data/raw/charades/videos/DO48Z.mp4,31.2312,0.8,9.0,0.8,9.0,False,14.985014985014985,468.0
+charades_sta_smoke_964,964,DO48Z,person putting shoes on the shelf.,data/raw/charades/videos/DO48Z.mp4,31.2312,5.7,16.4,5.7,16.4,False,14.985014985014985,468.0
+charades_sta_smoke_965,965,JNK11,person puts something onto a shelf.,data/raw/charades/videos/JNK11.mp4,23.766666666666666,1.8,7.3,1.8,7.3,False,30.0,713.0
+charades_sta_smoke_966,966,JNK11,a person puts a cup of coffee on the shelf.,data/raw/charades/videos/JNK11.mp4,23.766666666666666,1.8,7.3,1.8,7.3,False,30.0,713.0
+charades_sta_smoke_967,967,TH3M0,person sits on a chair.,data/raw/charades/videos/TH3M0.mp4,31.766666666666666,18.8,25.8,18.8,25.8,False,30.0,953.0
+charades_sta_smoke_968,968,TH3M0,a person opens a door.,data/raw/charades/videos/TH3M0.mp4,31.766666666666666,0.0,4.7,0.0,4.7,False,30.0,953.0
+charades_sta_smoke_969,969,TH3M0,the person sits down in a chair.,data/raw/charades/videos/TH3M0.mp4,31.766666666666666,18.8,25.8,18.8,25.8,False,30.0,953.0
+charades_sta_smoke_970,970,TH3M0,person takes out a broom from a cabinet.,data/raw/charades/videos/TH3M0.mp4,31.766666666666666,14.5,19.3,14.5,19.3,False,30.0,953.0
+charades_sta_smoke_971,971,TH3M0,person put the broom back into the cabinet.,data/raw/charades/videos/TH3M0.mp4,31.766666666666666,24.5,32.2,24.5,31.766666666666666,True,30.0,953.0
+charades_sta_smoke_972,972,TH3M0,person sits down in chair.,data/raw/charades/videos/TH3M0.mp4,31.766666666666666,18.8,25.8,18.8,25.8,False,30.0,953.0
+charades_sta_smoke_973,973,2B577,person puts it on a table.,data/raw/charades/videos/2B577.mp4,30.75,19.4,32.0,19.4,30.75,True,16.0,492.0
+charades_sta_smoke_974,974,2B577,a person cooks on the stove.,data/raw/charades/videos/2B577.mp4,30.75,0.0,3.7,0.0,3.7,False,16.0,492.0
+charades_sta_smoke_975,975,JXTAD,a person is holding a blanket.,data/raw/charades/videos/JXTAD.mp4,33.01251850854758,17.8,34.0,17.8,33.01251850854758,True,29.716,981.0
+charades_sta_smoke_976,976,JXTAD,person turning off the light.,data/raw/charades/videos/JXTAD.mp4,33.01251850854758,23.8,34.0,23.8,33.01251850854758,True,29.716,981.0
+charades_sta_smoke_977,977,5R7VN,person closing a door on the stairs.,data/raw/charades/videos/5R7VN.mp4,29.362666666666666,7.1,14.2,7.1,14.2,False,14.985014985014985,440.0
+charades_sta_smoke_978,978,5R7VN,person closing a door.,data/raw/charades/videos/5R7VN.mp4,29.362666666666666,7.1,14.2,7.1,14.2,False,14.985014985014985,440.0
+charades_sta_smoke_979,979,5R7VN,person closing the door.,data/raw/charades/videos/5R7VN.mp4,29.362666666666666,7.1,14.2,7.1,14.2,False,14.985014985014985,440.0
+charades_sta_smoke_980,980,5R7VN,the person is throwing shoes.,data/raw/charades/videos/5R7VN.mp4,29.362666666666666,0.9,10.7,0.9,10.7,False,14.985014985014985,440.0
+charades_sta_smoke_981,981,5R7VN,a person throws two shoes down the stairs.,data/raw/charades/videos/5R7VN.mp4,29.362666666666666,0.9,10.7,0.9,10.7,False,14.985014985014985,440.0
+charades_sta_smoke_982,982,N56QO,person the individual takes a drink from a coffee cup.,data/raw/charades/videos/N56QO.mp4,9.62176509621765,0.8,5.6,0.8,5.6,False,15.07,145.0
+charades_sta_smoke_983,983,N56QO,a person is playing on their laptop.,data/raw/charades/videos/N56QO.mp4,9.62176509621765,0.0,4.6,0.0,4.6,False,15.07,145.0
+charades_sta_smoke_984,984,1RD2K,another person comes running in.,data/raw/charades/videos/1RD2K.mp4,19.88,1.0,8.6,1.0,8.6,False,25.0,497.0
+charades_sta_smoke_985,985,1RD2K,a person closes the door to a house.,data/raw/charades/videos/1RD2K.mp4,19.88,0.0,5.5,0.0,5.5,False,25.0,497.0
+charades_sta_smoke_986,986,TKAUR,person takes a cup of coffee off of the counter.,data/raw/charades/videos/TKAUR.mp4,41.65305455733421,3.2,8.9,3.2,8.9,False,6.122,255.0
+charades_sta_smoke_987,987,TKAUR,person reads a book.,data/raw/charades/videos/TKAUR.mp4,41.65305455733421,0.0,18.7,0.0,18.7,False,6.122,255.0
+charades_sta_smoke_988,988,TKAUR,person reading a book.,data/raw/charades/videos/TKAUR.mp4,41.65305455733421,0.0,18.7,0.0,18.7,False,6.122,255.0
+charades_sta_smoke_989,989,TKAUR,person start dressing for the weather.,data/raw/charades/videos/TKAUR.mp4,41.65305455733421,27.0,40.3,27.0,40.3,False,6.122,255.0
+charades_sta_smoke_990,990,TKAUR,person begins to dress.,data/raw/charades/videos/TKAUR.mp4,41.65305455733421,27.0,40.3,27.0,40.3,False,6.122,255.0
+charades_sta_smoke_991,991,TKAUR,person puts the book down.,data/raw/charades/videos/TKAUR.mp4,41.65305455733421,14.9,19.7,14.9,19.7,False,6.122,255.0
+charades_sta_smoke_992,992,TKAUR,a person reads a book.,data/raw/charades/videos/TKAUR.mp4,41.65305455733421,0.0,18.7,0.0,18.7,False,6.122,255.0
+charades_sta_smoke_993,993,W7EDM,person sits on the bed.,data/raw/charades/videos/W7EDM.mp4,20.55041461362817,0.4,5.2,0.4,5.2,False,16.642,342.0
+charades_sta_smoke_994,994,W7EDM,a person sits on a bed.,data/raw/charades/videos/W7EDM.mp4,20.55041461362817,0.4,5.2,0.4,5.2,False,16.642,342.0
+charades_sta_smoke_995,995,W7EDM,person eats some food.,data/raw/charades/videos/W7EDM.mp4,20.55041461362817,11.6,17.6,11.6,17.6,False,16.642,342.0
+charades_sta_smoke_996,996,W7EDM,a person sits down on a bed.,data/raw/charades/videos/W7EDM.mp4,20.55041461362817,0.4,5.2,0.4,5.2,False,16.642,342.0
+charades_sta_smoke_997,997,W7EDM,person takes off their shoes.,data/raw/charades/videos/W7EDM.mp4,20.55041461362817,0.8,9.1,0.8,9.1,False,16.642,342.0
+charades_sta_smoke_998,998,HSKVH,person turning off a light.,data/raw/charades/videos/HSKVH.mp4,30.6,9.2,13.5,9.2,13.5,False,30.0,918.0
+charades_sta_smoke_999,999,HSKVH,a person is closing the door.,data/raw/charades/videos/HSKVH.mp4,30.6,4.0,10.3,4.0,10.3,False,30.0,918.0

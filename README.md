@@ -1,84 +1,176 @@
 # Video Moment Retrieval Coursework
 
 Курсовой проект посвящен поиску временного фрагмента видео по текстовому
-запросу (`text-to-video moment retrieval`). Практическая цель: собрать
-воспроизводимый baseline, провести контролируемые эксперименты и сравнить
-качество локализации с вычислительной стоимостью.
+запросу (`text-to-video moment retrieval`).
 
 Английское название темы: **Search for video moments using text queries:
 implementations and experiments with video-language retrieval models**.
 
-## Dataset
+## What this project does
 
-Основной датасет для финальных экспериментов: **Charades-STA**. Он используется
-с локально подготовленными Charades videos и подходит для воспроизводимого
-raw-video baseline.
+Проект реализует и анализирует воспроизводимый baseline для Video Moment
+Retrieval: по текстовому запросу система выбирает временное окно видео, которое
+лучше всего соответствует описанию.
 
-Предварительное направление: **QVHighlights**. Код, заметки и ранние результаты
-по QVHighlights сохранены в репозитории, но raw videos зависят от YouTube и
-оказались менее надежными для основной курсовой постановки.
+Основная экспериментальная линия:
 
-Полезные заметки:
+- датасет: **Charades-STA** с локально подготовленными Charades videos;
+- baseline: CLIP `ViT-B/32` без fine-tuning;
+- представление видео: sampling кадров, CLIP image embeddings, fixed temporal
+  windows;
+- scoring: similarity между текстовым embedding и frame/window embeddings;
+- оценка: `R@1` при `IoU = 0.3 / 0.5 / 0.7`, `mIoU`, runtime/cache metadata.
 
-- Charades-STA setup: `docs/charades_sta_data_setup.md`
-- QVHighlights data notes: `docs/qvhighlights_data.md`
-- Moment-DETR probe log: `docs/moment_detr_probe_log.md`
+QVHighlights сохранен как preliminary направление: код, заметки и ранние
+результаты есть в репозитории, но полноценный QVHighlights benchmark здесь не
+заявляется, потому что raw videos зависят от внешних YouTube-ссылок.
 
-## Main Experiments
+## Current status
 
-Основной baseline: CLIP-based retrieval без fine-tuning. Видео сэмплируется по
-кадрам, кадры и запрос кодируются CLIP `ViT-B/32`, frame-level similarities
-агрегируются в fixed temporal windows, затем выбирается top-1 window.
+Реализовано:
 
-Главные сохраненные эксперименты:
+- Charades-STA loader and dataset probes;
+- CLIP-based raw-video retrieval baseline;
+- window/stride/aggregation sweeps;
+- optional smoothing experiments;
+- evaluation metrics for temporal localization;
+- isolated Moment-DETR raw-video feasibility probe;
+- result tables and lightweight notebooks for coursework review.
 
-- `results/charades_sta_baseline_200/` - CLIP baseline на 200 Charades-STA
-  queries.
-- `results/charades_sta_sweep_1000/summary.csv` - sweep window/stride/aggregation
-  на фиксированных 1,000 Charades-STA queries.
-- `results/charades_sta_smoothing_1000/summary.csv` - smoothing sweep на тех же
-  1,000 queries.
-- `results/clip_vs_moment_detr_50/` и `results/moment_detr_charades_50/` -
-  CLIP vs Moment-DETR raw-video probe на 50 queries.
+Подробное состояние проекта и ограничения зафиксированы в
+`PROJECT_STATUS.md`.
 
-Метрики: `R@1` при `IoU = 0.3 / 0.5 / 0.7`, `mIoU`, inference time и cache
-statistics там, где они сохранены.
-
-## How To Read Results
-
-Для быстрого чтения результатов начните с:
-
-- `reports/results_tables.md` - финальные таблицы для руководителя.
-- `PROJECT_STATUS.md` - что реализовано, протестировано, какие есть ограничения.
-- `notebooks/06_results_summary.ipynb` - lightweight summary notebook.
-
-Все notebooks в `notebooks/` читают уже сохраненные `results/*.json` и
-`results/*.csv`. Они не запускают CLIP или Moment-DETR заново.
-
-## Draft
-
-Основной черновик курсовой лежит в:
+## Repository structure
 
 ```text
-thesis/coursework_draft_v2.md
+configs/      experiment configuration files
+src/          implementation modules: data, video, retrieval, models, metrics
+scripts/      reproducibility and experiment entry points
+tests/        regression and smoke tests
+notebooks/    readable coursework notebooks over saved results
+data/         local data layout, sample annotations, ignored raw/cache data
+results/      final coursework metrics, run configs, predictions, and figures
+reports/      supervisor-facing result tables
+thesis/       final coursework text, figures, tables, and bibliography
+docs/         concise coursework documentation: data, CLIP, Moment-DETR, limits
+archive/      old environment/history files not needed for the main path
+external/     external Moment-DETR code/checkpoints used for the probe
 ```
 
-Дополнительные черновики и обсуждение результатов находятся в `thesis/`.
+Recommended reading path for a reviewer:
 
-## Repository Map
+1. `README.md`
+2. `PROJECT_STATUS.md`
+3. `reports/results_tables.md`
+4. `notebooks/06_results_summary.ipynb`
+5. `thesis/coursework.md`
+
+## Reproducible experiments
+
+The main reproducibility path is Charades-STA + CLIP baseline. Useful files:
+
+- dependencies: `requirements.txt`;
+- configuration: `configs/clip_baseline.yaml`;
+- data notes: `data/README.md`, `docs/data_setup.md`;
+- method notes: `docs/clip_baseline.md`, `docs/video_frame_extraction.md`,
+  `docs/moment_detr.md`, `docs/qvhighlights_limitations.md`;
+- core implementation: `src/`;
+- final experiment runners:
+  - `scripts/run_clip_sweep.py`;
+  - `scripts/run_smoothing_sweep.py`;
+  - `scripts/run_clip_vs_moment_detr.py`;
+  - `scripts/run_moment_detr_probe.py`.
+
+Saved `run_config.json`, `metrics.json`, `result.json`, and `summary.csv` files
+are kept with the corresponding result folders so that reported numbers can be
+checked without rerunning all inference.
+
+All notebooks in `notebooks/` are designed as readable analysis notebooks over
+saved final `results/*.json` and `results/*.csv` artifacts. They are not the
+primary place where model logic lives.
+
+## Results
+
+Final coursework results are centered on Charades-STA:
+
+- `results/charades_sta_sweep_1000/summary.csv` - CLIP window/stride/aggregation
+  sweep on a fixed 1,000-query Charades-STA subset.
+- `results/charades_sta_smoothing_1000/summary.csv` - smoothing sweep on the
+  same 1,000-query subset.
+- `results/clip_vs_moment_detr_50/comparison_summary.csv` and
+  `results/moment_detr_charades_50/metrics.json` - CLIP vs Moment-DETR
+  raw-video comparison on a fixed 50-query subset.
+- `reports/results_tables.md` - compact result tables for coursework review.
+
+Reported highlights, copied from `PROJECT_STATUS.md`:
+
+- Best coarse CLIP result on the 1,000-query sweep:
+  `clip_w16_s8_mean`, `R@1_IoU_0.3 = 0.625`.
+- Best strict CLIP localization in that sweep:
+  `clip_w8_s4_mean`, `R@1_IoU_0.5 = 0.393`,
+  `R@1_IoU_0.7 = 0.181`.
+- Best mIoU in the sweep:
+  `clip_w16_s8_mean`, `mIoU = 0.34969020291901676`.
+- On the fixed 50-query comparison subset, best CLIP strict result:
+  `clip_w8_s4_mean`, `R@1_IoU_0.7 = 0.32`,
+  `mIoU = 0.4393782459360136`.
+- Moment-DETR raw-video probe on the same 50-query subset:
+  `R@1_IoU_0.3 = 0.44`, `R@1_IoU_0.5 = 0.32`,
+  `R@1_IoU_0.7 = 0.04`, `mIoU = 0.26340237468832634`.
+
+Exploratory results are preserved locally, but they are not part of the public
+coursework evidence line:
+
+- earlier Charades-STA smoke/200-query runs;
+- QVHighlights preliminary sweeps;
+- synthetic/sample experiments;
+- one-video and diagnostic probes.
+
+They live under ignored `.agent_memory/results/`. Caches and embeddings,
+especially `.npz` files, are kept only to speed up local reruns and should not
+be read as standalone final results.
+
+## Limitations
+
+- The main CLIP sweep uses a fixed 1,000-query subset, not the full
+  Charades-STA test split.
+- Moment-DETR comparison uses only 50 examples and should be read as a
+  feasibility probe, not a full official benchmark.
+- All reported runs use CPU inference.
+- No model is fine-tuned on Charades-STA.
+- QVHighlights remains preliminary because raw video availability depends on
+  external YouTube links.
+- Moment-DETR checkpoint compatibility is sensitive to feature format: the
+  raw-video-compatible checkpoint works for the probe, while the QVHighlights
+  feature checkpoint is not directly compatible with the raw-video path.
+
+## Thesis materials
+
+Main coursework text:
 
 ```text
-notebooks/      readable coursework notebooks
-reports/        final result tables for review
-results/        saved metrics, configs, predictions, cache artifacts
-thesis/         coursework drafts
-docs/           setup notes and experiment logs
-src/            implementation modules
-scripts/        reproducibility and experiment entry points
-tests/          regression tests
-external/       external Moment-DETR code/checkpoint used for probe
+thesis/coursework.md
 ```
 
-Scripts and tests are kept for reproducibility, but the recommended reading
-interface for coursework review is `README.md`, `PROJECT_STATUS.md`,
-`reports/results_tables.md`, `notebooks/`, and `thesis/coursework_draft_v2.md`.
+The final thesis folder is intentionally small:
+
+```text
+thesis/
+├── coursework.md
+├── figures/
+├── tables/
+└── references.bib
+```
+
+Intermediate writing notes were moved to local ignored agent memory and are not
+part of the final coursework repository structure. The most useful
+result-facing summary for review is `reports/results_tables.md`.
+
+## Legacy and archive notes
+
+`archive/` stores old environment/history files that are not needed for the main
+Charades-STA reproduction path. Local ignored `.agent_memory/` stores
+intermediate cleanup notes, deprecated planning documents, exploratory
+QVHighlights/synthetic history, and other Codex/OpenCode working memory. These
+files are preserved locally for transparency, but they are not required for
+understanding or reproducing the public coursework results.

@@ -1,0 +1,7 @@
+config_name,window_size,stride,aggregation,smoothing,evaluated_queries,unique_videos,processed_frames,R@1_IoU_0.3,R@1_IoU_0.5,R@1_IoU_0.7,mIoU,inference_time_sec,cache_hits,cache_misses,cache_size_bytes
+clip_w8_s4_mean_none,8.0,4.0,mean,none,1000,363,29994,0.509,0.393,0.181,0.34777747887511207,17.297376041009557,1000,0,58017484
+clip_w8_s4_mean_moving_average_3,8.0,4.0,mean,moving_average_3,1000,363,29994,0.511,0.398,0.183,0.3485195232005171,15.721828207999351,1000,0,58017484
+clip_w8_s4_mean_moving_average_5,8.0,4.0,mean,moving_average_5,1000,363,29994,0.509,0.398,0.19,0.34942105981287236,15.789070291997632,1000,0,58017484
+clip_w16_s8_mean_none,16.0,8.0,mean,none,1000,363,29994,0.625,0.26,0.096,0.34969020291901676,14.78721945900179,1000,0,58017484
+clip_w16_s8_mean_moving_average_3,16.0,8.0,mean,moving_average_3,1000,363,29994,0.62,0.257,0.098,0.3490817358808653,15.369382458011387,1000,0,58017484
+clip_w16_s8_mean_moving_average_5,16.0,8.0,mean,moving_average_5,1000,363,29994,0.623,0.254,0.098,0.3480849408190796,15.99566145800054,1000,0,58017484

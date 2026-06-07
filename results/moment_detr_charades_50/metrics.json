@@ -1,0 +1,9 @@
+{
+  "evaluated_queries": 50,
+  "failed_queries": 0,
+  "inference_time_sec": 17.933695000014268,
+  "R@1_IoU_0.3": 0.44,
+  "R@1_IoU_0.5": 0.32,
+  "R@1_IoU_0.7": 0.04,
+  "mIoU": 0.26340237468832634
+}

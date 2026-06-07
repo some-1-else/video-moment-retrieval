@@ -1,0 +1,533 @@
+{
+  "config": {
+    "videos_dir": "data/raw/charades/videos",
+    "fps": 1.0,
+    "window_size": 8.0,
+    "stride": 4.0,
+    "aggregation": "mean",
+    "model_name": "ViT-B/32",
+    "device": "cpu",
+    "batch_size": 32,
+    "use_cache": true,
+    "embeddings_cache_dir": "results/clip_vs_moment_detr_50/embeddings"
+  },
+  "predictions": {
+    "charades_sta_test_0": [
+      23.0,
+      31.0
+    ],
+    "charades_sta_test_1": [
+      23.0,
+      31.0
+    ],
+    "charades_sta_test_2": [
+      23.0,
+      31.0
+    ],
+    "charades_sta_test_3": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_test_4": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_5": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_test_6": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_7": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_8": [
+      24.916666666666664,
+      32.916666666666664
+    ],
+    "charades_sta_test_9": [
+      24.916666666666664,
+      32.916666666666664
+    ],
+    "charades_sta_test_10": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_11": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_12": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_13": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_14": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_15": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_16": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_17": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_test_18": [
+      10.633333333333333,
+      18.633333333333333
+    ],
+    "charades_sta_test_19": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_20": [
+      13.100000000000001,
+      21.1
+    ],
+    "charades_sta_test_21": [
+      13.100000000000001,
+      21.1
+    ],
+    "charades_sta_test_22": [
+      8.0,
+      16.0
+    ],
+    "charades_sta_test_23": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_24": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_25": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_test_26": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_27": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_28": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_test_29": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_30": [
+      12.0,
+      20.0
+    ],
+    "charades_sta_test_31": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_32": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_33": [
+      4.0,
+      12.0
+    ],
+    "charades_sta_test_34": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_test_35": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_36": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_37": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_test_38": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_39": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_40": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_41": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_test_42": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_test_43": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_44": [
+      27.81937528293345,
+      35.81937528293345
+    ],
+    "charades_sta_test_45": [
+      16.0,
+      24.0
+    ],
+    "charades_sta_test_46": [
+      12.62816076656907,
+      20.62816076656907
+    ],
+    "charades_sta_test_47": [
+      12.62816076656907,
+      20.62816076656907
+    ],
+    "charades_sta_test_48": [
+      0.0,
+      8.0
+    ],
+    "charades_sta_test_49": [
+      4.0,
+      12.0
+    ]
+  },
+  "ground_truth": {
+    "charades_sta_test_0": [
+      [
+        24.3,
+        30.4
+      ]
+    ],
+    "charades_sta_test_1": [
+      [
+        24.3,
+        30.4
+      ]
+    ],
+    "charades_sta_test_2": [
+      [
+        24.3,
+        30.4
+      ]
+    ],
+    "charades_sta_test_3": [
+      [
+        24.3,
+        30.4
+      ]
+    ],
+    "charades_sta_test_4": [
+      [
+        4.3,
+        12.5
+      ]
+    ],
+    "charades_sta_test_5": [
+      [
+        4.4,
+        9.2
+      ]
+    ],
+    "charades_sta_test_6": [
+      [
+        0.0,
+        3.4
+      ]
+    ],
+    "charades_sta_test_7": [
+      [
+        0.0,
+        4.0
+      ]
+    ],
+    "charades_sta_test_8": [
+      [
+        26.2,
+        31.3
+      ]
+    ],
+    "charades_sta_test_9": [
+      [
+        26.2,
+        31.3
+      ]
+    ],
+    "charades_sta_test_10": [
+      [
+        1.0,
+        11.0
+      ]
+    ],
+    "charades_sta_test_11": [
+      [
+        1.0,
+        11.0
+      ]
+    ],
+    "charades_sta_test_12": [
+      [
+        9.3,
+        14.4
+      ]
+    ],
+    "charades_sta_test_13": [
+      [
+        3.1,
+        11.8
+      ]
+    ],
+    "charades_sta_test_14": [
+      [
+        9.3,
+        14.4
+      ]
+    ],
+    "charades_sta_test_15": [
+      [
+        9.3,
+        14.4
+      ]
+    ],
+    "charades_sta_test_16": [
+      [
+        3.1,
+        11.8
+      ]
+    ],
+    "charades_sta_test_17": [
+      [
+        3.1,
+        11.8
+      ]
+    ],
+    "charades_sta_test_18": [
+      [
+        0.0,
+        8.8
+      ]
+    ],
+    "charades_sta_test_19": [
+      [
+        12.7,
+        18.633333333333333
+      ]
+    ],
+    "charades_sta_test_20": [
+      [
+        13.2,
+        20.8
+      ]
+    ],
+    "charades_sta_test_21": [
+      [
+        13.2,
+        20.8
+      ]
+    ],
+    "charades_sta_test_22": [
+      [
+        10.7,
+        16.5
+      ]
+    ],
+    "charades_sta_test_23": [
+      [
+        6.9,
+        13.1
+      ]
+    ],
+    "charades_sta_test_24": [
+      [
+        10.2,
+        19.8
+      ]
+    ],
+    "charades_sta_test_25": [
+      [
+        4.2,
+        14.2
+      ]
+    ],
+    "charades_sta_test_26": [
+      [
+        28.4,
+        35.0
+      ]
+    ],
+    "charades_sta_test_27": [
+      [
+        25.8,
+        33.43333333333333
+      ]
+    ],
+    "charades_sta_test_28": [
+      [
+        5.1,
+        10.2
+      ]
+    ],
+    "charades_sta_test_29": [
+      [
+        13.2,
+        22.37324833102785
+      ]
+    ],
+    "charades_sta_test_30": [
+      [
+        13.2,
+        22.37324833102785
+      ]
+    ],
+    "charades_sta_test_31": [
+      [
+        5.1,
+        10.2
+      ]
+    ],
+    "charades_sta_test_32": [
+      [
+        0.2,
+        9.8
+      ]
+    ],
+    "charades_sta_test_33": [
+      [
+        1.7,
+        12.1
+      ]
+    ],
+    "charades_sta_test_34": [
+      [
+        26.1,
+        35.81937528293345
+      ]
+    ],
+    "charades_sta_test_35": [
+      [
+        0.0,
+        9.9
+      ]
+    ],
+    "charades_sta_test_36": [
+      [
+        0.0,
+        12.6
+      ]
+    ],
+    "charades_sta_test_37": [
+      [
+        0.0,
+        15.1
+      ]
+    ],
+    "charades_sta_test_38": [
+      [
+        0.0,
+        9.9
+      ]
+    ],
+    "charades_sta_test_39": [
+      [
+        14.1,
+        20.3
+      ]
+    ],
+    "charades_sta_test_40": [
+      [
+        0.0,
+        9.9
+      ]
+    ],
+    "charades_sta_test_41": [
+      [
+        0.0,
+        15.1
+      ]
+    ],
+    "charades_sta_test_42": [
+      [
+        26.1,
+        35.81937528293345
+      ]
+    ],
+    "charades_sta_test_43": [
+      [
+        0.0,
+        9.9
+      ]
+    ],
+    "charades_sta_test_44": [
+      [
+        11.6,
+        20.8
+      ]
+    ],
+    "charades_sta_test_45": [
+      [
+        22.9,
+        29.8
+      ]
+    ],
+    "charades_sta_test_46": [
+      [
+        13.1,
+        20.62816076656907
+      ]
+    ],
+    "charades_sta_test_47": [
+      [
+        9.8,
+        15.7
+      ]
+    ],
+    "charades_sta_test_48": [
+      [
+        0.0,
+        15.9
+      ]
+    ],
+    "charades_sta_test_49": [
+      [
+        0.0,
+        14.4
+      ]
+    ]
+  },
+  "metrics": {
+    "R@1_IoU_0.3": 0.58,
+    "R@1_IoU_0.5": 0.52,
+    "R@1_IoU_0.7": 0.32,
+    "mIoU": 0.4393782459360136
+  },
+  "stats": {
+    "num_samples": 50,
+    "total_frames": 1515,
+    "avg_frames_per_sample": 30.3,
+    "inference_time_sec": 14.223121250004624,
+    "cache_hits": 34,
+    "cache_misses": 16,
+    "embedding_cache_size_bytes": 2929638
+  }
+}

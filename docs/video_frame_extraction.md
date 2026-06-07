@@ -29,7 +29,7 @@ OpenCV is imported lazily inside the frame extraction functions, so most tests a
 When a local video file is available, run:
 
 ```bash
-.venv/bin/python scripts/inspect_video.py \
+.venv/bin/python .agent_memory/scripts/inspect_video.py \
   --video path/to/video.mp4 \
   --fps 1
 ```

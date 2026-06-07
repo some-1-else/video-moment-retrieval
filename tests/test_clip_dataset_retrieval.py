@@ -40,6 +40,7 @@ def test_clip_dataset_build_result_returns_expected_schema() -> None:
     assert set(result) == {"config", "predictions", "ground_truth", "metrics", "stats"}
     assert result["config"]["videos_dir"] == "videos"
     assert result["config"]["model_name"] == "ViT-B/32"
+    assert result["config"]["smoothing_window"] is None
     assert result["metrics"]["R@1_IoU_0.5"] == pytest.approx(1.0)
     assert result["stats"] == {
         "num_samples": 1,
@@ -50,3 +51,25 @@ def test_clip_dataset_build_result_returns_expected_schema() -> None:
         "cache_misses": 0,
         "embedding_cache_size_bytes": 0,
     }
+
+
+def test_clip_dataset_build_result_records_smoothing_window() -> None:
+    result = build_result(
+        fps=1.0,
+        window_size=2.0,
+        stride=1.0,
+        aggregation="mean",
+        model_name="ViT-B/32",
+        device="cpu",
+        batch_size=32,
+        videos_dir=Path("videos"),
+        predictions={"sample_1": [1.0, 3.0]},
+        ground_truth={"sample_1": [[1.0, 3.0]]},
+        prediction_windows=[[1.0, 3.0]],
+        ground_truth_windows=[[[1.0, 3.0]]],
+        total_frames=5,
+        inference_time_sec=1.25,
+        smoothing_window=3,
+    )
+
+    assert result["config"]["smoothing_window"] == 3

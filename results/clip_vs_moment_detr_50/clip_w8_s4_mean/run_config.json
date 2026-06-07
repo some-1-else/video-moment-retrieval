@@ -1,0 +1,33 @@
+{
+  "subset_jsonl": "data/processed/charades_sta_moment_detr_test_subset.jsonl",
+  "config_name": "clip_w8_s4_mean",
+  "config": {
+    "videos_dir": "data/raw/charades/videos",
+    "fps": 1.0,
+    "window_size": 8.0,
+    "stride": 4.0,
+    "aggregation": "mean",
+    "model_name": "ViT-B/32",
+    "device": "cpu",
+    "batch_size": 32,
+    "use_cache": true,
+    "embeddings_cache_dir": "results/clip_vs_moment_detr_50/embeddings"
+  },
+  "summary": {
+    "model": "CLIP",
+    "config_name": "clip_w8_s4_mean",
+    "window_size": 8.0,
+    "stride": 4.0,
+    "aggregation": "mean",
+    "evaluated_queries": 50,
+    "failed_queries": 0,
+    "R@1_IoU_0.3": 0.58,
+    "R@1_IoU_0.5": 0.52,
+    "R@1_IoU_0.7": 0.32,
+    "mIoU": 0.4393782459360136,
+    "inference_time_sec": 14.223121250004624,
+    "cache_hits": 34,
+    "cache_misses": 16,
+    "cache_size_bytes": 2929638
+  }
+}
