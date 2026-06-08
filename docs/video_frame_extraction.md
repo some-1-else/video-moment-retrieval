@@ -1,57 +1,57 @@
-# Video Frame Extraction
+# Извлечение кадров из видео
 
-Frame extraction is the bridge between local video files and the planned CLIP-based baseline. In the future baseline, frames will be sampled from a video at fixed timestamps, encoded with a CLIP image encoder, and compared with the text query embedding.
+Frame extraction связывает локальные video files и CLIP-based baseline. Кадры
+выбираются из видео по фиксированным timestamps, кодируются CLIP image encoder
+и сравниваются с text query embedding.
 
-## Current Scope
+## Текущий scope
 
-The current implementation only supports extraction from a local video file provided by the user. It does not download QVHighlights videos, does not process the full dataset, and does not run CLIP.
+Текущая реализация поддерживает extraction из локального video file. Она не
+скачивает QVHighlights videos, не обрабатывает полный dataset и сама по себе не
+запускает CLIP.
 
-This layer is intended as a small smoke-testable component:
+Этот слой является небольшим smoke-testable component:
 
 ```text
 local video file -> sampled timestamps -> decoded frames
 ```
 
-The existing `src/video/frame_sampling.py` module generates timestamps from `duration` and `fps`. The new frame extraction module uses those timestamps to read frames from a local video.
+Модуль `src/video/frame_sampling.py` генерирует timestamps по `duration` и
+`fps`. Frame extraction использует эти timestamps, чтобы читать frames из
+локального video.
 
-## Dependency
+## Зависимость
 
-The implementation uses `opencv-python` for video reading:
+Для чтения видео используется `opencv-python`:
 
 ```text
 opencv-python
 ```
 
-OpenCV is imported lazily inside the frame extraction functions, so most tests and non-video workflows do not require video decoding to run.
+OpenCV импортируется lazy внутри frame extraction functions, поэтому большинству
+tests и non-video workflows не требуется video decoding.
 
-## Optional Local Smoke Test
+## Optional local smoke test
 
-When a local video file is available, run:
+Если локальный video file доступен, можно проверить extraction через public
+pipeline scripts или через unit tests для `src/video/`. Финальные notebooks не
+запускают video decoding: они читают уже сохраненные results.
 
-```bash
-.venv/bin/python .agent_memory/scripts/inspect_video.py \
-  --video path/to/video.mp4 \
-  --fps 1
-```
+## Timestamp behavior
 
-The script prints:
+`extract_frames_at_timestamps(video_path, timestamps)` ожидает timestamps в
+секундах. Negative timestamps отклоняются. Timestamps, которые больше или равны
+оцененной video duration, вызывают `ValueError`.
 
-- estimated duration;
-- number of sampled timestamps;
-- number of extracted frames;
-- first frame shape, if at least one frame was extracted.
+Это сделано намеренно: silent skipping out-of-range timestamps может скрывать
+ошибки в sampling logic.
 
-## Timestamp Behavior
+## Ограничения
 
-`extract_frames_at_timestamps(video_path, timestamps)` expects timestamps in seconds. Negative timestamps are rejected. Timestamps greater than or equal to the estimated video duration are rejected with `ValueError`.
-
-This is intentionally strict: silently skipping out-of-range timestamps can hide bugs in sampling logic.
-
-## Limitations
-
-- QVHighlights videos are not downloaded by this project step.
-- Dataset-level video processing is not implemented yet.
-- Different video codecs may behave differently depending on local OpenCV/FFmpeg support.
-- Some systems may need additional FFmpeg support for certain video formats.
-- Large videos can be slow to seek frame-by-frame.
-- This module only prepares frames; it does not compute CLIP embeddings.
+- QVHighlights videos не скачиваются этим project step.
+- Dataset-level video processing не является частью этого документа.
+- Разные video codecs могут вести себя по-разному в зависимости от локальной
+  поддержки OpenCV/FFmpeg.
+- Некоторым системам может потребоваться дополнительная FFmpeg support.
+- Большие videos могут медленно seek-аться frame-by-frame.
+- Этот модуль только подготавливает frames; он не вычисляет CLIP embeddings.

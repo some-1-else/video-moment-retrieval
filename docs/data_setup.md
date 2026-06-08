@@ -1,13 +1,12 @@
-# Data Setup
+# Подготовка данных
 
-This document describes the data preparation path needed to reproduce the final
-coursework experiments: Charades-STA annotations plus local Charades videos.
-The project does not automatically download the full Charades or Charades-STA
-datasets.
+Этот документ описывает подготовку данных для воспроизведения финальных
+экспериментов: Charades-STA annotations и локальные Charades videos. Проект не
+скачивает полный Charades или Charades-STA dataset автоматически.
 
-## Expected Layout
+## Ожидаемая структура
 
-Place Charades-STA annotation files here:
+Charades-STA annotation files должны лежать здесь:
 
 ```text
 data/charades_sta/
@@ -15,47 +14,47 @@ data/charades_sta/
   charades_sta_test.txt
 ```
 
-Place local Charades videos here:
+Локальные Charades videos должны лежать здесь:
 
 ```text
 data/raw/charades/videos/
   <video_id>.mp4
 ```
 
-The code also accepts `.avi` and `.mkv`, but `.mp4` is the preferred local
-format. Each Charades-STA annotation line is expected to have this form:
+Код также принимает `.avi` и `.mkv`, но `.mp4` является предпочтительным
+локальным форматом. Каждая строка Charades-STA annotation ожидается в формате:
 
 ```text
 <video_id> <start_time> <end_time>##<sentence>
 ```
 
-For example:
+Пример:
 
 ```text
 ABC123 12.3 18.7##person opens a door
 ```
 
-The matching local video path is:
+Соответствующий локальный video path:
 
 ```text
 data/raw/charades/videos/ABC123.mp4
 ```
 
-## Charades Video Archive
+## Архив Charades videos
 
-The raw Charades videos are stored in the official AI2 Charades archive. Keep
-the downloaded archive outside git, for example:
+Raw Charades videos хранятся в официальном AI2 Charades archive. Скачанный
+архив нужно держать вне git, например:
 
 ```text
 data/raw/charades/archives/Charades_v1_480.zip
 ```
 
-For coursework experiments, the 480p archive is sufficient and easier to handle
-locally than a larger version.
+Для coursework experiments достаточно 480p archive: он меньше, быстрее
+обрабатывается локально и подходит для CLIP baseline.
 
-## Extract Videos
+## Извлечение видео
 
-Start with a small subset, not the full archive:
+Начинайте с небольшой subset, а не с полного архива:
 
 ```bash
 .venv/bin/python scripts/prepare_data.py \
@@ -63,25 +62,25 @@ Start with a small subset, not the full archive:
   --limit 20
 ```
 
-The script extracts selected `.mp4` members into:
+Скрипт извлекает выбранные `.mp4` files в:
 
 ```text
 data/raw/charades/videos/
 ```
 
-and writes an extraction manifest:
+и записывает extraction manifest:
 
 ```text
 data/processed/charades_zip_extract_manifest.csv
 ```
 
-If the required video ids are already known, put them in a text or CSV file:
+Если нужные video ids уже известны, положите их в text или CSV file:
 
 ```text
 data/charades_sta/smoke_video_ids.txt
 ```
 
-then extract only those videos:
+Затем извлеките только эти видео:
 
 ```bash
 .venv/bin/python scripts/prepare_data.py \
@@ -90,40 +89,29 @@ then extract only those videos:
   --limit 20
 ```
 
-When both `--video_ids` and `--limit` are provided, the script first filters by
-the requested ids and then extracts at most the first `N` matching files.
+Если одновременно переданы `--video_ids` и `--limit`, скрипт сначала фильтрует
+по requested ids, а затем извлекает не больше первых `N` matching files.
 
-## Verify Data
+## Проверка данных
 
-Before running CLIP experiments, verify that annotations and local videos agree:
+Перед запуском CLIP experiments нужно убедиться, что annotations и локальные
+videos согласованы:
 
-```bash
-.venv/bin/python .agent_memory/scripts/probe_charades_sta.py \
-  --annotations_path data/charades_sta/charades_sta_train.txt \
-  --videos_dir data/raw/charades/videos \
-  --n 20 \
-  --output_manifest data/processed/charades_sta_probe_manifest.csv
-```
+- annotation files существуют в `data/charades_sta/`;
+- нужные videos существуют в `data/raw/charades/videos/`;
+- OpenCV может открыть видео и прочитать первый frame;
+- размеченные windows лежат внутри decoded video duration.
 
-The probe parses annotations and checks video readability with OpenCV. It does
-not run CLIP, retrieval, or evaluation.
+Эти проверки отражаются в локальных manifests под `data/processed/`. Финальные
+experiment runners также валидируют local videos и сохраняют `run_config.json`
+рядом с результатами.
 
-Successful rows should satisfy:
+## Reproduction notes
 
-- `video_exists=True`
-- `can_open=True`
-- `can_read_first_frame=True`
-- `window_within_duration=True`
-
-Rows with missing videos, unreadable files, or out-of-duration annotations
-should be excluded from the first smoke-test subset.
-
-## Reproduction Notes
-
-- Keep raw archives, extracted videos, manifests, caches, and embeddings out of
-  git unless they are intentionally tiny sample files.
-- Start with 5-20 verified videos before scaling to the fixed 1,000-query
-  coursework subset.
-- The final result folders keep their own `run_config.json`, `metrics.json`,
-  `summary.csv`, and prediction files so that reported numbers can be checked
-  without rerunning all inference.
+- Raw archives, extracted videos, manifests, caches и embeddings не должны
+  попадать в git, если это не специально подготовленные маленькие sample files.
+- Перед масштабированием на фиксированную 1,000-query coursework subset лучше
+  проверить небольшой набор из 5-20 videos.
+- Финальные result folders хранят собственные `run_config.json`,
+  `metrics.json`, `summary.csv` и prediction files, чтобы reported numbers
+  можно было проверить без повторного inference.

@@ -1,75 +1,75 @@
 # Moment-DETR
 
-This document summarizes what was done with Moment-DETR in the coursework and
-which limitations were found. Moment-DETR is treated as an external feasibility
-comparison, not as the main reproducible pipeline.
+Этот документ кратко описывает, что было сделано с Moment-DETR в курсовой и
+какие ограничения были обнаружены. Moment-DETR используется как внешний
+feasibility comparison, а не как основная воспроизводимая pipeline.
 
-## Role in the Project
+## Роль в проекте
 
-The main coursework line is Charades-STA + CLIP. Moment-DETR was added as an
-isolated raw-video probe to test whether a specialized temporal localization
-model could be connected to the same local Charades videos and evaluated with
-the same metrics.
+Основная линия курсовой - Charades-STA + CLIP. Moment-DETR добавлен как
+изолированный raw-video probe, чтобы проверить, можно ли подключить
+специализированную temporal localization model к тем же локальным Charades
+videos и оценить ее теми же метриками.
 
-No Moment-DETR model was trained, fine-tuned, or integrated into the main CLIP
-pipeline.
+Moment-DETR model не обучалась, не fine-tuned и не интегрировалась в основную
+CLIP pipeline.
 
-## Official Repository
+## Official repository
 
-The official repository is:
+Официальный репозиторий:
 
 ```text
 https://github.com/jayleicn/moment_detr
 ```
 
-It was cloned under:
+Он был клонирован в:
 
 ```text
 external/moment_detr
 ```
 
-Observed commit for the local probe:
+Observed commit для локального probe:
 
 ```text
 b7e553a
 ```
 
-The official project mainly targets QVHighlights and provides two relevant
-inference routes:
+Официальный проект в первую очередь ориентирован на QVHighlights и содержит два
+релевантных inference routes:
 
-- dataset-level QVHighlights inference with pre-extracted features;
-- raw-video prediction through the `run_on_video` demo.
+- dataset-level QVHighlights inference с pre-extracted features;
+- raw-video prediction через demo `run_on_video`.
 
-The raw-video route is the one used here because the coursework data is local
+В курсовой используется raw-video route, потому что данные проекта - локальные
 Charades `.mp4` files.
 
-## Environment Constraints
+## Ограничения окружения
 
-The official Moment-DETR README recommends a separate environment with Python
-3.7 and PyTorch 1.9.0. The coursework `.venv` is newer, so the probe keeps
-Moment-DETR isolated instead of downgrading the main project environment.
+Официальный README Moment-DETR рекомендует отдельное окружение с Python 3.7 и
+PyTorch 1.9.0. Текущий coursework `.venv` новее, поэтому probe сохраняет
+Moment-DETR изолированным и не downgrade-ит основное окружение проекта.
 
-The raw-video demo also depends on packages such as `ffmpeg-python`,
-`easydict`, and `tensorboard`. The isolated wrapper avoided changing the main
-environment and used OpenCV for frame extraction.
+Raw-video demo также зависит от packages вроде `ffmpeg-python`, `easydict` и
+`tensorboard`. Изолированная wrapper-логика не меняет основное окружение и
+использует OpenCV для frame extraction.
 
 ## Checkpoints
 
-Two checkpoint types were checked:
+Проверялись два типа checkpoints:
 
-- official release QVHighlights checkpoints, including
+- official release QVHighlights checkpoints, включая
   `ft_model_from_pt_model_e50.ckpt`;
-- the raw-video-compatible checkpoint included in the official repo:
+- raw-video-compatible checkpoint из official repo:
   `external/moment_detr/run_on_video/moment_detr_ckpt/model_best.ckpt`.
 
-The raw-video-compatible checkpoint works for the local probe. The released
-QVHighlights feature checkpoint is not directly compatible with the raw-video
-path: it expects feature dimension `2818`, while the raw-video path produces
-CLIP image features plus temporal endpoint features, i.e. `512 + 2 = 514`.
+Raw-video-compatible checkpoint работает для локального probe. Released
+QVHighlights feature checkpoint не совместим напрямую с raw-video path: он
+ожидает feature dimension `2818`, а raw-video path создает CLIP image features
+плюс temporal endpoint features, то есть `512 + 2 = 514`.
 
-## Charades-STA Conversion
+## Конвертация Charades-STA
 
-For the local probe, Charades-STA annotations were converted into a
+Для локального probe Charades-STA annotations были конвертированы в
 QVHighlights-like JSONL format:
 
 ```json
@@ -82,18 +82,18 @@ QVHighlights-like JSONL format:
 }
 ```
 
-The converted fixed 50-query subset is stored at:
+Фиксированная converted 50-query subset хранится здесь:
 
 ```text
 data/processed/charades_sta_moment_detr_test_subset.jsonl
 ```
 
-The conversion validates that local videos exist, can be opened with OpenCV,
-and have readable frames.
+Конвертация проверяет, что локальные videos существуют, открываются OpenCV и
+имеют readable frames.
 
-## One-Video Raw-Video Probe
+## One-video raw-video probe
 
-The first successful raw-video probe used:
+Первый successful raw-video probe использовал:
 
 ```text
 video: data/raw/charades/videos/3MSZA.mp4
@@ -102,41 +102,40 @@ checkpoint: external/moment_detr/run_on_video/moment_detr_ckpt/model_best.ckpt
 output: .agent_memory/results/probes/moment_detr_probe/3MSZA_prediction.json
 ```
 
-The top predicted window was:
+Top predicted window:
 
 ```json
 [26.0624, 31.9724, 0.9685]
 ```
 
-This confirmed that Moment-DETR raw-video inference can produce a temporal
-prediction for a local Charades video/query pair.
+Это подтвердило, что Moment-DETR raw-video inference может построить temporal
+prediction для локальной пары Charades video/query.
 
-## 50-Query Comparison
+## 50-query comparison
 
-The public comparison uses the same fixed 50 Charades-STA examples for CLIP and
-Moment-DETR. Results are stored in:
+Public comparison использует одни и те же 50 Charades-STA examples для CLIP и
+Moment-DETR. Results сохранены здесь:
 
 ```text
 results/clip_vs_moment_detr_50/comparison_summary.csv
 results/moment_detr_charades_50/metrics.json
 ```
 
-This comparison is a feasibility probe. It is not a full official Moment-DETR
-benchmark and it is not a trained Charades-STA Moment-DETR result.
+Это feasibility probe. Это не full official Moment-DETR benchmark и не
+обученный Charades-STA Moment-DETR result.
 
-## Limitations
+## Ограничения
 
-- The official dataset-level path expects QVHighlights-style pre-extracted
-  features and does not directly run on Charades-STA videos.
-- The raw-video-compatible checkpoint is usable, but the released
-  QVHighlights feature checkpoint is not compatible with the raw-video feature
-  dimensions.
-- The comparison uses only 50 examples.
-- CPU inference is slow if video encoding is repeated query by query.
-- A rigorous Moment-DETR benchmark would require a stable separate
-  environment, careful feature setup, batching by video, and likely
-  fine-tuning or dataset-specific adaptation.
+- Official dataset-level path ожидает QVHighlights-style pre-extracted features
+  и не запускается напрямую на Charades-STA videos.
+- Raw-video-compatible checkpoint usable, но released QVHighlights feature
+  checkpoint не совместим с raw-video feature dimensions.
+- Comparison использует только 50 examples.
+- CPU inference медленный, если video encoding повторяется query by query.
+- Rigorous Moment-DETR benchmark потребовал бы стабильного отдельного
+  окружения, аккуратного feature setup, batching by video и, вероятно,
+  fine-tuning или dataset-specific adaptation.
 
-Conclusion: Moment-DETR is feasible as a small isolated raw-video comparison,
-but the final coursework remains centered on the reproducible Charades-STA +
+Вывод: Moment-DETR feasible как небольшой isolated raw-video comparison, но
+финальная курсовая остается сосредоточенной на воспроизводимом Charades-STA +
 CLIP baseline.

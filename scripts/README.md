@@ -1,26 +1,26 @@
-# Scripts
+# Скрипты
 
-Public reproduction entrypoints for the coursework.
+Эта папка содержит public reproduction entrypoints для курсовой.
 
-## Data Preparation
+## Подготовка данных
 
-- `prepare_data.py` extracts selected Charades videos from a local zip archive
-  into the expected raw-video layout.
+- `prepare_data.py` извлекает выбранные Charades videos из локального zip
+  archive в ожидаемую raw-video структуру.
 
-## Experiments
+## Эксперименты
 
-- `run_clip_sweep.py` runs the main CLIP window/stride/aggregation sweep on
-  Charades-STA.
-- `run_smoothing_sweep.py` runs the CLIP smoothing ablation on the same
+- `run_clip_sweep.py` запускает основной CLIP window/stride/aggregation sweep
+  на Charades-STA.
+- `run_smoothing_sweep.py` запускает CLIP smoothing ablation на той же
   Charades-STA setup.
-- `run_clip_vs_moment_detr.py` runs the CLIP side of the fixed 50-query
-  comparison and writes the combined comparison table.
-- `run_moment_detr_probe.py` runs the Moment-DETR raw-video feasibility probe
-  on the fixed Charades-STA subset.
+- `run_clip_vs_moment_detr.py` запускает CLIP-часть фиксированного 50-query
+  comparison и записывает combined comparison table.
+- `run_moment_detr_probe.py` запускает Moment-DETR raw-video feasibility probe
+  на фиксированной Charades-STA subset.
 
-## Result Collection
+## Сбор результатов
 
-- `collect_results.py` collects JSON result files into a compact CSV summary.
+- `collect_results.py` собирает JSON result files в компактную CSV summary.
 
-Older probe, synthetic, QVHighlights, and debug scripts were moved to local
-ignored agent memory and are not part of the public reproduction path.
+Старые probe, synthetic, QVHighlights и debug scripts перенесены в локальную
+ignored agent memory и не входят в public reproduction path.

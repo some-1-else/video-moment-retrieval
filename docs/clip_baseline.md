@@ -1,12 +1,12 @@
-# CLIP Baseline
+# CLIP baseline
 
-The main coursework baseline uses pretrained CLIP as a frozen image-text
-encoder for raw-video moment retrieval on Charades-STA. No CLIP parameters are
-trained or fine-tuned.
+Основной baseline курсовой использует pretrained CLIP как frozen image-text
+encoder для raw-video moment retrieval на Charades-STA. Параметры CLIP не
+обучаются и не fine-tuned.
 
 ## Pipeline
 
-The baseline follows this flow:
+Baseline следует такой схеме:
 
 ```text
 video + text query
@@ -19,20 +19,20 @@ video + text query
 -> evaluate with R@1 IoU 0.3/0.5/0.7 and mIoU
 ```
 
-The public implementation keeps the core logic in `src/` and exposes final
-experiment entry points through `scripts/run_clip_sweep.py` and
+Основная логика находится в `src/`, а финальные experiment entrypoints
+доступны через `scripts/run_clip_sweep.py` и
 `scripts/run_smoothing_sweep.py`.
 
-## CLIP Encoder
+## CLIP encoder
 
-The encoder layer is responsible for:
+Encoder layer отвечает за:
 
-- loading a pretrained CLIP model;
-- encoding a text query into a normalized text embedding;
-- encoding decoded video frames into normalized image embeddings;
-- computing cosine similarity between text and image embeddings.
+- загрузку pretrained CLIP model;
+- кодирование text query в normalized text embedding;
+- кодирование decoded video frames в normalized image embeddings;
+- вычисление cosine similarity между text и image embeddings.
 
-The intended dependencies are:
+Основные зависимости:
 
 ```text
 torch
@@ -43,67 +43,67 @@ tqdm
 git+https://github.com/openai/CLIP.git
 ```
 
-`load_clip_model(..., device="auto")` selects `cuda`, then `mps`, then `cpu`
-depending on local availability. The reported coursework runs use CPU.
+`load_clip_model(..., device="auto")` выбирает `cuda`, затем `mps`, затем
+`cpu` в зависимости от локальной доступности. Reported coursework runs
+выполнены на CPU.
 
-## Frame Extraction
+## Frame extraction
 
-Frames are sampled from local video files at fixed timestamps. The frame
-extraction details are documented separately in `docs/video_frame_extraction.md`.
-The final experiments use `fps=1`.
+Кадры извлекаются из локальных видео по фиксированным timestamps. Детали
+описаны в `docs/video_frame_extraction.md`. В финальных экспериментах
+используется `fps=1`.
 
-## Temporal Windows
+## Temporal windows
 
-Frame scores are aggregated into candidate temporal windows. The main CLIP sweep
-uses controlled combinations of:
+Frame scores агрегируются в candidate temporal windows. Main CLIP sweep
+проверяет контролируемые комбинации:
 
 - window size;
 - stride;
 - aggregation method.
 
-The final 1,000-query Charades-STA sweep evaluates 8-second, 16-second, and
-32-second windows with mean or max aggregation.
+Финальный 1,000-query Charades-STA sweep оценивает 8-, 16- и 32-секундные
+windows с `mean` или `max` aggregation.
 
-## Scoring and Aggregation
+## Scoring и aggregation
 
-For each query-video pair:
+Для каждой пары query-video:
 
-1. CLIP encodes the query once.
-2. CLIP image embeddings are produced or loaded from cache for sampled frames.
-3. Cosine similarity gives a frame-level relevance score.
-4. Scores inside each candidate temporal window are aggregated with `mean` or
-   `max`.
-5. The highest-scoring window is used as the top-1 prediction.
+1. CLIP один раз кодирует query.
+2. CLIP image embeddings создаются или загружаются из cache для sampled frames.
+3. Cosine similarity дает frame-level relevance score.
+4. Scores внутри каждого candidate temporal window агрегируются через `mean`
+   или `max`.
+5. Window с максимальным score используется как top-1 prediction.
 
-The coursework results show that mean aggregation is more stable than max
-aggregation in the tested Charades-STA settings.
+Результаты курсовой показывают, что `mean` aggregation стабильнее `max`
+aggregation в проверенных настройках Charades-STA.
 
 ## Smoothing
 
-Optional smoothing applies a moving average to frame-level similarity scores
-before window aggregation. The smoothing sweep compares no smoothing,
-`moving_average_3`, and `moving_average_5` for selected base CLIP
-configurations.
+Optional smoothing применяет moving average к frame-level similarity scores
+перед window aggregation. Smoothing sweep сравнивает `none`,
+`moving_average_3` и `moving_average_5` для выбранных CLIP configurations.
 
-Smoothing slightly improves strict localization for the shorter `w8/s4/mean`
-configuration, but it does not consistently improve all metrics.
+Smoothing немного улучшает strict localization для короткой конфигурации
+`w8/s4/mean`, но не улучшает все метрики во всех настройках.
 
-## Embedding Cache
+## Embedding cache
 
-Image embedding extraction is the expensive repeated step. The public CLIP
-scripts can reuse cached image embeddings across parameter sweeps so that
-window size, stride, aggregation, and smoothing can change without recomputing
-the same video features.
+Image embedding extraction - самый дорогой повторяющийся шаг. Public CLIP
+scripts могут переиспользовать cached image embeddings между parameter sweeps,
+так что window size, stride, aggregation и smoothing можно менять без повторного
+кодирования тех же video frames.
 
-Embeddings and cache files are local artifacts and are not part of the final
-public result surface.
+Embeddings и cache files являются local artifacts и не входят в финальную
+public results surface.
 
 ## Scope
 
-This baseline is intentionally simple:
+Baseline намеренно простой:
 
-- no model training;
-- no fine-tuning on Charades-STA;
-- no full QVHighlights benchmark;
-- no learned temporal dynamics beyond fixed windows, aggregation, and optional
-  smoothing.
+- нет model training;
+- нет fine-tuning на Charades-STA;
+- нет full QVHighlights benchmark;
+- нет learned temporal dynamics за пределами fixed windows, aggregation и
+  optional smoothing.

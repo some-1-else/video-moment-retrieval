@@ -1,11 +1,11 @@
-# Results Tables
+# Таблицы результатов
 
-These tables are copied from saved result artifacts without changing the
-reported numbers.
+Эти таблицы скопированы из сохраненных result artifacts без изменения reported
+numbers.
 
-## CLIP Sweep 1000
+## CLIP sweep на 1000 queries
 
-Source: `results/charades_sta_sweep_1000/summary.csv`.
+Источник: `results/charades_sta_sweep_1000/summary.csv`.
 
 | Configuration | Window | Stride | Aggregation | Queries | Unique Videos | R@1 IoU 0.3 | R@1 IoU 0.5 | R@1 IoU 0.7 | mIoU | Time (s) | Cache Hits | Cache Misses |
 |---|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -14,9 +14,9 @@ Source: `results/charades_sta_sweep_1000/summary.csv`.
 | clip_w32_s16_mean | 32.0 | 16.0 | mean | 1000 | 363 | 0.395 | 0.014 | 0.0 | 0.2814292262260163 | 21.506190500003868 | 1000 | 0 |
 | clip_w16_s8_max | 16.0 | 8.0 | max | 1000 | 363 | 0.602 | 0.232 | 0.077 | 0.33861871441230174 | 20.922286917004385 | 1000 | 0 |
 
-## Smoothing
+## Smoothing ablation
 
-Source: `results/charades_sta_smoothing_1000/summary.csv`.
+Источник: `results/charades_sta_smoothing_1000/summary.csv`.
 
 | Configuration | Window | Stride | Aggregation | Smoothing | Queries | R@1 IoU 0.3 | R@1 IoU 0.5 | R@1 IoU 0.7 | mIoU | Time (s) |
 |---|---:|---:|---|---|---:|---:|---:|---:|---:|---:|
@@ -29,7 +29,7 @@ Source: `results/charades_sta_smoothing_1000/summary.csv`.
 
 ## CLIP vs Moment-DETR 50
 
-Sources:
+Источники:
 
 - `results/clip_vs_moment_detr_50/*/run_config.json`
 - `results/moment_detr_charades_50/metrics.json`

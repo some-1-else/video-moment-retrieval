@@ -1,92 +1,92 @@
-# Video Moment Retrieval Using Text Queries
+# Поиск временных фрагментов видео по текстовым запросам
 
-## 1. Introduction
+## 1. Введение
 
-Video Moment Retrieval is the task of localizing a temporal segment in a video
-that corresponds to a natural-language query. Given a video and a sentence such
-as "person turn a light on", the system must predict the start and end time of
-the relevant moment. This task is important for video search, video question
-answering, and human-centered media navigation, because users usually describe
-events in language rather than by frame indices.
+Video Moment Retrieval - это задача локализации временного фрагмента видео,
+соответствующего запросу на естественном языке. По видео и фразе вроде
+`person turn a light on` система должна предсказать начало и конец релевантного
+момента. Такая задача важна для поиска по видео, video question answering и
+навигации по медиаконтенту, потому что пользователь обычно описывает событие
+словами, а не номерами кадров.
 
-The original plan for this coursework was to use QVHighlights as the main
-dataset. QVHighlights is directly connected to modern moment retrieval research
-and is used by Moment-DETR. However, its raw videos are based on YouTube clips,
-which created practical availability problems: some videos are unavailable,
-private, deleted, or difficult to reproduce locally. For a coursework project,
-this made the full raw-video pipeline less reliable.
+Изначально в курсовой планировалось использовать QVHighlights как основной
+датасет. QVHighlights связан с современной research line по moment retrieval и
+используется в Moment-DETR. Однако raw videos в QVHighlights основаны на
+YouTube clips, что привело к практическим проблемам воспроизводимости: часть
+видео недоступна, удалена, закрыта или нестабильно скачивается локально. Для
+курсового проекта это сделало full raw-video pipeline менее надежным.
 
-For this reason, the main experimental dataset was changed to Charades-STA.
-Charades-STA is a standard temporal sentence grounding dataset built on the
-Charades videos. In this project, Charades-STA is used together with locally
-extracted Charades 480p videos. This gives a reproducible raw-video setup while
-keeping the task aligned with Video Moment Retrieval.
+Поэтому основной экспериментальный датасет был заменен на Charades-STA.
+Charades-STA является стандартным temporal sentence grounding dataset,
+построенным поверх Charades videos. В этом проекте Charades-STA используется
+вместе с локально извлеченными Charades 480p videos. Это дает воспроизводимый
+raw-video setup и сохраняет соответствие задаче Video Moment Retrieval.
 
-The project implements and evaluates a CLIP-based retrieval baseline. The
-baseline samples video frames, computes image-text similarities with CLIP, turns
-frame scores into temporal window scores, and selects the top temporal window.
-The implementation also includes temporal aggregation, optional similarity
-smoothing, and an embedding cache for efficient sweeps. In addition, the project
-includes a limited Moment-DETR raw-video feasibility probe adapted from the
-official external repository. The Moment-DETR comparison is intentionally
-limited and should not be interpreted as a full official benchmark.
+Проект реализует и оценивает CLIP-based retrieval baseline. Baseline выбирает
+кадры из видео, вычисляет image-text similarities через CLIP, преобразует
+frame scores в temporal window scores и выбирает top temporal window. Также
+реализованы temporal aggregation, optional similarity smoothing и embedding
+cache для эффективных sweeps. Дополнительно проект содержит ограниченный
+Moment-DETR raw-video feasibility probe, адаптированный из official external
+repository. Moment-DETR comparison намеренно ограничен и не должен
+интерпретироваться как full official benchmark.
 
-## 2. Related Work
+## 2. Связанные работы
 
-Temporal sentence grounding and Video Moment Retrieval study how to match a
-language query to a temporal segment in an untrimmed video. Earlier and standard
-datasets include Charades-STA, which provides sentence annotations with start
-and end timestamps over Charades videos. QVHighlights extends the task to a
-highlight-oriented setting and is used by Moment-DETR.
+Temporal sentence grounding и Video Moment Retrieval изучают сопоставление
+language query с временным сегментом в untrimmed video. Среди стандартных
+датасетов важен Charades-STA, который содержит sentence annotations со start и
+end timestamps поверх Charades videos. QVHighlights расширяет задачу в сторону
+highlight-oriented setting и используется в Moment-DETR.
 
-CLIP is a vision-language model trained on image-text pairs. Although CLIP is
-not a temporal localization model, it provides a strong zero-shot image-text
-similarity signal. This makes it useful as a simple baseline for frame-level
-video retrieval: sampled frames can be compared with a query, and the resulting
-similarities can be aggregated over temporal windows.
+CLIP - vision-language model, обученная на image-text pairs. Хотя CLIP не
+является temporal localization model, он дает сильный zero-shot image-text
+similarity signal. Поэтому CLIP полезен как простой baseline для frame-level
+video retrieval: sampled frames можно сравнить с query, а similarities
+агрегировать по temporal windows.
 
-Moment-DETR is a transformer-based moment retrieval model released with
-QVHighlights. It is more specialized than a simple CLIP baseline because it
-models temporal proposals and relevance jointly. However, the official
-dataset-level inference path expects pre-extracted QVHighlights-style features,
-while the raw-video demo path uses a different checkpoint and feature format.
-In this coursework, Moment-DETR is therefore used only as an isolated raw-video
-probe, not as a fully reproduced official benchmark.
+Moment-DETR - transformer-based moment retrieval model, опубликованная вместе с
+QVHighlights. Она специализированнее простого CLIP baseline, потому что
+моделирует temporal proposals и relevance совместно. Однако official
+dataset-level inference path ожидает pre-extracted QVHighlights-style features,
+а raw-video demo path использует другой checkpoint и feature format. Поэтому в
+этой курсовой Moment-DETR используется только как isolated raw-video probe, а
+не как полноценное воспроизведение official benchmark.
 
-## 3. Datasets
+## 3. Датасеты
 
-### 3.1 QVHighlights Initial Plan
+### 3.1 QVHighlights как исходный план
 
-QVHighlights was the initial target dataset because it is closely related to
-Moment-DETR and modern Video Moment Retrieval evaluation. The project keeps the
-QVHighlights loader code, preliminary checks, and early local experiments.
-However, QVHighlights raw videos depend on YouTube availability, which made the
-dataset difficult to reproduce reliably within the coursework timeline.
+QVHighlights был исходным target dataset, потому что он связан с Moment-DETR и
+современной оценкой Video Moment Retrieval. В проекте сохранены QVHighlights
+loader code, preliminary checks и ранние локальные эксперименты. Однако
+QVHighlights raw videos зависят от YouTube availability, что сделало dataset
+сложным для надежного воспроизведения в рамках курсовой.
 
-The QVHighlights code and preliminary results were not removed. They remain as
-part of the project history and can be reused if a stable raw-video subset
-becomes available. The final experimental results in this draft, however, are
-based on Charades-STA.
+QVHighlights code и preliminary results не удалены. Они остаются частью истории
+проекта и могут быть использованы, если появится стабильная raw-video subset.
+Тем не менее финальные экспериментальные результаты в этом тексте основаны на
+Charades-STA.
 
-### 3.2 Charades-STA Final Experimental Dataset
+### 3.2 Charades-STA как финальный экспериментальный датасет
 
-Charades-STA was selected as the final experimental dataset because it provides
-temporal sentence grounding annotations over Charades videos, and the raw video
-archive can be prepared locally. The local setup used in this project contains:
+Charades-STA был выбран как финальный экспериментальный датасет, потому что он
+содержит temporal sentence grounding annotations поверх Charades videos, а raw
+video archive можно подготовить локально. Локальная настройка проекта содержит:
 
-- Charades 480p videos extracted locally: 9,848 `.mp4` files under
+- Charades 480p videos, извлеченные локально: 9,848 `.mp4` files в
   `data/raw/charades/videos/`.
 - Charades-STA train annotations: 12,408 rows.
 - Charades-STA test annotations: 3,720 rows.
-- Annotation files under `data/charades_sta/`.
+- Annotation files в `data/charades_sta/`.
 
-The Charades-STA annotation format is line-based:
+Charades-STA annotation format является line-based:
 
 ```text
 video_id start_time end_time##sentence
 ```
 
-The implemented Charades-STA loader converts these rows into the internal
+Реализованный Charades-STA loader преобразует эти строки во внутренний
 moment retrieval format:
 
 ```json
@@ -100,184 +100,181 @@ moment retrieval format:
 }
 ```
 
-Video duration is read from local video metadata with OpenCV when it is not
-available in annotations. Ground-truth windows that exceed the decoded video
-duration are clipped to the valid interval `[0, duration]` in the experiment
-runners, and the number of clipped windows is logged.
+Если duration не указана в annotations, она читается из metadata локального
+video через OpenCV. Ground-truth windows, выходящие за decoded video duration,
+обрезаются до valid interval `[0, duration]` в experiment runners, а количество
+clipped windows логируется.
 
-## 4. Methodology
+## 4. Методика
 
-### 4.1 Implemented CLIP-Based Retrieval
+### 4.1 Реализованный CLIP-based retrieval
 
-The main method implemented by us is a CLIP-based frame and temporal-window
-retrieval baseline. It does not train or fine-tune a model. It uses pretrained
-CLIP ViT-B/32 to compute visual and textual embeddings.
+Основной метод проекта - CLIP-based frame и temporal-window retrieval baseline.
+Модель не обучается и не fine-tuned. Используется pretrained CLIP ViT-B/32 для
+вычисления visual и textual embeddings.
 
-For each video-query pair, the pipeline:
+Для каждой пары video-query pipeline:
 
-1. Samples video frames at a fixed rate, using `fps=1` in the reported
-   experiments.
-2. Encodes sampled frames with the CLIP image encoder.
-3. Encodes the query with the CLIP text encoder.
-4. Computes frame-level image-text similarity scores.
-5. Optionally smooths the similarity sequence.
-6. Generates temporal candidate windows.
-7. Aggregates frame scores inside each candidate window.
-8. Selects the highest-scoring window.
-9. Evaluates the prediction against the ground-truth temporal window.
+1. Samples video frames с фиксированной частотой; в reported experiments
+   используется `fps=1`.
+2. Кодирует sampled frames через CLIP image encoder.
+3. Кодирует query через CLIP text encoder.
+4. Вычисляет frame-level image-text similarity scores.
+5. Опционально сглаживает similarity sequence.
+6. Генерирует temporal candidate windows.
+7. Агрегирует frame scores внутри каждого candidate window.
+8. Выбирает highest-scoring window.
+9. Оценивает prediction относительно ground-truth temporal window.
 
-The retrieval and evaluation pipeline is implemented inside the project code.
-The saved experiment results are under `results/`.
+Retrieval и evaluation pipeline реализованы внутри проекта. Сохраненные
+experiment results находятся в `results/`.
 
-### 4.2 Temporal Windows
+### 4.2 Temporal windows
 
-The baseline converts frame-level similarities into temporal moment predictions
-by evaluating fixed-size candidate windows. Each configuration is defined by a
-window size and stride in seconds. For example, `w16/s8` means a 16-second
-window with an 8-second stride.
+Baseline преобразует frame-level similarities в temporal moment predictions
+через fixed-size candidate windows. Каждая configuration определяется window
+size и stride в секундах. Например, `w16/s8` означает 16-секундное window с
+8-секундным stride.
 
-This design provides a controlled way to study the trade-off between coarse and
-strict localization. Shorter windows can localize actions more precisely, while
-longer windows may capture broader context and improve coarse overlap at lower
-IoU thresholds.
+Такой design позволяет контролируемо изучать компромисс между coarse и strict
+localization. Shorter windows могут точнее локализовать actions, а longer
+windows захватывают более широкий context и могут улучшать coarse overlap при
+низких IoU thresholds.
 
 ### 4.3 Aggregation
 
-Two aggregation strategies are evaluated:
+Оцениваются две aggregation strategies:
 
-- Mean aggregation: average the CLIP frame similarities inside a window.
-- Max aggregation: use the highest frame similarity inside a window.
+- Mean aggregation: среднее CLIP frame similarities внутри window.
+- Max aggregation: максимальная frame similarity внутри window.
 
-Mean aggregation is expected to be more stable when several frames in a moment
-are moderately relevant. Max aggregation may help if a single frame is highly
-diagnostic, but it can also be more sensitive to noisy frame-level matches.
+Mean aggregation ожидаемо стабильнее, когда несколько frames в moment умеренно
+релевантны. Max aggregation может помочь, если один frame особенно
+диагностичен, но также может быть чувствительнее к noisy frame-level matches.
 
-### 4.4 Similarity Smoothing
+### 4.4 Similarity smoothing
 
-The smoothing experiment applies a moving average to frame-level similarity
-scores before temporal window aggregation. The tested variants are:
+Smoothing experiment применяет moving average к frame-level similarity scores
+перед temporal window aggregation. Проверяются варианты:
 
 - no smoothing;
-- moving average with window size 3;
-- moving average with window size 5.
+- moving average с window size 3;
+- moving average с window size 5.
 
-Smoothing is implemented as an isolated extension to the CLIP retrieval runner.
-It does not change the global evaluation logic. The goal is to check whether
-reducing frame-score noise improves temporal localization on the same fixed
-1,000-query Charades-STA subset.
+Smoothing реализован как изолированное расширение CLIP retrieval runner. Он не
+меняет общую evaluation logic. Цель - проверить, улучшает ли снижение
+frame-score noise temporal localization на той же фиксированной 1,000-query
+Charades-STA subset.
 
-### 4.5 Embedding Cache
+### 4.5 Embedding cache
 
-The CLIP image encoder is the most expensive part of the baseline. The project
-therefore uses a per-video embedding cache. The cache key depends on the video
-identifier, CLIP model name, and sampling FPS. Text embeddings are computed per
-query, while video image embeddings can be reused across different window sizes,
-strides, aggregation methods, and smoothing variants.
+CLIP image encoder - самая дорогая часть baseline. Поэтому проект использует
+per-video embedding cache. Cache key зависит от video identifier, CLIP model
+name и sampling FPS. Text embeddings считаются per query, а video image
+embeddings переиспользуются между разными window sizes, strides, aggregation
+methods и smoothing variants.
 
-The cache is especially important for controlled sweeps. In the 1,000-query
-Charades-STA sweep, the first configuration populated the cache and took
-309.6866 seconds. Later cached configurations took approximately 21-23 seconds
-in the main sweep, and the smoothing runs reused the same cache with 1,000 cache
-hits and 0 misses.
+Cache особенно важен для controlled sweeps. В 1,000-query Charades-STA sweep
+первая configuration заполнила cache и заняла 309.6866 seconds. Последующие
+cached configurations заняли примерно 21-23 seconds в main sweep, а smoothing
+runs переиспользовали тот же cache с 1,000 cache hits и 0 misses.
 
-### 4.6 Moment-DETR Raw-Video Probe
+### 4.6 Moment-DETR raw-video probe
 
-Moment-DETR was not implemented from scratch. The project cloned the official
-external repository into `external/moment_detr` and used its raw-video-compatible
-checkpoint:
+Moment-DETR не реализовывался с нуля. Проект использовал official external
+repository в `external/moment_detr` и raw-video-compatible checkpoint:
 
 ```text
 external/moment_detr/run_on_video/moment_detr_ckpt/model_best.ckpt
 ```
 
-The isolated wrapper added in this project adapts the official raw-video model
-path to local Charades videos and evaluates top-1 predicted windows with the
-same local metrics as the CLIP baseline. This wrapper is not part of the main
-CLIP pipeline.
+Изолированная wrapper-логика адаптирует official raw-video model path к
+локальным Charades videos и оценивает top-1 predicted windows теми же метриками,
+что и CLIP baseline. Эта wrapper-логика не является частью основной CLIP
+pipeline.
 
-The official QVHighlights release checkpoint was also checked, but it was not
-compatible with the raw-video path. The release checkpoint expects feature
-dimension 2818, while the raw-video path produces CLIP image features plus
-temporal endpoint features, i.e. `512 + 2 = 514`. This finding is documented in
-`docs/moment_detr.md`.
+Official QVHighlights release checkpoint также проверялся, но оказался
+несовместим с raw-video path. Release checkpoint ожидает feature dimension
+2818, а raw-video path создает CLIP image features плюс temporal endpoint
+features, то есть `512 + 2 = 514`. Это описано в `docs/moment_detr.md`.
 
-## 5. Experimental Setup
+## 5. Экспериментальная настройка
 
-### 5.1 Hardware and Device
+### 5.1 Hardware и device
 
-All reported experiments in this draft use CPU inference. No GPU acceleration
-is assumed. This makes the runtime numbers useful for local reproducibility,
-but they should not be interpreted as optimized inference throughput.
+Все reported experiments в этом тексте используют CPU inference. GPU
+acceleration не предполагается. Поэтому runtime numbers полезны для локальной
+воспроизводимости, но не должны интерпретироваться как optimized inference
+throughput.
 
-### 5.2 Charades-STA 1,000-Query Fixed Subset
+### 5.2 Фиксированная 1,000-query Charades-STA subset
 
-The main CLIP experiments use a fixed 1,000-query subset from the Charades-STA
-test split. The subset contains 363 unique videos. All CLIP sweep and smoothing
-configurations use exactly the same selection manifest, so the reported
-differences come from retrieval configuration rather than different data
-selection.
+Основные CLIP experiments используют фиксированную 1,000-query subset из
+Charades-STA test split. Subset содержит 363 unique videos. Все CLIP sweep и
+smoothing configurations используют один и тот же selection manifest, поэтому
+различия в reported metrics связаны с retrieval configuration, а не с
+различиями data selection.
 
-The main 1,000-query sweep is stored in:
+Main 1,000-query sweep сохранен здесь:
 
 ```text
 results/charades_sta_sweep_1000/summary.csv
 ```
 
-The smoothing experiment is stored in:
+Smoothing experiment сохранен здесь:
 
 ```text
 results/charades_sta_smoothing_1000/summary.csv
 ```
 
-The 50-query CLIP vs Moment-DETR comparison is stored in:
+50-query CLIP vs Moment-DETR comparison сохранен здесь:
 
 ```text
 results/clip_vs_moment_detr_50/comparison_summary.csv
 results/moment_detr_charades_50/metrics.json
 ```
 
-### 5.3 Metrics
+### 5.3 Метрики
 
-The evaluation uses standard temporal localization metrics:
+Evaluation использует стандартные temporal localization metrics:
 
-- `R@1 IoU 0.3`: fraction of queries where the top predicted window overlaps
-  the ground-truth window with IoU at least 0.3.
-- `R@1 IoU 0.5`: same at IoU threshold 0.5.
-- `R@1 IoU 0.7`: same at IoU threshold 0.7.
-- `mIoU`: mean temporal IoU between the top prediction and the ground-truth
-  window.
+- `R@1 IoU 0.3`: доля queries, где top predicted window пересекается с
+  ground-truth window с IoU не ниже 0.3.
+- `R@1 IoU 0.5`: то же при IoU threshold 0.5.
+- `R@1 IoU 0.7`: то же при IoU threshold 0.7.
+- `mIoU`: mean temporal IoU между top prediction и ground-truth window.
 
-All methods are evaluated with top-1 temporal predictions.
+Все методы оцениваются по top-1 temporal predictions.
 
-### 5.4 CLIP Configurations
+### 5.4 CLIP configurations
 
-The main 1,000-query CLIP sweep evaluates:
+Main 1,000-query CLIP sweep оценивает:
 
 - `window_size=8`, `stride=4`, `aggregation=mean`;
 - `window_size=16`, `stride=8`, `aggregation=mean`;
 - `window_size=32`, `stride=16`, `aggregation=mean`;
 - `window_size=16`, `stride=8`, `aggregation=max`.
 
-All configurations use:
+Все configurations используют:
 
 - `fps=1`;
 - CLIP `ViT-B/32`;
 - CPU;
 - shared embedding cache.
 
-The smoothing experiment evaluates two base configurations:
+Smoothing experiment оценивает две base configurations:
 
 - `w8/s4/mean`;
 - `w16/s8/mean`;
 
-with smoothing variants `none`, `moving_average_3`, and `moving_average_5`.
+с smoothing variants `none`, `moving_average_3` и `moving_average_5`.
 
-## 6. Results
+## 6. Результаты
 
-### 6.1 CLIP 1,000-Query Sweep
+### 6.1 CLIP 1,000-query sweep
 
-The following table reports the main controlled sweep on the fixed 1,000-query
-Charades-STA test subset. The source file is
+Следующая таблица показывает main controlled sweep на фиксированной 1,000-query
+Charades-STA test subset. Source file:
 `results/charades_sta_sweep_1000/summary.csv`.
 
 | Configuration | Window | Stride | Aggregation | Queries | Unique Videos | Frames | R@1 IoU 0.3 | R@1 IoU 0.5 | R@1 IoU 0.7 | mIoU | Time (s) | Cache Hits | Cache Misses |
@@ -287,15 +284,15 @@ Charades-STA test subset. The source file is
 | CLIP w32/s16/mean | 32 | 16 | mean | 1000 | 363 | 29994 | 0.395 | 0.014 | 0.000 | 0.2814 | 21.51 | 1000 | 0 |
 | CLIP w16/s8/max | 16 | 8 | max | 1000 | 363 | 29994 | 0.602 | 0.232 | 0.077 | 0.3386 | 20.92 | 1000 | 0 |
 
-The best coarse retrieval result is achieved by `w16/s8/mean`, with
-R@1 IoU 0.3 equal to 0.625. The best strict localization result is achieved by
-`w8/s4/mean`, with R@1 IoU 0.5 equal to 0.393 and R@1 IoU 0.7 equal to 0.181.
-The mIoU values of `w16/s8/mean` and `w8/s4/mean` are close: 0.3497 and 0.3478.
+Лучший coarse retrieval result достигается `w16/s8/mean`, где R@1 IoU 0.3
+равен 0.625. Лучшая strict localization достигается `w8/s4/mean`, где R@1 IoU
+0.5 равен 0.393, а R@1 IoU 0.7 равен 0.181. Значения mIoU у `w16/s8/mean` и
+`w8/s4/mean` близки: 0.3497 и 0.3478.
 
-### 6.2 Smoothing Experiment
+### 6.2 Smoothing experiment
 
-The smoothing experiment uses the same fixed 1,000-query subset and reuses the
-existing embedding cache from the main sweep. The source file is
+Smoothing experiment использует ту же fixed 1,000-query subset и переиспользует
+embedding cache из main sweep. Source file:
 `results/charades_sta_smoothing_1000/summary.csv`.
 
 | Configuration | Smoothing | R@1 IoU 0.3 | R@1 IoU 0.5 | R@1 IoU 0.7 | mIoU | Time (s) | Cache Hits | Cache Misses |
@@ -307,25 +304,24 @@ existing embedding cache from the main sweep. The source file is
 | CLIP w16/s8/mean | moving_average_3 | 0.620 | 0.257 | 0.098 | 0.3491 | 15.37 | 1000 | 0 |
 | CLIP w16/s8/mean | moving_average_5 | 0.623 | 0.254 | 0.098 | 0.3481 | 16.00 | 1000 | 0 |
 
-Smoothing slightly improves the stricter localization metrics for the shorter
-`w8/s4/mean` configuration. The moving-average-5 variant reaches R@1 IoU 0.7
-equal to 0.190 and mIoU equal to 0.3494. For the `w16/s8/mean` configuration,
-smoothing does not improve the main coarse metric or mIoU; the unsmoothed
-variant remains strongest at R@1 IoU 0.3 and mIoU.
+Smoothing немного улучшает strict localization metrics для короткой
+configuration `w8/s4/mean`. Вариант `moving_average_5` достигает R@1 IoU 0.7 =
+0.190 и mIoU = 0.3494. Для `w16/s8/mean` smoothing не улучшает main coarse
+metric или mIoU; unsmoothed variant остается strongest по R@1 IoU 0.3 и mIoU.
 
-### 6.3 CLIP vs Moment-DETR on the Same 50-Query Subset
+### 6.3 CLIP vs Moment-DETR на одной 50-query subset
 
-The CLIP vs Moment-DETR comparison uses the same 50 Charades-STA query-video
-pairs from:
+CLIP vs Moment-DETR comparison использует одни и те же 50 Charades-STA
+query-video pairs из:
 
 ```text
 data/processed/charades_sta_moment_detr_test_subset.jsonl
 ```
 
-The Moment-DETR result is a raw-video feasibility probe using the compatible
-raw-video checkpoint from the external repository. It is not a full official
-Moment-DETR benchmark and it is not fine-tuned on Charades-STA. The source files
-are `results/clip_vs_moment_detr_50/comparison_summary.csv` and
+Moment-DETR result является raw-video feasibility probe с compatible raw-video
+checkpoint из external repository. Это не full official Moment-DETR benchmark и
+не fine-tuned Charades-STA model. Source files:
+`results/clip_vs_moment_detr_50/comparison_summary.csv` и
 `results/moment_detr_charades_50/metrics.json`.
 
 | Model | Configuration | Queries | Failed | R@1 IoU 0.3 | R@1 IoU 0.5 | R@1 IoU 0.7 | mIoU | Time (s) |
@@ -336,108 +332,106 @@ are `results/clip_vs_moment_detr_50/comparison_summary.csv` and
 | CLIP | w16/s8/max | 50 | 0 | 0.560 | 0.360 | 0.060 | 0.3375 | 2.09 |
 | Moment-DETR | raw-video checkpoint | 50 | 0 | 0.440 | 0.320 | 0.040 | 0.2634 | 17.93 |
 
-On this limited subset, the simple CLIP baseline performs strongly. The
-`w8/s4/mean` CLIP configuration gives the best strict localization metrics,
-while `w16/s8/mean` gives the best coarse metric at IoU 0.3. Moment-DETR
-successfully produces predictions for all 50 examples, which confirms
-raw-video feasibility, but this comparison is too small and too setup-specific
-to support broad claims about model superiority.
+На этой ограниченной subset простой CLIP baseline показывает сильные результаты.
+`w8/s4/mean` дает лучшие strict localization metrics, а `w16/s8/mean` дает
+лучший coarse metric при IoU 0.3. Moment-DETR успешно строит predictions для
+всех 50 examples, что подтверждает raw-video feasibility, но comparison слишком
+мал и слишком зависит от setup, чтобы делать широкие выводы о превосходстве
+моделей.
 
-## 7. Discussion
+## 7. Обсуждение
 
-The experiments show a consistent trade-off between coarse retrieval and strict
-localization. Medium 16-second windows perform best at IoU 0.3, where approximate
-overlap is sufficient. Shorter 8-second windows perform better at stricter IoU
-thresholds, because they can align more tightly with Charades-STA moments.
-Large 32-second windows lose temporal precision and perform poorly at IoU 0.5
-and 0.7.
+Эксперименты показывают устойчивый компромисс между coarse retrieval и strict
+localization. Medium 16-second windows лучше работают при IoU 0.3, где
+достаточно approximate overlap. Shorter 8-second windows лучше работают при
+строгих IoU thresholds, потому что они точнее align-ятся с Charades-STA moments.
+Large 32-second windows теряют temporal precision и слабо работают при IoU 0.5
+и 0.7.
 
-Mean aggregation is more stable than max aggregation in the tested settings.
-For the same `w16/s8` temporal setup, mean aggregation improves all reported
-metrics compared with max aggregation in the 1,000-query sweep. This suggests
-that the average visual-language relevance over a window is a better signal
-than a single maximum-scoring frame for this dataset and baseline.
+Mean aggregation стабильнее max aggregation в проверенных settings. Для той же
+`w16/s8` temporal setup mean aggregation улучшает все reported metrics по
+сравнению с max aggregation в 1,000-query sweep. Это указывает, что average
+visual-language relevance внутри window является более надежным сигналом, чем
+один maximum-scoring frame.
 
-Similarity smoothing has a modest effect. It slightly improves strict
-localization for the shorter `w8/s4/mean` setup, especially at IoU 0.7. However,
-it does not improve the stronger coarse-retrieval configuration `w16/s8/mean`.
-This suggests that smoothing may be useful when the candidate windows are short
-and sensitive to local frame-score noise, but it is not a universal improvement.
+Similarity smoothing дает умеренный эффект. Он немного улучшает strict
+localization для короткого `w8/s4/mean`, особенно при IoU 0.7. Однако smoothing
+не улучшает stronger coarse-retrieval configuration `w16/s8/mean`. Значит,
+smoothing может быть полезен для коротких candidate windows, чувствительных к
+local frame-score noise, но не является универсальным улучшением.
 
-The embedding cache is essential for practical experimentation. Without the
-cache, each configuration would repeatedly run the CLIP image encoder on the
-same videos. With caching, the expensive video encoding step is reused, making
-controlled sweeps feasible on CPU.
+Embedding cache существенно важен для практических экспериментов. Без cache
+каждая configuration заново запускала бы CLIP image encoder на тех же videos. С
+cache дорогой video encoding step переиспользуется, что делает controlled
+sweeps возможными на CPU.
 
-The Moment-DETR probe demonstrates that integration with a specialized temporal
-localization model is feasible, but sensitive to checkpoint and feature format.
-The raw-video-compatible checkpoint works with local Charades videos. The
-released QVHighlights feature checkpoint is incompatible with the raw-video
-path due to feature dimension mismatch. Therefore, a rigorous Moment-DETR
-benchmark would require a more careful environment and feature setup than the
-limited probe performed here.
+Moment-DETR probe показывает, что интеграция specialized temporal localization
+model технически возможна, но чувствительна к checkpoint и feature format.
+Raw-video-compatible checkpoint работает с локальными Charades videos. Released
+QVHighlights feature checkpoint несовместим с raw-video path из-за feature
+dimension mismatch. Поэтому rigorous Moment-DETR benchmark потребовал бы более
+аккуратного environment и feature setup, чем limited probe в этой курсовой.
 
-## 8. Limitations
+## 8. Ограничения
 
-The main CLIP experiment uses a fixed 1,000-query subset rather than the full
-Charades-STA test split. The subset is large enough for a controlled coursework
-experiment, but it should not be reported as the full official Charades-STA
+Основной CLIP experiment использует fixed 1,000-query subset, а не полный
+Charades-STA test split. Subset достаточно велика для контролируемого
+coursework experiment, но ее нельзя подавать как full official Charades-STA
 benchmark.
 
-All reported runs use CPU inference. Runtime may differ substantially on GPU or
-with optimized batching.
+Все reported runs выполнены на CPU. Runtime может существенно отличаться на GPU
+или при optimized batching.
 
-The CLIP baseline uses pretrained CLIP only. No model is trained or fine-tuned
-on Charades-STA. The method also does not explicitly model temporal action
-dynamics beyond fixed windows, aggregation, and optional smoothing.
+CLIP baseline использует pretrained CLIP only. Модель не обучается и не
+fine-tuned на Charades-STA. Метод также не моделирует temporal action dynamics
+явно, кроме fixed windows, aggregation и optional smoothing.
 
-The Moment-DETR comparison uses only 50 examples and the raw-video-compatible
-checkpoint from the external repository. It is a preliminary feasibility
-comparison, not a full official Moment-DETR evaluation. Full official
-benchmarking, feature extraction, and fine-tuning are outside the scope of this
-coursework.
+Moment-DETR comparison использует только 50 examples и raw-video-compatible
+checkpoint из external repository. Это preliminary feasibility comparison, а не
+full official Moment-DETR evaluation. Full official benchmarking, feature
+extraction и fine-tuning находятся вне scope этой курсовой.
 
-QVHighlights remains preliminary in this project because raw video availability
-made it difficult to build a reproducible local experiment pipeline within the
-available time.
+QVHighlights остается preliminary направлением, потому что raw video
+availability усложнила построение воспроизводимой локальной experiment pipeline
+в доступное время.
 
-## 9. Conclusion
+## 9. Заключение
 
-This coursework implemented a reproducible raw-video Video Moment Retrieval
-pipeline and evaluated it on Charades-STA. The final dataset setup contains
-local Charades videos and standard Charades-STA annotations, avoiding the raw
-video availability issues encountered with QVHighlights.
+В курсовой реализована воспроизводимая raw-video Video Moment Retrieval
+pipeline и проведена оценка на Charades-STA. Финальный dataset setup содержит
+локальные Charades videos и standard Charades-STA annotations, что позволяет
+избежать проблем raw video availability, возникших с QVHighlights.
 
-The main implemented method is a CLIP-based temporal-window retrieval baseline.
-On a fixed 1,000-query Charades-STA subset, `w16/s8/mean` achieves the best
-coarse retrieval result with R@1 IoU 0.3 equal to 0.625, while `w8/s4/mean`
-achieves the best strict localization results with R@1 IoU 0.5 equal to 0.393
-and R@1 IoU 0.7 equal to 0.181. Smoothing provides small improvements for the
-short-window setup but does not consistently improve all configurations.
+Основной реализованный метод - CLIP-based temporal-window retrieval baseline.
+На фиксированной 1,000-query Charades-STA subset `w16/s8/mean` достигает
+лучшего coarse retrieval result с R@1 IoU 0.3 = 0.625, а `w8/s4/mean` достигает
+лучших strict localization results с R@1 IoU 0.5 = 0.393 и R@1 IoU 0.7 =
+0.181. Smoothing дает небольшие улучшения для short-window setup, но не
+улучшает все configurations consistently.
 
-The project also demonstrates an isolated Moment-DETR raw-video probe on 50
-Charades-STA examples. This confirms that a specialized temporal model can be
-connected to the local data, but a full official benchmark and fine-tuning are
-left outside the project scope.
+Проект также демонстрирует isolated Moment-DETR raw-video probe на 50
+Charades-STA examples. Это подтверждает, что specialized temporal model можно
+подключить к локальным данным, но full official benchmark и fine-tuning
+остаются за пределами scope.
 
-Overall, the project provides a clear baseline, reusable data preparation
-workflow, controlled experiment outputs, and a practical foundation for future
-work on trained temporal localization models.
+В результате проект дает понятный baseline, reusable data preparation workflow,
+controlled experiment outputs и практическую основу для будущей работы с
+trained temporal localization models.
 
-## 10. References and Project Evidence
+## 10. Источники и материалы проекта
 
-Core references used by the project:
+Базовые источники проекта:
 
-- Radford et al. introduced CLIP as a contrastive image-text pretraining model.
-- Lei et al. introduced Moment-DETR and the QVHighlights benchmark for moment
-  retrieval and highlight detection.
-- Sigurdsson et al. introduced the Charades video dataset.
-- Gao et al. introduced Charades-STA for temporal activity localization via
+- Radford et al. представили CLIP как contrastive image-text pretraining model.
+- Lei et al. представили Moment-DETR и QVHighlights benchmark для moment
+  retrieval и highlight detection.
+- Sigurdsson et al. представили Charades video dataset.
+- Gao et al. представили Charades-STA для temporal activity localization via
   language query.
 
-BibTeX entries are collected in `thesis/references.bib`.
+BibTeX entries собраны в `thesis/references.bib`.
 
-Current project evidence and result files used in this draft:
+Project evidence и result files, использованные в тексте:
 
 - `docs/moment_detr.md`
 - `results/charades_sta_sweep_1000/summary.csv`
@@ -445,5 +439,5 @@ Current project evidence and result files used in this draft:
 - `results/clip_vs_moment_detr_50/comparison_summary.csv`
 - `results/moment_detr_charades_50/metrics.json`
 
-Intermediate writing notes were moved to local ignored agent memory and are
-not part of the final coursework repository structure.
+Промежуточные writing notes перенесены в local ignored agent memory и не входят
+в финальную структуру coursework repository.
