@@ -1,4 +1,4 @@
-"""Run Moment-DETR raw-video inference on a small Charades-STA JSONL subset."""
+"""Run Moment-DETR raw-video inference on Charades-STA JSONL annotations."""
 
 from __future__ import annotations
 
@@ -412,7 +412,7 @@ def write_json(path: str | Path, data: dict[str, Any]) -> None:
 
 def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Run Moment-DETR raw-video inference on Charades-STA subset JSONL."
+        description="Run Moment-DETR raw-video inference on Charades-STA JSONL annotations."
     )
     parser.add_argument(
         "--input-jsonl",
