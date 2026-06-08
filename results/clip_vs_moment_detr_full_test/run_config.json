@@ -1,0 +1,8 @@
+{
+  "clip_metrics": "results/charades_sta_full_test_clip/clip_w16_s8_mean/metrics.json",
+  "clip_run_config": "results/charades_sta_full_test_clip/clip_w16_s8_mean/run_config.json",
+  "moment_detr_metrics": "results/moment_detr_charades_full_test/metrics.json",
+  "moment_detr_run_config": "results/moment_detr_charades_full_test/run_config.json",
+  "expected_queries": 3720,
+  "output_dir": "results/clip_vs_moment_detr_full_test"
+}

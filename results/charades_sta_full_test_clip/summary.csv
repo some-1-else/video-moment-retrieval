@@ -1,0 +1,2 @@
+config_name,window_size,stride,aggregation,evaluated_queries,unique_videos,processed_frames,R@1_IoU_0.3,R@1_IoU_0.5,R@1_IoU_0.7,mIoU,inference_time_sec,cache_hits,cache_misses,cache_size_bytes
+clip_w16_s8_mean,16.0,8.0,mean,3720,1334,113042,0.5943548387096774,0.2368279569892473,0.08225806451612903,0.33476115133925355,1362.6812800000007,2386,1334,218630414

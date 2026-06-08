@@ -1,0 +1,6 @@
+{
+  "embeddings_cache_dir": "results/charades_sta_full_test_clip/embeddings",
+  "cache_hits": 2386,
+  "cache_misses": 1334,
+  "cache_size_bytes": 218630414
+}

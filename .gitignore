@@ -25,6 +25,9 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/charades_sta_full_test_manifest.csv
+!data/processed/charades_sta_full_test_moment_detr.jsonl
+!data/processed/charades_sta_full_test_manifest.sha256
 data/embeddings/
 !data/embeddings/
 data/embeddings/*
@@ -63,6 +66,7 @@ logs/
 
 # Local agent memory
 .agent_memory/
+_agent/
 
 # OS files
 .DS_Store

@@ -261,7 +261,23 @@ def write_summary_csv(path: str | Path, rows: list[dict]) -> None:
         writer.writerows(rows)
 
 
+def select_configs(config_name: str | None) -> tuple[dict, ...]:
+    if config_name is None:
+        return DEFAULT_CONFIGS
+
+    configs = tuple(
+        config for config in DEFAULT_CONFIGS if config["config_name"] == config_name
+    )
+    if not configs:
+        available = ", ".join(config["config_name"] for config in DEFAULT_CONFIGS)
+        raise ValueError(
+            f"Unknown config_name '{config_name}'. Available configs: {available}."
+        )
+    return configs
+
+
 def run_from_args(args: argparse.Namespace) -> list[dict]:
+    configs_to_run = select_configs(args.config_name)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     fixed_selection_manifest = args.output_dir / "selection_manifest.csv"
 
@@ -291,7 +307,7 @@ def run_from_args(args: argparse.Namespace) -> list[dict]:
     unique_videos = len({sample.video_id for sample in samples})
 
     summary_rows: list[dict] = []
-    for config in DEFAULT_CONFIGS:
+    for config in configs_to_run:
         config_name = config["config_name"]
         config_dir = args.output_dir / config_name
         cache_dir = args.output_dir / "embeddings"
@@ -380,6 +396,11 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--min-queries", "--min_queries", type=int, default=20)
     parser.add_argument("--max-queries", "--max_queries", type=int, default=200)
+    parser.add_argument(
+        "--config-name",
+        default=None,
+        help="Optional single config name to run instead of all default configs.",
+    )
     parser.add_argument("--no-cache", action="store_true")
 
     return parser.parse_args(argv)

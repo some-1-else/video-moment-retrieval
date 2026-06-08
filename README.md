@@ -36,7 +36,8 @@ Charades-STA.
 - window/stride/aggregation sweeps;
 - smoothing ablation;
 - evaluation metrics для temporal localization;
-- отдельный Moment-DETR raw-video feasibility probe;
+- Moment-DETR raw-video integration: сначала 50-query feasibility probe, затем
+  full Charades-STA test evaluation;
 - таблицы результатов и легкие notebooks для проверки курсовой.
 
 Подробное состояние проекта и ограничения зафиксированы в `PROJECT_STATUS.md`.
@@ -90,10 +91,12 @@ external/     внешний Moment-DETR код/checkpoints для probe
   `docs/moment_detr.md`, `docs/qvhighlights_limitations.md`;
 - реализация: `src/`;
 - public experiment runners:
+  - `scripts/prepare_charades_sta_full_test.py`;
   - `scripts/run_clip_sweep.py`;
   - `scripts/run_smoothing_sweep.py`;
   - `scripts/run_clip_vs_moment_detr.py`;
-  - `scripts/run_moment_detr_probe.py`.
+  - `scripts/run_moment_detr_probe.py`;
+  - `scripts/build_clip_vs_moment_detr_comparison.py`.
 
 Файлы `run_config.json`, `metrics.json`, `result.json` и `summary.csv`
 сохранены рядом с соответствующими result folders, чтобы reported numbers
@@ -112,9 +115,12 @@ notebooks, а в `src/` и `scripts/`.
   Charades-STA.
 - `results/charades_sta_smoothing_1000/summary.csv` - smoothing ablation на той
   же 1,000-query subset.
+- `results/clip_vs_moment_detr_full_test/comparison_summary.csv` - финальное
+  CLIP vs Moment-DETR comparison на полном Charades-STA test split:
+  3,720 queries / 1,334 videos.
 - `results/clip_vs_moment_detr_50/comparison_summary.csv` и
-  `results/moment_detr_charades_50/metrics.json` - CLIP vs Moment-DETR
-  raw-video comparison на фиксированной 50-query subset.
+  `results/moment_detr_charades_50/metrics.json` - historical 50-query
+  feasibility probe, предшествующий full-test evaluation.
 - `reports/results_tables.md` - компактные таблицы результатов.
 
 Ключевые числа:
@@ -126,12 +132,17 @@ notebooks, а в `src/` и `scripts/`.
   `R@1_IoU_0.7 = 0.181`.
 - Лучший `mIoU` в sweep:
   `clip_w16_s8_mean`, `mIoU = 0.34969020291901676`.
-- На фиксированной 50-query comparison subset лучший CLIP strict result:
-  `clip_w8_s4_mean`, `R@1_IoU_0.7 = 0.32`,
-  `mIoU = 0.4393782459360136`.
-- Moment-DETR raw-video probe на той же 50-query subset:
-  `R@1_IoU_0.3 = 0.44`, `R@1_IoU_0.5 = 0.32`,
-  `R@1_IoU_0.7 = 0.04`, `mIoU = 0.26340237468832634`.
+- На полном Charades-STA test split `clip_w16_s8_mean`:
+  `R@1_IoU_0.3 = 0.5944`, `R@1_IoU_0.5 = 0.2368`,
+  `R@1_IoU_0.7 = 0.0823`, `mIoU = 0.3348`, time = 1362.68 sec,
+  output size = 78M.
+- На том же full test split `Moment-DETR` raw-video checkpoint:
+  `R@1_IoU_0.3 = 0.4145`, `R@1_IoU_0.5 = 0.2570`,
+  `R@1_IoU_0.7 = 0.0995`, `mIoU = 0.2662`, time = 2049.43 sec,
+  output size = 3.0M.
+- В full-test comparison CLIP выше по `R@1_IoU_0.3` и `mIoU`, а Moment-DETR
+  выше по строгим `R@1_IoU_0.5` и `R@1_IoU_0.7`. CLIP быстрее в CPU
+  experiment, но сохраняет больший cache embeddings.
 
 Exploratory результаты сохранены локально, но не входят в public evidence line:
 
@@ -146,10 +157,12 @@ Exploratory результаты сохранены локально, но не 
 
 ## Ограничения
 
-- Основной CLIP sweep использует фиксированную 1,000-query subset, а не полный
-  Charades-STA test split.
-- Moment-DETR comparison использует только 50 examples и должен читаться как
-  feasibility probe, а не как full official benchmark.
+- Window/stride/aggregation и smoothing sweeps используют фиксированную
+  1,000-query subset; финальное CLIP vs Moment-DETR comparison выполнено на
+  полном Charades-STA test split.
+- Moment-DETR сначала проверялся как 50-query feasibility probe, затем был
+  оценен на полном Charades-STA test split. Это coursework-scale reproducible
+  experiment, а не прямое SOTA comparison или official QVHighlights benchmark.
 - Все reported runs выполнены на CPU.
 - CLIP не fine-tuned на Charades-STA.
 - QVHighlights остается preliminary направлением из-за зависимости raw videos
