@@ -9,6 +9,7 @@ PUBLIC_SCRIPTS = [
     Path("scripts/run_clip_vs_moment_detr.py"),
     Path("scripts/run_moment_detr_probe.py"),
     Path("scripts/collect_results.py"),
+    Path("scripts/build_clip_vs_moment_detr_comparison.py"),
 ]
 
 

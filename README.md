@@ -1,203 +1,236 @@
-# Курсовой проект: Video Moment Retrieval
+# Поиск моментов в видео по текстовому запросу
 
-Курсовой проект посвящен поиску временного фрагмента видео по текстовому
-запросу (`text-to-video moment retrieval`).
+Данный репозиторий содержит программную реализацию курсовой работы по задаче
+**Video Moment Retrieval**: по текстовому запросу необходимо найти во входном
+видео временной фрагмент, который соответствует описанному действию или
+событию.
 
-Английское название темы: **Search for video moments using text queries:
-implementations and experiments with video-language retrieval models**.
+Текст курсовой работы сдаётся отдельно. В репозитории оставлены исходный код,
+скрипты запуска, конфигурации, краткая документация и сохранённые результаты
+экспериментов.
 
-## Что делает проект
+## Цель работы
 
-Проект реализует и анализирует воспроизводимый baseline для Video Moment
-Retrieval: по текстовому запросу система выбирает временное окно видео, которое
-лучше всего соответствует описанию.
+Цель работы состоит в том, чтобы реализовать и исследовать воспроизводимый
+подход к поиску моментов в видео по текстовому описанию. В рамках проекта
+решаются следующие задачи:
 
-Основная экспериментальная линия:
+- подготовить данные Charades-STA для локальных экспериментов;
+- реализовать поиск релевантного временного окна на основе CLIP;
+- оценить влияние размера окна, шага, агрегации и сглаживания оценок;
+- посчитать стандартные метрики temporal localization;
+- сравнить полученную реализацию с запуском Moment-DETR в той же постановке.
 
-- датасет: **Charades-STA** с локально подготовленными Charades videos;
-- baseline: CLIP `ViT-B/32` без fine-tuning;
-- представление видео: sampling кадров, CLIP image embeddings, fixed temporal
-  windows;
-- scoring: similarity между текстовым embedding и frame/window embeddings;
-- оценка: `R@1` при `IoU = 0.3 / 0.5 / 0.7`, `mIoU`,
-  runtime/cache metadata.
+## Постановка задачи
 
-QVHighlights был исходным направлением проекта и сохранен как preliminary
-история, но полноценный QVHighlights benchmark здесь не заявляется: raw videos
-зависят от внешних YouTube-ссылок, поэтому финальная оценка выполнена на
-Charades-STA.
+В отличие от обычного поиска видео, Video Moment Retrieval требует определить
+не только релевантное видео, но и границы нужного фрагмента внутри него. В
+проекте рассматривается следующая схема:
 
-## Текущий статус
+1. задаётся текстовый запрос;
+2. из локального видео извлекаются кадры;
+3. текст и кадры кодируются моделью CLIP;
+4. для кадров вычисляются оценки сходства с запросом;
+5. оценки агрегируются по фиксированным временным окнам;
+6. окно с максимальной оценкой считается ответом системы;
+7. предсказанный интервал сравнивается с разметкой.
 
-Реализовано:
+## Реализованный подход
 
-- Charades-STA loader и проверки локального dataset setup;
-- CLIP-based raw-video retrieval baseline;
-- window/stride/aggregation sweeps;
-- smoothing ablation;
-- evaluation metrics для temporal localization;
-- Moment-DETR raw-video integration: сначала 50-query feasibility probe, затем
-  full Charades-STA test evaluation;
-- таблицы результатов и легкие notebooks для проверки курсовой.
+Основная реализация использует CLIP `ViT-B/32` без дополнительного обучения.
+Видео представляется последовательностью кадров, извлечённых с частотой
+`1 FPS`. Для каждого текстового запроса вычисляется сходство с кадрами, после
+чего оценки объединяются внутри временных окон.
 
-Подробное состояние проекта и ограничения зафиксированы в `PROJECT_STATUS.md`.
+Ключевые элементы реализации:
+
+- датасет: Charades-STA;
+- визуально-текстовая модель: CLIP `ViT-B/32`;
+- обучение модели: не выполняется;
+- входные данные: локальные видео Charades и разметка Charades-STA;
+- построение кандидатов: фиксированные временные окна;
+- агрегация оценок: `mean` или `max`;
+- дополнительная проверка: сглаживание скользящим средним;
+- сравнение: Moment-DETR в режиме запуска по исходным видео.
 
 ## Структура репозитория
 
 ```text
 configs/      конфигурации экспериментов
-src/          implementation modules: data, video, retrieval, models, metrics
-scripts/      public reproduction entrypoints
-tests/        regression и smoke tests
-notebooks/    reader-facing notebooks поверх сохраненных результатов
-data/         local data layout, sample annotations, ignored raw/cache data
-results/      финальные metrics, run configs, predictions и figures
-reports/      таблицы результатов для быстрой проверки
-thesis/       текст курсовой, figures, tables и bibliography
-docs/         краткая документация: data, CLIP, Moment-DETR, limitations
-archive/      старая история окружения, не нужная для основного маршрута
-external/     внешний Moment-DETR код/checkpoints для probe
+data/         разметка, небольшие примеры и служебные списки данных
+docs/         пояснения по данным, CLIP, Moment-DETR и ограничениям
+notebooks/    ноутбуки для просмотра сохранённых результатов
+reports/      компактные таблицы результатов
+results/      метрики, предсказания, конфигурации запусков и сводные таблицы
+scripts/      скрипты подготовки данных и запуска экспериментов
+src/          основной Python-код проекта
+tests/        проверки модулей и публичных скриптов
 ```
 
-## Рекомендуемый маршрут просмотра
+Локальные видео, скачанные архивы датасетов, контрольные веса моделей, кэши
+эмбеддингов, внешние репозитории и файлы текста курсовой работы не входят в
+публичную версию репозитория.
 
-Рекомендуемый порядок для научного руководителя или проверяющего:
+## Установка
 
-1. `thesis/coursework.md` - полный текст курсовой: постановка задачи,
-   методика, результаты, ограничения и источники.
-2. `notebooks/06_results_summary.ipynb` - компактный notebook с сохраненными
-   таблицами результатов и выводами; он читает public `results/` files и не
-   запускает model inference.
-3. `results/README.md` - карта сохраненных experiment outputs, использованных
-   в курсовой.
-4. `notebooks/03_clip_window_sweep_1000.ipynb`,
-   `notebooks/04_smoothing_experiment.ipynb`,
-   `notebooks/05_clip_vs_moment_detr.ipynb` - подробные notebooks по main
-   sweep, smoothing ablation и Moment-DETR feasibility probe.
-5. `PROJECT_STATUS.md` - краткое резюме статуса проекта на русском.
+Рекомендуется Python 3.11 или новее.
 
-Тесты запускать необязательно: они полезны для engineering confidence, но не
-нужны для просмотра результатов курсовой. Последняя полная проверка прошла с
-результатом `83 passed`.
+```bash
+python -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+```
 
-## Воспроизводимые эксперименты
+Основные зависимости перечислены в `requirements.txt`: PyTorch, CLIP, OpenCV,
+NumPy, pandas, pytest и вспомогательные библиотеки.
 
-Основной маршрут воспроизведения: Charades-STA + CLIP baseline. Полезные файлы:
+## Данные
 
-- зависимости: `requirements.txt`;
-- конфигурация: `configs/clip_baseline.yaml`;
-- подготовка данных: `data/README.md`, `docs/data_setup.md`;
-- методика: `docs/clip_baseline.md`, `docs/video_frame_extraction.md`,
-  `docs/moment_detr.md`, `docs/qvhighlights_limitations.md`;
-- реализация: `src/`;
-- public experiment runners:
-  - `scripts/prepare_charades_sta_full_test.py`;
-  - `scripts/run_clip_sweep.py`;
-  - `scripts/run_smoothing_sweep.py`;
-  - `scripts/run_clip_vs_moment_detr.py`;
-  - `scripts/run_moment_detr_probe.py`;
-  - `scripts/build_clip_vs_moment_detr_comparison.py`.
+Финальные эксперименты выполнены на **Charades-STA**. Разметка хранится в:
 
-Файлы `run_config.json`, `metrics.json`, `result.json` и `summary.csv`
-сохранены рядом с соответствующими result folders, чтобы reported numbers
-можно было проверить без повторного запуска inference.
+```text
+data/charades_sta/charades_sta_train.txt
+data/charades_sta/charades_sta_test.txt
+```
 
-Notebooks в `notebooks/` являются reader-facing материалами поверх сохраненных
-`results/*.json` и `results/*.csv`. Основная model logic находится не в
-notebooks, а в `src/` и `scripts/`.
+Исходные видео не хранятся в git. Для локального запуска их нужно разместить в
+следующей директории:
+
+```text
+data/raw/charades/videos/<video_id>.mp4
+```
+
+Для проверки структуры полной тестовой части сохранены:
+
+```text
+data/processed/charades_sta_full_test_manifest.csv
+data/processed/charades_sta_full_test_moment_detr.jsonl
+```
+
+Подробности подготовки данных описаны в `docs/data_setup.md`.
+
+## Подготовка данных
+
+Если архив Charades доступен локально, выбранные видео можно извлечь командой:
+
+```bash
+python scripts/prepare_data.py \
+  --zip_path data/raw/charades/archives/Charades_v1_480.zip \
+  --limit 20
+```
+
+Извлечённые видео будут сохранены в `data/raw/charades/videos/`. Скачанный
+архив и сами видео игнорируются git.
+
+## Ход эксперимента
+
+Экспериментальная схема устроена следующим образом:
+
+1. загружается разметка Charades-STA;
+2. для каждого запроса находится соответствующее локальное видео;
+3. видео проверяется через OpenCV;
+4. кадры извлекаются с частотой `1 FPS`;
+5. CLIP кодирует текстовый запрос и кадры;
+6. для каждого кадра считается косинусное сходство с запросом;
+7. оценки агрегируются внутри временных окон;
+8. лучшее окно сравнивается с размеченным интервалом по IoU.
+
+## Метрики
+
+В проекте считаются:
+
+- `R@1_IoU_0.3`;
+- `R@1_IoU_0.5`;
+- `R@1_IoU_0.7`;
+- `mIoU`;
+- время выполнения и информация о кэше.
+
+Реализация метрик находится в `src/evaluation/`.
+
+## Основные команды
+
+Запуск перебора конфигураций CLIP на Charades-STA:
+
+```bash
+python scripts/run_clip_sweep.py \
+  --annotations-path data/charades_sta/charades_sta_test.txt \
+  --videos-dir data/raw/charades/videos \
+  --output-dir results/charades_sta_sweep_1000 \
+  --min-queries 1000 \
+  --max-queries 1000
+```
+
+Запуск проверки сглаживания:
+
+```bash
+python scripts/run_smoothing_sweep.py
+```
+
+Запуск Moment-DETR для полной тестовой части:
+
+```bash
+python scripts/run_moment_detr_probe.py --limit 3720
+```
+
+Сбор финальной таблицы для сравнения CLIP и Moment-DETR:
+
+```bash
+python scripts/build_clip_vs_moment_detr_comparison.py \
+  --clip-metrics results/charades_sta_full_test_clip/clip_w16_s8_mean/metrics.json \
+  --clip-run-config results/charades_sta_full_test_clip/clip_w16_s8_mean/run_config.json \
+  --moment-detr-metrics results/moment_detr_charades_full_test/metrics.json \
+  --moment-detr-run-config results/moment_detr_charades_full_test/run_config.json \
+  --expected-queries 3720 \
+  --output-dir results/clip_vs_moment_detr_full_test
+```
+
+Краткое описание скриптов находится в `scripts/README.md`.
 
 ## Результаты
 
-Финальные результаты курсовой сосредоточены на Charades-STA:
+Сохранённые результаты находятся в `results/`, а компактные таблицы приведены
+в `reports/results_tables.md`.
 
-- `results/charades_sta_sweep_1000/summary.csv` - CLIP
-  window/stride/aggregation sweep на фиксированной 1,000-query subset
-  Charades-STA.
-- `results/charades_sta_smoothing_1000/summary.csv` - smoothing ablation на той
-  же 1,000-query subset.
-- `results/clip_vs_moment_detr_full_test/comparison_summary.csv` - финальное
-  CLIP vs Moment-DETR comparison на полном Charades-STA test split:
-  3,720 queries / 1,334 videos.
-- `results/clip_vs_moment_detr_50/comparison_summary.csv` и
-  `results/moment_detr_charades_50/metrics.json` - historical 50-query
-  feasibility probe, предшествующий full-test evaluation.
-- `reports/results_tables.md` - компактные таблицы результатов.
+| Эксперимент | Конфигурация | R@1 IoU 0.3 | R@1 IoU 0.5 | R@1 IoU 0.7 | mIoU |
+|---|---|---:|---:|---:|---:|
+| Перебор конфигураций CLIP на 1,000 запросов | `clip_w16_s8_mean` | 0.6250 | 0.2600 | 0.0960 | 0.3497 |
+| Перебор конфигураций CLIP на 1,000 запросов | `clip_w8_s4_mean` | 0.5090 | 0.3930 | 0.1810 | 0.3478 |
+| Полная тестовая часть Charades-STA | CLIP `clip_w16_s8_mean` | 0.5944 | 0.2368 | 0.0823 | 0.3348 |
+| Полная тестовая часть Charades-STA | Moment-DETR по исходным видео | 0.4145 | 0.2570 | 0.0995 | 0.2662 |
 
-Ключевые числа:
+В данной экспериментальной постановке реализация на основе CLIP показывает
+лучший результат по грубой локализации (`IoU >= 0.3`) и `mIoU`, а Moment-DETR
+даёт более высокие значения на строгих порогах `IoU >= 0.5` и `IoU >= 0.7`.
 
-- Лучший coarse CLIP result на 1,000-query sweep:
-  `clip_w16_s8_mean`, `R@1_IoU_0.3 = 0.625`.
-- Лучшая strict CLIP localization в этом sweep:
-  `clip_w8_s4_mean`, `R@1_IoU_0.5 = 0.393`,
-  `R@1_IoU_0.7 = 0.181`.
-- Лучший `mIoU` в sweep:
-  `clip_w16_s8_mean`, `mIoU = 0.34969020291901676`.
-- На полном Charades-STA test split `clip_w16_s8_mean`:
-  `R@1_IoU_0.3 = 0.5944`, `R@1_IoU_0.5 = 0.2368`,
-  `R@1_IoU_0.7 = 0.0823`, `mIoU = 0.3348`, time = 1362.68 sec,
-  output size = 78M.
-- На том же full test split `Moment-DETR` raw-video checkpoint:
-  `R@1_IoU_0.3 = 0.4145`, `R@1_IoU_0.5 = 0.2570`,
-  `R@1_IoU_0.7 = 0.0995`, `mIoU = 0.2662`, time = 2049.43 sec,
-  output size = 3.0M.
-- В full-test comparison CLIP выше по `R@1_IoU_0.3` и `mIoU`, а Moment-DETR
-  выше по строгим `R@1_IoU_0.5` и `R@1_IoU_0.7`. CLIP быстрее в CPU
-  experiment, но сохраняет больший cache embeddings.
+## Что не хранится в репозитории
 
-Exploratory результаты сохранены локально, но не входят в public evidence line:
+В публичную версию намеренно не входят:
 
-- ранние Charades-STA smoke/200-query runs;
-- preliminary QVHighlights sweeps;
-- synthetic/sample experiments;
-- one-video и diagnostic probes.
+- исходные видео;
+- скачанные архивы датасетов;
+- контрольные веса моделей;
+- кэши эмбеддингов (`.npz`);
+- внешние репозитории;
+- локальные файлы курсовой работы в `thesis/`;
+- временные выходные файлы и логи.
 
-Они находятся в ignored `.agent_memory/results/`. Caches и embeddings, особенно
-`.npz` files, нужны только для ускорения локальных reruns и не являются
-самостоятельными финальными результатами.
+Сохранённые `metrics.json`, `run_config.json`, `summary.csv`,
+`comparison_summary.csv` и файлы предсказаний оставлены для проверки
+полученных результатов без повторного запуска модельного вывода.
 
-## Ограничения
+## Проверки
 
-- Window/stride/aggregation и smoothing sweeps используют фиксированную
-  1,000-query subset; финальное CLIP vs Moment-DETR comparison выполнено на
-  полном Charades-STA test split.
-- Moment-DETR сначала проверялся как 50-query feasibility probe, затем был
-  оценен на полном Charades-STA test split. Это coursework-scale reproducible
-  experiment, а не прямое SOTA comparison или official QVHighlights benchmark.
-- Все reported runs выполнены на CPU.
-- CLIP не fine-tuned на Charades-STA.
-- QVHighlights остается preliminary направлением из-за зависимости raw videos
-  от внешних YouTube-ссылок.
-- Moment-DETR checkpoint compatibility зависит от feature format:
-  raw-video-compatible checkpoint работает для probe, а QVHighlights feature
-  checkpoint не подходит напрямую для raw-video path.
-
-## Материалы курсовой
-
-Основной текст:
-
-```text
-thesis/coursework.md
+```bash
+python -m compileall src scripts tests
+pytest
 ```
 
-Финальная папка `thesis/` намеренно небольшая:
+Тесты проверяют temporal IoU, метрики, построение окон, агрегацию,
+загрузчики данных, извлечение кадров, работу кэша и компиляцию публичных
+скриптов.
 
-```text
-thesis/
-├── coursework.md
-├── figures/
-├── tables/
-└── references.bib
-```
+## Примечание
 
-Промежуточные writing notes перенесены в local ignored agent memory и не входят
-в финальную структуру coursework repository. Самый удобный result-facing
-summary для быстрой проверки: `reports/results_tables.md`.
-
-## Legacy и archive
-
-`archive/` хранит старые environment/history files, не нужные для основного
-Charades-STA reproduction path. Local ignored `.agent_memory/` хранит
-intermediate cleanup notes, deprecated planning documents, exploratory
-QVHighlights/synthetic history и другую рабочую память Codex/OpenCode. Эти
-файлы сохранены локально для traceability, но не нужны для понимания или
-воспроизведения public coursework results.
+Репозиторий предназначен для проверки программной реализации курсовой работы.
+Использование датасетов и предобученных моделей регулируется условиями
+соответствующих источников.

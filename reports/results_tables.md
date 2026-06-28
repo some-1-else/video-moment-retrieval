@@ -1,9 +1,9 @@
 # Таблицы результатов
 
-Эти таблицы скопированы из сохраненных result artifacts без изменения reported
-numbers.
+Таблицы ниже перенесены из сохранённых result artifacts без изменения
+экспериментальных чисел.
 
-## CLIP sweep на 1000 queries
+## CLIP sweep на 1,000 запросов
 
 Источник: `results/charades_sta_sweep_1000/summary.csv`.
 
@@ -27,23 +27,23 @@ numbers.
 | clip_w16_s8_mean_moving_average_3 | 16.0 | 8.0 | mean | moving_average_3 | 1000 | 0.62 | 0.257 | 0.098 | 0.3490817358808653 | 15.369382458011387 |
 | clip_w16_s8_mean_moving_average_5 | 16.0 | 8.0 | mean | moving_average_5 | 1000 | 0.623 | 0.254 | 0.098 | 0.3480849408190796 | 15.99566145800054 |
 
-## CLIP vs Moment-DETR full test
+## CLIP vs Moment-DETR на полном test split
 
 Источник: `results/clip_vs_moment_detr_full_test/comparison_summary.csv`.
 
-Charades-STA full test split: 3,720 queries / 1,334 videos.
+Полный Charades-STA test split: 3,720 queries / 1,334 videos.
 
 | Model | Configuration | Queries | Failed | R@1 IoU 0.3 | R@1 IoU 0.5 | R@1 IoU 0.7 | mIoU | Time (s) | Output size |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | CLIP | clip_w16_s8_mean | 3720 | 0 | 0.5944 | 0.2368 | 0.0823 | 0.3348 | 1362.68 | 78M |
 | Moment-DETR | moment_detr_raw_video | 3720 | 0 | 0.4145 | 0.2570 | 0.0995 | 0.2662 | 2049.43 | 3.0M |
 
-Interpretation: CLIP has higher `R@1 IoU 0.3` and `mIoU`. Moment-DETR has
-higher `R@1 IoU 0.5` and `R@1 IoU 0.7`. CLIP is faster in this CPU experiment
-but stores larger cached embeddings. Results are coursework-scale reproducible
-experiments, not direct SOTA comparison.
+Интерпретация: CLIP выше по `R@1 IoU 0.3` и `mIoU`. Moment-DETR выше по более
+строгим `R@1 IoU 0.5` и `R@1 IoU 0.7`. CLIP быстрее в CPU experiment, но
+сохраняет больший cache embeddings. Это воспроизводимое сравнение масштаба
+курсовой работы, а не прямое SOTA comparison.
 
-## CLIP vs Moment-DETR 50 historical probe
+## CLIP vs Moment-DETR на 50 запросах
 
 Источники:
 

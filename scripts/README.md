@@ -1,38 +1,32 @@
 # Скрипты
 
-Эта папка содержит public reproduction entrypoints для курсовой.
+Папка содержит публичные CLI-скрипты для подготовки данных, запуска
+экспериментов и сборки таблиц результатов.
 
 ## Подготовка данных
 
-- `prepare_data.py` извлекает выбранные Charades videos из локального zip
-  archive в ожидаемую raw-video структуру.
+- `prepare_data.py` извлекает выбранные видео Charades из локального zip-архива
+  в `data/raw/charades/videos/`.
+- `prepare_charades_sta_full_test.py` формирует manifest полного test split
+  Charades-STA и JSONL-файл для Moment-DETR без запуска моделей.
 
 ## Эксперименты
 
-- `run_clip_sweep.py` запускает основной CLIP window/stride/aggregation sweep
-  на Charades-STA.
-- `run_smoothing_sweep.py` запускает CLIP smoothing ablation на той же
-  Charades-STA setup.
-- `run_clip_vs_moment_detr.py` запускает CLIP-часть historical 50-query
-  comparison и записывает combined comparison table.
-- `run_moment_detr_probe.py` запускает Moment-DETR raw-video inference на
-  подготовленном Charades-STA JSONL; historical default остается 50-query
-  subset, full-test запуск использует `--limit 3720`.
+- `run_clip_sweep.py` запускает CLIP sweep по `window_size`, `stride` и
+  `aggregation` на Charades-STA.
+- `run_smoothing_sweep.py` запускает ablation по moving-average smoothing на
+  той же фиксированной выборке Charades-STA.
+- `run_clip_vs_moment_detr.py` воспроизводит сравнительный запуск CLIP для
+  выборки из 50 запросов.
+- `run_moment_detr_probe.py` запускает Moment-DETR raw-video inference по
+  подготовленному JSONL-файлу Charades-STA. Для полного test split используется
+  `--limit 3720`.
 
 ## Сбор результатов
 
-- `collect_results.py` собирает JSON result files в компактную CSV summary.
+- `collect_results.py` собирает JSON-файлы результатов в компактную CSV-таблицу.
+- `build_clip_vs_moment_detr_comparison.py` строит итоговую таблицу
+  CLIP vs Moment-DETR по сохранённым full-test metrics.
 
-## Full-test CLIP vs Moment-DETR
-
-- `prepare_charades_sta_full_test.py` готовит общий Charades-STA test manifest
-  и Moment-DETR JSONL без запуска моделей.
-- `run_clip_sweep.py --config-name clip_w16_s8_mean` запускает выбранный CLIP
-  full-test baseline на подготовленном manifest.
-- `run_moment_detr_probe.py --limit 3720` запускает Moment-DETR full-test
-  inference на подготовленном JSONL.
-- `build_clip_vs_moment_detr_comparison.py` собирает comparison table из
-  сохраненных CLIP и Moment-DETR metrics.
-
-Старые probe, synthetic, QVHighlights и debug scripts перенесены в локальную
-ignored agent memory и не входят в public reproduction path.
+Скрипты для основной сдачи курсовой находятся в этой папке; локальные
+исследовательские и временные утилиты в публичную структуру не включаются.

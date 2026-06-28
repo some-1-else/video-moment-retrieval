@@ -1,7 +1,8 @@
 dataset:
-  annotations: data/qvhighlights/highlight_val_release.jsonl
-  videos_dir: data/qvhighlights/videos
-  limit: 100
+  annotations: data/charades_sta/charades_sta_test.txt
+  videos_dir: data/raw/charades/videos
+  min_queries: 1000
+  max_queries: 1000
 
 frame_extraction:
   fps: 1.0
@@ -13,11 +14,11 @@ clip:
 
 retrieval:
   mode: windows
-  window_size: 8.0
-  stride: 4.0
+  window_size: 16.0
+  stride: 8.0
   aggregation: mean
   smoothing: null
 
 output:
-  embeddings_dir: results/embeddings
-  results_path: results/clip_baseline_val_100.json
+  output_dir: results/charades_sta_sweep_1000
+  embeddings_dir: results/charades_sta_sweep_1000/embeddings

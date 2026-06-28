@@ -1,6 +1,6 @@
 # Подготовка данных
 
-Этот документ описывает подготовку данных для воспроизведения финальных
+Документ описывает подготовку данных для воспроизведения финальных
 экспериментов: Charades-STA annotations и локальные Charades videos. Проект не
 скачивает полный Charades или Charades-STA dataset автоматически.
 
@@ -49,15 +49,15 @@ Raw Charades videos хранятся в официальном AI2 Charades arch
 data/raw/charades/archives/Charades_v1_480.zip
 ```
 
-Для coursework experiments достаточно 480p archive: он меньше, быстрее
+Для экспериментов курсовой достаточно 480p archive: он меньше, быстрее
 обрабатывается локально и подходит для CLIP baseline.
 
 ## Извлечение видео
 
-Начинайте с небольшой subset, а не с полного архива:
+Для первичной проверки удобно начать с небольшой выборки:
 
 ```bash
-.venv/bin/python scripts/prepare_data.py \
+python scripts/prepare_data.py \
   --zip_path data/raw/charades/archives/Charades_v1_480.zip \
   --limit 20
 ```
@@ -68,11 +68,14 @@ data/raw/charades/archives/Charades_v1_480.zip
 data/raw/charades/videos/
 ```
 
-и записывает extraction manifest:
+и записывает локальный extraction manifest:
 
 ```text
 data/processed/charades_zip_extract_manifest.csv
 ```
+
+Этот manifest является промежуточным файлом и не нужен для финальной проверки
+репозитория.
 
 Если нужные video ids уже известны, положите их в text или CSV file:
 
@@ -83,7 +86,7 @@ data/charades_sta/smoke_video_ids.txt
 Затем извлеките только эти видео:
 
 ```bash
-.venv/bin/python scripts/prepare_data.py \
+python scripts/prepare_data.py \
   --zip_path data/raw/charades/archives/Charades_v1_480.zip \
   --video_ids data/charades_sta/smoke_video_ids.txt \
   --limit 20
@@ -102,16 +105,15 @@ videos согласованы:
 - OpenCV может открыть видео и прочитать первый frame;
 - размеченные windows лежат внутри decoded video duration.
 
-Эти проверки отражаются в локальных manifests под `data/processed/`. Финальные
-experiment runners также валидируют local videos и сохраняют `run_config.json`
+Финальные experiment runners выполняют эти проверки и сохраняют `run_config.json`
 рядом с результатами.
 
-## Reproduction notes
+## Замечания по воспроизведению
 
 - Raw archives, extracted videos, manifests, caches и embeddings не должны
   попадать в git, если это не специально подготовленные маленькие sample files.
-- Перед масштабированием на фиксированную 1,000-query coursework subset лучше
+- Перед масштабированием на фиксированную выборку из 1,000 запросов лучше
   проверить небольшой набор из 5-20 videos.
-- Финальные result folders хранят собственные `run_config.json`,
-  `metrics.json`, `summary.csv` и prediction files, чтобы reported numbers
-  можно было проверить без повторного inference.
+- Финальные папки результатов хранят `run_config.json`, `metrics.json`,
+  `summary.csv` и prediction files, чтобы reported numbers можно было
+  проверить без повторного inference.

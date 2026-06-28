@@ -186,7 +186,7 @@ def parse_args(argv: Sequence[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--embeddings-cache-dir",
         type=Path,
-        default=Path(".agent_memory/results/caches/charades_sta_sweep_1000/embeddings"),
+        default=Path("results/charades_sta_sweep_1000/embeddings"),
     )
     parser.add_argument("--fps", type=float, default=1.0)
     parser.add_argument("--model-name", default="ViT-B/32")

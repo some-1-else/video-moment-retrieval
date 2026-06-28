@@ -1,27 +1,25 @@
-# Data
+# Данные
 
-Эта папка описывает данные, используемые в финальной версии курсового проекта.
-Основная экспериментальная линия сейчас: **Charades-STA + локальные Charades
-videos**. QVHighlights сохранен только как preliminary/history direction и не
-является финальным benchmark в репозитории.
+Папка описывает данные, необходимые для финальной версии проекта. Основная
+экспериментальная линия: **Charades-STA + локальные Charades videos**.
 
 ## Что входит в git
 
-- `charades_sta/charades_sta_train.txt` и `charades_sta_test.txt` - annotations
+- `charades_sta/charades_sta_train.txt` и `charades_sta_test.txt` - разметка
   Charades-STA.
-- `processed/charades_sta_full_test_manifest.csv` - проверенный manifest полного
-  Charades-STA test split.
-- `processed/charades_sta_full_test_moment_detr.jsonl` - Charades-STA test split
-  в JSONL format для Moment-DETR raw-video evaluation.
-- `sample/` - маленькие sample annotations для тестов.
-- `.gitkeep` files - placeholders для локальных raw/cache директорий.
+- `processed/charades_sta_full_test_manifest.csv` - проверенный manifest
+  полного test split Charades-STA.
+- `processed/charades_sta_full_test_moment_detr.jsonl` - тот же test split в
+  JSONL-формате для Moment-DETR raw-video evaluation.
+- `sample/` - небольшие sample annotations для тестов.
+- `.gitkeep` files - маркеры для локальных директорий с данными и cache.
 
 ## Что не входит в git
 
-- `raw/` - локальные Charades videos и скачанные archives.
+- `raw/` - локальные Charades videos и скачанные архивы.
 - `embeddings/` - локальные embedding caches.
-- временные manifests и промежуточные artifacts, кроме специально сохраненных
-  финальных files в `processed/`.
+- промежуточные manifests и временные artifacts, кроме специально сохранённых
+  файлов в `processed/`.
 - локальные QVHighlights videos/manifests.
 
 ## Ожидаемая локальная структура

@@ -59,7 +59,7 @@ class OpenCVMomentDETRPredictor:
             device=device,
             jit=False,
         )
-        self.model = self._build_model_with_legacy_torch_load(
+        self.model = self._build_model_with_compatible_torch_load(
             build_inference_model,
             ckpt_path,
         ).to(device)
@@ -148,14 +148,14 @@ class OpenCVMomentDETRPredictor:
         return features
 
     @staticmethod
-    def _build_model_with_legacy_torch_load(build_inference_model, ckpt_path):
+    def _build_model_with_compatible_torch_load(build_inference_model, ckpt_path):
         original_torch_load = torch.load
 
-        def legacy_torch_load(*args, **kwargs):
+        def compatible_torch_load(*args, **kwargs):
             kwargs.setdefault("weights_only", False)
             return original_torch_load(*args, **kwargs)
 
-        torch.load = legacy_torch_load
+        torch.load = compatible_torch_load
         try:
             return build_inference_model(str(ckpt_path))
         finally:

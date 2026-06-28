@@ -1,15 +1,20 @@
-# Python
+# Python bytecode and build artifacts
 __pycache__/
-*.pyc
 *.py[cod]
+*.pyc
+*.pyo
 *.so
+build/
+dist/
+*.egg-info/
 
 # Virtual environments
 .venv/
 venv/
 env/
+.env/
 
-# Testing and tooling
+# Testing, coverage, and tooling caches
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -20,56 +25,61 @@ htmlcov/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data artifacts
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and temporary outputs
+logs/
+*.log
+tmp/
+temp/
+
+# Local datasets and generated data artifacts
 data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
 !data/processed/charades_sta_full_test_manifest.csv
-!data/processed/charades_sta_full_test_moment_detr.jsonl
 !data/processed/charades_sta_full_test_manifest.sha256
-data/embeddings/
-!data/embeddings/
+!data/processed/charades_sta_full_test_moment_detr.jsonl
 data/embeddings/*
 !data/embeddings/.gitkeep
 data/sample/*.mp4
 data/sample/synthetic_clip_videos/*.mp4
 data/qvhighlights/*.json
 data/qvhighlights/*.jsonl
-data/qvhighlights/qvhighlights_val_subset_manifest.json
-data/qvhighlights/videos/*.mp4
 data/qvhighlights/*.zip
 data/qvhighlights/*.tar
 data/qvhighlights/*.tar.gz
+data/qvhighlights/videos/
 !data/qvhighlights/.gitkeep
 
-# Experiment outputs
+# Experiment caches and generated outputs
 results/**/embeddings/
 results/caches/
 results/predictions/*
 !results/predictions/.gitkeep
-results/metrics/*
-!results/metrics/.gitkeep
 results/figures/*
 !results/figures/.gitkeep
 
-# Model checkpoints
+# Model checkpoints and external repositories
 checkpoints/
 *.ckpt
 *.pt
 *.pth
 *.bin
 *.safetensors
+external/moment_detr/
+external/moment_detr_checkpoints/
 
-# Logs
-logs/
-*.log
-
-# Local agent memory
+# Local service directories
 .agent_memory/
 _agent/
 
-# OS files
-.DS_Store
-external/moment_detr/
-external/moment_detr_checkpoints/
+# Local coursework text and administrative files
+thesis/
+пост_файлы/

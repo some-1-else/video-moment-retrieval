@@ -4,13 +4,13 @@ Frame extraction связывает локальные video files и CLIP-based
 выбираются из видео по фиксированным timestamps, кодируются CLIP image encoder
 и сравниваются с text query embedding.
 
-## Текущий scope
+## Назначение
 
 Текущая реализация поддерживает extraction из локального video file. Она не
 скачивает QVHighlights videos, не обрабатывает полный dataset и сама по себе не
 запускает CLIP.
 
-Этот слой является небольшим smoke-testable component:
+Слой можно описать так:
 
 ```text
 local video file -> sampled timestamps -> decoded frames
@@ -31,13 +31,13 @@ opencv-python
 OpenCV импортируется lazy внутри frame extraction functions, поэтому большинству
 tests и non-video workflows не требуется video decoding.
 
-## Optional local smoke test
+## Локальная проверка
 
-Если локальный video file доступен, можно проверить extraction через public
+Если локальный video file доступен, extraction можно проверить через публичные
 pipeline scripts или через unit tests для `src/video/`. Финальные notebooks не
-запускают video decoding: они читают уже сохраненные results.
+запускают video decoding: они читают уже сохранённые results.
 
-## Timestamp behavior
+## Поведение timestamps
 
 `extract_frames_at_timestamps(video_path, timestamps)` ожидает timestamps в
 секундах. Negative timestamps отклоняются. Timestamps, которые больше или равны
